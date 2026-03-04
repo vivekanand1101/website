@@ -173,62 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { passive: true });
     }
 
-    /* ==================== CRICKET SCOREBOARD ==================== */
-    const scoreEl = document.getElementById('score');
-    const wicketsEl = document.getElementById('wickets');
-    const oversEl = document.getElementById('overs');
-    const crrEl = document.getElementById('crr');
-
-    if (scoreEl) {
-        let score = 0;
-        let wickets = 0;
-        let balls = 0;
-        let scorecardStarted = false;
-
-        const outcomes = [0, 0, 1, 1, 1, 1, 2, 2, 3, 4, 4, 6, 'W'];
-
-        const scoreObserver = new IntersectionObserver(
-            (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && !scorecardStarted) {
-                        scorecardStarted = true;
-                        runScorecard();
-                        scoreObserver.unobserve(entry.target);
-                    }
-                });
-            },
-            { threshold: 0.5 }
-        );
-
-        scoreObserver.observe(scoreEl.closest('.scoreboard'));
-
-        function runScorecard() {
-            const interval = setInterval(() => {
-                if (wickets >= 10 || balls >= 120) {
-                    clearInterval(interval);
-                    return;
-                }
-
-                const outcome = outcomes[Math.floor(Math.random() * outcomes.length)];
-
-                if (outcome === 'W') {
-                    wickets++;
-                } else {
-                    score += outcome;
-                }
-
-                balls++;
-                const overs = Math.floor(balls / 6);
-                const ballsInOver = balls % 6;
-
-                scoreEl.textContent = score;
-                wicketsEl.textContent = wickets;
-                oversEl.textContent = overs + '.' + ballsInOver;
-                crrEl.textContent = balls > 0 ? (score / (balls / 6)).toFixed(2) : '0.00';
-            }, 800);
-        }
-    }
-
     /* ==================== HERO ENTRANCE ==================== */
     const heroTerminal = document.querySelector('.hero-terminal');
     if (heroTerminal && !hasBooted) {

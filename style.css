@@ -720,36 +720,41 @@ img { max-width: 100%; display: block; }
 
 .testimonial-track {
     display: flex;
+    flex-wrap: nowrap;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
 }
 
 .testimonial-card {
+    width: 100%;
     min-width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
     padding: 0 4px;
     box-sizing: border-box;
-    flex-shrink: 0;
 }
 
-.testimonial-card > blockquote {
+.testimonial-inner {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 32px 32px 24px;
+    padding: 32px;
+}
+
+.testimonial-inner blockquote {
     color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.8;
     font-style: italic;
-    margin-bottom: 0;
-    min-height: 180px;
-    display: flex;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
 .testimonial-author {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    padding: 16px 8px 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
 }
 
 .author-name {
@@ -772,10 +777,11 @@ a.author-name:hover {
 
 .carousel-controls {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-top: 24px;
+    margin-top: 28px;
 }
 
 .carousel-btn {
@@ -784,14 +790,16 @@ a.author-name:hover {
     color: var(--text-muted);
     width: 40px;
     height: 40px;
+    min-width: 40px;
     border-radius: 50%;
     cursor: pointer;
     font-size: 1rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
     font-family: var(--font-mono);
+    line-height: 1;
 }
 
 .carousel-btn:hover {
@@ -802,7 +810,9 @@ a.author-name:hover {
 
 .carousel-dots {
     display: flex;
+    flex-direction: row;
     gap: 8px;
+    align-items: center;
 }
 
 .carousel-dot {
