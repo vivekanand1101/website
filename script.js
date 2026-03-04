@@ -1,5 +1,5 @@
 /* ============================================================
-   VIVEK ANAND — Website Scripts
+   VIVEK ANAND - Website Scripts
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,13 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const site = document.getElementById('site');
     const bootLines = document.getElementById('boot-lines');
 
-    // Skip boot on revisit (session)
     const hasBooted = sessionStorage.getItem('booted');
 
     const lines = [
         '> booting vivek.os v3.0 ...',
         '> loading Bihar kernel modules ........... OK',
-        '> mounting /home/bihar/fields ............ OK',
+        '> mounting /home/kerai/fields ............. OK',
         '> starting cricket-daemon ................ OK',
         '> initializing vim (obviously) ........... OK',
         '> connecting to chai-protocol ............ OK',
@@ -25,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     if (hasBooted) {
-        // Instant show
         bootScreen.classList.add('done');
         site.classList.remove('site-hidden');
         site.classList.add('site-visible');
@@ -53,16 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ==================== NAVBAR SCROLL ==================== */
     const navbar = document.getElementById('navbar');
-    let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        if (scrollY > 50) {
+        if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-        lastScroll = scrollY;
     }, { passive: true });
 
     /* ==================== MOBILE MENU ==================== */
@@ -72,11 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navToggle) {
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('open');
-            // Animate hamburger
             navToggle.classList.toggle('active');
         });
 
-        // Close menu on link click
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('open');
@@ -112,6 +105,73 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    /* ==================== TESTIMONIAL CAROUSEL ==================== */
+    const track = document.getElementById('testimonial-track');
+    const dotsContainer = document.getElementById('carousel-dots');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+
+    if (track && dotsContainer) {
+        const cards = track.querySelectorAll('.testimonial-card');
+        const total = cards.length;
+        let current = 0;
+        let autoPlayTimer = null;
+
+        // Create dots
+        for (let i = 0; i < total; i++) {
+            const dot = document.createElement('button');
+            dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', 'Go to testimonial ' + (i + 1));
+            dot.addEventListener('click', () => goTo(i));
+            dotsContainer.appendChild(dot);
+        }
+
+        const dots = dotsContainer.querySelectorAll('.carousel-dot');
+
+        function goTo(index) {
+            current = ((index % total) + total) % total;
+            track.style.transform = 'translateX(-' + (current * 100) + '%)';
+            dots.forEach((d, i) => d.classList.toggle('active', i === current));
+            resetAutoPlay();
+        }
+
+        prevBtn.addEventListener('click', () => goTo(current - 1));
+        nextBtn.addEventListener('click', () => goTo(current + 1));
+
+        // Auto-rotate every 6 seconds
+        function startAutoPlay() {
+            autoPlayTimer = setInterval(() => goTo(current + 1), 6000);
+        }
+
+        function resetAutoPlay() {
+            clearInterval(autoPlayTimer);
+            startAutoPlay();
+        }
+
+        startAutoPlay();
+
+        // Pause on hover
+        track.addEventListener('mouseenter', () => clearInterval(autoPlayTimer));
+        track.addEventListener('mouseleave', () => startAutoPlay());
+
+        // Swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        track.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        track.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) goTo(current + 1);
+                else goTo(current - 1);
+            }
+        }, { passive: true });
+    }
 
     /* ==================== CRICKET SCOREBOARD ==================== */
     const scoreEl = document.getElementById('score');
@@ -163,14 +223,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 scoreEl.textContent = score;
                 wicketsEl.textContent = wickets;
-                oversEl.textContent = `${overs}.${ballsInOver}`;
+                oversEl.textContent = overs + '.' + ballsInOver;
                 crrEl.textContent = balls > 0 ? (score / (balls / 6)).toFixed(2) : '0.00';
             }, 800);
         }
     }
 
-    /* ==================== TYPING EFFECT FOR HERO ==================== */
-    // The hero content types in after boot
+    /* ==================== HERO ENTRANCE ==================== */
     const heroTerminal = document.querySelector('.hero-terminal');
     if (heroTerminal && !hasBooted) {
         heroTerminal.style.opacity = '0';
@@ -184,7 +243,6 @@ document.addEventListener('DOMContentLoaded', () => {
             heroLinks.style.transition = 'opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s';
         }
 
-        // Wait for boot to finish
         setTimeout(() => {
             heroTerminal.style.opacity = '1';
             heroTerminal.style.transform = 'translateY(0)';
