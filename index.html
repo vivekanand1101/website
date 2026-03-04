@@ -61,29 +61,30 @@
                     <path d="M0,340 C250,330 500,350 750,335 C1000,320 1250,345 1440,330" stroke="var(--paddy-line)" stroke-width="1" fill="none" opacity="0.3"/>
                     <path d="M0,360 C200,355 450,370 700,358 C950,346 1200,365 1440,355" stroke="var(--paddy-line)" stroke-width="1" fill="none" opacity="0.2"/>
 
-                    <!-- cricket pitch (horizontal) -->
-                    <g transform="translate(720, 350)">
-                        <!-- pitch rectangle -->
-                        <rect x="-75" y="-14" width="150" height="28" rx="1" fill="#c4a960" opacity="0.45"/>
-                        <!-- center line -->
-                        <line x1="-75" y1="0" x2="75" y2="0" stroke="#d4b870" stroke-width="0.5" opacity="0.25"/>
+                    <!-- cricket pitch (vertical) -->
+                    <g transform="translate(720, 335)">
+                        <!-- pitch rectangle (perspective: narrower at top) -->
+                        <path d="M-18,-35 L-12,35 L12,35 L18,-35 Z" fill="#c4a960" opacity="0.5"/>
+                        <line x1="0" y1="-35" x2="0" y2="35" stroke="#d4b870" stroke-width="0.5" opacity="0.3"/>
                         <!-- crease lines -->
-                        <line x1="-58" y1="-13" x2="-58" y2="13" stroke="#d4b870" stroke-width="0.8" opacity="0.35"/>
-                        <line x1="58" y1="-13" x2="58" y2="13" stroke="#d4b870" stroke-width="0.8" opacity="0.35"/>
+                        <line x1="-16" y1="-28" x2="16" y2="-28" stroke="#d4b870" stroke-width="0.8" opacity="0.4"/>
+                        <line x1="-14" y1="28" x2="14" y2="28" stroke="#d4b870" stroke-width="0.8" opacity="0.4"/>
 
-                        <!-- stumps - left end (facing RIGHT, towards center) -->
-                        <line x1="-68" y1="-5" x2="-50" y2="-5" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
-                        <line x1="-68" y1="0" x2="-50" y2="0" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
-                        <line x1="-68" y1="5" x2="-50" y2="5" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
-                        <!-- bail -->
-                        <line x1="-50" y1="-6" x2="-50" y2="6" stroke="#dcc89a" stroke-width="1.2" opacity="0.7"/>
+                        <!-- stumps - far end (smaller, top) -->
+                        <line x1="-3" y1="-33" x2="-3" y2="-22" stroke="#dcc89a" stroke-width="1.2" opacity="0.7"/>
+                        <line x1="0" y1="-34" x2="0" y2="-23" stroke="#dcc89a" stroke-width="1.2" opacity="0.7"/>
+                        <line x1="3" y1="-33" x2="3" y2="-22" stroke="#dcc89a" stroke-width="1.2" opacity="0.7"/>
+                        <!-- bails -->
+                        <line x1="-3.5" y1="-22" x2="0" y2="-23" stroke="#dcc89a" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="0" y1="-23" x2="3.5" y2="-22" stroke="#dcc89a" stroke-width="0.8" opacity="0.6"/>
 
-                        <!-- stumps - right end (facing LEFT, towards center) -->
-                        <line x1="68" y1="-5" x2="50" y2="-5" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
-                        <line x1="68" y1="0" x2="50" y2="0" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
-                        <line x1="68" y1="5" x2="50" y2="5" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
-                        <!-- bail -->
-                        <line x1="50" y1="-6" x2="50" y2="6" stroke="#dcc89a" stroke-width="1.2" opacity="0.7"/>
+                        <!-- stumps - near end (larger, bottom) -->
+                        <line x1="-4" y1="32" x2="-4" y2="18" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
+                        <line x1="0" y1="33" x2="0" y2="19" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
+                        <line x1="4" y1="32" x2="4" y2="18" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
+                        <!-- bails -->
+                        <line x1="-4.5" y1="18" x2="0" y2="19" stroke="#dcc89a" stroke-width="1" opacity="0.7"/>
+                        <line x1="0" y1="19" x2="4.5" y2="18" stroke="#dcc89a" stroke-width="1" opacity="0.7"/>
                     </g>
                 </svg>
             </div>

@@ -377,8 +377,8 @@ img { max-width: 100%; display: block; }
 }
 
 @keyframes ballRoll {
-    0%   { left: 50%;  transform: rotate(0deg); }
-    100% { left: calc(100% + 40px); transform: rotate(720deg); }
+    0%   { left: -40px;  transform: rotate(0deg); }
+    100% { left: calc(100% + 40px); transform: rotate(1080deg); }
 }
 
 /* ============================================================
@@ -653,6 +653,7 @@ img { max-width: 100%; display: block; }
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0;
 }
 
 .project-card-more:hover {
