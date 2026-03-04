@@ -410,27 +410,17 @@ img { max-width: 100%; display: block; }
     box-shadow: 0 4px 16px rgba(141,181,96,0.25);
 }
 
-.btn-github {
+.btn-github,
+.btn-secondary {
     background: var(--surface);
     color: var(--text);
     border-color: var(--border);
 }
 
-.btn-github:hover {
+.btn-github:hover,
+.btn-secondary:hover {
     border-color: var(--green);
     color: var(--green);
-    transform: translateY(-2px);
-}
-
-.btn-secondary {
-    background: transparent;
-    color: var(--text-muted);
-    border-color: var(--border);
-}
-
-.btn-secondary:hover {
-    color: var(--text);
-    border-color: var(--text-muted);
     transform: translateY(-2px);
 }
 
