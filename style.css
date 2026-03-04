@@ -364,6 +364,7 @@ img { max-width: 100%; display: block; }
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Cricket ball */
@@ -637,6 +638,44 @@ img { max-width: 100%; display: block; }
     font-family: var(--font-mono);
     font-size: 0.78rem;
     color: var(--gold);
+}
+
+.project-card-more {
+    border-style: dashed;
+    border-color: var(--border-light);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-card-more:hover {
+    background: rgba(141,181,96,0.04);
+    border-color: var(--green-dim);
+}
+
+.project-more-content {
+    padding: 12px 0;
+}
+
+.project-more-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px dashed var(--border-light);
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    color: var(--text-dim);
+    margin-bottom: 14px;
+}
+
+.project-card-more:hover .project-more-icon {
+    border-color: var(--green-dim);
+    color: var(--green);
 }
 
 .projects-more {
