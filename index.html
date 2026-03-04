@@ -4,106 +4,438 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivek Anand</title>
-    <meta name="description" content="Personal website of Vivek Anand — Software Engineer">
+    <meta name="description" content="Vivek Anand. Software engineer from Bihar. 8+ years building scalable backend systems. GSoC '16 alum. Cricket lover. Terminal dweller.">
     <link rel="canonical" href="https://anandvivek.in">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Vivek Anand">
-    <meta property="og:description" content="Personal website of Vivek Anand">
+    <meta property="og:description" content="Software engineer from Bihar. 8+ years of backend systems, fintech, and open source.">
     <meta property="og:url" content="https://anandvivek.in">
     <meta property="og:type" content="website">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <a href="/" class="logo">VA</a>
-                <div class="nav-links">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                    <a href="https://blog.anandvivek.in" class="nav-blog">Blog ↗</a>
-                </div>
-            </nav>
-        </header>
 
-        <main>
-            <!-- Hero -->
-            <section class="hero">
-                <div class="hero-content">
-                    <p class="greeting">Hey, I'm</p>
-                    <h1>Vivek Anand</h1>
-                    <p class="tagline">Software Engineer · Builder · Open Source Enthusiast</p>
-                    <p class="intro">
-                        I build things for the web and beyond. Passionate about clean code,
-                        thoughtful design, and solving interesting problems.
-                    </p>
-                    <div class="hero-links">
-                        <a href="https://github.com/vivekanand1101" target="_blank" rel="noopener" class="btn btn-primary">GitHub</a>
-                        <a href="https://linkedin.com/in/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
-                        <a href="mailto:hello@anandvivek.in" class="btn btn-secondary">Email</a>
+    <!-- ======================== BOOT SEQUENCE ======================== -->
+    <div id="boot-screen" aria-hidden="true">
+        <div class="boot-terminal">
+            <div id="boot-lines"></div>
+            <span class="boot-cursor">█</span>
+        </div>
+    </div>
+
+    <!-- ======================== MAIN SITE ======================== -->
+    <div id="site" class="site-hidden">
+
+        <!-- Floating nav -->
+        <nav id="navbar">
+            <a href="#" class="nav-logo" aria-label="Home">
+                <span class="prompt">~</span> vivek<span class="cursor-blink">_</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">about</a>
+                <a href="#projects">projects</a>
+                <a href="#journey">journey</a>
+                <a href="#contact">contact</a>
+                <a href="https://blog.anandvivek.in" class="nav-blog">blog ↗</a>
+            </div>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <!-- ======================== HERO ======================== -->
+        <section id="hero" class="hero">
+            <!-- Paddy field landscape SVG background -->
+            <div class="hero-landscape" aria-hidden="true">
+                <svg viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- far hills -->
+                    <path d="M0,180 C200,120 400,160 600,130 C800,100 1100,150 1440,120 L1440,400 L0,400Z" fill="var(--hill-far)" opacity="0.5"/>
+                    <!-- near hills -->
+                    <path d="M0,220 C300,180 500,240 720,200 C940,160 1200,230 1440,190 L1440,400 L0,400Z" fill="var(--hill-near)" opacity="0.7"/>
+                    <!-- paddy field -->
+                    <path d="M0,300 C200,280 400,310 700,285 C1000,260 1200,300 1440,280 L1440,400 L0,400Z" fill="var(--paddy)"/>
+                    <!-- paddy field detail lines -->
+                    <path d="M0,320 C300,305 600,330 900,310 C1200,290 1350,315 1440,305" stroke="var(--paddy-line)" stroke-width="1" fill="none" opacity="0.4"/>
+                    <path d="M0,340 C250,330 500,350 750,335 C1000,320 1250,345 1440,330" stroke="var(--paddy-line)" stroke-width="1" fill="none" opacity="0.3"/>
+                    <path d="M0,360 C200,355 450,370 700,358 C950,346 1200,365 1440,355" stroke="var(--paddy-line)" stroke-width="1" fill="none" opacity="0.2"/>
+                </svg>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-terminal">
+                    <div class="terminal-bar">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">vivek@bihar:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> whoami</p>
+                        <h1 class="hero-name">Vivek Anand</h1>
+                        <p class="hero-role"><span class="prompt">$</span> cat role.txt</p>
+                        <p class="hero-desc">Tech Lead · Backend Engineer · Open Source</p>
+                        <p class="hero-origin"><span class="prompt">$</span> echo $HOME</p>
+                        <p class="hero-home">Bihar, India 🌾</p>
                     </div>
                 </div>
-            </section>
-
-            <!-- About -->
-            <section id="about" class="section">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <p>
-                        I'm a software engineer who enjoys building products that make a difference.
-                        I care deeply about writing maintainable code and creating great user experiences.
-                    </p>
-                    <p>
-                        When I'm not coding, you'll find me reading, exploring new places, or
-                        tinkering with side projects.
-                    </p>
-                    <!-- TODO: Add more about yourself — your journey, interests, tech stack, etc. -->
+                <div class="hero-links">
+                    <a href="https://github.com/vivekanand1101" target="_blank" rel="noopener" class="btn btn-github">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/vivekanandxyz" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+                    <a href="https://blog.anandvivek.in" class="btn btn-secondary">Blog</a>
                 </div>
-            </section>
+            </div>
 
-            <!-- Projects -->
-            <section id="projects" class="section">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <a href="https://github.com/vivekanand1101" target="_blank" rel="noopener" class="project-card">
-                        <h3>Project One</h3>
-                        <p>Brief description of a cool project you've built. What problem does it solve?</p>
-                        <span class="project-tech">Python · React · PostgreSQL</span>
-                    </a>
-                    <a href="https://github.com/vivekanand1101" target="_blank" rel="noopener" class="project-card">
-                        <h3>Project Two</h3>
-                        <p>Another awesome thing you've worked on. Highlight the impact.</p>
-                        <span class="project-tech">Go · Docker · AWS</span>
-                    </a>
-                    <a href="https://github.com/vivekanand1101" target="_blank" rel="noopener" class="project-card">
-                        <h3>Project Three</h3>
-                        <p>One more project to showcase your skills and interests.</p>
-                        <span class="project-tech">TypeScript · Node.js</span>
-                    </a>
-                    <!-- TODO: Replace with your actual projects -->
+            <!-- Cricket ball rolling across the bottom -->
+            <div class="cricket-ball" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28">
+                    <circle cx="14" cy="14" r="13" fill="#c0392b" stroke="#922b21" stroke-width="1"/>
+                    <path d="M7,5 Q14,14 7,23" stroke="#fff" stroke-width="1.2" fill="none" opacity="0.8"/>
+                    <path d="M21,5 Q14,14 21,23" stroke="#fff" stroke-width="1.2" fill="none" opacity="0.8"/>
+                    <line x1="6" y1="7" x2="8" y2="8" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+                    <line x1="5.5" y1="10" x2="7.5" y2="10.5" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+                    <line x1="5.5" y1="13" x2="7.5" y2="13" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+                    <line x1="5.5" y1="16" x2="7.5" y2="15.5" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+                    <line x1="6" y1="19" x2="8" y2="18.5" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+                    <line x1="22" y1="7" x2="20" y2="8" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+                    <line x1="22.5" y1="10" x2="20.5" y2="10.5" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+                    <line x1="22.5" y1="13" x2="20.5" y2="13" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+                    <line x1="22.5" y1="16" x2="20.5" y2="15.5" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+                    <line x1="22" y1="19" x2="20" y2="18.5" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ======================== ABOUT ======================== -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span class="section-num">01.</span> About
+                </h2>
+                <div class="about-grid fade-in">
+                    <div class="about-text">
+                        <p>
+                            I grew up in <strong>Bihar</strong>, where summers smell of mango
+                            and monsoons turn everything impossibly green. That's still where home is.
+                        </p>
+                        <p>
+                            I've been writing software professionally for <strong>8+ years</strong> now, mostly backend
+                            systems, databases, and the kind of plumbing that keeps products running at scale.
+                            Fintech, KYC platforms, real-time systems serving millions of users.
+                            I'm a <strong>Google Summer of Code 2016</strong> alumnus (Fedora/Pagure),
+                            and that was my first real taste of open source.
+                        </p>
+                        <p>
+                            I think best in a terminal. My editor is Vim, my shell is zsh, and I
+                            genuinely enjoy reading man pages. I build with <strong>Python, Go,
+                            TypeScript, Django, PostgreSQL</strong>, and whatever else the problem demands.
+                        </p>
+                        <p>
+                            Outside of work, I play cricket. Not the TV kind. The <em>gully</em> kind,
+                            with a tennis ball and arguments about LBW. I also built a
+                            <a href="https://github.com/vivekanand1101/cricket-kerai" target="_blank" rel="noopener">scoreboard app</a>
+                            for our local village tournament because of course I did.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-terminal">
+                            <div class="ct-header"><span>~/.config/vivek.yml</span></div>
+                            <pre><code><span class="yaml-key">name:</span> Vivek Anand
+<span class="yaml-key">location:</span> Bihar → Bengaluru
+<span class="yaml-key">role:</span> Tech Lead
+<span class="yaml-key">experience:</span> 8+ years
+<span class="yaml-key">languages:</span>
+  - Python
+  - Go
+  - TypeScript
+  - C
+<span class="yaml-key">tools:</span>
+  - vim
+  - tmux
+  - docker
+  - postgres
+<span class="yaml-key">interests:</span>
+  - cricket 🏏
+  - open source
+  - AI
+  - building things
+<span class="yaml-key">motto:</span> |
+  ship it, then improve it</code></pre>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Contact -->
-            <section id="contact" class="section">
-                <h2>Get in Touch</h2>
-                <p class="contact-text">
-                    Want to chat? Feel free to reach out — I'm always open to interesting
-                    conversations, collaborations, or just a friendly hello.
+        <!-- ======================== PROJECTS ======================== -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span class="section-num">02.</span> Things I've Built
+                </h2>
+                <div class="projects-grid fade-in">
+
+                    <a href="https://github.com/vivekanand1101/cricket-kerai" target="_blank" rel="noopener" class="project-card featured">
+                        <div class="project-icon">🏏</div>
+                        <h3>Cricket Kerai</h3>
+                        <p>Scoreboard app for our local village cricket tournament. Real-time scoring, team management, and match history. Built for the gully cricket experience.</p>
+                        <div class="project-meta">
+                            <span class="project-tech">TypeScript · React</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vivekanand1101/labour-thekedar-app" target="_blank" rel="noopener" class="project-card">
+                        <div class="project-icon">👷</div>
+                        <h3>Labour Thekedar</h3>
+                        <p>Full-stack app for managing daily-wage labour contracts. Attendance tracking, payments, and site assignments.</p>
+                        <div class="project-meta">
+                            <span class="project-tech">TypeScript · Go</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vivekanand1101/dabba" target="_blank" rel="noopener" class="project-card">
+                        <div class="project-icon"><span class="mono">&gt;_</span></div>
+                        <h3>Dabba</h3>
+                        <p>Minimal MySQL client for the terminal. Because sometimes you just need a dabba to peek into your database.</p>
+                        <div class="project-meta">
+                            <span class="project-tech">TypeScript</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vivekanand1101/real-estate-web-crawler" target="_blank" rel="noopener" class="project-card">
+                        <div class="project-icon">🏠</div>
+                        <h3>Real Estate Crawler</h3>
+                        <p>Web scraper built with Scrapy to crawl real estate listings. Data extraction at scale.</p>
+                        <div class="project-meta">
+                            <span class="project-tech">Python · Scrapy</span>
+                            <span class="project-stars">★ 12</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vivekanand1101/twitter-sentiment-analysis" target="_blank" rel="noopener" class="project-card">
+                        <div class="project-icon">📊</div>
+                        <h3>Twitter Sentiment Analysis</h3>
+                        <p>CLI tool for sentiment analysis of tweets. Data mining meets the command line.</p>
+                        <div class="project-meta">
+                            <span class="project-tech">Python · NLP</span>
+                            <span class="project-stars">★ 11</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vivekanand1101/so-desktop-notification" target="_blank" rel="noopener" class="project-card">
+                        <div class="project-icon">🔔</div>
+                        <h3>SO Desktop Notifications</h3>
+                        <p>Desktop notifications for StackOverflow questions matching your tags. Never miss an interesting question.</p>
+                        <div class="project-meta">
+                            <span class="project-tech">Python</span>
+                            <span class="project-stars">★ 4</span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="projects-more fade-in">
+                    <a href="https://github.com/vivekanand1101" target="_blank" rel="noopener" class="btn btn-outline">
+                        View all on GitHub →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== JOURNEY ======================== -->
+        <section id="journey" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span class="section-num">03.</span> The Journey
+                </h2>
+                <div class="timeline fade-in">
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">Bihar</span>
+                            <h3>Where It Started</h3>
+                            <p>Grew up in rural Bihar. First encounter with a computer was at a cybercafe. The blinking cursor on a black screen felt like magic. Still does.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">IIIT Allahabad</span>
+                            <h3>College</h3>
+                            <p>Studied at the Indian Institute of Information Technology, Allahabad. Spent more time on IRC and open-source mailing lists than in classrooms. No regrets.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2016</span>
+                            <h3>Google Summer of Code, Fedora</h3>
+                            <p>Selected for GSoC with Fedora. Built tooling for Pagure, Fedora's git forge. Wrote patches, argued on IRC, shipped features. First real taste of open source at scale.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">Ethereal Machines</span>
+                            <h3>First Job</h3>
+                            <p>Jumped into the startup world. Backend systems, getting my hands dirty with everything from databases to deployment pipelines.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">PaySense</span>
+                            <h3>Fintech</h3>
+                            <p>Dove into fintech. Built systems around lending, KYC, and payments. Learned what it means to build software where getting it wrong costs real money.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">Innovaccer</span>
+                            <h3>Healthcare Tech</h3>
+                            <p>Worked on healthcare data platforms at scale. Big data, complex integrations, and systems that actually matter to people's lives.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">Barq</span>
+                            <h3>Fintech, Again</h3>
+                            <p>Back in fintech. Built a payments app from the ground up. Performance, security, scalability. Led the accounts team as Technical Lead.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker active"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">Virtual Internships</span>
+                            <h3>Present</h3>
+                            <p>Tech Lead. Building the platform that connects students worldwide with remote internship experiences. Still shipping code, still in the terminal.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== WHAT PEOPLE SAY ======================== -->
+        <section id="testimonials" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span class="section-num">04.</span> What People Say
+                </h2>
+                <div class="testimonials-grid fade-in">
+
+                    <div class="testimonial-card">
+                        <blockquote>
+                            "One of the most skilled and dedicated developers I've had the pleasure of collaborating with. Vivek combines exceptional technical expertise with a natural ability to lead and inspire teams. He consistently delivered innovative solutions while fostering a collaborative environment that encouraged creativity and problem-solving among colleagues. Whether tackling complex challenges or mentoring junior team members, Vivek demonstrated a commitment to excellence and an ability to see projects through to success."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <a href="https://sa.linkedin.com/in/sultan-alangari-0b6767112" target="_blank" rel="noopener" class="author-name">Sultan Alangari ↗</a>
+                            <span class="author-context">Anti-Fraud Director, Barq</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <blockquote>
+                            "I have spent over a year and a half working closely with Vivek and for all that time, I can say he is a great leader. In his role as our Technical Lead for the Accounts team, he has played an essential part of the growth of our payments app overseeing key areas like performance, security, and usability. What sets Vivek apart is his unwavering commitment to going the extra mile. He has also proven to be an asset to our team because of his knowledge in complex integrations and system optimizations. He's been a great coach that delivers results and maintains team morale and direction."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <a href="https://in.linkedin.com/in/r-ajay-kumar" target="_blank" rel="noopener" class="author-name">Ajay Kumar R ↗</a>
+                            <span class="author-context">Engineering, Barq</span>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="testimonials-note fade-in">
+                    <a href="https://linkedin.com/in/vivekanandxyz" target="_blank" rel="noopener">
+                        Read all 8 recommendations on LinkedIn →
+                    </a>
                 </p>
-                <a href="mailto:hello@anandvivek.in" class="btn btn-primary">Say Hello →</a>
-            </section>
-        </main>
+            </div>
+        </section>
 
+        <!-- ======================== CRICKET SCOREBOARD ======================== -->
+        <section class="section section-cricket">
+            <div class="container">
+                <div class="scoreboard fade-in">
+                    <div class="scoreboard-header">
+                        <span class="scoreboard-league">Kerai Premier League</span>
+                        <span class="scoreboard-status">● LIVE</span>
+                    </div>
+                    <div class="scoreboard-body">
+                        <div class="scoreboard-team">
+                            <span class="team-name">Vivek XI</span>
+                            <span class="team-score" id="score">0</span>/<span class="team-wickets" id="wickets">0</span>
+                            <span class="team-overs">(<span id="overs">0.0</span> ov)</span>
+                        </div>
+                        <div class="scoreboard-detail">
+                            <span>CRR: <span id="crr">0.00</span></span>
+                            <span class="scoreboard-target">Target: ∞</span>
+                        </div>
+                    </div>
+                    <div class="scoreboard-footer">
+                        <p>This is not a real match. But the cricket obsession is very real. 🏏</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== CONTACT ======================== -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span class="section-num">05.</span> Say Hello
+                </h2>
+                <div class="contact-content fade-in">
+                    <p>
+                        Whether it's about code, cricket, or just a good conversation,
+                        I'd love to hear from you. My inbox is always open.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:mail@anandvivek.in" class="btn btn-primary">
+                            mail@anandvivek.in →
+                        </a>
+                        <div class="contact-social">
+                            <a href="https://github.com/vivekanand1101" target="_blank" rel="noopener" title="GitHub">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/vivekanandxyz" target="_blank" rel="noopener" title="LinkedIn">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="https://blog.anandvivek.in" title="Blog">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== FOOTER ======================== -->
         <footer>
-            <p>© 2026 Vivek Anand · <a href="https://anandvivek.in">anandvivek.in</a></p>
+            <div class="container">
+                <div class="footer-content">
+                    <p class="footer-note">Built with bare HTML, CSS & JS. No frameworks were harmed.</p>
+                    <p class="footer-copy">© 2026 Vivek Anand · <a href="https://anandvivek.in">anandvivek.in</a></p>
+                </div>
+            </div>
         </footer>
-    </div>
+
+    </div><!-- /site -->
 
     <script src="script.js"></script>
 </body>
