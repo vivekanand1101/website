@@ -715,21 +715,21 @@ img { max-width: 100%; display: block; }
    ============================================================ */
 .testimonial-carousel {
     position: relative;
+}
+
+.testimonial-viewport {
     overflow: hidden;
+    width: 100%;
 }
 
 .testimonial-track {
     display: flex;
-    flex-wrap: nowrap;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 100%;
 }
 
 .testimonial-card {
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
     flex: 0 0 100%;
+    min-width: 0;
     padding: 0 4px;
     box-sizing: border-box;
 }
