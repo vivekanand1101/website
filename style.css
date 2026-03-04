@@ -541,6 +541,11 @@ img { max-width: 100%; display: block; }
     color: var(--terracotta);
 }
 
+.yaml-comment {
+    color: var(--text-dim);
+    font-style: italic;
+}
+
 /* ============================================================
    PROJECTS
    ============================================================ */

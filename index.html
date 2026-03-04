@@ -52,12 +52,40 @@
         <section id="hero" class="hero">
             <div class="hero-landscape" aria-hidden="true">
                 <svg viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- hills -->
                     <path d="M0,180 C200,120 400,160 600,130 C800,100 1100,150 1440,120 L1440,400 L0,400Z" fill="var(--hill-far)" opacity="0.5"/>
                     <path d="M0,220 C300,180 500,240 720,200 C940,160 1200,230 1440,190 L1440,400 L0,400Z" fill="var(--hill-near)" opacity="0.7"/>
+                    <!-- paddy field -->
                     <path d="M0,300 C200,280 400,310 700,285 C1000,260 1200,300 1440,280 L1440,400 L0,400Z" fill="var(--paddy)"/>
                     <path d="M0,320 C300,305 600,330 900,310 C1200,290 1350,315 1440,305" stroke="var(--paddy-line)" stroke-width="1" fill="none" opacity="0.4"/>
                     <path d="M0,340 C250,330 500,350 750,335 C1000,320 1250,345 1440,330" stroke="var(--paddy-line)" stroke-width="1" fill="none" opacity="0.3"/>
                     <path d="M0,360 C200,355 450,370 700,358 C950,346 1200,365 1440,355" stroke="var(--paddy-line)" stroke-width="1" fill="none" opacity="0.2"/>
+
+                    <!-- cricket pitch -->
+                    <g transform="translate(720, 335)">
+                        <!-- pitch rectangle (perspective: narrower at top) -->
+                        <path d="M-18,-35 L-12,35 L12,35 L18,-35 Z" fill="#c4a960" opacity="0.5"/>
+                        <line x1="0" y1="-35" x2="0" y2="35" stroke="#d4b870" stroke-width="0.5" opacity="0.3"/>
+                        <!-- crease lines -->
+                        <line x1="-16" y1="-28" x2="16" y2="-28" stroke="#d4b870" stroke-width="0.8" opacity="0.4"/>
+                        <line x1="-14" y1="28" x2="14" y2="28" stroke="#d4b870" stroke-width="0.8" opacity="0.4"/>
+
+                        <!-- stumps - bowling end (far, smaller) -->
+                        <line x1="-3" y1="-33" x2="-3" y2="-22" stroke="#dcc89a" stroke-width="1.2" opacity="0.7"/>
+                        <line x1="0" y1="-34" x2="0" y2="-23" stroke="#dcc89a" stroke-width="1.2" opacity="0.7"/>
+                        <line x1="3" y1="-33" x2="3" y2="-22" stroke="#dcc89a" stroke-width="1.2" opacity="0.7"/>
+                        <!-- bails -->
+                        <line x1="-3.5" y1="-22" x2="0" y2="-23" stroke="#dcc89a" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="0" y1="-23" x2="3.5" y2="-22" stroke="#dcc89a" stroke-width="0.8" opacity="0.6"/>
+
+                        <!-- stumps - batting end (near, taller) -->
+                        <line x1="-4" y1="32" x2="-4" y2="18" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
+                        <line x1="0" y1="33" x2="0" y2="19" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
+                        <line x1="4" y1="32" x2="4" y2="18" stroke="#dcc89a" stroke-width="1.5" opacity="0.8"/>
+                        <!-- bails -->
+                        <line x1="-4.5" y1="18" x2="0" y2="19" stroke="#dcc89a" stroke-width="1" opacity="0.7"/>
+                        <line x1="0" y1="19" x2="4.5" y2="18" stroke="#dcc89a" stroke-width="1" opacity="0.7"/>
+                    </g>
                 </svg>
             </div>
 
@@ -163,12 +191,10 @@
   - Python
   - Go
   - TypeScript
-  - C
 <span class="yaml-key">tools:</span>
   - vim
-  - tmux
-  - docker
-  - postgres
+  - zsh
+  - pi  <span class="yaml-comment"># the coding agent</span>
 <span class="yaml-key">interests:</span>
   - cricket 🏏
   - table tennis 🏓
