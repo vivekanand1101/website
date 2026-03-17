@@ -106,6 +106,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    /* ==================== EMAIL COPY FALLBACK ==================== */
+    const mailLink = document.querySelector('a[href^="mailto:"]');
+    if (mailLink) {
+        mailLink.addEventListener('click', (e) => {
+            const email = mailLink.href.replace('mailto:', '');
+            navigator.clipboard.writeText(email).then(() => {
+                const original = mailLink.textContent;
+                mailLink.textContent = 'Copied to clipboard ✓';
+                setTimeout(() => { mailLink.textContent = original; }, 2000);
+            });
+        });
+    }
+
     /* ==================== TESTIMONIAL CAROUSEL ==================== */
     const track = document.getElementById('testimonial-track');
     const dotsContainer = document.getElementById('carousel-dots');
