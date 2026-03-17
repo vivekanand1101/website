@@ -1086,6 +1086,19 @@ footer {
         display: flex;
     }
 
+    .hero-landscape svg {
+        min-height: 180px;
+    }
+
+    .cricket-ball {
+        bottom: 35px;
+    }
+
+    .cricket-ball svg {
+        width: 24px;
+        height: 24px;
+    }
+
     .about-grid {
         grid-template-columns: 1fr;
         gap: 36px;
@@ -1122,6 +1135,23 @@ footer {
 
     .hero {
         padding: 100px 20px 60px;
+    }
+
+    .hero-landscape svg {
+        min-height: 120px;
+    }
+
+    .cricket-ball {
+        bottom: 18px;
+    }
+
+    .cricket-ball svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cricket-pitch {
+        display: none;
     }
 
     .terminal-body {
