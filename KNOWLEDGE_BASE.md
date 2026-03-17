@@ -26,7 +26,7 @@
 
 - **Languages**: Python, Go, TypeScript, C
 - **Frameworks**: Django, Flask, Tornado, Celery
-- **Databases**: PostgreSQL, MySQL
+- **Databases**: MySQL, MongoDB
 - **Tools**: Vim, tmux, Docker, zsh
 - **Current Interest**: Agentic AI/engineering (Claude, Codex)
 
