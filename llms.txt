@@ -13,8 +13,9 @@ Vivek works remotely from home. Professionally, he is a software engineer mostly
 
 ## Writing
 
-- [Blog](https://blog.anandvivek.in/): Notes on software, systems, and lessons learned building them.
-- [Blog guide](https://blog.anandvivek.in/llms.txt): Index of published posts.
+- [Writing](https://writings.anandvivek.in): Notes on software, systems, and lessons learned building them.
+- [Reading](https://readings.anandvivek.in): What Vivek is reading.
+- [Writing guide](https://writings.anandvivek.in/llms.txt): Index of published posts.
 
 ## Optional
 
