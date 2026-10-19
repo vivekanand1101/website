@@ -4,67 +4,61 @@
 
 Personal website for Vivek Anand, hosted at **anandvivek.in** via Cloudflare Pages.
 
-Static site: HTML + CSS + JS. No frameworks, no build step, no backend.
+This repo is the deploy target only: it holds the production build of the
+React + TypeScript + Vite app in `/Users/vivekanand/portfolio`
+(`git@github.com:vivekanand1101/portfolio.git`). Make content and code changes
+there, never in the built files here.
 
 ## Repository
 
 - **Repo**: `git@github.com:vivekanand1101/website.git`
 - **Branch**: `main`
-- **Deploy**: Pushes to `main` trigger automatic Cloudflare Pages build.
+- **Deploy**: Pushes to `main` trigger automatic Cloudflare Pages deploys.
 - **Local preview**: `python3 -m http.server 8080` from project root.
+
+## Publishing a change
+
+1. Edit the source in the portfolio repo and run `npm run build` there.
+2. Copy `dist/index.html`, `dist/llms.txt` and new files from `dist/assets/` here.
+   Keep older bundles in `assets/` so cached pages still load.
+3. Do not copy `robots.txt`, `favicon.ico` or `placeholder.svg`; they have never been published.
+4. Commit and push to `main`.
 
 ## File Structure
 
 ```
 .
-├── index.html          # Single-page site with all sections
-├── style.css           # All styles, CSS custom properties for theming
-├── script.js           # Boot sequence, carousel, scroll animations
-├── favicon.svg         # Green "VA" monospace on dark bg
+├── index.html          # Built page
+├── assets/             # Hashed JS/CSS bundles
+├── images/             # Site images
+├── llms.txt            # Site guide for AI tools
+├── favicon*.svg
 ├── KNOWLEDGE_BASE.md   # Personal details about Vivek (read this first)
 ├── AGENTS.md           # This file
 └── README.md
 ```
 
-## Design System
+`style.css` and `script.js` are left over from the earlier hand-written site
+and are not used by `index.html`.
 
-### Theme: Bihar fields meet terminal green
+### Page sections (from the portfolio source)
 
-- **Dark earthy palette**: backgrounds in `#0c0f0a` range, green accents (`#8db560`), terracotta for highlights (`#c0785a`)
-- **Fonts**: JetBrains Mono (terminal/code), DM Serif Display (headings), Inter (body)
-- **Terminal aesthetic**: hero card styled as a macOS terminal window, YAML config card, boot sequence animation
-- **Rural Bihar elements**: paddy field SVG landscape in hero, rolling cricket ball animation
-- **No em dashes anywhere in visible content**
-
-### CSS Custom Properties (defined in `:root`)
-
-Key tokens: `--bg`, `--surface`, `--text`, `--text-muted`, `--green`, `--terracotta`, `--gold`, `--paddy`, `--font-mono`, `--font-display`, `--font-body`
-
-### Sections
-
-1. **Boot Sequence** - Terminal-style loading animation (skipped on revisit via sessionStorage)
-2. **Hero** - Terminal card with `whoami`, paddy field SVG, cricket ball, three CTA buttons
-3. **About** (01) - Personal story + YAML config card sidebar
-4. **Work** (02) - Professional projects (Barq focus, Innovaccer, GSoC/Pagure, PaySense)
-5. **Journey** (03) - Timeline from Kerai to present
-6. **Testimonials** (04) - 7 LinkedIn recommendations in a rotating carousel
-7. **Contact** (05) - Email + social links
-8. **Footer**
-
-### Testimonial Carousel
-
-- Container: `.testimonial-carousel` > `.testimonial-viewport` (overflow hidden) > `.testimonial-track` (flex, translateX)
-- Cards: `.testimonial-card` > `.testimonial-inner`
-- Controls: `.carousel-controls` with prev/next buttons and dot indicators
-- Auto-rotates every 6 seconds, pauses on hover, supports touch swipe
-- JS manages state in `script.js`
+1. **Navigation** - Experience, Reading, Writing, Contact
+2. **Hero** - Personal intro, cricket, table tennis, portrait
+3. **Experience** - Virtual Internships, Barq, Innovaccer, PaySense, Ethereal Machines, Pagure
+4. **Technical practice** - Skills by category
+5. **Education**
+6. **Contact**
+7. **Footer**
 
 ## Related Projects
 
-- **Blog**: `/Users/vivekanand/projects/blog` (Hugo, blog.anandvivek.in)
+- **Portfolio source**: `/Users/vivekanand/portfolio`
+- **Blog**: `/Users/vivekanand/projects/blog` (Hugo, writings.anandvivek.in)
   - Theme: Paper
-  - 22 migrated WordPress posts with `originalUrl` front matter
-  - Has Playwright test suite (144 tests)
+  - 10 published WordPress posts with `originalUrl` front matter
+  - Has Playwright test suite
+- **Reading list**: readings.anandvivek.in
 
 ## Content Guidelines
 
@@ -74,31 +68,7 @@ Key tokens: `--bg`, `--surface`, `--text`, `--text-muted`, `--green`, `--terraco
 - Cricket references are always appropriate.
 - Work projects (especially Barq) are the highlight, not side projects.
 - Side projects that are incomplete should not be mentioned.
-
-## Testing
-
-No formal test suite for the website yet. For visual checks:
-
-```bash
-# Start local server
-python3 -m http.server 8080
-
-# Playwright screenshots (run from blog dir which has playwright installed)
-cd /Users/vivekanand/projects/blog
-node -e "
-const { chromium } = require(require('path').join(process.cwd(), 'node_modules', '@playwright/test'));
-(async () => {
-    const browser = await chromium.launch({ channel: 'chrome', headless: true });
-    const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-    await page.goto('http://localhost:8080', { waitUntil: 'networkidle' });
-    await page.evaluate(() => sessionStorage.setItem('booted', '1'));
-    await page.reload({ waitUntil: 'networkidle' });
-    await page.waitForTimeout(500);
-    await page.screenshot({ path: '/tmp/ss-website.png', fullPage: true });
-    await browser.close();
-})();
-"
-```
+- Do not publish the resume PDF.
 
 ## Deployment Notes
 

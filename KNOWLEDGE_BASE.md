@@ -11,22 +11,22 @@
   - Bansal Classes, Kota
   - IIIT Allahabad (Indian Institute of Information Technology)
 
-## Career (8+ years)
+## Career (9+ years)
 
 | Company             | Role               | Domain                | Notable Work                                                                 |
 |---------------------|--------------------|-----------------------|------------------------------------------------------------------------------|
-| Virtual Internships | Tech Lead          | EdTech                | Current. Remote from Kerai. Platform connecting students with internships.    |
-| Barq                | Technical Lead     | Fintech (Saudi Arabia)| Built digital account onboarding, auth platform, payments from scratch. 10M+ users in year one. Led the Accounts team. |
-| Innovaccer          | Engineer           | Healthcare Tech       | Healthcare data platform. Complex integrations, data pipelines.              |
-| PaySense            | Engineer           | Fintech               | Lending platform, KYC systems, credit scoring.                               |
-| Ethereal Machines   | Engineer           | Startup               | First job. Backend systems, databases, deployment.                           |
-| Fedora Project      | GSoC Student (2016)| Open Source            | Contributed to Pagure (Fedora's git forge) and built pagure-importer.        |
+| Virtual Internships | Lead Engineer, Backend | EdTech                | Current. Remote from Kerai. Leads a backend team of 6 on a platform for 200k+ interns. Transforming an operations-heavy business to be agent-first. |
+| Barq                | Technical Lead     | Fintech (Saudi Arabia)| Built digital account onboarding, auth platform, payments from scratch. Grew to 15M+ verified users. |
+| Innovaccer          | SDE II Backend     | Healthcare Tech       | Patient 360, a video-calling application, a referral management system, and a MongoDB to Elasticsearch sync system. |
+| PaySense            | SDE I              | Fintech               | Built the repayment service for the lending platform. |
+| Ethereal Machines   | SDE I              | Startup               | First job. Backend systems, databases, deployment.                           |
+| Pagure (Fedora)     | Open Source Contributor (2015–2017) | Open Source | 170+ commits to Pagure (Fedora's git forge), including GSoC 2016. Built pagure-importer. |
 
 ## Tech Stack
 
-- **Languages**: Python, Go, TypeScript, C
-- **Frameworks**: Django, Flask, Tornado, Celery
-- **Databases**: MySQL, MongoDB
+- **Languages**: Python, Go, JavaScript, TypeScript, C
+- **Frameworks**: Django, Flask, FastAPI, Tornado, NodeJS, NestJS, Celery
+- **Databases**: PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch
 - **Tools**: Vim, tmux, Docker, zsh
 - **Current Interest**: Agentic AI/engineering (Claude, Codex)
 
@@ -53,11 +53,11 @@
 
 ## Open Source
 
-- GSoC 2016 with Fedora: Pagure and pagure-importer
-- Blog posts (2016-2019) documenting Django, Tornado, Celery, PostgreSQL, Raspberry Pi work
-- WordPress blog migrated to Hugo at blog.anandvivek.in (22 published posts)
+- Pagure contributor 2015–2017 (170+ commits), including GSoC 2016 with Fedora. Built pagure-importer.
+- Blog posts (2016-2018) documenting Django, Tornado, Celery, PostgreSQL, Raspberry Pi work
+- WordPress blog migrated to Hugo at writings.anandvivek.in (10 published posts)
 
-## LinkedIn Recommendations (7 displayed on website)
+## LinkedIn Recommendations (not currently shown on the website)
 
 1. **Sibhansh Hastey** - Product Manager, Barq - "best Tech Lead I have worked with across my career"
 2. **Ajay Kumar R** - Engineering, Barq - "great leader... essential part of the growth of our payments app"
@@ -67,7 +67,7 @@
 6. **Akhilesh Pandey** - DevOps & Cloud Architect, Barq - "most talented and dedicated Tech Leads I know"
 7. **Atif Zaidi** - Engineer, Barq/Innovaccer - "excellent engineer... focuses on winning as a team"
 
-Total on LinkedIn: 8 (Nilay Shah from Innovaccer excluded from website by choice).
+Total on LinkedIn: 8. The earlier hand-written site showed the 7 above (Nilay Shah from Innovaccer excluded by choice).
 
 ## Writing Style Preferences
 
@@ -79,7 +79,8 @@ Total on LinkedIn: 8 (Nilay Shah from Innovaccer excluded from website by choice
 ## Links
 
 - **Website**: https://anandvivek.in
-- **Blog**: https://blog.anandvivek.in
+- **Writing**: https://writings.anandvivek.in
+- **Reading**: https://readings.anandvivek.in
 - **GitHub**: https://github.com/vivekanand1101
 - **LinkedIn**: https://linkedin.com/in/vivekanandxyz
 - **Email**: mail@anandvivek.in
@@ -90,7 +91,8 @@ Total on LinkedIn: 8 (Nilay Shah from Innovaccer excluded from website by choice
 | Domain                  | Hosting           | Purpose          |
 |-------------------------|-------------------|------------------|
 | anandvivek.in           | Cloudflare Pages  | Personal website |
-| blog.anandvivek.in      | Cloudflare Pages  | Hugo blog        |
+| writings.anandvivek.in  | Cloudflare Pages  | Hugo blog        |
+| readings.anandvivek.in  | Cloudflare Pages  | Reading list     |
 | jewel.anandvivek.in     | Oracle Cloud      | ERP app          |
 
 DNS managed via Cloudflare.
