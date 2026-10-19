@@ -33,7 +33,6 @@ there, never in the built files here.
 ├── images/             # Site images
 ├── llms.txt            # Site guide for AI tools
 ├── favicon*.svg
-├── KNOWLEDGE_BASE.md   # Personal details about Vivek (read this first)
 ├── AGENTS.md           # This file
 └── README.md
 ```
@@ -62,7 +61,6 @@ and are not used by `index.html`.
 
 ## Content Guidelines
 
-- Read `KNOWLEDGE_BASE.md` before making content changes
 - No em dashes. Ever. Vivek considers them an AI tell.
 - Keep copy natural and human. Humor is welcome.
 - Cricket references are always appropriate.
