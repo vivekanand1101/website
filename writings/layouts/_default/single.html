@@ -11,13 +11,13 @@
   <div class="meta">
     <time datetime="{{- .Date.Format `2006-01-02` -}}">{{- .Date | time.Format ":date_long" -}}</time>
     {{- with .Params.originalUrl }} &middot; Originally published on <a href="{{- . -}}">WordPress</a>{{ end -}}
-    {{- " " -}}<span class="note" data-written="{{ .Date.Format `2006-01-02` }}"{{ if lt $years 1 }} hidden{{ end }}>(written {{ $years }} {{ cond (eq $years 1) "year" "years" }} ago)</span>
+    {{- " " -}}<span class="note" data-written="{{ .Date.Format `2006-01-02` }}"{{ if lt $years 1 }} hidden{{ end }}>(written {{ $years }} {{ cond (eq $years 1) "year" "years" }} ago, might be outdated)</span>
   </div>
   <script>
     for (const el of document.querySelectorAll(".note[data-written]")) {
       const years = Math.floor((Date.now() - Date.parse(el.dataset.written)) / 31557600000);
       el.hidden = years < 1;
-      el.textContent = `(written ${years} ${years === 1 ? "year" : "years"} ago)`;
+      el.textContent = `(written ${years} ${years === 1 ? "year" : "years"} ago, might be outdated)`;
     }
   </script>
   {{- end -}}
