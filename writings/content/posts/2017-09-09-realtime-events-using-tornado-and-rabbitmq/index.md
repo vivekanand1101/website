@@ -133,3 +133,5 @@ class PikaConsumer(object):
 That's it. In your `WebSocketHandler` objects, you can access the consumer via `self.application.pc`.
 
 Although, this is working fine for me right now but, i am not fully satisfied with this. At present each connection is listening to a single queue because in rabbitmq one consumer cannot listen to multiple queues.
+
+> **Update (2026):** The limitation in the last paragraph isn't real: one channel can consume from several queues, and a single queue can be bound with several routing keys. The comment on `basic_ack` is also off. Unacknowledged messages aren't lost or overwhelming RabbitMQ; they wait and get redelivered when the channel closes. `basic_qos` (prefetch) is what limits how many a consumer receives at once. The code is Python 2 and uses the pre-1.0 pika API (pika 1.0 changed `exchange_declare`, `queue_declare` and `basic_consume`), and `IOLoop.instance()` is now `IOLoop.current()`.

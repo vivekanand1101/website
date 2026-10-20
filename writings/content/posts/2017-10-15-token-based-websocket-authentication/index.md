@@ -41,8 +41,8 @@ Generating the token on server side for multiple views can be done by making a p
 
 ## Making a project wide template tag in django for creating tokens
 
-1. Create a folder under the project's main directory and create two files: `__init__.py` and `create_ws_tokens.py`.
-2. In `create_ws_tokens.py`, you can put something like this:
+1. Create a folder named `templatetags` under the project's main directory and create two files: `__init__.py` and `create_ws_token.py`.
+2. In `create_ws_token.py`, you can put something like this:
 
 ```python
 import uuid
@@ -135,3 +135,5 @@ def authenticate(self, token):
 I chose redis because, Tornado is a single threaded server and connecting to db, if it's not async will result in a blocking connection which means the real time features will get affected.
 
 > **Note:** The token is stored in Redis using `set()` with no TTL. If the websocket connection never happens (e.g. user closes the tab before connecting), the token will stay in Redis forever. A better approach is to use `setex()` with a short TTL (e.g. 30 seconds) so that unused tokens are automatically cleaned up.
+
+> **Update (2026):** `HttpOnly` only hides the cookie from JavaScript. The browser still sends it with the WebSocket handshake to the same host (cookies ignore the port), so Tornado could have read the session cookie on the server side, as long as it checks the `Origin` header to prevent cross-site WebSocket hijacking. Short-lived tokens are still a fine design, just not because cookies were unavailable. Two more corrections: redis-py is a blocking client too, it's just fast, so Redis doesn't make the lookup non-blocking. And since Django 2.0, `is_authenticated` is a property, not a method.

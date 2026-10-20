@@ -75,7 +75,6 @@ class TransactionAwareUniqueTask(TransactionAwareTask):
         has_lock = lock.acquire(blocking=False)
         if has_lock:
             LOGGER.debug("Lock acquired: %s", key)
-            kwargs.pop('key')  # remove 'key' before passing to celery, it's not serialisable/needed by the worker
             super(TransactionAwareUniqueTask, self).delay(*args, **kwargs)
         else:
             LOGGER.debug("Can not get lock: %s", key)
@@ -102,3 +101,5 @@ def release_the_lock(*args, **kwargs):
     LOGGER.debug("Deleted lock: %s", key)
 ```
 This deletes the key instead of using the locking interface. This is one thing that bothers me a little but, i couldn't find any better solution. The lock itself needs to be acquired before releasing and you can't pass the lock object to the worker thread because it won't be json serialisable. This feels a bit hacky but, it sure worked.
+
+> **Update (2026):** An earlier version of the code removed `key` from the task's kwargs before publishing it, which broke the cleanup: `release_the_lock` reads `kwargs['kwargs']['key']`, so it raised a `KeyError` and the lock stayed until its 10-minute timeout. The task needs to keep `key` in its kwargs (and accept it as an argument). Also keep in mind that a task running longer than the lock timeout can overlap with a second copy, and the first one's cleanup would then delete the second one's lock.

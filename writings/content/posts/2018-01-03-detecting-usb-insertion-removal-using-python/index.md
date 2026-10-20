@@ -31,10 +31,12 @@ class USBDetector():
             if device.action == 'add':
                 # some function to run on insertion of usb
                 self.on_created()
-            else:
+            elif device.action == 'remove':
                 # some function to run on removal of usb
                 self.on_deleted()
 ```
 Since, usbmount mounts the filesystem of usb at some particular locations (`/media/usb0-7`), you can easily check for files in those folders and do whatever you wish to do with it.
 
 Using the above code would be as easy as creating an object of `USBDetector` class.
+
+> **Update (2026):** The code originally treated every event other than `add` as a removal. Since Linux 4.14 the kernel also sends `bind` and `unbind` events, so that fired `on_deleted` on insertion; the snippet now checks for `remove`. Filtering on `subsystem='usb'` also fires several events per stick (the device and its interfaces); add `device_type='usb_device'` to get one. And the `add` event arrives before usbmount has mounted the stick, so the folder under `/media` may still be empty at that moment.
