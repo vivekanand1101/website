@@ -9,7 +9,6 @@ originalUrl: "https://vivekanandxyz.wordpress.com/2018/01/03/detecting-usb-inser
 In a previous post, i wrote about how [usbmount](https://github.com/rbrito/usbmount) can be used to automatically mount a USB on Raspbian. Today, i had to detect this mounting from python and show it in a web application that a usb has been inserted. I used [pyudev](https://github.com/pyudev/pyudev) for this and ran it in a different thread so that the main application thread is not affected by pyudev's monitor loop.
 
 ```python
-
 class USBDetector():
     ''' Monitor udev for detection of usb '''
 
@@ -35,9 +34,7 @@ class USBDetector():
             else:
                 # some function to run on removal of usb
                 self.on_deleted()
-
 ```
+Since, usbmount mounts the filesystem of usb at some particular locations (`/media/usb0-7`), you can easily check for files in those folders and do whatever you wish to do with it.
 
-Since, usbmount mounts the filesystem of usb at some particular locations (/media/usb0-7), you can easily check for files in those folders and do whatever you wish to do with it.
-
-Using the above code would be as easy as creating an object of *USBDetector* class.
+Using the above code would be as easy as creating an object of `USBDetector` class.

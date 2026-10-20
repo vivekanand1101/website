@@ -8,19 +8,17 @@ originalUrl: "https://vivekanandxyz.wordpress.com/2017/09/09/realtime-events-usi
 
 At my day job, i needed a way to send real time events to clients that would in turn trigger some action on their side. The clients could ask for some computation from server which may take time.
 
-To tackle this situation, i ended up making [Tornado](https://github.com/tornadoweb/tornado) as a websocket server which will be different from our web app server (and both behind [nginx](https://nginx.org/en/)). There are a couple of other services which the client may ask for indirectly. Since, those computations won't have normal request - response cycle, the results from the computations will have to pushed to the clients. Since, the communication between the client and server is two-way so, websocket seemed fitting. For routing of messages internally, i decided to use [Rabbitmq](https://www.rabbitmq.com/)
-and [Celery](http://www.celeryproject.org/) for actual execution of tasks.
+To tackle this situation, i ended up making [Tornado](https://github.com/tornadoweb/tornado) as a websocket server which will be different from our web app server (and both behind [nginx](https://nginx.org/en/)). There are a couple of other services which the client may ask for indirectly. Since, those computations won't have normal request - response cycle, the results from the computations will have to pushed to the clients. Since, the communication between the client and server is two-way so, websocket seemed fitting. For routing of messages internally, i decided to use [Rabbitmq](https://www.rabbitmq.com/) and [Celery](http://www.celeryproject.org/) for actual execution of tasks.
 
-The problem with this is: Rabbitmq consumer and Tornado both run their own I/O loop. That confused me a little because i had heard this combo worked for [zulip](https://github.com/zulip/zulip) when i was randomly reading about their architecture. So, i duckduckgoed(:D) and found this article: [https://reminiscential.wordpress.com/2012/04/07/realtime-notification-delivery-using-rabbitmq-tornado-and-websocket/](https://reminiscential.wordpress.com/2012/04/07/realtime-notification-delivery-using-rabbitmq-tornado-and-websocket/)   . It turns out he also had a similar doubt and he got a solution.
+The problem with this is: Rabbitmq consumer and Tornado both run their own I/O loop. That confused me a little because i had heard this combo worked for [zulip](https://github.com/zulip/zulip) when i was randomly reading about their architecture. So, i duckduckgoed(:D) and found [this article](https://reminiscential.wordpress.com/2012/04/07/realtime-notification-delivery-using-rabbitmq-tornado-and-websocket/). It turns out he also had a similar doubt and he got a solution.
 
 [Pika](https://github.com/pika/pika) library comes with a tornado adapter named [TornadoConnection](https://github.com/pika/pika/blob/master/pika/adapters/tornado_connection.py). This makes running the rabbitmq consumer loop inside the tornado IOloop itself. The code for tornado connection is fairly simple. As the code given in the blog wasn't fully functional, i had to contact the source code of pika a couple of times.
 
-Each websocket connection in tornado gets a unique [WebSocketHandler](https://github.com/tornadoweb/tornado/blob/master/tornado/websocket.py#L60) object and these are not directly accessible from the tornado application object. But, the reverse is true. Each websocket handler has access to the application object. So, using TorandoConnection, we tie up one pika consumer to the tornado application object.
+Each websocket connection in tornado gets a unique [WebSocketHandler](https://github.com/tornadoweb/tornado/blob/master/tornado/websocket.py#L60) object and these are not directly accessible from the tornado application object. But, the reverse is true. Each websocket handler has access to the application object. So, using `TornadoConnection`, we tie up one pika consumer to the tornado application object.
 
-**server.py**
+`server.py`
 
 ```python
-
 def main():
     ''' The main method to run the tornado application '''
 
@@ -32,13 +30,10 @@ def main():
     application.pc.connect()
     application.listen(8080)
     io_loop.start()
-
 ```
-
-**consumer.py**
+`consumer.py`
 
 ```python
-
 class PikaConsumer(object):
     ''' The pika client the tornado will be part of '''
 
@@ -134,9 +129,7 @@ class PikaConsumer(object):
         if tmp_obj is not None:
             return tmp_obj['obj']
         return None
-
 ```
-
-That's it. In your *WebSocketHandler* objects, you can access the consumer via: *self.application.pc*
+That's it. In your `WebSocketHandler` objects, you can access the consumer via `self.application.pc`.
 
 Although, this is working fine for me right now but, i am not fully satisfied with this. At present each connection is listening to a single queue because in rabbitmq one consumer cannot listen to multiple queues.

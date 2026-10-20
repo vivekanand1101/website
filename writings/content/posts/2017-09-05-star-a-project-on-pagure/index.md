@@ -17,16 +17,22 @@ If you star a project on github, your followers come to know that you have liked
 Pagure doesn't have the follow feature and i am not sure it will have in near future. This means the star project won't have it's full effect. But, one can star a project, there is a star count, there is a list of people who have starred, there is a list of starred projects of a user.
 
 Here is how you can use this feature:
+
 - Log in to pagure and go to a project's home page.
-	- There is a star button, just beside the fork button. It has a star count just beside it.
-	- Star it if you like the project.
+- There is a star button, just beside the fork button. It has a star count just beside it.
+- Star it if you like the project.
+
 ![](images/screenshot-from-2017-09-05-00-28-45.png)
 
 Here is where you will find your starred projects:
+
 - Log in to pagure.
-	- The drop down on the top right corner will be "My Stars"
+- The drop down on the top right corner will be "My Stars"
+
 ![](images/screenshot-from-2017-09-05-00-43-16.png)
 
 Here is where you can see who all have starred a particular projects:
+
 - Right beside the star button on repo page, we have a star count which actually links to a page which lists all the users who have starred the project.
+
 ![](images/screenshot-from-2017-09-05-00-42-01.png)
