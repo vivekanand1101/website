@@ -3,7 +3,7 @@
 Every post from the blogs I read in full, plus the AI, backend and database posts from
 company engineering blogs.
 
-Every day a scheduled Claude routine pulls each blog's feed, reads the new posts, keeps the
+Every morning `run-local.sh` pulls each blog's feed, reads the new posts, keeps the
 company-blog posts that match [CRITERIA.md](CRITERIA.md), tags topics on everything, and pushes the result. Cloudflare Pages
 builds the whole site on every push to `main` (see the root README); this section is rendered by
 `python3 readings/build.py render` and copied to `dist/readings/`.
@@ -11,7 +11,13 @@ builds the whole site on every push to `main` (see the root README); this sectio
 - `blogs.json` — the blogs to track. `"filter": false` shows every post;
   `"filter": true` keeps only what Claude judges to be AI, backend or databases.
 - `CRITERIA.md` — what counts as relevant. Edit it to change what Claude keeps.
-- `ROUTINE.md` — the steps the daily routine follows.
+- `ROUTINE.md` — the steps the daily update follows.
+- `run-local.sh` — the daily update itself. launchd runs it on Vivek's Mac at 08:30 IST
+  (`~/Library/LaunchAgents/in.anandvivek.reading-daily-update.plist`, logs in
+  `~/Library/Logs/reading-daily-update/`). It works in a fresh clone, has `claude -p` judge the
+  pending posts with read-only tools, and commits and pushes only `readings/data/posts.json`,
+  or nothing when there is nothing new. The cloud routine was paused because its sandbox
+  can't reach most feeds.
 - `build.py` — `fetch` / `apply` / `render` (standard library only).
 - `template.html` — the page; the build injects `../shared/site.css` and the post data.
 - `data/posts.json` — every post with Claude's verdict.

@@ -1,6 +1,7 @@
 # Daily routine
 
-Instructions for the scheduled Claude run that updates anandvivek.in/readings/.
+Instructions for the daily update of anandvivek.in/readings/. `run-local.sh` automates these
+steps on Vivek's Mac every morning; follow them by hand only when it can't run.
 Run every command from the repository root; all paths below are under `readings/`.
 
 1. `python3 readings/build.py fetch` — pulls every feed and writes `readings/data/pending.json`,
