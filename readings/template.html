@@ -14,8 +14,6 @@
 <style>
 /*__SHARED_CSS__*/
   /* Reading page. Palette, header and footer come from shared/site.css. */
-  h1 { font-size: 40px; letter-spacing: -.025em; line-height: 1.25; margin: 8px 0 16px; }
-  .intro { color: var(--muted); margin: 0 0 32px; }
 
   /* Controls: plain text, one accent */
   .bar {
@@ -87,7 +85,6 @@
   }
 
   @media (max-width: 560px) {
-    h1 { font-size: 34px; }
     .bar { position: static; }
     .right { width: 100%; justify-content: space-between; }
     .posts li { flex-direction: column; gap: 0; padding: 8px 0; }
@@ -107,9 +104,7 @@
     </nav>
   </header>
 
-  <p class="eyebrow">Backend engineering · AI · Databases</p>
-  <h1>Reading</h1>
-  <p class="intro" id="sub"></p>
+  <h1 class="sr-only">Reading</h1>
 
   <div class="bar">
     <div class="opts" id="topics" role="group" aria-label="Topic"></div>
@@ -259,10 +254,8 @@ const companyPosts = all.filter(p => p.blog.filter);
 const kept = all.filter(relevant);
 const judged = companyPosts.filter(p => p.verdict).length;
 const keptCompany = companyPosts.filter(relevant).length;
-document.getElementById("sub").textContent =
-  `Every post from ${DATA.blogs.filter(b => !b.filter).length} blogs I read in full, plus the AI, backend and database posts from ${DATA.blogs.filter(b => b.filter).length} company engineering blogs. ${kept.filter(isFresh).length} new this week; updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}.`;
 document.getElementById("since").textContent =
-  `From the topic-filtered blogs, Claude kept ${keptCompany} of ${judged} posts.` + (judged < companyPosts.length ? ` ${companyPosts.length - judged} are waiting to be judged.` : "") +
+  `Updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}. From the topic-filtered blogs, Claude kept ${keptCompany} of ${judged} posts.` + (judged < companyPosts.length ? ` ${companyPosts.length - judged} are waiting to be judged.` : "") +
   (lastVisit ? ` Your last visit: ${new Date(lastVisit).toLocaleString()}.` : "");
 document.getElementById("year").textContent = new Date().getFullYear();
 render();

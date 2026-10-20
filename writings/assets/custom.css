@@ -1,7 +1,6 @@
 /* Writing pages. Palette, header and footer come from shared/site.css. */
 
 /* Home */
-.intro { margin: 0 0 48px; color: var(--muted); }
 .year { font-size: 16px; color: var(--muted); font-weight: 400; margin: 40px 0 8px; }
 .posts { list-style: none; padding: 0; margin: 0; }
 .posts li { display: flex; gap: 20px; padding: 4px 0; }
@@ -22,12 +21,7 @@ h2 { font-size: 24px; margin: 48px 0 12px; }
 h3 { font-size: 20px; margin: 36px 0 8px; }
 
 .meta { color: var(--muted); font-size: 16px; margin-bottom: 40px; }
-.note {
-  color: var(--muted);
-  font-size: 16px;
-  font-style: italic;
-  margin: -24px 0 40px;
-}
+.note { color: var(--alert); font-weight: 700; }
 
 article img { max-width: 100%; height: auto; }
 hr { border: 0; border-top: 1px solid var(--rule); margin: 48px 0; }
@@ -77,14 +71,9 @@ th, td { border-bottom: 1px solid var(--rule); padding: 6px 8px; text-align: lef
   .post-nav { flex-direction: column; }
 }
 
-/* Author intro on the list page; a small portrait on article pages. */
-.author-intro { display: grid; grid-template-columns: minmax(0, 1fr) 100px; gap: 32px; align-items: center; margin-bottom: 48px; }
-.author-intro h1 { font-size: 40px; letter-spacing: -.025em; margin: 8px 0 16px; }
-.author-intro .intro { margin-bottom: 16px; }
-.author-intro a { font-size: 16px; }
+/* A small portrait on article pages. */
 .author-portrait { display: block; width: 100px; height: 120px; object-fit: cover; object-position: 53% center; filter: grayscale(1); border: 1px solid var(--rule); }
 article { max-width: 640px; margin: 0 auto; }
-@media (max-width: 560px) { .author-intro { gap: 16px; grid-template-columns: minmax(0, 1fr) 80px; } .author-portrait { width: 80px; height: 100px; } }
 
 /* Article pages share the home page identity and neutral code palette. */
 .back-link { display: inline-block; margin-bottom: 28px; font-size: 15px; }

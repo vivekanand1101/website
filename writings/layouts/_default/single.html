@@ -6,13 +6,20 @@
   <h1>{{- .Title -}}</h1>
 
   {{- if ne .Type "page" -}}
+  {{- /* Build-time count; the script below recounts in the reader's browser. */ -}}
+  {{- $years := int (div (sub now.Unix .Date.Unix) 31557600) -}}
   <div class="meta">
     <time datetime="{{- .Date.Format `2006-01-02` -}}">{{- .Date | time.Format ":date_long" -}}</time>
     {{- with .Params.originalUrl }} &middot; Originally published on <a href="{{- . -}}">WordPress</a>{{ end -}}
+    {{- " " -}}<span class="note" data-written="{{ .Date.Format `2006-01-02` }}"{{ if lt $years 1 }} hidden{{ end }}>(written {{ $years }} {{ cond (eq $years 1) "year" "years" }} ago)</span>
   </div>
-  {{- if gt (div (sub now.Unix .Date.Unix) 86400) 730 -}}
-  <p class="note">Written in {{ .Date.Year }}. Some details may be out of date.</p>
-  {{- end -}}
+  <script>
+    for (const el of document.querySelectorAll(".note[data-written]")) {
+      const years = Math.floor((Date.now() - Date.parse(el.dataset.written)) / 31557600000);
+      el.hidden = years < 1;
+      el.textContent = `(written ${years} ${years === 1 ? "year" : "years"} ago)`;
+    }
+  </script>
   {{- end -}}
 
   </header>
@@ -20,7 +27,7 @@
 
   <aside class="article-author" aria-label="About the author">
     <img class="author-portrait" src="/images/vivek.png" alt="Vivek Anand" width="1264" height="842" loading="lazy">
-    <div><p><strong>Vivek Anand</strong></p><p>Backend engineering · Technical leadership</p><a href="/">About Vivek &rarr;</a></div>
+    <div><p><strong>Vivek Anand</strong></p><p>Product engineer</p></div>
   </aside>
 
   {{- with .Params.tags -}}

@@ -2,7 +2,7 @@
 <header class="site-header">
   <a class="site-title" href="/">{{- site.Params.name -}}</a>
   <nav aria-label="Main">
-    <a href="{{- `` | relURL -}}"{{ if .IsHome }} aria-current="page"{{ end }}>Writing</a>
+    <a href="{{- `` | relURL -}}" aria-current="{{ if .IsHome }}page{{ else }}true{{ end }}">Writing</a>
     <a href="/readings/">Reading</a>
     <a href="/">About</a>
   </nav>
