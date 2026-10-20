@@ -1,0 +1,9 @@
+{{- /* Same header as the home page (src/components/Navigation.tsx) and /readings/ (readings/template.html). */ -}}
+<header class="site-header">
+  <a class="site-title" href="/">{{- site.Params.name -}}</a>
+  <nav aria-label="Main">
+    <a href="{{- `` | relURL -}}"{{ if .IsHome }} aria-current="page"{{ end }}>Writing</a>
+    <a href="/readings/">Reading</a>
+    <a href="/">About</a>
+  </nav>
+</header>

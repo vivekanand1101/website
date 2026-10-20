@@ -1,0 +1,29 @@
+{{- define "main" -}}
+
+{{- $pages := union .RegularPages .Sections -}}
+{{- if .IsHome -}}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections -}}
+<section class="author-intro" aria-labelledby="writing-title">
+  <div><p class="eyebrow">Backend engineering · Technical leadership</p>
+  <h1 id="writing-title">Writing</h1>
+  <p class="intro">Notes on software, systems, and the lessons learned building them.</p>
+  <a href="/">About Vivek &rarr;</a></div>
+  <img class="author-portrait" src="/images/vivek.png" alt="Vivek Anand smiling outdoors in sunglasses" width="1264" height="842">
+</section>
+{{- else if eq .Type "tags" -}}
+<h1>{{- .Title -}}</h1>
+{{- end -}}
+
+{{- range $pages.GroupByDate "2006" -}}
+<h2 class="year">{{- .Key -}}</h2>
+<ul class="posts">
+  {{- range .Pages -}}
+  <li>
+    <time datetime="{{- .Date.Format `2006-01-02` -}}">{{- .Date.Format "Jan 02" -}}</time>
+    <a href="{{- .Permalink -}}">{{- .Title -}}</a>
+  </li>
+  {{- end -}}
+</ul>
+{{- end -}}
+
+{{- end -}}

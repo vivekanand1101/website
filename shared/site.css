@@ -1,0 +1,53 @@
+/* Shared by every section of anandvivek.in: the home page (src/index.css),
+   /writings/ (Hugo asset) and /readings/ (inlined by readings/build.py).
+   Palette, type, page width, header and footer live here only. */
+
+:root {
+  --bg: #fdfdfc; --text: #1c1c1c; --muted: #62625e; --rule: #e4e4e2;
+  --code-bg: #f4f4f2; --link: #1f4e8c;
+  --serif: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, Cambria, serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161616; --text: #e2e2e0; --muted: #aaa9a3; --rule: #2e2e2c;
+    --code-bg: #1f1f1e; --link: #8fb3e6; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161616; --text: #e2e2e0; --muted: #aaa9a3; --rule: #2e2e2c;
+  --code-bg: #1f1f1e; --link: #8fb3e6; color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 24px; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 18px/1.65 var(--serif); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+a { color: var(--link); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible {
+  outline: 2px solid var(--link); outline-offset: 4px;
+}
+
+/* Header: the same name and nav on every page. */
+.site-header { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 32px 0 48px; }
+.site-header a { color: var(--text); text-decoration: none; }
+.site-title { font-weight: 700; white-space: nowrap; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 20px; font-size: 16px; }
+.site-header nav a { color: var(--muted); }
+.site-header nav a:hover, .site-header nav a[aria-current] { color: var(--text); }
+.site-header nav a:hover { text-decoration: underline; }
+
+/* Footer */
+.site-footer { margin-top: 80px; padding: 24px 0 48px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 15px; }
+.site-footer p { margin: 0 0 8px; }
+.site-footer a { color: var(--muted); }
+
+.eyebrow { color: var(--muted); font-size: 15px; margin: 0 0 8px; }
+
+@media (max-width: 560px) {
+  body { font-size: 17px; }
+  .site-header { gap: 12px; flex-wrap: wrap; padding: 24px 0 32px; }
+}

@@ -1,45 +1,47 @@
 # anandvivek.in
 
-Personal website hosted at [anandvivek.in](https://anandvivek.in) via **Cloudflare Pages**.
+Source for https://anandvivek.in: one repository, one Cloudflare Pages build, one theme.
 
-This repo holds the production build only. The source lives in
-[`vivekanand1101/portfolio`](https://github.com/vivekanand1101/portfolio)
-(React, TypeScript, Vite).
+| Path | Section | Built with |
+|---|---|---|
+| `/` | About (home page) | React, TypeScript and Vite (`src/`, `public/`) |
+| `/writings/` | Writing | [Hugo](https://gohugo.io/) (`writings/`) |
+| `/readings/` | Reading | Python standard library (`readings/`, see its README) |
 
-## Structure
+`shared/site.css` holds the palette, type, header and footer every section uses. The header
+markup is repeated in three places; keep them in step when the nav changes:
+`src/components/Navigation.tsx`, `writings/layouts/partials/header.html`, `readings/template.html`.
+Root `public/` holds the favicon and portrait used by every section.
 
-```
-index.html   – Built page (references the current bundle in assets/)
-assets/      – Hashed JS/CSS bundles; older ones are kept for cached clients
-images/      – Site images
-llms.txt     – Site guide for AI tools
-```
-
-## Publishing
-
-1. In the portfolio repo, run `npm run build`.
-2. Copy `dist/index.html`, `dist/llms.txt` and any new files from `dist/assets/` into this repo.
-3. Commit and push to `main`. Cloudflare Pages deploys automatically.
-
-## Hosting
-
-Deployed via **Cloudflare Pages** connected to this GitHub repo. No build
-command is needed; the files are served as they are.
-
-### Domain Setup
-
-DNS is managed on Cloudflare. Subdomains:
-
-| Subdomain              | Hosted On        | Type                              |
-|------------------------|------------------|-----------------------------------|
-| anandvivek.in          | Cloudflare Pages | Personal site (this repo)         |
-| writings.anandvivek.in | Cloudflare Pages | Hugo blog (`vivekanand1101/blog`) |
-| readings.anandvivek.in | Cloudflare Pages | Reading list                      |
-| jewel.anandvivek.in    | Oracle Cloud     | ERP (backend)                     |
-
-## Local Preview
+## Development
 
 ```bash
-python3 -m http.server 8000
-# visit http://localhost:8000
+npm ci
+npm run dev      # home page only, http://localhost:8080
+npm run build    # whole site into dist/
+npx vite preview # serve dist/, including /writings/ and /readings/
 ```
+
+`npm run build` needs Node, Hugo (extended) and Python 3.
+
+### Writing a new post
+
+```bash
+hugo new content posts/my-new-post/index.md -s writings
+```
+
+Edit the generated file, set `draft: false` when ready, then push. `hugo server -s writings`
+previews just the writing section (the shared portrait and favicon live at the site root, so
+they only show in a full build).
+
+## Cloudflare Pages build settings
+
+| Field | Value |
+|---|---|
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Environment variable | `HUGO_VERSION` = `0.158.0` |
+
+## Attribution
+
+The writing section's initial code was stolen from [Armin Ronacher’s blog](https://lucumr.pocoo.org/) and then modified by AI.

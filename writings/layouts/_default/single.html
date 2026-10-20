@@ -1,0 +1,41 @@
+{{- define "main" -}}
+
+<article class="post">
+  <a class="back-link" href="{{ `` | relURL }}">&larr; All writing</a>
+  <header class="article-header">
+  <h1>{{- .Title -}}</h1>
+
+  {{- if ne .Type "page" -}}
+  <div class="meta">
+    <time datetime="{{- .Date.Format `2006-01-02` -}}">{{- .Date | time.Format ":date_long" -}}</time>
+    {{- with .Params.originalUrl }} &middot; Originally published on <a href="{{- . -}}">WordPress</a>{{ end -}}
+  </div>
+  {{- if gt (div (sub now.Unix .Date.Unix) 86400) 730 -}}
+  <p class="note">Written in {{ .Date.Year }}. Some details may be out of date.</p>
+  {{- end -}}
+  {{- end -}}
+
+  </header>
+  <section class="article-content">{{- .Content -}}</section>
+
+  <aside class="article-author" aria-label="About the author">
+    <img class="author-portrait" src="/images/vivek.png" alt="Vivek Anand" width="1264" height="842" loading="lazy">
+    <div><p><strong>Vivek Anand</strong></p><p>Backend engineering · Technical leadership</p><a href="/">About Vivek &rarr;</a></div>
+  </aside>
+
+  {{- with .Params.tags -}}
+  <div class="tags">
+    {{- range . -}}<a href="{{- print (absURL "tags/") (urlize .) -}}">#{{- . -}}</a>{{- end -}}
+  </div>
+  {{- end -}}
+
+  {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+  {{- if and (gt (len $pages) 1) (in $pages .) -}}
+  <nav class="post-nav">
+    {{- with $pages.Next . -}}<a href="{{- .Permalink -}}">&larr; {{ .Title -}}</a>{{- end -}}
+    {{- with $pages.Prev . -}}<a class="next" href="{{- .Permalink -}}">{{- .Title }} &rarr;</a>{{- end -}}
+  </nav>
+  {{- end -}}
+</article>
+
+{{- end -}}

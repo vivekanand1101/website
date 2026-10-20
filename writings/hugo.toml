@@ -1,0 +1,36 @@
+baseURL = 'https://anandvivek.in/writings/'
+languageCode = 'en-us'
+title = "Vivek Anand"
+
+[params]
+  name = 'Vivek Anand'
+  bio = 'Lead Engineer, Backend'
+
+# shared/site.css (palette, header, footer) is the same stylesheet the rest of
+# anandvivek.in uses. Declaring any mount replaces Hugo's defaults, so list them too.
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = '../shared'
+    target = 'assets/shared'
+  [[module.mounts]]
+    source = 'content'
+    target = 'content'
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'archetypes'
+    target = 'archetypes'
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

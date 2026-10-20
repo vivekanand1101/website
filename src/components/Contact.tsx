@@ -1,0 +1,2 @@
+const Contact = () => <section className="editorial-section"><h2>Get in touch</h2><p>For conversations about backend systems, engineering leadership, or working together.</p><p><a href="mailto:vivekanand1101@gmail.com">vivekanand1101@gmail.com</a></p><div className="text-links"><a href="https://linkedin.com/in/vivekanandxyz/">LinkedIn ↗</a><a href="https://github.com/vivekanand1101">GitHub ↗</a><a href="tel:+918084627231">+91 8084627231</a></div></section>;
+export default Contact;

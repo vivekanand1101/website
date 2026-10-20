@@ -1,0 +1,42 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <!-- title -->
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}Writing · {{ site.Title }}</title>
+
+  <!-- meta -->
+  <meta name="theme-color" content="#0c0f0a" />
+  <meta name="description" content="{{- if eq .Kind `page` -}}{{- .Summary -}}{{- else -}}{{- site.Params.description | default (print `Vivek Anand's writing. Software engineering, open source, and life from Bihar.`) -}}{{- end -}}" />
+
+  <!-- System fonts and a single editorial stylesheet. -->
+  {{- $css := slice (resources.Get "shared/site.css") (resources.Get "custom.css") | resources.Concat "site.css" | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon-editorial.svg" />
+
+  <!-- generator -->
+  {{- hugo.Generator -}}
+
+  <!-- production -->
+  {{- if or hugo.IsProduction (eq site.Params.env "production") -}}
+  {{- template "_internal/google_analytics.html" . -}}
+  {{- template "_internal/schema.html" . -}}
+  {{- template "_internal/opengraph.html" . -}}
+  {{- template "_internal/twitter_cards.html" . -}}
+  {{- range .AlternativeOutputFormats -}}
+  <link
+    rel="{{- .Rel -}}"
+    type="{{- .MediaType.Type -}}"
+    href="{{- .Permalink -}}"
+    title="{{- site.Title -}}"
+  />
+  {{- end -}}
+  <link rel="canonical" href="{{- .Permalink -}}" />
+  {{- end -}}
+</head>

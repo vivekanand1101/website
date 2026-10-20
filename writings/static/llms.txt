@@ -1,0 +1,22 @@
+# Vivek Anand’s writing
+
+> Notes on software, systems, and lessons learned building them, by Vivek Anand, a software engineer from Kerai, Bihar, India, mostly working in backend development.
+
+These posts document work with Python, Django, PostgreSQL, asynchronous systems, Raspberry Pi, and the Pagure open-source project. They were written between 2016 and 2018; technical details describe the software and practices used at the time.
+
+## About the author
+
+- [Personal site](https://anandvivek.in/): Personal background, interests, experience, and contact details.
+
+## Published posts
+
+- [Django's transaction.on_commit](https://anandvivek.in/writings/posts/2018-12-18-djangos-transaction-on_commit/)
+- [Running Unique tasks in celery](https://anandvivek.in/writings/posts/2018-11-25-running-unique-tasks-in-celery/)
+- [Detecting USB Insertion/Removal using Python](https://anandvivek.in/writings/posts/2018-01-03-detecting-usb-insertion-removal-using-python/)
+- [Token based Websocket Authentication](https://anandvivek.in/writings/posts/2017-10-15-token-based-websocket-authentication/)
+- [Realtime Events using Tornado and Rabbitmq](https://anandvivek.in/writings/posts/2017-09-09-realtime-events-using-tornado-and-rabbitmq/)
+- [Star a project on pagure](https://anandvivek.in/writings/posts/2017-09-05-star-a-project-on-pagure/)
+- [GSoC Wrap Up](https://anandvivek.in/writings/posts/2016-08-29-gsoc-wrap-up/)
+- [User's project watch list on pagure](https://anandvivek.in/writings/posts/2016-08-16-users-project-watch-list-on-pagure/)
+- [pkgs.fedoraproject.org on a pagure instance](https://anandvivek.in/writings/posts/2016-08-13-pkgs-fedoraproject-org-on-a-pagure-instance/)
+- [Access levels of user/group in a pagure project](https://anandvivek.in/writings/posts/2016-08-10-access-levels-of-user-or-group-in-a-pagure-project/)

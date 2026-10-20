@@ -1,0 +1,195 @@
+[
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "home": "https://www.anthropic.com/news",
+    "filter": true,
+    "sources": [
+      {
+        "type": "anthropic",
+        "url": "https://www.anthropic.com/news"
+      },
+      {
+        "type": "anthropic",
+        "url": "https://www.anthropic.com/engineering"
+      }
+    ]
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "home": "https://openai.com/news/",
+    "filter": true,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://openai.com/news/rss.xml"
+      }
+    ]
+  },
+  {
+    "id": "meta",
+    "name": "Meta Engineering",
+    "home": "https://engineering.fb.com/",
+    "filter": true,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://engineering.fb.com/feed/"
+      }
+    ]
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "home": "https://blog.cloudflare.com/",
+    "filter": true,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://blog.cloudflare.com/rss/"
+      }
+    ]
+  },
+  {
+    "id": "railway",
+    "name": "Railway",
+    "home": "https://blog.railway.com/",
+    "filter": true,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://blog.railway.com/rss.xml"
+      }
+    ]
+  },
+  {
+    "id": "earendil",
+    "name": "Earendil",
+    "home": "https://earendil.com/posts/",
+    "filter": true,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://earendil.com/posts/feed.atom"
+      }
+    ]
+  },
+  {
+    "id": "armin",
+    "name": "Armin Ronacher",
+    "home": "https://lucumr.pocoo.org/",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://lucumr.pocoo.org/feed.atom"
+      }
+    ]
+  },
+  {
+    "id": "thorsten",
+    "name": "Thorsten Ball",
+    "home": "https://thorstenball.com/",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://thorstenball.com/atom.xml"
+      },
+      {
+        "type": "feed",
+        "url": "https://registerspill.thorstenball.com/feed"
+      }
+    ]
+  },
+  {
+    "id": "mario",
+    "name": "Mario Zechner",
+    "home": "https://mariozechner.at/",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://mariozechner.at/rss.xml"
+      },
+      {
+        "type": "feed",
+        "url": "https://mariozechner.at/recommended-reading/rss.xml",
+        "label": "Recommended"
+      }
+    ]
+  },
+  {
+    "id": "ben",
+    "name": "Ben Vinegar",
+    "home": "https://benv.ca/blog",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://benv.ca/blog/feed.xml"
+      }
+    ]
+  },
+  {
+    "id": "dhh",
+    "name": "DHH",
+    "home": "https://world.hey.com/dhh",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://world.hey.com/dhh/feed.atom"
+      }
+    ]
+  },
+  {
+    "id": "amp",
+    "name": "Amp",
+    "home": "https://ampcode.com/news",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://ampcode.com/news.rss"
+      }
+    ]
+  },
+  {
+    "id": "typesafe",
+    "name": "TypeSafe AI",
+    "home": "https://typesafe.ai/blog",
+    "filter": false,
+    "sources": [
+      {
+        "type": "framer",
+        "url": "https://typesafe.ai/blog"
+      }
+    ]
+  },
+  {
+    "id": "simon",
+    "name": "Simon Willison",
+    "home": "https://simonwillison.net/",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://simonwillison.net/atom/entries/"
+      }
+    ]
+  },
+  {
+    "id": "pragmatic",
+    "name": "The Pragmatic Engineer",
+    "home": "https://newsletter.pragmaticengineer.com/",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://newsletter.pragmaticengineer.com/feed"
+      }
+    ]
+  }
+]
