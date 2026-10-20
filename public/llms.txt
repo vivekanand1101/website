@@ -6,7 +6,7 @@ Vivek's current role is remote, so for now he works from home in Kerai. Professi
 
 ## Personal site
 
-- [About](https://anandvivek.in/): Personal background, interests, education, and contact details.
+- [About](https://anandvivek.in/): Personal background, work, and interests. Email, LinkedIn and GitHub links are in the footer.
 
 ## Writing
 

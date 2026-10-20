@@ -30,7 +30,7 @@ and `readings/template.html`; change all three together.
 ### Home page (`src/components/`)
 
 1. **Navigation** - Vivek Anand, Writing, Reading, About
-2. **Hero** - One short intro with no visible heading: product engineer (backend roots, works across the product lifecycle, Barq and Virtual Internships), cricket then table tennis, home and chai, contact links in a sentence; portrait
+2. **Hero** - One short intro with no visible heading: product engineer (backend roots, works across the product lifecycle, Barq and Virtual Internships), cricket then table tennis, remote for now; contact lives in the footer only; portrait
 3. **Footer**
 
 ### Writing (`writings/`)
