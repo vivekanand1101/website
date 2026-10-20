@@ -1,10 +1,11 @@
 const Hero = () => (
   <section className="hero" aria-labelledby="intro-title">
     <div>
-      <h1 id="intro-title">Vivek Anand</h1>
-      <p>I’m from Kerai, a village in Bihar, India. I work remotely from home. Morning walks, chai, and a game of cricket or table tennis are some of the things I enjoy.</p>
-      <p>Cricket has been a constant. I captained IIIT Allahabad’s team, and in 2017 we brought home the college’s first tournament trophy. I picked up table tennis at Innovaccer and got surprisingly good at it. Still quite proud of that.</p>
-      <p>Professionally, I’m a software engineer, mostly working in backend development. I build systems and lead teams across fintech, healthtech, and B2B SaaS, and <a href="/writings/">write about software and what I learn along the way</a>. My first computer, bought by my father in 2004, was mostly used for Road Rash and EA Cricket. The engineering came later.</p>
+      {/* The header already shows the name; this heading is for screen readers and search engines. */}
+      <h1 id="intro-title" className="sr-only">Vivek Anand</h1>
+      <p>I’m Vivek, a product engineer from <a href="https://www.google.com/maps/search/?api=1&query=Kerai%2C+Bihar%2C+India" target="_blank" rel="noopener noreferrer">Kerai</a>, a small village in Bihar, India. I started on the backend and it’s still where I’m most at home, but these days I work across the whole product: working out what to build, designing it, building the frontend and the backend, and leading the team that ships it. That’s how I’ve worked at Barq and now at Virtual Internships.</p>
+      <p>Cricket was my first love. I grew up playing it in the village and kept at it through college and at work whenever I could. As time and a full team got harder to find, table tennis filled the gap, and these days I’ll happily play either when I get the chance.</p>
+      <p id="contact">My current role is remote, so for now I’m based at home in Kerai. You can reach me by <a href="mailto:vivekanand1101@gmail.com">email</a> or on <a href="https://linkedin.com/in/vivekanandxyz/">LinkedIn</a>.</p>
     </div>
     <figure className="portrait">
       <img src="/images/vivek.png" alt="Vivek Anand smiling outdoors in sunglasses" width="1264" height="842" />

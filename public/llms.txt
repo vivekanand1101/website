@@ -1,13 +1,12 @@
 # Vivek Anand
 
-> Personal site of Vivek Anand, from Kerai, a village in Bihar, India. Software engineering is part of his life alongside cricket, table tennis, morning walks, and chai.
+> Personal site of Vivek Anand, from Kerai, a village in Bihar, India. Software engineering is part of his life alongside cricket and table tennis.
 
-Vivek works remotely from home. Professionally, he is a software engineer mostly working in backend development, building systems and leading teams across fintech, healthtech, and B2B SaaS. He captained IIIT Allahabad’s cricket team, which won the college’s first tournament trophy in 2017.
+Vivek's current role is remote, so for now he works from home in Kerai. Professionally, he is a product engineer with roots in backend development. He works across the product lifecycle (product thinking, design, frontend and backend) and leads the teams that ship it, most recently at Barq and Virtual Internships.
 
 ## Personal site
 
-- [Introduction](https://anandvivek.in/): Personal background and interests.
-- [Contact](https://anandvivek.in/#contact): Contact details and social profiles.
+- [About](https://anandvivek.in/): Personal background, interests, education, and contact details.
 
 ## Writing
 

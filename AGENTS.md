@@ -30,10 +30,8 @@ and `readings/template.html`; change all three together.
 ### Home page (`src/components/`)
 
 1. **Navigation** - Vivek Anand, Writing, Reading, About
-2. **Hero** - Personal intro, cricket, table tennis, portrait
-3. **Education**
-4. **Contact**
-5. **Footer**
+2. **Hero** - One short intro with no visible heading: product engineer (backend roots, works across the product lifecycle, Barq and Virtual Internships), cricket then table tennis, home and chai, contact links in a sentence; portrait
+3. **Footer**
 
 ### Writing (`writings/`)
 
@@ -50,6 +48,9 @@ and `readings/template.html`; change all three together.
 - No em dashes. Ever. Vivek considers them an AI tell.
 - Keep copy natural and human. Humor is welcome.
 - Cricket references are always appropriate.
+- Don't oversell: no trophies or "surprisingly good" claims, and don't say Vivek writes a lot.
+- Cricket is a childhood thing played for real, not a video game; leave out the first-computer and Road Rash story.
+- Write like a person talks. No stock phrases like "if you'd like to talk about backend systems, engineering leadership, or working together".
 - Work projects (especially Barq) are the highlight, not side projects.
 - Side projects that are incomplete should not be mentioned.
 - Do not publish the resume PDF.
