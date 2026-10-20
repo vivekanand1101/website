@@ -490,6 +490,20 @@
  ],
  "openai": [
   {
+   "title": "Advancing coding in low‑resource programming languages",
+   "url": "https://openai.com/index/low-resource-programming-languages",
+   "date": "2026-10-19T12:00:00+00:00",
+   "summary": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
+   "seen": "2026-10-20T06:27:13.815510+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Describes new coding evaluations (software engineering, SQLite, COBOL migration) used to improve model performance on low-resource languages, which has technical eval substance."
+   }
+  },
+  {
    "title": "How Itaú is building generative AI for its entire customer base",
    "url": "https://openai.com/index/itau-generative-ai",
    "date": "2026-10-16T19:00:00+00:00",
@@ -1209,18 +1223,6 @@
    "url": "https://openai.com/index/priorities-principles-third-party-assessments",
    "date": "2026-09-22T00:00:00+00:00",
    "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Advisory Group on Mathematics and Artificial Intelligence",
-   "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-   "date": "2026-09-21T12:00:00+00:00",
-   "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results.",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -2260,6 +2262,19 @@
   }
  ],
  "mario": [
+  {
+   "title": "It's still OK to enjoy programming - Blogomatano",
+   "url": "https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming",
+   "date": "2026-10-19T23:00:47+00:00",
+   "summary": "recommended reading.",
+   "label": "Recommended",
+   "seen": "2026-10-20T06:27:13.815510+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown personal essay about enjoying programming that doesn't focus on AI, backend, or databases."
+   }
+  },
   {
    "title": "The Buckmaster Interview (Navier-Stokes) - Numberphile",
    "url": "https://www.youtube.com/watch?is=kimGlsNZ6H7ps5u6&v=Mzbtj5nkMXI&feature=youtu.be",
@@ -6507,6 +6522,33 @@
  ],
  "cloudflare": [
   {
+   "title": "Cutting our inference bill by 68% by being obsessive about optimization",
+   "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+   "date": "2026-10-19T19:12:53+00:00",
+   "summary": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews.",
+   "seen": "2026-10-20T06:27:13.815510+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Technical walkthrough of cutting LLM inference costs with token analysis, prompt caching, and model routing."
+   }
+  },
+  {
+   "title": "Introducing Clairic, a new System One class of extraction models",
+   "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+   "date": "2026-10-19T17:48:26+00:00",
+   "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs.",
+   "seen": "2026-10-20T06:27:13.815510+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mostly a product announcement of a new extraction model, with no architecture, training, or evaluation details."
+   }
+  },
+  {
    "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
    "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
    "date": "2026-10-19T13:00:00+00:00",
@@ -7994,6 +8036,20 @@
   }
  ],
  "amp": [
+  {
+   "title": "Assign It To Amp",
+   "url": "https://ampcode.com/news/assign-it-to-amp",
+   "date": "2026-10-19T00:00:00+00:00",
+   "summary": "Amp is now an agent in Linear. Assigning an issue to Amp starts a new Agent Session in Linear and spawns a new orb. You can also mention @Amp to kick off a session. Amp sends its response back to the same session and…",
+   "seen": "2026-10-20T06:27:13.815510+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always-shown post about a coding agent integration that starts agent sessions from Linear issues."
+   }
+  },
   {
    "title": "See Your Runner's Desktop",
    "url": "https://ampcode.com/news/runner-desktop",
