@@ -31,11 +31,9 @@ and `readings/template.html`; change all three together.
 
 1. **Navigation** - Vivek Anand, Writing, Reading, About
 2. **Hero** - Personal intro, cricket, table tennis, portrait
-3. **Experience** - Virtual Internships, Barq, Innovaccer, PaySense, Ethereal Machines, Pagure
-4. **Technical practice** - Skills by category
-5. **Education**
-6. **Contact**
-7. **Footer**
+3. **Education**
+4. **Contact**
+5. **Footer**
 
 ### Writing (`writings/`)
 

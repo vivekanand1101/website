@@ -7,8 +7,6 @@ Vivek works remotely from home. Professionally, he is a software engineer mostly
 ## Personal site
 
 - [Introduction](https://anandvivek.in/): Personal background and interests.
-- [Experience](https://anandvivek.in/#experience): Work at Virtual Internships, Barq, Innovaccer, PaySense, Ethereal Machines, and contributions to Pagure.
-- [Technical practice](https://anandvivek.in/#skills): Languages, frameworks, infrastructure, and applied AI.
 - [Contact](https://anandvivek.in/#contact): Contact details and social profiles.
 
 ## Writing
