@@ -1,6 +1,18 @@
 {
  "anthropic": [
   {
+   "title": "Features",
+   "url": "https://www.anthropic.com/news/features",
+   "date": "2026-10-21T03:00:14.492119+00:00",
+   "summary": "",
+   "seen": "2026-10-21T03:00:14.492119+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "This is an index page for Anthropic's Features section, which holds customer case studies, not a technical post."
+   }
+  },
+  {
    "title": "Anthropic Education Report: The AI Fluency Index",
    "url": "https://www.anthropic.com/research/AI-fluency-index",
    "date": "2026-10-21T01:28:56.959577+00:00",
@@ -28,7 +40,7 @@
    "title": "Investing in the public benefit",
    "url": "https://www.anthropic.com/news/public-benefit-fund",
    "date": "2026-10-18T00:00:00+00:00",
-   "summary": "",
+   "summary": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -756,18 +768,6 @@
      "ai"
     ],
     "reason": "New tool use features and the engineering behind them."
-   }
-  },
-  {
-   "title": "Measuring political bias in Claude",
-   "url": "https://www.anthropic.com/research/political-even-handedness",
-   "date": "2025-11-13T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:29:48.441744+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Domain science, policy or social research without engineering substance for this list."
    }
   }
  ],
