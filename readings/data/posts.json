@@ -63,6 +63,21 @@
    }
   },
   {
+   "title": "Strengthening our defenses against distillation attacks",
+   "url": "https://www.anthropic.com/news/distillation-defenses",
+   "date": "2026-10-12T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Defending model APIs against distillation is security engineering for LLM serving."
+   }
+  },
+  {
    "title": "2026 Usage Policy update",
    "url": "https://www.anthropic.com/news/2026-usage-policy-update",
    "date": "2026-10-08T00:00:00+00:00",
@@ -132,6 +147,104 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, customer story, announcement or essay without enough technical depth."
+   }
+  },
+  {
+   "title": "Partnering with Accenture on embedded evaluation",
+   "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+   "date": "2026-09-18T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "Introducing the Life Sciences Verification Program",
+   "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+   "date": "2026-09-17T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "Developing Enterprise Frontier Safeguards with our customers",
+   "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+   "date": "2026-09-01T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "Improving our alignment and security efforts",
+   "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+   "date": "2026-08-31T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "Previewing the Model Hardware Standard",
+   "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+   "date": "2026-08-27T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "Expanding our support for scientists",
+   "url": "https://www.anthropic.com/news/expanding-support-for-scientists",
+   "date": "2026-08-27T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "Funding better evaluations of AI’s impact on wellbeing",
+   "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+   "date": "2026-08-25T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "How Claude’s text watermark works",
+   "url": "https://www.anthropic.com/news/claude-text-watermark",
+   "date": "2026-08-14T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Explains how a text watermark for LLM output is built and detected."
    }
   },
   {
@@ -489,6 +602,30 @@
   }
  ],
  "openai": [
+  {
+   "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+   "url": "https://openai.com/index/ted-taylor-restaurant",
+   "date": "2026-10-20T10:00:00+00:00",
+   "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "OpenAI acquires Orchestra Bio",
+   "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+   "date": "2026-10-20T00:00:00+00:00",
+   "summary": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D, helping biopharma teams accelerate drug development and advance new treatments.",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
   {
    "title": "Advancing coding in low‑resource programming languages",
    "url": "https://openai.com/index/low-resource-programming-languages",
@@ -1199,30 +1336,6 @@
    "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
    "date": "2026-09-22T18:00:00+00:00",
    "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-   "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-   "date": "2026-09-22T12:00:00+00:00",
-   "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Priorities and principles for effective third party assessments",
-   "url": "https://openai.com/index/priorities-principles-third-party-assessments",
-   "date": "2026-09-22T00:00:00+00:00",
-   "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -6522,6 +6635,34 @@
  ],
  "cloudflare": [
   {
+   "title": "8 eMudhra certificates are compromised. Here's what you need to know",
+   "url": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
+   "date": "2026-10-20T22:20:16+00:00",
+   "summary": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and…",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Weak-key intermediate certificates and the PKI mitigations rolled out."
+   }
+  },
+  {
+   "title": "Introducing tsrs: A port of TypeScript to Rust",
+   "url": "https://blog.cloudflare.com/typescript-rust-port/",
+   "date": "2026-10-20T13:00:00+00:00",
+   "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory.",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "A Rust port of TypeScript with performance and memory numbers."
+   }
+  },
+  {
    "title": "Cutting our inference bill by 68% by being obsessive about optimization",
    "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
    "date": "2026-10-19T19:12:53+00:00",
@@ -9543,32 +9684,6 @@
     ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Edit, Restore and Fork in the CLI",
-   "url": "https://ampcode.com/news/cli-tab-navigation",
-   "date": "2025-10-21T00:00:00+00:00",
-   "summary": "You can now edit messages in the Amp CLI, restore the thread to a specific point, or fork a new thread from a message. Hit Tab to select a previous message, then hit e to edit the message, r to restore the thread up to…",
-   "seen": "2025-10-21T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "50% Faster Search Agent",
-   "url": "https://ampcode.com/news/faster-search-agent",
-   "date": "2025-10-21T00:00:00+00:00",
-   "summary": "Amp's search subagent is now 50% faster. We switched the model powering the finder subagent to Haiku 4.5. In our evaluations and usage, this resulted in an approximate 50% speedup with no noticeable loss in quality.…",
-   "seen": "2025-10-21T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "typesafe": [
@@ -9672,6 +9787,20 @@
   }
  ],
  "simon": [
+  {
+   "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+   "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+   "date": "2026-10-20T19:34:19+00:00",
+   "summary": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat…",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Vibe coded game experiment; always shown."
+   }
+  },
   {
    "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
    "url": "https://simonwillison.net/2026/Oct/12/python-3-15/",
@@ -11197,6 +11326,20 @@
   }
  ],
  "pragmatic": [
+  {
+   "title": "What’s the ROI of software engineers’ spending on AI?",
+   "url": "https://newsletter.pragmaticengineer.com/p/whats-the-roi-of-software-engineers",
+   "date": "2026-10-20T17:34:18+00:00",
+   "summary": "AI spending has greatly increased at most companies this year, but has it actually changed shipping velocity and PR output? We analyse data from 27 companies – with some interesting findings",
+   "seen": "2026-10-21T00:45:21.640412+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Data on AI spending versus shipping velocity; always shown."
+   }
+  },
   {
    "title": "The Pulse: OpenAI software engineer accused of spying",
    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-openai-software-engineer",
