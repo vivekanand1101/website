@@ -106,13 +106,21 @@ def parse_feed(raw, base):
     return posts
 
 
+NEWS_CATEGORIES = {f"/news/{c}" for c in (
+    "announcements", "product", "policy", "partnerships", "safeguards", "security", "research")}
+
+
 def parse_anthropic(raw, base):
     """anthropic.com has no RSS; read the post links off the listing page."""
     page = raw.decode("utf-8", "replace")
-    section = re.escape(base.rstrip("/").rsplit("/", 1)[-1])
+    # Posts live under /news and /research (engineering, science and social impacts
+    # listings link to /research/<slug>); /research/team/* are listing pages, not posts.
+    section = r"(?:news|engineering|research)"
     posts = []
     for m in re.finditer(rf'<a[^>]+href="(/{section}/[^"#?]+)"[^>]*>(.*?)</a>', page, re.S):
         href, inner = m.groups()
+        if href.startswith("/research/team/") or href in NEWS_CATEGORIES:
+            continue
         heading = re.search(r"<h[1-6][^>]*>(.*?)</h[1-6]>", inner, re.S)
         if heading:
             title = strip_tags(heading.group(1))
@@ -120,6 +128,11 @@ def parse_anthropic(raw, base):
             spans = [strip_tags(s) for s in re.findall(r"<span[^>]*>(.*?)</span>", inner, re.S)]
             spans = [s for s in spans if s]
             title = max(spans, key=len) if spans else ""
+            if not title:  # plain-text link, or an image tile whose alt is the title
+                alt = re.search(r'<img[^>]+alt="([^"]+)"', inner)
+                title = strip_tags(inner) or (strip_tags(alt.group(1)) if alt else "")
+        if re.fullmatch(r"(read|learn) more", title, re.I):
+            continue
         t = re.search(r'<time[^>]*?(?:dateTime="([^"]+)")?[^>]*>(.*?)</time>', inner, re.S)
         date = parse_date(t.group(1) or strip_tags(t.group(2))) if t else None
         para = re.search(r"<p[^>]*>(.*?)</p>", inner, re.S)
@@ -198,6 +211,16 @@ def fetch_all(blogs, store):
         known = {p["url"]: p for p in store.get(blog["id"], [])}
         # A source seen for the first time is a backfill: don't flag its history as new.
         first_time = not any(p["url"] in known for p in posts)
+        # Anthropic moved posts from /engineering/<slug> to /research/<slug>: treat a known
+        # slug under another path as the same post, and keep the new URL.
+        if blog["id"] == "anthropic":
+            for p in posts:
+                slug = p["url"].rsplit("/", 1)[-1].lower()
+                for u in [u for u in known if u != p["url"] and u.rsplit("/", 1)[-1].lower() == slug]:
+                    gone = known.pop(u)
+                    keep = known.setdefault(p["url"], gone)
+                    keep.update({k: gone[k] for k in ("seen", "verdict") if gone.get(k)})
+                    keep["url"] = p["url"]
         for p in posts:
             old = known.get(p["url"])
             p["seen"] = old["seen"] if old else (p["date"] or now) if first_time else now

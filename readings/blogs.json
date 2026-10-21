@@ -12,6 +12,14 @@
       {
         "type": "anthropic",
         "url": "https://www.anthropic.com/engineering"
+      },
+      {
+        "type": "anthropic",
+        "url": "https://www.anthropic.com/science"
+      },
+      {
+        "type": "anthropic",
+        "url": "https://www.anthropic.com/research/team/societal-impacts"
       }
     ]
   },
