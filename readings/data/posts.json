@@ -1,6 +1,30 @@
 {
  "anthropic": [
   {
+   "title": "Anthropic Education Report: The AI Fluency Index",
+   "url": "https://www.anthropic.com/research/AI-fluency-index",
+   "date": "2026-10-21T01:28:56.959577+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
+   "title": "How Claude designed protein binders against scorpion neurotoxins",
+   "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+   "date": "2026-10-20T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
    "title": "Investing in the public benefit",
    "url": "https://www.anthropic.com/news/public-benefit-fund",
    "date": "2026-10-18T00:00:00+00:00",
@@ -10,6 +34,20 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, customer story, announcement or essay without enough technical depth."
+   }
+  },
+  {
+   "title": "Designing more efficient quantum circuits with Claude",
+   "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+   "date": "2026-10-16T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Claude searching for better quantum circuit designs, with technical results."
    }
   },
   {
@@ -50,9 +88,9 @@
   },
   {
    "title": "Redesigning source control at Anthropic",
-   "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+   "url": "https://www.anthropic.com/research/redesigning-source-control",
    "date": "2026-10-13T00:00:00+00:00",
-   "summary": "As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.",
+   "summary": "",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": true,
@@ -114,6 +152,18 @@
    }
   },
   {
+   "title": "The missing map of the sky",
+   "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
+   "date": "2026-10-08T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
    "title": "Expanding the Cyber Verification Program",
    "url": "https://www.anthropic.com/news/cyber-verification-program",
    "date": "2026-10-06T00:00:00+00:00",
@@ -150,6 +200,54 @@
    }
   },
   {
+   "title": "Claude-shaped science",
+   "url": "https://www.anthropic.com/research/claude-shaped-science",
+   "date": "2026-10-01T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
+   "title": "What do you want from AI?",
+   "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
+   "date": "2026-09-29T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
+   "title": "Yes, Claude can do Nine Loops",
+   "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+   "date": "2026-09-25T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
+   "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+   "url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system",
+   "date": "2026-09-23T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
    "title": "Partnering with Accenture on embedded evaluation",
    "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
    "date": "2026-09-18T00:00:00+00:00",
@@ -171,6 +269,32 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "How Claude is uplifting biomolecular modeling",
+   "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+   "date": "2026-09-17T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
+   "title": "Formalizing Fermat's Last Theorem",
+   "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+   "date": "2026-09-04T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Using Claude for formal proof work in Lean, a hard reasoning benchmark."
    }
   },
   {
@@ -222,6 +346,18 @@
    }
   },
   {
+   "title": "Enabling independent research on how people use Claude",
+   "url": "https://www.anthropic.com/research/enabling-independent-research",
+   "date": "2026-08-26T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
    "title": "Funding better evaluations of AI’s impact on wellbeing",
    "url": "https://www.anthropic.com/news/wellbeing-research-grants",
    "date": "2026-08-25T00:00:00+00:00",
@@ -231,6 +367,18 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "How Claude is accelerating protein design and analytical chemistry",
+   "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+   "date": "2026-08-18T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
    }
   },
   {
@@ -248,8 +396,86 @@
    }
   },
   {
+   "title": "Learning more about Claude's mathematical capabilities",
+   "url": "https://www.anthropic.com/research/riemann-zeta",
+   "date": "2026-08-10T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Probes Claude's mathematical capabilities with concrete results."
+   }
+  },
+  {
+   "title": "Claude’s values across models and languages",
+   "url": "https://www.anthropic.com/research/claude-values-models-languages",
+   "date": "2026-07-13T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
+   "title": "Results from the first Anthropic Public Record",
+   "url": "https://www.anthropic.com/research/anthropic-public-record",
+   "date": "2026-06-12T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
+   "title": "Paving the way for agents in biology",
+   "url": "https://www.anthropic.com/research/agents-in-biology",
+   "date": "2026-06-08T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
+   "title": "Making Claude a chemist",
+   "url": "https://www.anthropic.com/research/making-claude-a-chemist",
+   "date": "2026-06-05T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Training and evaluating Claude on chemistry tasks."
+   }
+  },
+  {
+   "title": "Coding agents in the social sciences",
+   "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
+   "date": "2026-05-27T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Coding agents applied to empirical research workflows."
+   }
+  },
+  {
    "title": "How we contain Claude across products",
-   "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+   "url": "https://www.anthropic.com/research/how-we-contain-claude",
    "date": "2026-05-25T00:00:00+00:00",
    "summary": "",
    "seen": "2026-10-19T14:51:25.580290+00:00",
@@ -263,8 +489,34 @@
    }
   },
   {
+   "title": "How people ask Claude for personal guidance",
+   "url": "https://www.anthropic.com/research/claude-personal-guidance",
+   "date": "2026-04-30T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
+   "title": "Evaluating Claude’s bioinformatics research capabilities with BioMysteryBench",
+   "url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
+   "date": "2026-04-29T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "A benchmark for agentic bioinformatics research, an evals writeup."
+   }
+  },
+  {
    "title": "An update on recent Claude Code quality reports",
-   "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+   "url": "https://www.anthropic.com/research/april-23-postmortem",
    "date": "2026-04-23T00:00:00+00:00",
    "summary": "",
    "seen": "2026-10-19T14:51:25.580290+00:00",
@@ -276,7 +528,7 @@
   },
   {
    "title": "Scaling Managed Agents: Decoupling the brain from the hands",
-   "url": "https://www.anthropic.com/engineering/managed-agents",
+   "url": "https://www.anthropic.com/research/managed-agents",
    "date": "2026-04-08T00:00:00+00:00",
    "summary": "",
    "seen": "2026-10-19T14:51:25.580290+00:00",
@@ -291,7 +543,7 @@
   },
   {
    "title": "How we built Claude Code auto mode: a safer way to skip permissions",
-   "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+   "url": "https://www.anthropic.com/research/claude-code-auto-mode",
    "date": "2026-03-25T00:00:00+00:00",
    "summary": "",
    "seen": "2026-10-19T14:51:25.580290+00:00",
@@ -305,7 +557,7 @@
   },
   {
    "title": "Harness design for long-running application development",
-   "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+   "url": "https://www.anthropic.com/research/harness-design-long-running-apps",
    "date": "2026-03-24T00:00:00+00:00",
    "summary": "",
    "seen": "2026-10-19T14:51:25.580290+00:00",
@@ -318,8 +570,48 @@
    }
   },
   {
+   "title": "Vibe physics: The AI grad student",
+   "url": "https://www.anthropic.com/research/vibe-physics",
+   "date": "2026-03-23T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "A worked example of agentic research with Claude, including where it fails."
+   }
+  },
+  {
+   "title": "Long-running Claude for scientific computing",
+   "url": "https://www.anthropic.com/research/long-running-claude",
+   "date": "2026-03-23T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "How to run long agentic scientific computing jobs with Claude."
+   }
+  },
+  {
+   "title": "Introducing our Science Blog",
+   "url": "https://www.anthropic.com/research/introducing-anthropic-science",
+   "date": "2026-03-23T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
    "title": "Eval awareness in Claude Opus 4.6’s BrowseComp performance",
-   "url": "https://www.anthropic.com/engineering/eval-awareness-browsecomp",
+   "url": "https://www.anthropic.com/research/eval-awareness-browsecomp",
    "date": "2026-03-06T00:00:00+00:00",
    "summary": "",
    "seen": "2026-10-19T14:51:25.580290+00:00",
@@ -332,8 +624,36 @@
    }
   },
   {
+   "title": "Measuring AI agent autonomy in practice",
+   "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+   "date": "2026-02-18T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Empirical data on how agents are used in practice."
+   }
+  },
+  {
+   "title": "Building a C compiler with a team of parallel Claudes",
+   "url": "https://www.anthropic.com/research/building-c-compiler",
+   "date": "2026-02-05T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Building a C compiler with many parallel Claude agents."
+   }
+  },
+  {
    "title": "Quantifying infrastructure noise in agentic coding evals",
-   "url": "https://www.anthropic.com/engineering/infrastructure-noise",
+   "url": "https://www.anthropic.com/research/infrastructure-noise",
    "date": "2026-02-05T00:00:00+00:00",
    "summary": "",
    "seen": "2026-10-19T14:51:25.580290+00:00",
@@ -347,257 +667,107 @@
    }
   },
   {
-   "title": "Building a C compiler with a team of parallel Claudes",
-   "url": "https://www.anthropic.com/engineering/building-c-compiler",
-   "date": "2026-02-05T00:00:00+00:00",
+   "title": "Designing AI-resistant technical evaluations",
+   "url": "https://www.anthropic.com/research/AI-resistant-technical-evaluations",
+   "date": "2026-01-21T00:00:00+00:00",
    "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
+   "seen": "2026-10-21T01:29:48.441744+00:00",
    "verdict": {
     "relevant": true,
     "topics": [
      "ai"
     ],
-    "reason": "Building a C compiler with many parallel Claude agents."
+    "reason": "Designing technical hiring evals that hold up against capable models."
    }
   },
   {
-   "title": "Designing AI-resistant technical evaluations",
-   "url": "https://www.anthropic.com/engineering/AI-resistant-technical-evaluations",
-   "date": "2026-01-21T00:00:00+00:00",
+   "title": "How scientists are using Claude to accelerate research and discovery",
+   "url": "https://www.anthropic.com/research/accelerating-scientific-research",
+   "date": "2026-01-15T00:00:00+00:00",
    "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
+   "seen": "2026-10-21T01:29:48.441744+00:00",
    "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Designing technical evaluations that hold up against AI."
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
    }
   },
   {
    "title": "Demystifying evals for AI agents",
-   "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+   "url": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents",
    "date": "2026-01-09T00:00:00+00:00",
    "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
+   "seen": "2026-10-21T01:29:48.441744+00:00",
    "verdict": {
     "relevant": true,
     "topics": [
      "ai"
     ],
-    "reason": "A practical guide to evaluating AI agents."
+    "reason": "Practical guidance on building evals for agents."
+   }
+  },
+  {
+   "title": "Introducing Anthropic Interviewer: What 1,250 professionals told us about working with AI",
+   "url": "https://www.anthropic.com/research/anthropic-interviewer",
+   "date": "2025-12-04T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:29:48.441744+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
+   }
+  },
+  {
+   "title": "How AI is transforming work at Anthropic",
+   "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
+   "date": "2025-12-02T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-21T01:29:48.441744+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
    }
   },
   {
    "title": "Effective harnesses for long-running agents",
-   "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+   "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents",
    "date": "2025-11-26T00:00:00+00:00",
    "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
+   "seen": "2026-10-21T01:29:48.441744+00:00",
    "verdict": {
     "relevant": true,
     "topics": [
      "ai"
     ],
-    "reason": "Harness patterns for long-running agents."
+    "reason": "Harness design for agents that work across many context windows."
    }
   },
   {
    "title": "Introducing advanced tool use on the Claude Developer Platform",
-   "url": "https://www.anthropic.com/engineering/advanced-tool-use",
+   "url": "https://www.anthropic.com/research/advanced-tool-use",
    "date": "2025-11-24T00:00:00+00:00",
    "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
+   "seen": "2026-10-21T01:29:48.441744+00:00",
    "verdict": {
     "relevant": true,
     "topics": [
      "ai"
     ],
-    "reason": "Technical overview of advanced tool use features."
+    "reason": "New tool use features and the engineering behind them."
    }
   },
   {
-   "title": "Code execution with MCP: Building more efficient agents",
-   "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
-   "date": "2025-11-04T00:00:00+00:00",
+   "title": "Measuring political bias in Claude",
+   "url": "https://www.anthropic.com/research/political-even-handedness",
+   "date": "2025-11-13T00:00:00+00:00",
    "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Using code execution with MCP to make agents more efficient."
-   }
-  },
-  {
-   "title": "Beyond permission prompts: making Claude Code more secure and autonomous",
-   "url": "https://www.anthropic.com/engineering/claude-code-sandboxing",
-   "date": "2025-10-20T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "backend"
-    ],
-    "reason": "Sandboxing approach for making Claude Code more autonomous and secure."
-   }
-  },
-  {
-   "title": "Equipping agents for the real world with Agent Skills",
-   "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
-   "date": "2025-10-16T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "How Agent Skills package capabilities for agents."
-   }
-  },
-  {
-   "title": "Effective context engineering for AI agents",
-   "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
-   "date": "2025-09-29T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Techniques for context engineering in agents."
-   }
-  },
-  {
-   "title": "A postmortem of three recent issues",
-   "url": "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues",
-   "date": "2025-09-17T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "backend"
-    ],
-    "reason": "Postmortem of three infrastructure bugs that degraded Claude responses."
-   }
-  },
-  {
-   "title": "Writing effective tools for agents — with agents",
-   "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
-   "date": "2025-09-11T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "How to design effective tools for agents."
-   }
-  },
-  {
-   "title": "Desktop Extensions: One-click MCP server installation for Claude Desktop",
-   "url": "https://www.anthropic.com/engineering/desktop-extensions",
-   "date": "2025-06-26T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
+   "seen": "2026-10-21T01:29:48.441744+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "How we built our multi-agent research system",
-   "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
-   "date": "2025-06-13T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "backend"
-    ],
-    "reason": "Architecture of Anthropic's multi-agent research system."
-   }
-  },
-  {
-   "title": "Claude Code: Best practices for agentic coding",
-   "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
-   "date": "2025-04-18T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Practical patterns for agentic coding with Claude Code."
-   }
-  },
-  {
-   "title": "The \"think\" tool: Enabling Claude to stop and think in complex tool use situations",
-   "url": "https://www.anthropic.com/engineering/claude-think-tool",
-   "date": "2025-03-20T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "The think tool technique for complex tool use."
-   }
-  },
-  {
-   "title": "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
-   "url": "https://www.anthropic.com/engineering/swe-bench-sonnet",
-   "date": "2025-01-06T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "How an agent scaffold reached a high SWE-bench Verified score."
-   }
-  },
-  {
-   "title": "Building effective agents",
-   "url": "https://www.anthropic.com/engineering/building-effective-agents",
-   "date": "2024-12-19T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Foundational patterns for building LLM agents."
-   }
-  },
-  {
-   "title": "Introducing Contextual Retrieval",
-   "url": "https://www.anthropic.com/engineering/contextual-retrieval",
-   "date": "2024-09-19T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "databases"
-    ],
-    "reason": "Contextual Retrieval technique for improving RAG."
+    "reason": "Domain science, policy or social research without engineering substance for this list."
    }
   }
  ],
@@ -612,6 +782,18 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, partnership, program or announcement without technical detail."
+   }
+  },
+  {
+   "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+   "url": "https://openai.com/index/terminal-x",
+   "date": "2026-10-20T07:00:00+00:00",
+   "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+   "seen": "2026-10-21T01:28:56.959577+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Domain science, policy or social research without engineering substance for this list."
    }
   },
   {
@@ -1329,18 +1511,6 @@
      "backend"
     ],
     "reason": "How GPT-6 prompt caching works and improves hit rates."
-   }
-  },
-  {
-   "title": "Introducing GPT-6 Sol and Luna",
-   "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-   "date": "2026-09-22T18:00:00+00:00",
-   "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
    }
   }
  ],
