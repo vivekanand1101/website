@@ -25,6 +25,18 @@
    }
   },
   {
+   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+   "date": "2026-10-21T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Governance and personnel news with no technical content."
+   }
+  },
+  {
    "title": "How Claude designed protein binders against scorpion neurotoxins",
    "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
    "date": "2026-10-20T00:00:00+00:00",
@@ -40,7 +52,7 @@
    "title": "Investing in the public benefit",
    "url": "https://www.anthropic.com/news/public-benefit-fund",
    "date": "2026-10-18T00:00:00+00:00",
-   "summary": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+   "summary": "",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -755,23 +767,122 @@
     ],
     "reason": "Harness design for agents that work across many context windows."
    }
+  }
+ ],
+ "openai": [
+  {
+   "title": "Broad access through consistent standards",
+   "url": "https://openai.com/index/broad-access-through-consistent-standards",
+   "date": "2026-10-21T21:00:00+00:00",
+   "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Usage-policy and distribution-partner post, not engineering."
+   }
   },
   {
-   "title": "Introducing advanced tool use on the Claude Developer Platform",
-   "url": "https://www.anthropic.com/research/advanced-tool-use",
-   "date": "2025-11-24T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:29:48.441744+00:00",
+   "title": "How AT&T is rethinking in-house legal work with OpenAI",
+   "url": "https://openai.com/index/att-legal",
+   "date": "2026-10-21T17:00:00+00:00",
+   "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study about legal work."
+   }
+  },
+  {
+   "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+   "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+   "date": "2026-10-21T13:00:00+00:00",
+   "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Business expansion news about the ads product."
+   }
+  },
+  {
+   "title": "OpenAI models are coming to Google Cloud",
+   "url": "https://openai.com/index/openai-models-google-cloud",
+   "date": "2026-10-21T12:00:00+00:00",
+   "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Partnership and availability announcement with no technical detail."
+   }
+  },
+  {
+   "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+   "date": "2026-10-21T07:00:00+00:00",
+   "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Announces a coordination program and does not appear to include security engineering detail."
+   }
+  },
+  {
+   "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+   "url": "https://openai.com/index/building-chatgpt-ad-stack",
+   "date": "2026-10-21T07:00:00+00:00",
+   "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Engineering write-up on building an LLM-powered ad system for intent understanding at scale."
+   }
+  },
+  {
+   "title": "Using thousands of AI agents to uncover new leads in biological data",
+   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+   "date": "2026-10-21T04:50:00+00:00",
+   "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
    "verdict": {
     "relevant": true,
     "topics": [
      "ai"
     ],
-    "reason": "New tool use features and the engineering behind them."
+    "reason": "Describes running thousands of distributed AI agents over large biological datasets, a technical multi-agent application."
    }
-  }
- ],
- "openai": [
+  },
+  {
+   "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+   "url": "https://openai.com/index/cloudflare-cyber",
+   "date": "2026-10-21T00:00:00+00:00",
+   "summary": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study about Cloudflare using OpenAI products."
+   }
+  },
+  {
+   "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+   "url": "https://openai.com/index/empowering-cyber-defenders",
+   "date": "2026-10-21T00:00:00+00:00",
+   "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Policy and governance blueprint, not engineering."
+   }
+  },
   {
    "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
    "url": "https://openai.com/index/ted-taylor-restaurant",
@@ -1398,119 +1509,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-   "url": "https://openai.com/index/ringg",
-   "date": "2026-09-23T12:00:00+00:00",
-   "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-   "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
-   "date": "2026-09-23T12:00:00+00:00",
-   "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Sam Altman’s remarks at the United Nations Security Council",
-   "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
-   "date": "2026-09-23T12:00:00+00:00",
-   "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-   "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
-   "date": "2026-09-23T12:00:00+00:00",
-   "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Introducing MentalHealthBench",
-   "url": "https://openai.com/index/introducing-mentalhealthbench",
-   "date": "2026-09-23T10:00:00+00:00",
-   "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "A new benchmark for evaluating AI responses on mental health."
-   }
-  },
-  {
-   "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-   "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
-   "date": "2026-09-23T02:00:00+00:00",
-   "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-   "url": "https://openai.com/index/airbnb-gpt-6-astra",
-   "date": "2026-09-23T01:00:00+00:00",
-   "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-   "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
-   "date": "2026-09-23T00:00:00+00:00",
-   "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Better prompt caching for GPT-6",
-   "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-   "date": "2026-09-22T21:00:00+00:00",
-   "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "backend"
-    ],
-    "reason": "How GPT-6 prompt caching works and improves hit rates."
    }
   }
  ],
@@ -6805,6 +6803,46 @@
  ],
  "cloudflare": [
   {
+   "title": "Introducing full transaction detection for Cloudflare WAF",
+   "url": "https://blog.cloudflare.com/full-transaction-waf/",
+   "date": "2026-10-21T14:10:42+00:00",
+   "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that…",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Security engineering feature that lets the WAF correlate HTTP requests with their responses to detect exploits."
+   }
+  },
+  {
+   "title": "Cloudflare deploys protections against php2shell vulnerability",
+   "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+   "date": "2026-10-21T13:56:45+00:00",
+   "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and…",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Security engineering post on WAF rules that use request and response signals to block PHP exploits."
+   }
+  },
+  {
+   "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+   "url": "https://blog.cloudflare.com/webmcp-commerce/",
+   "date": "2026-10-21T13:00:00+00:00",
+   "summary": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly a partnership announcement with only light technical context."
+   }
+  },
+  {
    "title": "8 eMudhra certificates are compromised. Here's what you need to know",
    "url": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
    "date": "2026-10-20T22:20:16+00:00",
@@ -7129,6 +7167,192 @@
   }
  ],
  "railway": [
+  {
+   "title": "Security Disclosure Recommendation: Check for Anomalous GCP Access",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-check-for-anomalous-gcp-access",
+   "date": "2026-10-22T00:46:47+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Check for Anomalous GCP Access",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Incident-response guide with gcloud commands, audit-log queries, and notes on how key revocation behaves."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Check for Anomalous AWS Access",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-check-for-anomalous-aws-access",
+   "date": "2026-10-22T00:46:42+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Check for Anomalous AWS Access",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Incident-response guide covering CloudTrail forensics, IAM credential reports, and suspicious API calls."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Rotate MySQL Database Credentials",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-rotate-mysql-database-credentials",
+   "date": "2026-10-22T00:46:35+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Rotate MySQL Database Credentials",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend",
+     "databases"
+    ],
+    "reason": "Database credential-rotation guide for incident response, likely with DB-level checks like its Postgres counterpart."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Rotate Redis Database Credentials",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-rotate-redis-database-credentials",
+   "date": "2026-10-22T00:46:30+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Rotate Redis Database Credentials",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend",
+     "databases"
+    ],
+    "reason": "Database credential-rotation guide for incident response, likely with DB-level checks like its Postgres counterpart."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Rotate MongoDB Database Credentials",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-rotate-mongodb-database-credentials",
+   "date": "2026-10-22T00:46:25+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Rotate MongoDB Database Credentials",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend",
+     "databases"
+    ],
+    "reason": "Database credential-rotation guide for incident response, likely with DB-level checks like its Postgres counterpart."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Check for Anomalous GitHub Access",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-check-for-anomalous-github-access",
+   "date": "2026-10-22T00:46:18+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Check for Anomalous GitHub Access",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mostly a checklist of clicks through GitHub settings."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Check for Unexpected Usage in Stripe",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-check-for-unexpected-usage-in-stripe",
+   "date": "2026-10-22T00:46:13+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Check for Unexpected Usage in Stripe",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "A checklist of clicks for rotating a key and reviewing a dashboard."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Check for Unexpected OpenAI Usage",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-check-for-unexpected-openai-usage",
+   "date": "2026-10-22T00:46:08+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Check for Unexpected OpenAI Usage",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "A checklist of dashboard clicks for revoking a key and reviewing usage."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Check for Unexpected Anthropic Usage",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-check-for-unexpected-anthropic-usage",
+   "date": "2026-10-22T00:46:00+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Check for Unexpected Anthropic Usage",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "A checklist of dashboard clicks for revoking a key and reviewing usage."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Redeploy Buckets and Reconnect GitHub After the Credential Reset",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-redeploy-buckets-and-reconnect-github-after-the-credential-reset",
+   "date": "2026-10-22T00:45:56+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Redeploy Buckets and Reconnect GitHub After the Credential Reset",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly UI steps for redeploying after a credential reset, with little technical depth."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Check for Unexpected Grok Usage",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-check-for-unexpected-grok-usage",
+   "date": "2026-10-22T00:45:50+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Check for Unexpected Grok Usage",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "A checklist of dashboard clicks for revoking a key and reviewing usage."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Rotate PostgreSQL Database Credentials",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-rotate-postgresql-database-credentials",
+   "date": "2026-10-22T00:45:42+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Rotate PostgreSQL Database Credentials",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend",
+     "databases"
+    ],
+    "reason": "Covers PostgreSQL credential rotation with pg_stat_activity and pg_roles checks and when redeploys are needed."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Check for Unexpected OpenRouter Usage",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-check-for-unexpected-openrouter-usage",
+   "date": "2026-10-22T00:43:43+00:00",
+   "summary": "Learn how to Security Disclosure Recommendation: Check for Unexpected OpenRouter Usage",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "A checklist of dashboard clicks for revoking a key and reviewing usage."
+   }
+  },
+  {
+   "title": "Security Disclosure: Wednesday October 21st",
+   "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+   "date": "2026-10-21T20:44:02+00:00",
+   "summary": "Railway detected anomalous activity involving systems that store customer environment variables and recommends your immediate attention",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Platform security incident disclosure about exposed customer environment variables, though still early and light on detail."
+   }
+  },
   {
    "title": "The Best Declarative Deploy Configs in 2026",
    "url": "https://blog.railway.com/p/declarative-deploy-configs",
@@ -7701,187 +7925,6 @@
     "topics": [],
     "reason": "Vendor listicle/marketing comparison."
    }
-  },
-  {
-   "title": "The Best Cloud Application Deployment Platforms in 2026",
-   "url": "https://blog.railway.com/p/best-cloud-application-deployment-platforms-2026",
-   "date": "2026-05-25T00:00:00+00:00",
-   "summary": "A working developer's field guide to the deployment platform landscape in 2026. The honest case for Railway, the honest case against, and the eight criteria that actually decide which platform you end up on.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Vendor listicle/marketing comparison."
-   }
-  },
-  {
-   "title": "The Best CI/CD Tools for 2026",
-   "url": "https://blog.railway.com/p/best-ci-cd-tools-2026",
-   "date": "2026-05-25T00:00:00+00:00",
-   "summary": "What CI/CD actually does in 2026, why most teams don't need a separate tool anymore, and an honest ranking of the platforms that handle it for you alongside the standalone tools for teams that still need them.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Vendor listicle/marketing comparison."
-   }
-  },
-  {
-   "title": "The Agent-Native Cloud: What It Means and Why It Matters",
-   "url": "https://blog.railway.com/p/the-agent-native-cloud",
-   "date": "2026-05-25T00:00:00+00:00",
-   "summary": "The cloud category reorders itself every seven years around a new primitive. The 2026 primitive is the agent, and most clouds have not picked a position on it yet. A manifesto on the next consolidation event.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Agentic Coding on Railway: A Practical Guide for 2026",
-   "url": "https://blog.railway.com/p/agentic-coding-on-railway-2026",
-   "date": "2026-05-25T00:00:00+00:00",
-   "summary": "A practitioner walkthrough on using Claude Code, Cursor, and Codex to drive Railway deployments end to end. Five real workflows, six production gotchas, and what works today vs what's coming.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Incident Report: May 19, 2026- GCP Account Suspension",
-   "url": "https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage",
-   "date": "2026-05-20T00:00:00+00:00",
-   "summary": "Railway experienced a platform-wide service disruption due to Google Cloud incorrectly placing our account in a suspended status. This resulted in a temporary loss of service for all GCP hosted infrastructure.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "backend"
-    ],
-    "reason": "Postmortem of an outage caused by a GCP account suspension."
-   }
-  },
-  {
-   "title": "Counting to 3 with a new builder processing 50M+ monthly builds",
-   "url": "https://blog.railway.com/p/new-builder-scale-big",
-   "date": "2026-05-14T00:00:00+00:00",
-   "summary": "We replaced our Docker-buildx GCP autoscaler with a fleet of microVM build cells running BuildKit. Here's what we learned rolling it out.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "backend"
-    ],
-    "reason": "Replacing a Docker buildx autoscaler with microVM build cells."
-   }
-  },
-  {
-   "title": "Railway iOS preview now available via TestFlight",
-   "url": "https://blog.railway.com/p/ios-app-testflight",
-   "date": "2026-05-11T00:00:00+00:00",
-   "summary": "We’re releasing the first preview of the Railway iOS app via Testflight",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Kill your onboarding: selling to 10,000+ new users a day",
-   "url": "https://blog.railway.com/p/kill-your-onboarding",
-   "date": "2026-05-06T00:00:00+00:00",
-   "summary": "A Solutions Engineer's playbook for turning 10,000 daily PLG signups into a warm enterprise pipeline using PostHog, Hex, and customer.io Why brute-forcing dimensions beats fancy ML, and how a deliberately boring…",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Your AI wants to nuke your database. Guardrails fix that.",
-   "url": "https://blog.railway.com/p/your-ai-wants-to-nuke-your-database",
-   "date": "2026-04-29T00:00:00+00:00",
-   "summary": "An AI agent deleted a customer's production database on Railway. Here's what happened, what we've shipped to fix it, and the surfaces we're building so agents can move fast on Railway without breaking things.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "databases"
-    ],
-    "reason": "How an agent deleted a production database and the guardrails added."
-   }
-  },
-  {
-   "title": "Better Rails for Agents: A New Remote MCP and Railway Agent in the CLI",
-   "url": "https://blog.railway.com/p/agent-rails-remote-mcp-cli",
-   "date": "2026-04-17T00:00:00+00:00",
-   "summary": "We want to make it effortless to use agents in Railway. No friction. Today we’re launching a new Remote MCP that uses our Railway Agent, and bringing that agent into the CLI.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Moving Railway's Frontend Off Next.js",
-   "url": "https://blog.railway.com/p/moving-railways-frontend-off-nextjs",
-   "date": "2026-04-03T00:00:00+00:00",
-   "summary": "We migrated http://railway.com, the dashboard, and the canvas from Next.js to Vite + TanStack Router in two PRs. Here's why, how, and what we learned.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "backend"
-    ],
-    "reason": "Migrating a large frontend from Next.js to Vite and TanStack."
-   }
-  },
-  {
-   "title": "Incident Report: March 30th, 2026 — Authenticated user data cached",
-   "url": "https://blog.railway.com/p/incident-report-march-30-2026-authenticated-user-data-cached",
-   "date": "2026-03-30T00:00:00+00:00",
-   "summary": "Railway experienced an issue where authenticated content was cached and shown to unauthenticated users",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "backend"
-    ],
-    "reason": "Postmortem on authenticated content being cached publicly."
-   }
-  },
-  {
-   "title": "Incident Report: March 30th, 2026 — Authenticated user data cached",
-   "url": "https://blog.railway.com/p/incident-report-march-30-2026-accidental-cdn-caching",
-   "date": "2026-03-30T00:00:00+00:00",
-   "summary": "Railway experienced an incident where CDN features were accidentally enabled for some domains without users enabling them.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "backend"
-    ],
-    "reason": "Postmortem on CDN features accidentally enabled for some domains."
-   }
-  },
-  {
-   "title": "One command deploys, there's a Stripe APP for that",
-   "url": "https://blog.railway.com/p/railway-stripe-app",
-   "date": "2026-03-19T00:00:00+00:00",
-   "summary": "We've partnered with Stripe and built on their new https://docs.stripe.com/agentic-provisioning spec to let developers sign up and deploy in one command.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
   }
  ],
  "ben": [
@@ -8421,7 +8464,7 @@
    "title": "Use Your Claude Plan in Amp",
    "url": "https://ampcode.com/news/use-your-claude-plan",
    "date": "2026-10-10T00:00:00+00:00",
-   "summary": "You can now use your Claude Pro/Max subscription in Amp. It's free and available for everyone now. When creating a new thread, just pick Mode > Claude Code . It'll ask to link your Claude sub if you haven't already…",
+   "summary": "You can now use your Claude Subscription in Amp. It's free and available for everyone now. When creating a new thread, just pick Mode > Claude Code . It'll ask to link your Claude sub if you haven't already done that.…",
    "seen": "2026-10-10T00:00:00+00:00",
    "verdict": {
     "relevant": true,
@@ -9833,20 +9876,6 @@
    "date": "2025-10-23T00:00:00+00:00",
    "summary": "We have removed compaction from Amp and replaced it with something that we think works a lot better: Handoff. Compaction — which you know as /compact from the Amp CLI, or the Compact or New Thread With Summary buttons…",
    "seen": "2025-10-23T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "More Tools for the Agent",
-   "url": "https://ampcode.com/news/more-tools-for-the-agent",
-   "date": "2025-10-22T00:00:00+00:00",
-   "summary": "We shipped several changes to toolboxes that make them easier to use: You can now have multiple toolboxes in the AMP_TOOLBOX environment variable amp tools make is a new command to create a functional example tool in…",
-   "seen": "2025-10-22T00:00:00+00:00",
    "verdict": {
     "relevant": true,
     "topics": [
@@ -11467,35 +11496,21 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Dane Stuckey (OpenAI CISO) on prompt injection risks for ChatGPT Atlas",
-   "url": "https://simonwillison.net/2025/Oct/22/openai-ciso-on-atlas/",
-   "date": "2025-10-22T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-10-22T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Living dangerously with Claude",
-   "url": "https://simonwillison.net/2025/Oct/22/living-dangerously-with-claude/",
-   "date": "2025-10-22T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-10-22T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "pragmatic": [
+  {
+   "title": "The revised rules of engineering management with Will Larson",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-revised-rules-of-engineering",
+   "date": "2026-10-21T16:58:21+00:00",
+   "summary": "Will Larson, CTO of Imprint, explores how AI and shifting industry expectations are changing engineering management, career ladders, and the path from engineer to CTO.",
+   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown newsletter post about engineering management, which fits none of the three topics."
+   }
+  },
   {
    "title": "What’s the ROI of software engineers’ spending on AI?",
    "url": "https://newsletter.pragmaticengineer.com/p/whats-the-roi-of-software-engineers",
@@ -13128,18 +13143,6 @@
    "date": "2025-10-23T16:17:31.435000+00:00",
    "summary": "On Monday, a major AWS outage hit thousands of sites & apps, and even a Premier League soccer game. An overview of what caused this high-profile, global outage, and learnings from the incident",
    "seen": "2025-10-23T16:17:31.435000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "What is good software architecture?",
-   "url": "https://newsletter.pragmaticengineer.com/p/what-is-good-software-architecture",
-   "date": "2025-10-21T16:10:03.488000+00:00",
-   "summary": "What good architecture looks like, how to improve your skill at building it –and why Architects are not always the answer. Guest post by Matthew Hawthorne, who built large systems at Netflix & Twitter",
-   "seen": "2025-10-21T16:10:03.488000+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
