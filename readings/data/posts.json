@@ -1,6 +1,30 @@
 {
  "anthropic": [
   {
+   "title": "Donating Agent Skills to the Agentic AI Foundation",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "date": "2026-10-22T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, announcement or non-technical post without engineering detail."
+   }
+  },
+  {
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "date": "2026-10-22T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, announcement or non-technical post without engineering detail."
+   }
+  },
+  {
    "title": "Features",
    "url": "https://www.anthropic.com/news/features",
    "date": "2026-10-21T03:00:14.492119+00:00",
@@ -741,35 +765,87 @@
     "topics": [],
     "reason": "Domain science, policy or social research without engineering substance for this list."
    }
-  },
-  {
-   "title": "How AI is transforming work at Anthropic",
-   "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
-   "date": "2025-12-02T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:29:48.441744+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Domain science, policy or social research without engineering substance for this list."
-   }
-  },
-  {
-   "title": "Effective harnesses for long-running agents",
-   "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents",
-   "date": "2025-11-26T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:29:48.441744+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Harness design for agents that work across many context windows."
-   }
   }
  ],
  "openai": [
+  {
+   "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+   "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+   "date": "2026-10-23T17:00:00+00:00",
+   "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend",
+     "databases"
+    ],
+    "reason": "Details multi-tenancy, global caching and Cosmos DB for ChatGPT storage at scale."
+   }
+  },
+  {
+   "title": "Securing our frontier model training environment",
+   "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "date": "2026-10-23T10:00:00+00:00",
+   "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Covers containment and security engineering for model training environments."
+   }
+  },
+  {
+   "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+   "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+   "date": "2026-10-23T00:00:00+00:00",
+   "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, announcement or non-technical post without engineering detail."
+   }
+  },
+  {
+   "title": "Build more responsive apps with the Decisions API",
+   "url": "https://openai.com/index/decisions-api",
+   "date": "2026-10-22T19:00:00+00:00",
+   "summary": "Fast, focused, low-cost decisions for any application.",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, announcement or non-technical post without engineering detail."
+   }
+  },
+  {
+   "title": "What FDE means at OpenAI",
+   "url": "https://openai.com/index/forward-deployed-engineering-means",
+   "date": "2026-10-22T06:00:00+00:00",
+   "summary": "What forward deployed engineering means at OpenAI",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, announcement or non-technical post without engineering detail."
+   }
+  },
+  {
+   "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+   "url": "https://openai.com/index/uber-chatgpt-work-rollout",
+   "date": "2026-10-22T00:00:00+00:00",
+   "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, announcement or non-technical post without engineering detail."
+   }
+  },
   {
    "title": "Broad access through consistent standards",
    "url": "https://openai.com/index/broad-access-through-consistent-standards",
@@ -1358,7 +1434,7 @@
   {
    "title": "Introducing GPT-6.1 Sol",
    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-   "date": "2026-09-29T10:00:00+00:00",
+   "date": "2026-09-29T17:00:00+00:00",
    "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
@@ -1432,78 +1508,6 @@
    "url": "https://openai.com/form/codex-originals",
    "date": "2026-09-28T00:00:00+00:00",
    "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more…",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-   "url": "https://openai.com/index/basis-tax-workbook-with-astra",
-   "date": "2026-09-28T00:00:00+00:00",
-   "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-   "url": "https://openai.com/index/proaction",
-   "date": "2026-09-25T19:00:00+00:00",
-   "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Lowe’s answers millions of home improvement questions with OpenAI",
-   "url": "https://openai.com/index/lowes",
-   "date": "2026-09-25T07:00:00+00:00",
-   "summary": "Lowe’s uses OpenAI models to power Mylow and Mylow Companion, helping customers and associates answer 25M+ questions and move home improvement projects forward.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Wayfair boosts catalog accuracy and support speed with OpenAI",
-   "url": "https://openai.com/index/wayfair",
-   "date": "2026-09-25T00:00:00+00:00",
-   "summary": "Wayfair uses OpenAI models to improve ecommerce support and product catalog accuracy, automating ticket triage and enhancing millions of product attributes at scale.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Two years of OpenAI Academy",
-   "url": "https://openai.com/index/two-years-of-openai-academy",
-   "date": "2026-09-23T16:00:00+00:00",
-   "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-   "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-   "date": "2026-09-23T13:00:00+00:00",
-   "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -2048,6 +2052,18 @@
  ],
  "thorsten": [
   {
+   "title": "Joy & Curiosity #103",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-103",
+   "date": "2026-10-25T07:11:23+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown blog; no listed topic fits."
+   }
+  },
+  {
    "title": "Joy & Curiosity #102",
    "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-102",
    "date": "2026-10-04T05:05:04+00:00",
@@ -2543,6 +2559,58 @@
   }
  ],
  "mario": [
+  {
+   "title": "Switch Angel Taught me how to Make Music from Scratch",
+   "url": "https://www.youtube.com/watch?is=jXxCFNxCPfnaa5XV&v=HMUZ01p0akw&feature=youtu.be",
+   "date": "2026-10-23T19:45:09+00:00",
+   "summary": "recommended viewing. switch angel is awesome. also, dj_dave, goat",
+   "label": "Recommended",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown blog; no listed topic fits."
+   }
+  },
+  {
+   "title": "Ultimate | Daniel Griesser",
+   "url": "https://danielgriesser.com/posts/ultimate/",
+   "date": "2026-10-23T08:21:53+00:00",
+   "summary": "recommended reading.",
+   "label": "Recommended",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown blog; no listed topic fits."
+   }
+  },
+  {
+   "title": "pepsipu.com",
+   "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+   "date": "2026-10-22T23:29:25+00:00",
+   "summary": "recommended reading. the \"harness\" is hilarious.",
+   "label": "Recommended",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown blog; no listed topic fits."
+   }
+  },
+  {
+   "title": "video.twimg.com",
+   "url": "https://video.twimg.com/amplify_video/2113246725078994944/vid/avc1/1920x1080/1FSxX17HUbhTvJaq.mp4",
+   "date": "2026-10-22T14:25:03+00:00",
+   "summary": "recommended viewing. it's very satisfying watching people explain and show how tonuse your stuff. well done, @superlinear_fm",
+   "label": "Recommended",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown blog; no listed topic fits."
+   }
+  },
   {
    "title": "It's still OK to enjoy programming - Blogomatano",
    "url": "https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming",
@@ -6628,19 +6696,6 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Where’s the AI design renaissance?",
-   "url": "https://www.learnui.design/blog/wheres-the-ai-design-renaissance.html",
-   "date": "2025-10-24T18:10:18+00:00",
-   "summary": "Recommended reading.",
-   "label": "Recommended",
-   "seen": "2025-10-24T18:10:18+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "meta": [
@@ -6802,6 +6857,46 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "Origin Range Requests: Serving large files without range-request tuning",
+   "url": "https://blog.cloudflare.com/origin-range-requests/",
+   "date": "2026-10-23T18:22:59+00:00",
+   "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half.",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Cache architecture redesign in Pingora for range requests, with latency results."
+   }
+  },
+  {
+   "title": "Bringing post-quantum cryptography to geographically fenced key management",
+   "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
+   "date": "2026-10-23T18:06:56+00:00",
+   "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in…",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Cryptography and key management redesign for post-quantum security."
+   }
+  },
+  {
+   "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+   "url": "https://blog.cloudflare.com/k-isms/",
+   "date": "2026-10-22T13:00:00+00:00",
+   "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security…",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, announcement or non-technical post without engineering detail."
+   }
+  },
   {
    "title": "Introducing full transaction detection for Cloudflare WAF",
    "url": "https://blog.cloudflare.com/full-transaction-waf/",
@@ -7168,6 +7263,44 @@
  ],
  "railway": [
   {
+   "title": "Security Disclosure Recommendation: Resolving Login Issues",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-recover-account-access",
+   "date": "2026-10-23T16:30:00+00:00",
+   "summary": "Commits pushed while Railway paused deployments on October 21 were not deployed. Redeploy the latest commit, reconnect GitHub, and recreate CLI and CI credentials to get your services deploying again.",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, announcement or non-technical post without engineering detail."
+   }
+  },
+  {
+   "title": "Security Disclosure Recommendation: Recover Failing Deploys",
+   "url": "https://blog.railway.com/p/security-disclosure-recommendation-recover-failing-deploys",
+   "date": "2026-10-23T16:30:00+00:00",
+   "summary": "Commits pushed while Railway paused deployments on October 21 were not deployed. Redeploy the latest commit, reconnect GitHub, and recreate CLI and CI credentials to get your services deploying again.",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, announcement or non-technical post without engineering detail."
+   }
+  },
+  {
+   "title": "Preliminary Report: Oct 21st Security Incident",
+   "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+   "date": "2026-10-22T23:31:37+00:00",
+   "summary": "Preliminary report detailing Railway's October 21st security incident.",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Incident report on a platform security incident and its response."
+   }
+  },
+  {
    "title": "Security Disclosure Recommendation: Check for Anomalous GCP Access",
    "url": "https://blog.railway.com/p/security-disclosure-recommendation-check-for-anomalous-gcp-access",
    "date": "2026-10-22T00:46:47+00:00",
@@ -7316,7 +7449,7 @@
    "title": "Security Disclosure Recommendation: Rotate PostgreSQL Database Credentials",
    "url": "https://blog.railway.com/p/security-disclosure-recommendation-rotate-postgresql-database-credentials",
    "date": "2026-10-22T00:45:42+00:00",
-   "summary": "Learn how to Security Disclosure Recommendation: Rotate PostgreSQL Database Credentials",
+   "summary": "Learn how to rotate PostgreSQL Database Credentials",
    "seen": "2026-10-22T03:00:13.766239+00:00",
    "verdict": {
     "relevant": true,
@@ -7889,42 +8022,6 @@
     "topics": [],
     "reason": "Vendor listicle/marketing comparison."
    }
-  },
-  {
-   "title": "The Best Cloud Platform MCP Servers in 2026",
-   "url": "https://blog.railway.com/p/best-cloud-platform-mcps-2026",
-   "date": "2026-05-25T00:00:00+00:00",
-   "summary": "Which cloud platforms expose their full surface area to agents over MCP, which expose only fragments, and where each provider actually fits for agent-driven workflows.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Vendor listicle/marketing comparison."
-   }
-  },
-  {
-   "title": "The Best Cloud Observability and Logging Tools in 2026",
-   "url": "https://blog.railway.com/p/best-cloud-observability-tools-2026",
-   "date": "2026-05-25T00:00:00+00:00",
-   "summary": "The three pillars (logs, metrics, traces), why unifying them matters, and an honest ranking from PaaS-bundled observability through enterprise APM.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Vendor listicle/marketing comparison."
-   }
-  },
-  {
-   "title": "The Best Cloud Hosting Platforms in 2026",
-   "url": "https://blog.railway.com/p/best-cloud-hosting-platforms-2026",
-   "date": "2026-05-25T00:00:00+00:00",
-   "summary": "Cloud hosting in 2026 is a spectrum, from VPS-style hosts up through modern agentic-PaaS. Here is where each platform actually sits, and how to pick the level of abstraction your team should be on.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Vendor listicle/marketing comparison."
-   }
   }
  ],
  "ben": [
@@ -8009,6 +8106,30 @@
   }
  ],
  "dhh": [
+  {
+   "title": "Seven years from China",
+   "url": "https://world.hey.com/dhh/seven-years-from-china-a63b03cc",
+   "date": "2026-10-24T12:53:44+00:00",
+   "summary": "I first went to China in 2011 , racing for the Lotus/Jetalliance team at Zhuhai in the Intercontinental Le Mans Cup. It was a delightful experience, but also a glimpse of China's gritty side. Zhuhai had an…",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown blog; no listed topic fits."
+   }
+  },
+  {
+   "title": "Be a tech bro",
+   "url": "https://world.hey.com/dhh/be-a-tech-bro-30db1962",
+   "date": "2026-10-24T10:16:07+00:00",
+   "summary": "We should all strive to be our brother’s keeper: to look after each other, inspire each other, and simply enjoy each other’s company. For men this usually requires a shared mission or interest. Mine has always been…",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown blog; no listed topic fits."
+   }
+  },
   {
    "title": "Redundancy is the engine of progress",
    "url": "https://world.hey.com/dhh/redundancy-is-the-engine-of-progress-76499402",
@@ -8391,6 +8512,20 @@
  ],
  "amp": [
   {
+   "title": "Self-Hosted Orbs",
+   "url": "https://ampcode.com/news/self-hosted-orbs",
+   "date": "2026-10-22T00:00:00+00:00",
+   "summary": "You can now self-host orbs . You provide the compute and Amp turns it into orbs. If you have compute that can quickly start new machines put them to sleep and resume them equally fast keep them around for a long time…",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Self-hosted compute for running agent sandboxes."
+   }
+  },
+  {
    "title": "Assign It To Amp",
    "url": "https://ampcode.com/news/assign-it-to-amp",
    "date": "2026-10-19T00:00:00+00:00",
@@ -8618,7 +8753,7 @@
    "title": "Customize Your Dial",
    "url": "https://ampcode.com/news/build-your-own-dial",
    "date": "2026-09-10T00:00:00+00:00",
-   "summary": "You can now choose the models behind Amp's builtin modes and put your own agents on the Dial . There are two tabs in Settings → Mode Dial . Tune Your Modes In Tune Modes , choose the model and reasoning effort for a…",
+   "summary": "Update (2026-10-23): Tune Modes now has one role per mode, Main Agent . You can no longer pin a model for the Oracle or for subagents, so the Oracle and Subagents rows in the screenshot below are gone. Task and Read…",
    "seen": "2026-09-10T00:00:00+00:00",
    "verdict": {
     "relevant": true,
@@ -9843,44 +9978,6 @@
    "verdict": {
     "relevant": false,
     "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Review",
-   "url": "https://ampcode.com/news/review",
-   "date": "2025-10-25T00:00:00+00:00",
-   "summary": "The bottleneck in coding agents is no longer writing code, but reviewing it. The Amp VS Code extension now has a new panel that enables humans to review agent-generated code more effectively. Why build this? Existing…",
-   "seen": "2025-10-25T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Use Amp Free at Work",
-   "url": "https://ampcode.com/news/amp-free-no-training",
-   "date": "2025-10-24T00:00:00+00:00",
-   "summary": "We heard you! Amp Free no longer requires you to opt into training. Now more programmers can use Amp Free as a free coding agent for both sensitive work code and on personal side projects. How is this possible? It…",
-   "seen": "2025-10-24T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Handoff (No More Compaction)",
-   "url": "https://ampcode.com/news/handoff",
-   "date": "2025-10-23T00:00:00+00:00",
-   "summary": "We have removed compaction from Amp and replaced it with something that we think works a lot better: Handoff. Compaction — which you know as /compact from the Amp CLI, or the Compact or New Thread With Summary buttons…",
-   "seen": "2025-10-23T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
   }
@@ -11484,21 +11581,24 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Video: Building a tool to copy-paste share terminal sessions using Claude Code for web",
-   "url": "https://simonwillison.net/2025/Oct/23/claude-code-for-web-video/",
-   "date": "2025-10-23T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-10-23T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "pragmatic": [
+  {
+   "title": "The Pulse: Time to rethink software security because of AI?",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-do-we-need-to-rethink-software",
+   "date": "2026-10-22T14:08:21+00:00",
+   "summary": "A month’s worth of security breaches in a single day – will things get worse before they improve? Also: Anthropic accused of version control “rip off”, and more",
+   "seen": "2026-10-25T14:03:41.740917+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Discusses software security in light of AI-driven breaches."
+   }
+  },
   {
    "title": "The revised rules of engineering management with Will Larson",
    "url": "https://newsletter.pragmaticengineer.com/p/the-revised-rules-of-engineering",
@@ -13131,18 +13231,6 @@
    "date": "2025-10-28T16:55:50.514000+00:00",
    "summary": "Impressions from a week in San Fran spent visiting engineering teams at Cursor, OpenAI, Anthropic, Wispr, Factory, and more",
    "seen": "2025-10-28T16:55:50.514000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "The Pulse: AWS takes down a good part of the internet",
-   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-aws-takes-down-a-good-part",
-   "date": "2025-10-23T16:17:31.435000+00:00",
-   "summary": "On Monday, a major AWS outage hit thousands of sites & apps, and even a Premier League soccer game. An overview of what caused this high-profile, global outage, and learnings from the incident",
-   "seen": "2025-10-23T16:17:31.435000+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
