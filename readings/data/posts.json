@@ -2560,6 +2560,19 @@
  ],
  "mario": [
   {
+   "title": "x.com",
+   "url": "https://x.com/i/article/2114385531811319808",
+   "date": "2026-10-25T17:49:45+00:00",
+   "summary": "recommended reading. i don't agree with everything, but it's a good data point.",
+   "label": "Recommended",
+   "seen": "2026-10-26T03:00:12.234996+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown link post recommending an X article whose content couldn't be fetched (HTTP 402), so no topic is assigned."
+   }
+  },
+  {
    "title": "Switch Angel Taught me how to Make Music from Scratch",
    "url": "https://www.youtube.com/watch?is=jXxCFNxCPfnaa5XV&v=HMUZ01p0akw&feature=youtu.be",
    "date": "2026-10-23T19:45:09+00:00",
