@@ -1,6 +1,18 @@
 {
  "anthropic": [
   {
+   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "date": "2026-10-26T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, case study, or product announcement without technical depth."
+   }
+  },
+  {
    "title": "Donating Agent Skills to the Agentic AI Foundation",
    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
    "date": "2026-10-22T00:00:00+00:00",
@@ -753,21 +765,96 @@
     ],
     "reason": "Practical guidance on building evals for agents."
    }
-  },
-  {
-   "title": "Introducing Anthropic Interviewer: What 1,250 professionals told us about working with AI",
-   "url": "https://www.anthropic.com/research/anthropic-interviewer",
-   "date": "2025-12-04T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:29:48.441744+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Domain science, policy or social research without engineering substance for this list."
-   }
   }
  ],
  "openai": [
+  {
+   "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+   "url": "https://openai.com/index/greptile-code-review-codex-astra",
+   "date": "2026-10-26T22:00:00+00:00",
+   "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, case study, or product announcement without technical depth."
+   }
+  },
+  {
+   "title": "Working with academic communities to build scientific understanding",
+   "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+   "date": "2026-10-26T14:30:00+00:00",
+   "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, case study, or product announcement without technical depth."
+   }
+  },
+  {
+   "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+   "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+   "date": "2026-10-26T13:45:00+00:00",
+   "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, case study, or product announcement without technical depth."
+   }
+  },
+  {
+   "title": "ChatGPT’s expanding world of work",
+   "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+   "date": "2026-10-26T10:00:00+00:00",
+   "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, case study, or product announcement without technical depth."
+   }
+  },
+  {
+   "title": "How Fanatics and OpenAI streamline the fan experience",
+   "url": "https://openai.com/index/fanatics-streamline-fan-experience",
+   "date": "2026-10-26T07:00:00+00:00",
+   "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, case study, or product announcement without technical depth."
+   }
+  },
+  {
+   "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+   "url": "https://openai.com/index/openai-cut-incident-investigation",
+   "date": "2026-10-26T07:00:00+00:00",
+   "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "How engineers use a coding agent for incident investigation."
+   }
+  },
+  {
+   "title": "Introducing GPT-6.1 Terra",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+   "date": "2026-10-26T00:00:00+00:00",
+   "summary": "Bringing fast and capable computer use to everyone",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, case study, or product announcement without technical depth."
+   }
+  },
   {
    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
@@ -1424,90 +1511,6 @@
    "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
    "date": "2026-09-30T10:00:00+00:00",
    "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Introducing GPT-6.1 Sol",
-   "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-   "date": "2026-09-29T17:00:00+00:00",
-   "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "DevDay 2026 Recap",
-   "url": "https://openai.com/index/devday-2026-recap",
-   "date": "2026-09-29T10:00:00+00:00",
-   "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Introducing dots",
-   "url": "https://openai.com/index/introducing-dots",
-   "date": "2026-09-29T00:00:00+00:00",
-   "summary": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Towards safety cases for frontier AI training",
-   "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
-   "date": "2026-09-28T19:00:00+00:00",
-   "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "How we will do better for Australia",
-   "url": "https://openai.com/index/how-we-will-do-better-for-australia",
-   "date": "2026-09-28T19:00:00+00:00",
-   "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-   "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-   "date": "2026-09-28T07:00:00+00:00",
-   "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Are you a Codex Original?",
-   "url": "https://openai.com/form/codex-originals",
-   "date": "2026-09-28T00:00:00+00:00",
-   "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more…",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -2559,6 +2562,21 @@
   }
  ],
  "mario": [
+  {
+   "title": "GitHub - badlogic/qwen3_tts_rs: A Rust implementation of the Qwen3 Text-to-Speech (TTS) model inference.",
+   "url": "https://github.com/badlogic/qwen3_tts_rs",
+   "date": "2026-10-26T23:10:57+00:00",
+   "summary": "recommended viewing. icmust bully @mitsuhiko into using my gunk",
+   "label": "Recommended",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Rust inference implementation of a text-to-speech model."
+   }
+  },
   {
    "title": "x.com",
    "url": "https://x.com/i/article/2114385531811319808",
@@ -6696,22 +6714,24 @@
     ],
     "reason": "Using Bash and code interpreters instead of MCP for agents."
    }
-  },
-  {
-   "title": "Frank Chimero · Beyond the Machine",
-   "url": "https://frankchimero.com/blog/2025/beyond-the-machine/",
-   "date": "2025-10-26T16:55:33+00:00",
-   "summary": "Recommended reading. This resonates. As an ex-(shitty)-ML researcher, I marvel at the scientific achievement. As a programmer, I try to find ways to make them useful. As a human, I despise the future their invention…",
-   "label": "Recommended",
-   "seen": "2025-10-26T16:55:33+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "meta": [
+  {
+   "title": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
+   "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
+   "date": "2026-10-26T16:00:07+00:00",
+   "summary": "At the 2026 Open Compute Project (OCP) Global Summit, Meta shared the networking innovations that are directly supporting our latest AI models, including Muse Wonder and Muse Spark, and our gigawatt-scale Prometheus…",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Networking designs for scaling AI clusters, with technical detail."
+   }
+  },
   {
    "title": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
    "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/",
@@ -6870,6 +6890,21 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+   "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+   "date": "2026-10-26T22:01:23+00:00",
+   "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue.",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Postmortem of a KV cache exposure bug in LLM inference serving."
+   }
+  },
   {
    "title": "Origin Range Requests: Serving large files without range-request tuning",
    "url": "https://blog.cloudflare.com/origin-range-requests/",
