@@ -1,10 +1,34 @@
 {
  "anthropic": [
   {
+   "title": "Early progress on accelerating drug development with Claude",
+   "url": "https://www.anthropic.com/research/early-progress-drug-development",
+   "date": "2026-10-27T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Applied results in drug development with little engineering detail."
+   }
+  },
+  {
+   "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+   "date": "2026-10-27T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Government partnership news."
+   }
+  },
+  {
    "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
    "url": "https://www.anthropic.com/news/s1-sec",
    "date": "2026-10-26T00:00:00+00:00",
-   "summary": "",
+   "summary": "Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
    "seen": "2026-10-27T03:09:01.794125+00:00",
    "verdict": {
     "relevant": false,
@@ -227,7 +251,7 @@
    "title": "Expanding the Cyber Verification Program",
    "url": "https://www.anthropic.com/news/cyber-verification-program",
    "date": "2026-10-06T00:00:00+00:00",
-   "summary": "We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+   "summary": "",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -739,35 +763,33 @@
     ],
     "reason": "Designing technical hiring evals that hold up against capable models."
    }
-  },
-  {
-   "title": "How scientists are using Claude to accelerate research and discovery",
-   "url": "https://www.anthropic.com/research/accelerating-scientific-research",
-   "date": "2026-01-15T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:29:48.441744+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Domain science, policy or social research without engineering substance for this list."
-   }
-  },
-  {
-   "title": "Demystifying evals for AI agents",
-   "url": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents",
-   "date": "2026-01-09T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:29:48.441744+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Practical guidance on building evals for agents."
-   }
   }
  ],
  "openai": [
+  {
+   "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+   "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+   "date": "2026-10-27T07:00:00+00:00",
+   "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Partnership announcement."
+   }
+  },
+  {
+   "title": "How Check Point accelerates vulnerability research with Daybreak",
+   "url": "https://openai.com/index/check-point-daybreak",
+   "date": "2026-10-27T00:00:00+00:00",
+   "summary": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster.",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study."
+   }
+  },
   {
    "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
    "url": "https://openai.com/index/greptile-code-review-codex-astra",
@@ -895,6 +917,18 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, announcement or non-technical post without engineering detail."
+   }
+  },
+  {
+   "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
+   "url": "https://openai.com/index/anima",
+   "date": "2026-10-23T00:00:00+00:00",
+   "summary": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients.",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study."
    }
   },
   {
@@ -1130,6 +1164,30 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, customer story, announcement or essay without enough technical depth."
+   }
+  },
+  {
+   "title": "How Localiza reorganized work around generative AI",
+   "url": "https://openai.com/index/localiza-generative-ai",
+   "date": "2026-10-16T00:00:00+00:00",
+   "summary": "See how Localiza uses ChatGPT Enterprise, the OpenAI API, Codex, and 60+ specialized agents to reorganize work and build AI-native mobility experiences.",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study."
+   }
+  },
+  {
+   "title": "How Grupo Boticário uses AI to strengthen human connections",
+   "url": "https://openai.com/index/grupo-boticario",
+   "date": "2026-10-16T00:00:00+00:00",
+   "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to…",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study."
    }
   },
   {
@@ -1448,69 +1506,6 @@
    "url": "https://openai.com/index/chatham-financial",
    "date": "2026-10-02T00:00:00+00:00",
    "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "The eternal complement",
-   "url": "https://openai.com/index/the-eternal-complement",
-   "date": "2026-10-01T17:00:00+00:00",
-   "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "How Albertsons Companies is reimagining retail from the inside out",
-   "url": "https://openai.com/index/albertsons-reimagining-retail",
-   "date": "2026-10-01T16:00:00+00:00",
-   "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
-   "url": "https://openai.com/index/the-den-family-social",
-   "date": "2026-10-01T00:00:00+00:00",
-   "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Disrupting a coordinated model-distillation campaign",
-   "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-   "date": "2026-09-30T10:30:00+00:00",
-   "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "backend"
-    ],
-    "reason": "How OpenAI detected and stopped a model-distillation campaign."
-   }
-  },
-  {
-   "title": "Helping small businesses put AI to work",
-   "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-   "date": "2026-09-30T10:00:00+00:00",
-   "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -2563,6 +2558,34 @@
  ],
  "mario": [
   {
+   "title": "No Man Is an Island",
+   "url": "https://borretti.me/article/no-man-is-an-island",
+   "date": "2026-10-27T09:29:43+00:00",
+   "summary": "recommended reading.",
+   "label": "Recommended",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Recommended reading, no topic fit."
+   }
+  },
+  {
+   "title": "Reforging the Workflow: Where the Human Goes When Agents Ship | Martin Gratzer",
+   "url": "https://mgratzer.com/posts/reforging-the-workflow/",
+   "date": "2026-10-27T08:36:57+00:00",
+   "summary": "recommended reading.",
+   "label": "Recommended",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Essay on engineering workflows when agents ship code."
+   }
+  },
+  {
    "title": "GitHub - badlogic/qwen3_tts_rs: A Rust implementation of the Qwen3 Text-to-Speech (TTS) model inference.",
    "url": "https://github.com/badlogic/qwen3_tts_rs",
    "date": "2026-10-26T23:10:57+00:00",
@@ -2578,7 +2601,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2114385531811319808",
    "date": "2026-10-25T17:49:45+00:00",
    "summary": "recommended reading. i don't agree with everything, but it's a good data point.",
@@ -2818,7 +2841,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2106522285293154304",
    "date": "2026-10-07T18:26:17+00:00",
    "summary": "recommended reading.",
@@ -3205,7 +3228,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2091415861659615232",
    "date": "2026-08-23T15:33:51+00:00",
    "summary": "recommended reading",
@@ -3257,7 +3280,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2080691655238107136",
    "date": "2026-08-17T16:01:51+00:00",
    "summary": "recommended reading.",
@@ -3309,7 +3332,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2087315210667429888",
    "date": "2026-08-12T19:14:50+00:00",
    "summary": "recommended reading. i see a dex post, i don't even read it. i just recommend.",
@@ -3387,7 +3410,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2085540776512192512",
    "date": "2026-08-08T08:27:03+00:00",
    "summary": "recommended reading. similar observations on my end, albeit at much smaller scale.",
@@ -3400,7 +3423,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2085457619372691456",
    "date": "2026-08-06T21:57:32+00:00",
    "summary": "recommended reading. i would also warmly recommend getting into electronics, do some soldering, some PCB design. you can teach yourself in 6 months, don't need a lot of gear. feels great slapping together a bunch of…",
@@ -3441,7 +3464,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2084638847887941632",
    "date": "2026-08-05T09:07:03+00:00",
    "summary": "recommended reading!",
@@ -3506,7 +3529,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2083631047120748544",
    "date": "2026-08-02T20:09:25+00:00",
    "summary": "recommended reading. if we get \"stuck\" with improvements in verifiable domains only (which makes sense from a data point of view), i'm already a very happy camper, as that includes a lot of STEM.",
@@ -3571,7 +3594,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2082133743893204992",
    "date": "2026-07-29T20:03:42+00:00",
    "summary": "recommended reading, if you don't follow dex you're ngmi. also, please stop posting useful stuff. haven't written a blog post in ages and this makes me feel bad.",
@@ -3584,7 +3607,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2082158799104659456",
    "date": "2026-07-29T16:21:17+00:00",
    "summary": "recommended reading. being in the business of shipping software for artists, it's a pretty good analogy. it's also why i think the \"generate single digital artifact based on millions of examples\" (music, images,…",
@@ -3610,7 +3633,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2082137754788646912",
    "date": "2026-07-28T18:14:53+00:00",
    "summary": "recommended reading. very cool. should be even easier once the new harness hits.",
@@ -3623,7 +3646,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2081948601752715264",
    "date": "2026-07-28T05:40:08+00:00",
    "summary": "recommended reading.",
@@ -3649,7 +3672,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2081753730534506496",
    "date": "2026-07-27T18:59:03+00:00",
    "summary": "recommended reading.",
@@ -3662,7 +3685,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2080408648560578560",
    "date": "2026-07-25T22:31:32+00:00",
    "summary": "recommended reading",
@@ -3718,7 +3741,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2080310373140594688",
    "date": "2026-07-23T16:26:19+00:00",
    "summary": "recommended reading.",
@@ -3854,7 +3877,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2077829753680334848",
    "date": "2026-07-16T19:29:02+00:00",
    "summary": "recommended reading. simple is good, simple is beautiful. simple works.",
@@ -3893,7 +3916,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2076946210397552640",
    "date": "2026-07-14T15:21:05+00:00",
    "summary": "recommended reading.",
@@ -3945,7 +3968,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2076319195718090753",
    "date": "2026-07-13T09:46:13+00:00",
    "summary": "recommended reading.",
@@ -3984,7 +4007,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2076072720559972352",
    "date": "2026-07-12T12:43:08+00:00",
    "summary": "recommended reading. good advise for now.",
@@ -4395,7 +4418,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2061850535708483585",
    "date": "2026-06-02T22:41:28+00:00",
    "summary": "recommended reading. i really like the durability aspect of dynamic workflows. looked into how it's implemented, and while there are some minor footguns, it's smart!",
@@ -4472,7 +4495,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2059839454370828288",
    "date": "2026-05-29T23:41:22+00:00",
    "summary": "recommended reading. very happy to see that the concept of bottlenecks and according scaling is catching on. this also extends to things like OSS issue/PR trackers, which are flooded by 3rd party controlled agents.",
@@ -4675,7 +4698,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2058013399091724289",
    "date": "2026-05-23T18:42:14+00:00",
    "summary": "recommended reading.",
@@ -4742,7 +4765,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2057107605667958784",
    "date": "2026-05-21T15:37:39+00:00",
    "summary": "recommended reading!",
@@ -4995,7 +5018,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2054083280593641472",
    "date": "2026-05-13T10:37:31+00:00",
    "summary": "recommended reading.",
@@ -5047,7 +5070,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2052738533111013380",
    "date": "2026-05-10T18:03:32+00:00",
    "summary": "recommended reading. i too am concerned about what agents mean for genuine learning. i think what tobi propsoses here is one piece of the puzzle.",
@@ -5099,7 +5122,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2051783989027848193",
    "date": "2026-05-06T08:37:55+00:00",
    "summary": "recommended reading. strongly so. > And these layoffs will continue till we learn to use AI. Till we learn to convert AI-tokens into outcomes and not just input.",
@@ -5352,7 +5375,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2046690715657478145",
    "date": "2026-04-22T20:51:40+00:00",
    "summary": "recommended reading.",
@@ -5419,7 +5442,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2043727556529295360",
    "date": "2026-04-13T18:24:26+00:00",
    "summary": "recommended reading.",
@@ -5483,7 +5506,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2041548775328829440",
    "date": "2026-04-07T18:10:37+00:00",
    "summary": "recommended reading.",
@@ -5800,7 +5823,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2031387672686604289",
    "date": "2026-03-10T23:23:28+00:00",
    "summary": "recommended reading. for me, a harness also beeds to serve the human-agent interaction. atm, we mostly invest in the agent part.",
@@ -5865,7 +5888,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2029917440348426240",
    "date": "2026-03-07T07:36:51+00:00",
    "summary": "recommended reading. (fwiw, i find @doodlestein 's work to be interesting, shows what works and doesn't yet. kinda like a canary in the SWE mines)",
@@ -6038,7 +6061,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2021829028160700416",
    "date": "2026-02-13T15:26:19+00:00",
    "summary": "recommended reading. this feels intuitively right. you can kind of see this in OSS as well, where you'd think the cost to copy is essentially zero now. but it's anything but. OSS that gives into vibeslop or full…",
@@ -6051,7 +6074,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2021660093725696000",
    "date": "2026-02-12T14:59:36+00:00",
    "summary": "recommended reading. matt's vibe-texted essay even hit some of my normie friends and it does quite a bit of damage already.",
@@ -6064,7 +6087,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2021795056764469249",
    "date": "2026-02-12T08:44:31+00:00",
    "summary": "Recommended reading. Hashing lines is such a smart idea, I'm not beating myself up having not thought of this myself. Good stuff! Try oh-my-pi, the batteries included version of pi.",
@@ -6077,7 +6100,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2021638167892242432",
    "date": "2026-02-11T23:53:03+00:00",
    "summary": "recommended reading (found on @nateberkopec 's TL). This is not anti-LLM. This is anti-performative-productivity and we need more of it.",
@@ -6090,7 +6113,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2021347850656022528",
    "date": "2026-02-11T20:10:12+00:00",
    "summary": "recommended reading. the primitives are really this simple. as usual, the devil's in the details. try it yourself! it's a great rainy sunday afternoon project.",
@@ -6222,7 +6245,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2015345595687583744",
    "date": "2026-01-26T11:18:24+00:00",
    "summary": "Recommended reading.",
@@ -6328,7 +6351,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "http://x.com/i/article/2010826317634420736",
    "date": "2026-01-14T01:39:47+00:00",
    "summary": "Recommended reading. It will take a while until coding agents are normie compatible.",
@@ -6341,7 +6364,7 @@
    }
   },
   {
-   "title": "x.com",
+   "title": "X - The Everything App",
    "url": "https://x.com/i/article/2010134997856927745",
    "date": "2026-01-11T01:26:02+00:00",
    "summary": "Recommended reading. They say \"never meet your heroes\", but I'm glad I had Duncan, creator of x64dbg, show up with PRs in the pi repo. I've used x64dbg for super gnarly stuff over the years, and it's been a pleasure.",
@@ -6718,6 +6741,32 @@
  ],
  "meta": [
   {
+   "title": "PrivacyLib: Privacy Controls at the Data Access Boundary",
+   "url": "https://engineering.fb.com/2026/10/27/security/privacylib/",
+   "date": "2026-10-27T16:00:12+00:00",
+   "summary": "This latest deep dive into Meta’s Privacy Aware Infrastructure (PAI) takes a look at PrivacyLib. A privacy requirement must hold as data moves through Meta’s diverse data and processing systems. Historically,…",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Privacy controls enforced at the data access layer of Meta's infrastructure."
+   }
+  },
+  {
+   "title": "Python Typing Survey 2026: AI Tools and the Shifting Checker Landscape",
+   "url": "https://engineering.fb.com/2026/10/27/developer-tools/python-typing-survey-2026-ai-tools-checker-landscape/",
+   "date": "2026-10-27T15:59:24+00:00",
+   "summary": "The 2026 Python Typing Survey received 1,794 responses. Type hint use changed little across three years, but checker selection changed sharply. Among respondents who reported which checkers they use, half selected more…",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Survey results on Python type checkers, not core to the three topics."
+   }
+  },
+  {
    "title": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
    "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
    "date": "2026-10-26T16:00:07+00:00",
@@ -6890,6 +6939,32 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
+   "url": "https://blog.cloudflare.com/php-ctf/",
+   "date": "2026-10-27T13:00:00+00:00",
+   "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the…",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Bug bounty challenge announcement."
+   }
+  },
+  {
+   "title": "What took the Internet offline in Q3 2026",
+   "url": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
+   "date": "2026-10-27T13:00:00+00:00",
+   "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network…",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Analysis of network outages and their causes from Cloudflare Radar data."
+   }
+  },
   {
    "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
@@ -8560,6 +8635,18 @@
  ],
  "amp": [
   {
+   "title": "Amp on Android",
+   "url": "https://ampcode.com/news/amp-on-android",
+   "date": "2026-10-27T00:00:00+00:00",
+   "summary": "We now have an Android app: :::gallery carousel ::: :::gallery carousel ::: Download and install from ampcode.com/app , or scan this QR code:",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product announcement from a full-feed blog."
+   }
+  },
+  {
    "title": "Self-Hosted Orbs",
    "url": "https://ampcode.com/news/self-hosted-orbs",
    "date": "2026-10-22T00:00:00+00:00",
@@ -10011,18 +10098,6 @@
    "date": "2025-10-29T00:00:00+00:00",
    "summary": "You can now reference threads in your messages, and Amp will fetch and extract the relevant context from them. For example: \"Implement the plan we devised in…",
    "seen": "2025-10-29T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Command Palette, Not Slash Commands",
-   "url": "https://ampcode.com/news/command-palette",
-   "date": "2025-10-28T00:00:00+00:00",
-   "summary": "The Amp CLI and editor extensions now have something new: the Amp Command Palette. You can open it via Ctrl+O / Alt+O in the CLI and Cmd+Shift+A / Alt+Shift+A in the editor extensions. Unlike the old slash menu, the…",
-   "seen": "2025-10-28T00:00:00+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
@@ -11617,21 +11692,24 @@
     ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Hacking the WiFi-enabled color screen GitHub Universe conference badge",
-   "url": "https://simonwillison.net/2025/Oct/28/github-universe-badge/",
-   "date": "2025-10-28T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-10-28T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "pragmatic": [
+  {
+   "title": "AI SRE: what is it, how could it change on-call – and does it work?",
+   "url": "https://newsletter.pragmaticengineer.com/p/ai-sre",
+   "date": "2026-10-27T16:19:22+00:00",
+   "summary": "“AI SRE” is fast becoming a trending term fueled by flashy demos from vendors, but has an AI SRE ever really been on-call while engineers slept? Deepdive",
+   "seen": "2026-10-28T03:08:09.369386+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Deep dive on AI SRE tools and how they affect on-call."
+   }
+  },
   {
    "title": "The Pulse: Time to rethink software security because of AI?",
    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-do-we-need-to-rethink-software",
