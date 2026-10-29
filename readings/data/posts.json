@@ -1,6 +1,18 @@
 {
  "anthropic": [
   {
+   "title": "AI for Science expands to foundations and research institutions",
+   "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+   "date": "2026-10-28T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-29T03:08:41.809921+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly company news, partnership or case study without technical depth."
+   }
+  },
+  {
    "title": "Early progress on accelerating drug development with Claude",
    "url": "https://www.anthropic.com/research/early-progress-drug-development",
    "date": "2026-10-27T00:00:00+00:00",
@@ -749,23 +761,45 @@
     ],
     "reason": "Measuring how infrastructure noise skews agentic coding evals."
    }
-  },
-  {
-   "title": "Designing AI-resistant technical evaluations",
-   "url": "https://www.anthropic.com/research/AI-resistant-technical-evaluations",
-   "date": "2026-01-21T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:29:48.441744+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Designing technical hiring evals that hold up against capable models."
-   }
   }
  ],
  "openai": [
+  {
+   "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+   "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+   "date": "2026-10-28T13:15:00+00:00",
+   "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+   "seen": "2026-10-29T03:08:41.809921+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly company news, partnership or case study without technical depth."
+   }
+  },
+  {
+   "title": "The future of the firm",
+   "url": "https://openai.com/index/the-future-of-the-firm",
+   "date": "2026-10-28T10:00:00+00:00",
+   "summary": "How AI might enter the org chart—beneath, beside, and between us.",
+   "seen": "2026-10-29T03:08:41.809921+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly company news, partnership or case study without technical depth."
+   }
+  },
+  {
+   "title": "Legora is building the agentic operating system for legal work",
+   "url": "https://openai.com/index/legora",
+   "date": "2026-10-28T09:30:00+00:00",
+   "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+   "seen": "2026-10-29T03:08:41.809921+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly company news, partnership or case study without technical depth."
+   }
+  },
   {
    "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
    "url": "https://openai.com/index/oracle-apps-in-chatgpt",
@@ -1468,44 +1502,6 @@
    "url": "https://openai.com/index/eu-text-provenance",
    "date": "2026-10-05T15:00:00+00:00",
    "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Building advertising for the way people use AI",
-   "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
-   "date": "2026-10-05T10:00:00+00:00",
-   "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "A model guide for the GPT-6 family",
-   "url": "https://openai.com/index/practical-guide-building-gpt-6",
-   "date": "2026-10-02T16:15:00+00:00",
-   "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Guide to choosing GPT-6 models, reasoning effort and prompting."
-   }
-  },
-  {
-   "title": "Chatham scales its capital markets expertise with OpenAI",
-   "url": "https://openai.com/index/chatham-financial",
-   "date": "2026-10-02T00:00:00+00:00",
-   "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -6741,6 +6737,20 @@
  ],
  "meta": [
   {
+   "title": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
+   "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
+   "date": "2026-10-28T16:00:01+00:00",
+   "summary": "This post describes the next generation of Meta Andromeda, Meta’s personalized ads retrieval engine, and how co-designing the model, system, and GPU hardware unlocks a new efficiency frontier for ads retrieval. In…",
+   "seen": "2026-10-29T03:08:41.809921+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Technical look at co-designing model, system and GPU hardware for ads retrieval."
+   }
+  },
+  {
    "title": "PrivacyLib: Privacy Controls at the Data Access Boundary",
    "url": "https://engineering.fb.com/2026/10/27/security/privacylib/",
    "date": "2026-10-27T16:00:12+00:00",
@@ -8635,10 +8645,22 @@
  ],
  "amp": [
   {
+   "title": "Your Own Self-Hosted Orbs",
+   "url": "https://ampcode.com/news/personal-self-hosted-orbs",
+   "date": "2026-10-28T00:00:00+00:00",
+   "summary": "You no longer need to be in a workspace to self-host orbs . Up until now, only workspace admins could manage self-hosted orb providers. Now, you can add a provider in your personal Settings → Orbs and set it up the…",
+   "seen": "2026-10-29T03:08:41.809921+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always shown from a full-feed blog."
+   }
+  },
+  {
    "title": "Amp on Android",
    "url": "https://ampcode.com/news/amp-on-android",
    "date": "2026-10-27T00:00:00+00:00",
-   "summary": "We now have an Android app: :::gallery carousel ::: :::gallery carousel ::: Download and install from ampcode.com/app , or scan this QR code:",
+   "summary": "We now have an Android app: Download and install from ampcode.com/app , or scan this QR code:",
    "seen": "2026-10-28T03:08:09.369386+00:00",
    "verdict": {
     "relevant": false,
@@ -10091,18 +10113,6 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Amp Now Reads Threads",
-   "url": "https://ampcode.com/news/read-threads",
-   "date": "2025-10-29T00:00:00+00:00",
-   "summary": "You can now reference threads in your messages, and Amp will fetch and extract the relevant context from them. For example: \"Implement the plan we devised in…",
-   "seen": "2025-10-29T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "typesafe": [
@@ -10206,6 +10216,20 @@
   }
  ],
  "simon": [
+  {
+   "title": "The October inflection point for vibe game development",
+   "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+   "date": "2026-10-28T13:55:15+00:00",
+   "summary": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily…",
+   "seen": "2026-10-29T03:08:41.809921+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always shown from a full-feed blog."
+   }
+  },
   {
    "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
    "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
@@ -13345,18 +13369,6 @@
    "date": "2025-10-29T16:36:24.347000+00:00",
    "summary": "Google’s Head of Chrome Developer Experience, Addy Osmani, shares how AI is transforming the way he codes—accelerating development while still relying on human expertise to ensure real quality",
    "seen": "2025-10-29T16:36:24.347000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "San Francisco is back as the world’s leading tech hub",
-   "url": "https://newsletter.pragmaticengineer.com/p/san-francisco-is-back",
-   "date": "2025-10-28T16:55:50.514000+00:00",
-   "summary": "Impressions from a week in San Fran spent visiting engineering teams at Cursor, OpenAI, Anthropic, Wispr, Factory, and more",
-   "seen": "2025-10-28T16:55:50.514000+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
