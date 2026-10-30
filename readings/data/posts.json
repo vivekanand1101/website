@@ -765,6 +765,44 @@
  ],
  "openai": [
   {
+   "title": "An updated Model Spec for more capable and beneficial AI",
+   "url": "https://openai.com/index/updated-model-spec",
+   "date": "2026-10-29T17:00:00+00:00",
+   "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+   "seen": "2026-10-30T03:08:16.639703+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, case study or product announcement without enough technical detail."
+   }
+  },
+  {
+   "title": "How we detect frontier model misalignment",
+   "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+   "date": "2026-10-29T09:00:00+00:00",
+   "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
+   "seen": "2026-10-30T03:08:16.639703+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Technical write-up an engineer would learn from."
+   }
+  },
+  {
+   "title": "How Ropes & Gray is developing AI for transactional diligence",
+   "url": "https://openai.com/index/ropes-gray-ai-diligence",
+   "date": "2026-10-29T07:00:00+00:00",
+   "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
+   "seen": "2026-10-30T03:08:16.639703+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, case study or product announcement without enough technical detail."
+   }
+  },
+  {
    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
    "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
    "date": "2026-10-28T13:15:00+00:00",
@@ -1468,49 +1506,23 @@
     "topics": [],
     "reason": "Company news, customer story, announcement or essay without enough technical depth."
    }
-  },
-  {
-   "title": "Sharing AI progress in mathematics",
-   "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-   "date": "2026-10-06T12:00:00+00:00",
-   "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "New results from a frontier model on open math problems."
-   }
-  },
-  {
-   "title": "Advancing computer use with Ironclad",
-   "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
-   "date": "2026-10-06T10:00:00+00:00",
-   "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Training and evaluating computer-use agents on contracting tasks."
-   }
-  },
-  {
-   "title": "Our approach to EU text provenance rules",
-   "url": "https://openai.com/index/eu-text-provenance",
-   "date": "2026-10-05T15:00:00+00:00",
-   "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
   }
  ],
  "armin": [
+  {
+   "title": "Custom Voices With Qwen3-TTS",
+   "url": "https://lucumr.pocoo.org/2026/10/29/qwen3-custom-voices/",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "With my kids I’m currently building a little dungeron crawler and we’re trying to learn a bit about game development along the way. However given that we live in the modern times of increasing capabilities we wanted to…",
+   "seen": "2026-10-30T03:08:16.639703+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
   {
    "title": "What is Codemode",
    "url": "https://lucumr.pocoo.org/2026/10/6/codemode/",
@@ -2553,6 +2565,21 @@
   }
  ],
  "mario": [
+  {
+   "title": "Custom Voices With Qwen3-TTS",
+   "url": "https://lucumr.pocoo.org/2026/10/29/qwen3-custom-voices/",
+   "date": "2026-10-29T19:18:20+00:00",
+   "summary": "recommended reading. pipi also uses qwen3-tts, with a heavily optimized single executable mlx-c inference engine. great quality, but compute heavy.",
+   "label": "Recommended",
+   "seen": "2026-10-30T03:08:16.639703+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
   {
    "title": "No Man Is an Island",
    "url": "https://borretti.me/article/no-man-is-an-island",
@@ -6737,6 +6764,21 @@
  ],
  "meta": [
   {
+   "title": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
+   "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/",
+   "date": "2026-10-29T16:00:12+00:00",
+   "summary": "Over the last year we’ve been sharing our work leveraging large language models to catch bugs on the fly — a novel approach we call Catching Just-in-Time Tests (JiTTests). Now, we’re sharing the results and positive…",
+   "seen": "2026-10-30T03:08:16.639703+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Technical write-up an engineer would learn from."
+   }
+  },
+  {
    "title": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
    "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
    "date": "2026-10-28T16:00:01+00:00",
@@ -6949,6 +6991,20 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+   "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
+   "date": "2026-10-29T12:55:00+00:00",
+   "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent…",
+   "seen": "2026-10-30T03:08:16.639703+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Technical write-up an engineer would learn from."
+   }
+  },
   {
    "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
    "url": "https://blog.cloudflare.com/php-ctf/",
@@ -8645,6 +8701,32 @@
  ],
  "amp": [
   {
+   "title": "macOS Satellites",
+   "url": "https://ampcode.com/news/macos-satellites",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Amp now has a Mac: ask it to work on your iOS or Mac app and watch it build, test, and run the app. Port to iPhone Duo New Mac App Feature Penny runs on iPhone 17 Pro. Amp has it open in DeviceHub on a Mac next to the…",
+   "seen": "2026-10-30T03:08:16.639703+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Visualize This",
+   "url": "https://ampcode.com/news/visualize-this",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "You can now ask Amp to visualize or build something for you and it will do it, right in the thread: charts, timelines, diagrams, and mockups you can click through. Here are some examples, from our real threads. Go…",
+   "seen": "2026-10-30T03:08:16.639703+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
    "title": "Your Own Self-Hosted Orbs",
    "url": "https://ampcode.com/news/personal-self-hosted-orbs",
    "date": "2026-10-28T00:00:00+00:00",
@@ -10096,18 +10178,6 @@
    "date": "2025-11-04T00:00:00+00:00",
    "summary": "Update (2026-06-02): We've removed public thread sharing and related features; see The End of Public Threads for why. We're all learning a new way to code: prompting, referencing, planning, handoffs, specs, and…",
    "seen": "2025-11-04T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Workspace Entitlements",
-   "url": "https://ampcode.com/news/workspace-entitlements",
-   "date": "2025-10-30T00:00:00+00:00",
-   "summary": "Workspaces can now set per-user spending limits through entitlements, such as: A default of $50/week for regular users and $200/week for senior engineers A team-wide limit of $100/day that applies to everyone Different…",
-   "seen": "2025-10-30T00:00:00+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
@@ -11719,6 +11789,20 @@
   }
  ],
  "pragmatic": [
+  {
+   "title": "Software engineering at Google & CS education with Titus Winters",
+   "url": "https://newsletter.pragmaticengineer.com/p/software-engineering-at-google-and",
+   "date": "2026-10-29T13:37:13+00:00",
+   "summary": "Titus Winters shares lessons from engineering at Google’s scale and explores how AI is reshaping developer productivity and computer science education.",
+   "seen": "2026-10-30T03:08:16.639703+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
   {
    "title": "AI SRE: what is it, how could it change on-call – and does it work?",
    "url": "https://newsletter.pragmaticengineer.com/p/ai-sre",
@@ -13357,18 +13441,6 @@
    "date": "2025-10-30T17:46:40.528000+00:00",
    "summary": "Also: OpenAI becomes for-profit and takes on Chrome, NVIDIA the biggest Big Tech by a distance, Citibank annoys premium customers for weeks with disastrous product rollout, and more",
    "seen": "2025-10-30T17:46:40.528000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Beyond Vibe Coding with Addy Osmani",
-   "url": "https://newsletter.pragmaticengineer.com/p/beyond-vibe-coding-with-addy-osmani",
-   "date": "2025-10-29T16:36:24.347000+00:00",
-   "summary": "Google’s Head of Chrome Developer Experience, Addy Osmani, shares how AI is transforming the way he codes—accelerating development while still relying on human expertise to ensure real quality",
-   "seen": "2025-10-29T16:36:24.347000+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
