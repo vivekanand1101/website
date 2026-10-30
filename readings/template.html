@@ -113,7 +113,6 @@
       <div class="opts" id="view" role="group" aria-label="View">
         <button type="button" data-view="latest">Latest</button>
         <button type="button" data-view="blogs">By blog</button>
-        <button type="button" data-view="picks">Great reads</button>
       </div>
     </div>
   </div>
@@ -139,7 +138,7 @@ const store = {
 
 const state = {
   blog: "all", topic: "all", limit: 100,
-  view: store.get("view") || "latest",
+  view: store.get("view") === "blogs" ? "blogs" : "latest",
   skipped: store.get("skipped") === "1",
 };
 const all = DATA.blogs.flatMap(b => b.posts.map(p => ({ ...p, blog: b })))
@@ -186,7 +185,7 @@ function postEl(p, { showSource = true, showSummary = true } = {}) {
 }
 
 function renderFilters() {
-  const topics = [["all", "All"], ...Object.entries(TOPICS)];
+  const topics = [["all", "All"], ...Object.entries(TOPICS), ["picks", "Great reads"]];
   document.getElementById("topics").replaceChildren(...topics.map(([id, name]) => {
     const b = el("button", { type: "button", textContent: name, onclick: () => { state.topic = id; render(); } });
     b.setAttribute("aria-pressed", state.topic === id);
@@ -248,12 +247,12 @@ function render() {
   const skippedCount = all.filter(p => p.verdict && !relevant(p)).length;
   document.getElementById("skipped").textContent = state.skipped ? "Hide skipped posts." : `Show the ${skippedCount} skipped posts.`;
   document.getElementById("blog").classList.toggle("set", state.blog !== "all");
-  const list = pool().filter(p => byTopic(p) && byBlog(p));
+  const list = pool().filter(p => state.topic !== "picks" && byTopic(p) && byBlog(p));
   const main = document.getElementById("main");
   main.replaceChildren();
-  const picks = state.view === "picks";
-  document.getElementById("topics").hidden = picks;
+  const picks = state.topic === "picks";
   document.querySelector(".pick").hidden = picks;
+  document.getElementById("view").hidden = picks;
   (picks ? renderPicks : state.view === "blogs" ? renderBlogs : renderLatest)(main, list);
 }
 
