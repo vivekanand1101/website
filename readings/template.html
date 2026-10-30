@@ -135,8 +135,6 @@ const store = {
   get(k) { try { return localStorage.getItem(k); } catch { return null; } },
   set(k, v) { try { localStorage.setItem(k, v); } catch {} },
 };
-const lastVisit = Number(store.get("lastVisit")) || 0;
-store.set("lastVisit", String(Date.now()));
 
 const state = {
   blog: "all", topic: "all", limit: 100,
@@ -147,7 +145,6 @@ const all = DATA.blogs.flatMap(b => b.posts.map(p => ({ ...p, blog: b })))
   .sort((a, b) => b.date.localeCompare(a.date));
 const relevant = p => !p.blog.filter || !!(p.verdict && p.verdict.relevant);
 const isFresh = p => Date.now() - Date.parse(p.date) < WEEK;
-const isUnseen = p => lastVisit && Date.parse(p.seen) > lastVisit;
 const pool = () => all.filter(p => relevant(p) || (state.skipped && p.verdict));
 const topicsOf = p => (p.verdict && p.verdict.topics) || [];
 const byTopic = (p, t = state.topic) => t === "all" || topicsOf(p).includes(t);
@@ -173,7 +170,7 @@ function postEl(p, { showSource = true, showSummary = true } = {}) {
     topicsOf(p).map(t => TOPICS[t] || t).join(", ") || null,
     ok ? null : "skipped",
   ].filter(Boolean);
-  const fresh = ok && (isUnseen(p) ? "new since your last visit" : isFresh(p) ? "this week" : null);
+  const fresh = ok && (isFresh(p) ? "this week" : null);
   const meta = el("div", { className: "meta" });
   bits.forEach((b, i) => { if (i) meta.append(sep()); meta.append(b); });
   if (fresh) { if (bits.length) meta.append(sep()); meta.append(el("span", { className: "fresh", textContent: fresh })); }
@@ -255,8 +252,7 @@ const kept = all.filter(relevant);
 const judged = companyPosts.filter(p => p.verdict).length;
 const keptCompany = companyPosts.filter(relevant).length;
 document.getElementById("since").textContent =
-  `Updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}. From the topic-filtered blogs, Claude kept ${keptCompany} of ${judged} posts.` + (judged < companyPosts.length ? ` ${companyPosts.length - judged} are waiting to be judged.` : "") +
-  (lastVisit ? ` Your last visit: ${new Date(lastVisit).toLocaleString()}.` : "");
+  `Updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}. From the topic-filtered blogs, Claude kept ${keptCompany} of ${judged} posts.` + (judged < companyPosts.length ? ` ${companyPosts.length - judged} are waiting to be judged.` : "");
 document.getElementById("year").textContent = new Date().getFullYear();
 render();
 </script>
