@@ -5,8 +5,8 @@ Source for https://anandvivek.in: one repository, one Cloudflare Pages build, on
 | Path | Section | Built with |
 |---|---|---|
 | `/` | About (home page) | React, TypeScript and Vite (`src/`, `public/`) |
-| `/writings/` | Writing | [Hugo](https://gohugo.io/) (`writings/`) |
-| `/readings/` | Reading | Python standard library (`readings/`, see its README) |
+| `/writing/` | Writing | [Hugo](https://gohugo.io/) (`writings/`) |
+| `/reading/` | Reading | Python standard library (`readings/`, see its README) |
 
 `shared/site.css` holds the palette, type, header and footer every section uses. The header
 markup is repeated in three places; keep them in step when the nav changes:
@@ -19,7 +19,7 @@ Root `public/` holds the favicon and portrait used by every section.
 npm ci
 npm run dev      # home page only, http://localhost:8080
 npm run build    # whole site into dist/
-npx vite preview # serve dist/, including /writings/ and /readings/
+npx vite preview # serve dist/, including /writing/ and /reading/
 ```
 
 `npm run build` needs Node, Hugo (extended) and Python 3.

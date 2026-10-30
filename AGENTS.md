@@ -8,8 +8,8 @@ One repository and one build serve every section:
 | Path | Section | Source |
 |---|---|---|
 | `/` | About (home page) | React + TypeScript + Vite (`src/`, `public/`) |
-| `/writings/` | Writing | Hugo (`writings/`) |
-| `/readings/` | Reading | Python standard library (`readings/`) |
+| `/writing/` | Writing | Hugo (`writings/`) |
+| `/reading/` | Reading | Python standard library (`readings/`) |
 
 `shared/site.css` holds the palette, type, header and footer for all three. The header
 markup lives in `src/components/Navigation.tsx`, `writings/layouts/partials/header.html`

@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 // Run against a full build: npm run build && npx vite preview
-const BASE = process.env.BASE || 'http://localhost:4173/writings';
+const BASE = process.env.BASE || 'http://localhost:4173/writing';
 
 // Published posts only; drafts (draft: true) are not built.
 const ALL_POSTS = [

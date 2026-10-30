@@ -1,0 +1,4 @@
+/writings /writing/ 301
+/writings/* /writing/:splat 301
+/readings /reading/ 301
+/readings/* /reading/:splat 301

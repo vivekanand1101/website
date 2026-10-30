@@ -1,6 +1,6 @@
 # Daily routine
 
-Instructions for the daily update of anandvivek.in/readings/. `run-local.sh` automates these
+Instructions for the daily update of anandvivek.in/reading/. `run-local.sh` automates these
 steps on Vivek's Mac every morning; follow them by hand only when it can't run.
 Run every command from the repository root; all paths below are under `readings/`.
 

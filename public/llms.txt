@@ -10,9 +10,9 @@ Vivek's current role is remote, so for now he works from home in Kerai. Professi
 
 ## Writing
 
-- [Writing](https://anandvivek.in/writings/): Notes on software, systems, and lessons learned building them.
-- [Reading](https://anandvivek.in/readings/): What Vivek is reading.
-- [Writing guide](https://anandvivek.in/writings/llms.txt): Index of published posts.
+- [Writing](https://anandvivek.in/writing/): Notes on software, systems, and lessons learned building them.
+- [Reading](https://anandvivek.in/reading/): What Vivek is reading.
+- [Writing guide](https://anandvivek.in/writing/llms.txt): Index of published posts.
 
 ## Optional
 

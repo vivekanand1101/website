@@ -7,9 +7,9 @@
 <meta name="description" content="What Vivek Anand reads: every post from a few people and teams, plus AI, backend and database posts from company engineering blogs, picked by Claude daily.">
 <meta name="author" content="Vivek Anand">
 <link rel="icon" type="image/svg+xml" href="/favicon-editorial.svg">
-<link rel="canonical" href="https://anandvivek.in/readings/">
+<link rel="canonical" href="https://anandvivek.in/reading/">
 <meta property="og:title" content="Reading · Vivek Anand">
-<meta property="og:url" content="https://anandvivek.in/readings/">
+<meta property="og:url" content="https://anandvivek.in/reading/">
 <meta property="og:type" content="website">
 <style>
 /*__SHARED_CSS__*/
@@ -94,12 +94,12 @@
 </head>
 <body>
 <div class="wrap">
-  <!-- Same header as the home page (src/components/Navigation.tsx) and /writings/ (writings/layouts/partials/header.html). -->
+  <!-- Same header as the home page (src/components/Navigation.tsx) and /writing/ (writings/layouts/partials/header.html). -->
   <header class="site-header">
     <a class="site-title" href="/">Vivek Anand</a>
     <nav aria-label="Main">
-      <a href="/writings/">Writing</a>
-      <a href="/readings/" aria-current="page">Reading</a>
+      <a href="/writing/">Writing</a>
+      <a href="/reading/" aria-current="page">Reading</a>
       <a href="/">About</a>
     </nav>
   </header>
@@ -121,7 +121,7 @@
   <main id="main"></main>
 
   <footer class="site-footer">
-    <p>Refreshed daily. Full-feed blogs show every post; for the others, Claude keeps the ones about AI, backend engineering or databases. <span id="since"></span> <button type="button" class="toggle-skipped" id="skipped"></button></p>
+    <p><button type="button" class="toggle-skipped" id="skipped"></button></p>
     <p>&copy; <span id="year"></span> Vivek Anand &middot;
       <a href="https://github.com/vivekanand1101">GitHub</a> &middot;
       <a href="https://linkedin.com/in/vivekanandxyz">LinkedIn</a> &middot;
@@ -260,12 +260,6 @@ function render() {
 document.querySelectorAll("#view button").forEach(b => b.onclick = () => { state.view = b.dataset.view; render(); });
 document.getElementById("blog").onchange = e => { state.blog = e.target.value; render(); };
 document.getElementById("skipped").onclick = () => { state.skipped = !state.skipped; render(); scrollTo({ top: 0 }); };
-const companyPosts = all.filter(p => p.blog.filter);
-const kept = all.filter(relevant);
-const judged = companyPosts.filter(p => p.verdict).length;
-const keptCompany = companyPosts.filter(relevant).length;
-document.getElementById("since").textContent =
-  `Updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}. From the topic-filtered blogs, Claude kept ${keptCompany} of ${judged} posts.` + (judged < companyPosts.length ? ` ${companyPosts.length - judged} are waiting to be judged.` : "");
 document.getElementById("year").textContent = new Date().getFullYear();
 render();
 </script>
