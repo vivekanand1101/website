@@ -177,6 +177,18 @@
     ]
   },
   {
+    "id": "nikunj",
+    "name": "Nikunj Kothari",
+    "home": "https://writing.nikunjk.com/",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://writing.nikunjk.com/feed"
+      }
+    ]
+  },
+  {
     "id": "simon",
     "name": "Simon Willison",
     "home": "https://simonwillison.net/",

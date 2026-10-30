@@ -10,6 +10,8 @@ builds the whole site on every push to `main` (see the root README); this sectio
 
 - `blogs.json` — the blogs to track. `"filter": false` shows every post;
   `"filter": true` keeps only what Claude judges to be AI, backend or databases.
+- `picks.json` — hand-picked great articles, shown under "Great reads". Add an entry
+  (`url`, `title`, `author`, `added`) whenever Vivek shares one.
 - `CRITERIA.md` — what counts as relevant. Edit it to change what Claude keeps.
 - `ROUTINE.md` — the steps the daily update follows.
 - `run-local.sh` — the daily update itself. launchd runs it on Vivek's Mac at 08:30 IST

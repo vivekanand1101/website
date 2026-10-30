@@ -288,6 +288,8 @@ def render(blogs, store, status=None):
             for b in blogs
         ],
     }
+    picks_file = ROOT / "picks.json"  # hand-curated "Great reads", newest first
+    payload["picks"] = sorted(json.loads(picks_file.read_text()), key=lambda p: p["added"], reverse=True) if picks_file.exists() else []
     OUT.mkdir(exist_ok=True)
     data_js = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
     shared_css = (ROOT.parent / "shared" / "site.css").read_text()  # same stylesheet as the rest of anandvivek.in

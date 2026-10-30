@@ -113,6 +113,7 @@
       <div class="opts" id="view" role="group" aria-label="View">
         <button type="button" data-view="latest">Latest</button>
         <button type="button" data-view="blogs">By blog</button>
+        <button type="button" data-view="picks">Great reads</button>
       </div>
     </div>
   </div>
@@ -229,6 +230,15 @@ function renderBlogs(main, list) {
   }
 }
 
+function renderPicks(main) {
+  if (!DATA.picks.length) return main.append(el("p", { className: "empty", textContent: "Nothing here yet." }));
+  main.append(el("ul", { className: "posts" }, ...DATA.picks.map(p => el("li", {},
+    el("time", { dateTime: p.added, textContent: fmtDay(p.added) }),
+    el("div", { className: "entry" },
+      el("a", { href: safeUrl(p.url), target: "_blank", rel: "noopener", textContent: p.title }),
+      el("div", { className: "meta", textContent: [p.author, new URL(p.url).hostname].filter(Boolean).join(" \u00b7 ") }))))));
+}
+
 function render() {
   if (render.key !== state.blog + state.topic + state.skipped) { state.limit = 100; render.key = state.blog + state.topic + state.skipped; }
   store.set("view", state.view);
@@ -241,7 +251,10 @@ function render() {
   const list = pool().filter(p => byTopic(p) && byBlog(p));
   const main = document.getElementById("main");
   main.replaceChildren();
-  (state.view === "blogs" ? renderBlogs : renderLatest)(main, list);
+  const picks = state.view === "picks";
+  document.getElementById("topics").hidden = picks;
+  document.querySelector(".pick").hidden = picks;
+  (picks ? renderPicks : state.view === "blogs" ? renderBlogs : renderLatest)(main, list);
 }
 
 document.querySelectorAll("#view button").forEach(b => b.onclick = () => { state.view = b.dataset.view; render(); });

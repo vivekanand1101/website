@@ -2566,6 +2566,19 @@
  ],
  "mario": [
   {
+   "title": "X - The Everything App",
+   "url": "https://x.com/i/article/2115609431790518272",
+   "date": "2026-10-30T08:19:17+00:00",
+   "summary": "recommended reading. describes codemode in pinand pi durable accurately, and also explains why durable codemode is pretty sweet.",
+   "label": "Recommended",
+   "seen": "2026-10-30T14:57:18.903697+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
    "title": "Custom Voices With Qwen3-TTS",
    "url": "https://lucumr.pocoo.org/2026/10/29/qwen3-custom-voices/",
    "date": "2026-10-29T19:18:20+00:00",
@@ -6991,6 +7004,20 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "Cloudflare services for private origins is now generally available",
+   "url": "https://blog.cloudflare.com/private-origins-public-to-private/",
+   "date": "2026-10-30T14:23:43+00:00",
+   "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity.",
+   "seen": "2026-10-30T14:57:18.903697+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Explains how a networking feature for private origins works."
+   }
+  },
   {
    "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
    "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
@@ -13585,6 +13612,248 @@
      "ai"
     ],
     "reason": "Design and performance choices behind the Pi agent harness."
+   }
+  }
+ ],
+ "nikunj": [
+  {
+   "title": "The Bridge",
+   "url": "https://writing.nikunjk.com/p/the-bridge",
+   "date": "2026-10-28T23:15:42+00:00",
+   "summary": "The seed is a bet on a dream. The A is a bet on scale.",
+   "seen": "2026-10-28T23:15:42+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "More warm bodies",
+   "url": "https://writing.nikunjk.com/p/more-warm-bodies",
+   "date": "2026-10-05T22:38:05+00:00",
+   "summary": "Independent thinking continues to be the greatest edge",
+   "seen": "2026-10-05T22:38:05+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Deployment Gap",
+   "url": "https://writing.nikunjk.com/p/deployment-gap",
+   "date": "2026-09-28T22:35:23+00:00",
+   "summary": "Atoms just work slower than bits",
+   "seen": "2026-09-28T22:35:23+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "The Amplification Gap",
+   "url": "https://writing.nikunjk.com/p/the-amplification-gap",
+   "date": "2026-09-23T23:16:50+00:00",
+   "summary": "AI alone won't amplify you, and neither will agency. Why founders are hiring for the barbell, and why a decade in product might make me the wrong archetype.",
+   "seen": "2026-09-23T23:16:50+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Divorced from reality",
+   "url": "https://writing.nikunjk.com/p/divorced-from-reality",
+   "date": "2026-09-10T22:33:17+00:00",
+   "summary": "Fundamentals will matter",
+   "seen": "2026-09-10T22:33:17+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "The New Valley",
+   "url": "https://writing.nikunjk.com/p/the-new-valley",
+   "date": "2026-08-31T22:33:07+00:00",
+   "summary": "Is this venture backable?",
+   "seen": "2026-08-31T22:33:07+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Being legible to capital",
+   "url": "https://writing.nikunjk.com/p/being-legible-to-capital",
+   "date": "2026-08-26T22:33:34+00:00",
+   "summary": "Fundraising tips in this 'consensus' market",
+   "seen": "2026-08-26T22:33:34+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Everything is downstream of ambition",
+   "url": "https://writing.nikunjk.com/p/everything-is-downstream-of-ambition",
+   "date": "2026-08-10T22:37:01+00:00",
+   "summary": "Everyone wants to build the one person billion dollar company. But how many people you need used to be a decision you made last, not first.",
+   "seen": "2026-08-10T22:37:01+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Mode Push",
+   "url": "https://writing.nikunjk.com/p/mode-push",
+   "date": "2026-07-31T19:45:10+00:00",
+   "summary": "Drive doesn't need a troubled childhood",
+   "seen": "2026-07-31T19:45:10+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Sanitized Slop",
+   "url": "https://writing.nikunjk.com/p/sanitized-slop",
+   "date": "2026-07-08T22:25:25+00:00",
+   "summary": "Startup launch videos have become sanitized slop. A VC on why polish stopped working, what the box office proves, and what actually earns attention.",
+   "seen": "2026-07-08T22:25:25+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "the Series A squeeze",
+   "url": "https://writing.nikunjk.com/p/the-series-a-squeeze",
+   "date": "2026-06-25T22:09:08+00:00",
+   "summary": "Valuation is a marker in time",
+   "seen": "2026-06-25T22:09:08+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Decisions and Dollars",
+   "url": "https://writing.nikunjk.com/p/decisions-and-dollars",
+   "date": "2026-06-12T22:18:19+00:00",
+   "summary": "Anthropic shipped Claude Fable 5 yesterday, the first Mythos-class model the public can use.",
+   "seen": "2026-06-12T22:18:19+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Share your obsession",
+   "url": "https://writing.nikunjk.com/p/share-your-obsession-304",
+   "date": "2026-05-27T23:06:33+00:00",
+   "summary": "What actually breaks through when every AI pitch sounds the sam",
+   "seen": "2026-05-27T23:06:33+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "The Coddling of the Tech Mind",
+   "url": "https://writing.nikunjk.com/p/the-coddling-of-the-tech-mind",
+   "date": "2026-05-22T00:11:39+00:00",
+   "summary": "We built daycares for adults",
+   "seen": "2026-05-22T00:11:39+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "The Mess Is the Work",
+   "url": "https://writing.nikunjk.com/p/the-mess-is-the-work",
+   "date": "2026-04-26T14:15:43+00:00",
+   "summary": "The 99.9% just became the whole job",
+   "seen": "2026-04-26T14:15:43+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Fear",
+   "url": "https://writing.nikunjk.com/p/fear",
+   "date": "2026-04-13T23:30:08+00:00",
+   "summary": "San Francisco, April 2026",
+   "seen": "2026-04-13T23:30:08+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Your Only Competition is You",
+   "url": "https://writing.nikunjk.com/p/your-only-competition-is-you",
+   "date": "2026-04-10T00:27:51+00:00",
+   "summary": "The playbook is a commodity now",
+   "seen": "2026-04-10T00:27:51+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "The Pull",
+   "url": "https://writing.nikunjk.com/p/the-pull",
+   "date": "2026-03-20T22:02:44+00:00",
+   "summary": "That feeling that won't leave you alone",
+   "seen": "2026-03-20T22:02:44+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "10x is the new floor",
+   "url": "https://writing.nikunjk.com/p/10x-is-the-new-floor",
+   "date": "2026-03-09T23:19:14+00:00",
+   "summary": "Good enough just stopped being enough",
+   "seen": "2026-03-09T23:19:14+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
+   }
+  },
+  {
+   "title": "Become A Tinkerer",
+   "url": "https://writing.nikunjk.com/p/become-a-tinkerer",
+   "date": "2026-03-06T00:32:23+00:00",
+   "summary": "Pick a lane is dead",
+   "seen": "2026-03-06T00:32:23+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "From a full-feed blog, always kept."
    }
   }
  ]
