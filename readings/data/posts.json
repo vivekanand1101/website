@@ -765,6 +765,42 @@
  ],
  "openai": [
   {
+   "title": "Making it easier for websites to express AI training preferences",
+   "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "date": "2026-10-30T09:30:00+00:00",
+   "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
+   "seen": "2026-10-31T03:07:48.843593+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Policy-oriented announcement about training preferences with little technical depth."
+   }
+  },
+  {
+   "title": "Community safety report and new protections for teens",
+   "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+   "date": "2026-10-30T09:00:00+00:00",
+   "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
+   "seen": "2026-10-31T03:07:48.843593+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Safety and policy news, not engineering detail."
+   }
+  },
+  {
+   "title": "Fair use benefits everyone",
+   "url": "https://openai.com/index/fair-use-benefits-everyone",
+   "date": "2026-10-30T00:00:00+00:00",
+   "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
+   "seen": "2026-10-31T03:07:48.843593+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Legal and policy advocacy about fair use."
+   }
+  },
+  {
    "title": "An updated Model Spec for more capable and beneficial AI",
    "url": "https://openai.com/index/updated-model-spec",
    "date": "2026-10-29T17:00:00+00:00",
@@ -800,6 +836,18 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, case study or product announcement without enough technical detail."
+   }
+  },
+  {
+   "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+   "url": "https://openai.com/index/credit-saison",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
+   "seen": "2026-10-31T03:07:48.843593+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study focused on ROI."
    }
   },
   {
@@ -1452,54 +1500,6 @@
    "url": "https://openai.com/index/teens-learn-and-plan",
    "date": "2026-10-07T12:00:00+00:00",
    "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-   "url": "https://openai.com/index/radisson",
-   "date": "2026-10-07T07:00:00+00:00",
-   "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "GPT-6 and Intelligent UI for everyone",
-   "url": "https://openai.com/index/gpt-6-for-everyone",
-   "date": "2026-10-07T00:00:00+00:00",
-   "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-   "url": "https://openai.com/index/atlassian-partnership",
-   "date": "2026-10-06T16:00:00+00:00",
-   "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "How Jump Trading is scaling quant research with ChatGPT",
-   "url": "https://openai.com/index/jump-trading",
-   "date": "2026-10-06T12:00:00+00:00",
-   "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -2565,6 +2565,19 @@
   }
  ],
  "mario": [
+  {
+   "title": "A Little Determinism",
+   "url": "https://cra.mr/a-little-determinism",
+   "date": "2026-10-30T22:05:37+00:00",
+   "summary": "recommended reading.",
+   "label": "Recommended",
+   "seen": "2026-10-31T03:07:48.843593+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown full-feed blog post."
+   }
+  },
   {
    "title": "X - The Everything App",
    "url": "https://x.com/i/article/2115609431790518272",
@@ -7004,6 +7017,20 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+   "url": "https://blog.cloudflare.com/emudhra-patching/",
+   "date": "2026-10-30T17:38:50+00:00",
+   "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation,…",
+   "seen": "2026-10-31T03:07:48.843593+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Security engineering writeup on weak certificate keys, patching and exploitation evidence."
+   }
+  },
   {
    "title": "Cloudflare services for private origins is now generally available",
    "url": "https://blog.cloudflare.com/private-origins-public-to-private/",
@@ -11817,6 +11844,20 @@
  ],
  "pragmatic": [
   {
+   "title": "The Pulse: Anthropic kills the coding interview",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-anthropic-kills-the-coding",
+   "date": "2026-10-30T16:37:51+00:00",
+   "summary": "AI is rendering the Leetcode-style interview pointless and now Anthropic has deleted it from its interview loop. Also: details of incident.io’s AI spend, Microsoft’s exit offer to engineers, and more",
+   "seen": "2026-10-31T03:07:48.843593+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always-shown newsletter issue on AI changing engineering hiring."
+   }
+  },
+  {
    "title": "Software engineering at Google & CS education with Titus Winters",
    "url": "https://newsletter.pragmaticengineer.com/p/software-engineering-at-google-and",
    "date": "2026-10-29T13:37:13+00:00",
@@ -13456,18 +13497,6 @@
    "date": "2025-11-04T17:23:15.287000+00:00",
    "summary": "Details on the state of hiring from software engineers and EMs in the market for a new job. Insights on what’s happening from recruitment platforms: junior rebound, picky employers & a tough market",
    "seen": "2025-11-04T17:23:15.287000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "The Pulse #151: Amazon layoffs – AI or economy to blame?",
-   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-151",
-   "date": "2025-10-30T17:46:40.528000+00:00",
-   "summary": "Also: OpenAI becomes for-profit and takes on Chrome, NVIDIA the biggest Big Tech by a distance, Citibank annoys premium customers for weeks with disastrous product rollout, and more",
-   "seen": "2025-10-30T17:46:40.528000+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
