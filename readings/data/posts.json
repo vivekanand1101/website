@@ -2566,6 +2566,34 @@
  ],
  "mario": [
   {
+   "title": "The Golden Age",
+   "url": "https://dark.ronacher.eu/2026/10/31/golden-age/",
+   "date": "2026-10-31T20:27:51+00:00",
+   "summary": "recommended reading.",
+   "label": "Recommended",
+   "seen": "2026-11-01T03:07:43.803314+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Recommended reading from a full-feed blog, always kept; topic unclear from the title."
+   }
+  },
+  {
+   "title": "Xoranth's musings",
+   "url": "https://xoranth.net/gcc-switch/",
+   "date": "2026-10-31T19:51:02+00:00",
+   "summary": "recommended reading. having \"All those moments will be lost in time, like tears in rain.\" feels",
+   "label": "Recommended",
+   "seen": "2026-11-01T03:07:43.803314+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Recommended reading on how GCC compiles switch statements, a low-level performance topic."
+   }
+  },
+  {
    "title": "A Little Determinism",
    "url": "https://cra.mr/a-little-determinism",
    "date": "2026-10-30T22:05:37+00:00",
