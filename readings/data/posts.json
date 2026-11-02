@@ -2058,6 +2058,18 @@
  ],
  "thorsten": [
   {
+   "title": "Joy & Curiosity #104",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-104",
+   "date": "2026-11-01T08:49:36+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-11-02T03:08:40.135884+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Weekly link roundup from a full-feed blog, no single topic dominates."
+   }
+  },
+  {
    "title": "Joy & Curiosity #103",
    "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-103",
    "date": "2026-10-25T07:11:23+00:00",
@@ -2565,6 +2577,21 @@
   }
  ],
  "mario": [
+  {
+   "title": "X - The Everything App",
+   "url": "https://x.com/i/article/2116829218935857152",
+   "date": "2026-11-01T20:56:38+00:00",
+   "summary": "recommended reading. had the good fortune to talk with @tianyi a little while ago, and the DSH folks are one of the not so many teams doing innovative stuff in the harness space. the below largely aligns with what we…",
+   "label": "Recommended",
+   "seen": "2026-11-02T03:08:40.135884+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Recommends an article on innovative agent harness design."
+   }
+  },
   {
    "title": "The Golden Age",
    "url": "https://dark.ronacher.eu/2026/10/31/golden-age/",
@@ -6799,20 +6826,6 @@
      "databases"
     ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "What if you don't need MCP at all?",
-   "url": "https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp",
-   "date": "2025-11-02T00:00:00+00:00",
-   "summary": "Got Bash and some code interpreter? Skip MCP.",
-   "seen": "2025-11-02T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Using Bash and code interpreters instead of MCP for agents."
    }
   }
  ],
@@ -11851,20 +11864,6 @@
     "relevant": true,
     "topics": [
      "databases"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "New prompt injection papers: Agents Rule of Two and The Attacker Moves Second",
-   "url": "https://simonwillison.net/2025/Nov/2/new-prompt-injection-papers/",
-   "date": "2025-11-02T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-02T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
     ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
