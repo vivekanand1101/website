@@ -10,6 +10,7 @@ One repository and one build serve every section:
 | `/` | About (home page) | React + TypeScript + Vite (`src/`, `public/`) |
 | `/writing/` | Writing | Hugo (`writings/`) |
 | `/reading/` | Reading | Python standard library (`readings/`) |
+| `/slops/` | AI projects and Kerai Race | Python index (`slops/`), static game (`public/slops/`) |
 
 `shared/site.css` holds the palette, type, header and footer for all three. The header
 markup lives in `src/components/Navigation.tsx`, `writings/layouts/partials/header.html`

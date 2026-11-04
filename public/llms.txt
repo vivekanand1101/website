@@ -18,3 +18,8 @@ Vivek's current role is remote, so for now he works from home in Kerai. Professi
 
 - [GitHub](https://github.com/vivekanand1101): Public projects.
 - [LinkedIn](https://linkedin.com/in/vivekanandxyz/): Professional profile.
+
+## Slops
+
+- [Slops](https://anandvivek.in/slops/): Small projects built with AI.
+- [Kerai Race](https://anandvivek.in/slops/kerai-race/): Road Rash game adjusted to the map of Vivek’s village.

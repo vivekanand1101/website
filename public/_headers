@@ -1,0 +1,6 @@
+/slops/kerai-race/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/slops/kerai-race/manifest.json
+  Cache-Control: no-cache
+/slops/kerai-race/
+  Cache-Control: no-cache

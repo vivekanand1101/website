@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<base href="/slops/kerai-race/">
+<link rel="canonical" href="https://anandvivek.in/slops/kerai-race/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerai Race</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #111; font-family: -apple-system, "Kohinoor Devanagari", sans-serif; color: #fff; }
+  canvas { display: block; }
+  body > *:not(#gl) { z-index: 2; }
+  #gl { z-index: 0; position: fixed; inset: 0; width: 100vw !important; height: 100vh !important; height: 100dvh !important; }
+  .panel { position: fixed; background: rgba(10,12,16,0.55); border-radius: clamp(8px, 1.4vmin, 14px); padding: clamp(5px, 1vmin, 10px) clamp(8px, 1.6vmin, 16px); pointer-events: none; backdrop-filter: blur(4px); }
+  #tl { top: clamp(6px, 1.4vmin, 14px); left: clamp(6px, 1.4vmin, 14px); min-width: clamp(90px, 15vmin, 150px); }
+  #coins { font-size: clamp(24px, 4.6vmin, 46px); font-weight: 800; line-height: 1; color: #ffd54f; text-shadow: 0 2px 0 #7a5200; }
+  #coins::before { content: '🏁 '; font-size: 0.6em; }
+  #coinsub { font-size: clamp(10px, 1.3vmin, 13px); opacity: .85; margin-top: 4px; }
+  #tc { top: clamp(6px, 1.4vmin, 14px); left: 50%; transform: translateX(-50%); text-align: center; padding: clamp(3px, 0.6vmin, 6px) clamp(10px, 2.2vmin, 22px); }
+  #time { font-size: clamp(24px, 4.4vmin, 44px); font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  #time.low { color: #ff5252; animation: pulse .6s infinite alternate; }
+  @keyframes pulse { to { transform: scale(1.08); } }
+  #tr { top: clamp(6px, 1.4vmin, 14px); right: clamp(6px, 1.4vmin, 14px); text-align: right; min-width: clamp(100px, 17vmin, 170px); }
+  #speed { font-size: clamp(22px, 4vmin, 40px); font-weight: 800; line-height: 1; }
+  .small { font-size: clamp(10px, 1.3vmin, 13px); opacity: .85; }
+  .bar { height: 8px; background: rgba(255,255,255,.2); border-radius: 5px; margin-top: 6px; overflow: hidden; }
+  .bar > div { height: 100%; width: 0; }
+  #mission { position: fixed; top: clamp(50px, 8.6vmin, 86px); left: 50%; transform: translateX(-50%); display: none; align-items: center; gap: 10px; background: rgba(10,12,16,0.6); border: 2px solid #ffca28; border-radius: 30px; padding: 6px 16px 6px 8px; pointer-events: none; }
+  #arrow { width: clamp(22px, 3vmin, 30px); height: clamp(22px, 3vmin, 30px); display: grid; place-items: center; background: #ffca28; color: #000; border-radius: 50%; font-weight: 900; font-size: 18px; }
+  #mname { font-weight: 700; font-size: clamp(12px, 1.6vmin, 16px); max-width: 46vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #mdist { font-size: clamp(11px, 1.4vmin, 14px); color: #ffe082; font-variant-numeric: tabular-nums; }
+  #streak { position: fixed; top: clamp(90px, 13vmin, 132px); font-size: clamp(12px, 1.6vmin, 16px); left: 50%; transform: translateX(-50%); font-weight: 800; color: #ffd54f; text-shadow: 0 2px 6px #000; pointer-events: none; }
+  #mini { position: fixed; left: clamp(6px, 1.4vmin, 14px); bottom: clamp(6px, 1.4vmin, 14px); width: clamp(110px, 24vmin, 240px); height: clamp(110px, 24vmin, 240px); border: 3px solid rgba(255,255,255,.85); border-radius: 50%; box-shadow: 0 4px 18px rgba(0,0,0,.5); }
+  #msg { position: fixed; top: 30%; width: 100%; padding: 0 12px; box-sizing: border-box; text-align: center; font-size: clamp(20px, 4vmin, 40px); font-weight: 800; text-shadow: 0 3px 10px #000; transition: opacity .3s; opacity: 0; pointer-events: none; }
+  .bump { animation: bump .35s ease-out; }
+  @keyframes bump { 0% { transform: scale(1); } 40% { transform: scale(1.22); } 100% { transform: scale(1); } }
+  .screen { position: fixed; inset: 0; overflow-y: auto; box-sizing: border-box; display: none; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,.62); text-align: center; padding: 16px; }
+  .screen h1 { font-size: clamp(28px, 5.4vmin, 54px); margin: 0 0 6px; color: #ffca28; text-shadow: 0 4px 0 #b71c1c; }
+  .screen p { font-size: clamp(13px, 1.8vmin, 18px); margin: 6px; max-width: 780px; }
+  .k b { background: #fff; color: #000; border-radius: 4px; padding: 1px 7px; }
+  table.keys { margin: 12px auto; border-collapse: collapse; font-size: clamp(12px, 1.6vmin, 16px); }
+  table.keys td { padding: 4px 12px; text-align: left; }
+  .stats { display: flex; gap: 14px; margin: 14px 0; flex-wrap: wrap; justify-content: center; }
+  .stats div { background: rgba(255,255,255,.1); border-radius: 12px; padding: 10px 18px; min-width: 110px; }
+  .stats b { display: block; font-size: 30px; color: #ffd54f; }
+  .stats span { font-size: 13px; opacity: .85; }
+  #loading { display: flex; }
+  #road { position: fixed; bottom: clamp(6px, 1.4vmin, 14px); left: 50%; transform: translateX(-50%); font-size: clamp(11px, 1.6vmin, 16px) !important; padding: clamp(3px, 0.6vmin, 6px) clamp(8px, 1.6vmin, 16px) !important; background: rgba(13,71,161,.85); border: 2px solid #fff; border-radius: 8px; padding: 6px 16px; font-weight: 700; font-size: 16px; pointer-events: none; white-space: nowrap; max-width: 60vw; overflow: hidden; text-overflow: ellipsis; }
+  #sign { position: fixed; top: clamp(96px, 15vmin, 150px); right: clamp(6px, 1.4vmin, 14px); width: clamp(220px, 44vmin, 440px); height: auto; display: none; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,.5); pointer-events: none; }
+  #flash { position: fixed; inset: 0; pointer-events: none; opacity: 0; background: radial-gradient(ellipse at center, rgba(255,255,255,.55) 0%, rgba(255,60,40,.35) 45%, rgba(90,0,0,.85) 100%); }
+  #fsbtn { position: fixed; right: clamp(6px, 1.4vmin, 14px); bottom: clamp(22px, 3vmin, 32px); width: 40px; height: 40px; border-radius: 10px; border: 2px solid rgba(255,255,255,.7); background: rgba(10,12,16,.55); color: #fff; font-size: 22px; cursor: pointer; }
+  #dirs { top: calc(clamp(6px, 1.4vmin, 14px) + clamp(70px, 10vmin, 100px)); left: clamp(6px, 1.4vmin, 14px); display: none; width: clamp(200px, 26vmin, 290px); padding: 8px 10px; }
+  #dirs .dh { font-size: clamp(10px, 1.2vmin, 12px); opacity: .8; margin-bottom: 4px; letter-spacing: .04em; }
+  #dirs .dr { display: flex; align-items: center; gap: 8px; padding: 3px 0; border-top: 1px solid rgba(255,255,255,.12); }
+  #dirs .dm { color: #ffd54f; }
+  #dirs .da { width: 1.4em; font-size: clamp(16px, 2.2vmin, 22px); font-weight: 900; text-align: center; }
+  #dirs .dn { flex: 1; font-weight: 700; font-size: clamp(11px, 1.45vmin, 14px); line-height: 1.15; }
+  #dirs .dn small { display: block; font-weight: 500; font-size: .8em; opacity: .8; }
+  #dirs .dd { font-size: clamp(11px, 1.35vmin, 13px); font-variant-numeric: tabular-nums; opacity: .9; }
+  @media (max-width: 760px) { body #dirs { top: auto; bottom: calc(clamp(58px, 12vmin, 90px) + 70px); width: 56vw; } body #dirs .dr:nth-child(n+5) { display: none; } }
+  .lob { background: rgba(0,0,0,.45); border: 1px solid rgba(255,255,255,.2); border-radius: 14px; padding: 14px 18px; display: flex; flex-direction: column; gap: 10px; min-width: min(560px, 92vw); text-align: left; }
+  .lob label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; opacity: .95; }
+  .lob input, .lob select { font: inherit; font-size: 16px; padding: 7px 10px; border-radius: 8px; border: 1px solid #888; background: #1d2128; color: #fff; }
+  .lob .row { display: flex; gap: 10px; align-items: flex-end; } .lob .row label { flex: 1; }
+  .lob button { font: inherit; font-weight: 700; border: 0; border-radius: 10px; padding: 8px 14px; background: #37474f; color: #fff; cursor: pointer; }
+  .lob button.go { background: linear-gradient(#ffca28, #ff8f00); color: #1b1b1b; font-size: 20px; padding: 12px; }
+  .lob .tracks { display: flex; gap: 6px; flex-wrap: wrap; } .lob .tracks span { font-size: 12px; padding: 3px 8px; border-radius: 12px; background: rgba(255,255,255,.1); } .lob .tracks span.on { background: #ffca28; color: #000; font-weight: 700; }
+  .lob .plist { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; } .lob .plist span { background: rgba(255,255,255,.12); padding: 3px 9px; border-radius: 12px; }
+  .lob .wait { color: #ffe082; font-weight: 700; }
+  #mission.warn { border-color: #ff5252; background: rgba(120,0,0,.7); }
+  table.podium { border-collapse: collapse; font-size: clamp(14px, 2vmin, 20px); margin: 10px auto; } table.podium td { padding: 6px 16px; border-bottom: 1px solid rgba(255,255,255,.15); text-align: left; } table.podium tr.me td { color: #ffd54f; font-weight: 800; }
+  #winner { position: fixed; top: 18%; left: 50%; transform: translate(-50%, -30px) scale(.6); opacity: 0; transition: all .6s cubic-bezier(.2,1.6,.4,1); pointer-events: none; text-align: center; padding: 18px 38px; border-radius: 20px;
+    background: radial-gradient(circle, rgba(255,214,0,.35), rgba(120,40,0,.75)); border: 4px solid #ffd54f; box-shadow: 0 0 60px rgba(255,200,0,.8); }
+  #winner.on { opacity: 1; transform: translate(-50%, 0) scale(1); animation: glow 1s infinite alternate; }
+  @keyframes glow { to { box-shadow: 0 0 110px rgba(255,220,60,1); } }
+  #winner .wt { font-size: clamp(22px, 4vmin, 40px); font-weight: 900; color: #ffd54f; text-shadow: 0 3px 0 #7a3b00; } #winner .wn { font-size: clamp(30px, 7vmin, 70px); font-weight: 900; color: #fff; text-shadow: 0 4px 12px #000; } #winner .ws { font-size: clamp(13px, 2vmin, 18px); }
+  #credit { position: fixed; right: 8px; bottom: 6px; font-size: clamp(8px, 1.1vmin, 11px); opacity: .7; }
+  @media (max-width: 760px) {
+    body #tl, body #tr { min-width: 0; }
+    body #tc { top: 58px; }
+    body #mission { top: 104px; } body #mname { max-width: 44vw; }
+    body #streak { top: 152px; }
+    body #mini { left: auto; right: 6px; bottom: auto; top: 104px; width: 88px; height: 88px; }
+    body #road { bottom: 8px; top: auto; max-width: 94vw; }
+    body #sign { top: 200px; right: 6px; width: min(46vw, 220px); }
+    body #credit { display: none; }
+  }
+  @media (max-width: 760px) and (pointer: coarse) { body #road { bottom: calc(clamp(58px, 12vmin, 90px) + 34px); } }
+  .tapnote { display: none; }
+  #touch { display: none; position: fixed; inset: auto 0 0 0; pointer-events: none; }
+  #touch button { pointer-events: auto; position: fixed; bottom: clamp(14px, 3vmin, 28px); width: clamp(58px, 12vmin, 90px); height: clamp(58px, 12vmin, 90px); border-radius: 50%; border: 2px solid rgba(255,255,255,.7); background: rgba(10,12,16,.45); color: #fff; font-size: clamp(20px, 4vmin, 30px); font-weight: 800; touch-action: none; -webkit-user-select: none; user-select: none; }
+  #touch button.on { background: rgba(255,202,40,.6); }
+  @media (pointer: coarse) { #touch { display: block; } .tapnote { display: inline; } #credit { display: none; } #mini { bottom: auto; top: clamp(70px, 12vmin, 110px); width: clamp(90px, 20vmin, 160px); height: clamp(90px, 20vmin, 160px); } }
+  @media (pointer: coarse) and (max-width: 760px) { body #mini { top: 104px; width: 88px; height: 88px; } }
+</style>
+</head>
+<body>
+<div id="tl" class="panel"><div id="coins">0</div><div id="coinsub"></div></div>
+<div id="tc" class="panel"><div id="time">3:00</div></div>
+<div id="tr" class="panel"><div><span id="speed">0</span> <span class="small">km/h</span></div>
+  <div style="display:none"><div id="heat"></div></div>
+  <div class="small" style="margin-top:6px">बाइक Bike 🔧</div><div class="bar"><div id="bikehp" style="width:100%;background:#66bb6a"></div></div></div>
+<div id="road"></div>
+<canvas id="sign" width="680" height="346"></canvas>
+<div id="mission"><div id="arrow">▲</div><div><div id="mname"></div><div id="mdist"></div></div></div>
+<div id="streak"></div>
+<div id="dirs" class="panel"></div>
+<canvas id="mini"></canvas>
+<div id="msg"></div>
+<div id="flash"></div>
+<div id="winner"></div>
+<button id="fsbtn" title="Full screen (F)">⛶</button>
+<div id="touch">
+  <button data-k="ArrowLeft" style="left:clamp(10px,3vmin,30px)">◀</button>
+  <button data-k="ArrowRight" style="left:calc(clamp(10px,3vmin,30px) + clamp(66px,14vmin,104px))">▶</button>
+  <button data-k="KeyJ" style="left:clamp(10px,3vmin,30px);bottom:calc(clamp(14px,3vmin,28px) + clamp(66px,14vmin,104px))">🦵L</button>
+  <button data-k="KeyK" style="left:calc(clamp(10px,3vmin,30px) + clamp(66px,14vmin,104px));bottom:calc(clamp(14px,3vmin,28px) + clamp(66px,14vmin,104px))">R🦵</button>
+  <button data-k="KeyH" style="right:calc(clamp(10px,3vmin,30px) + 2 * clamp(66px,14vmin,104px));bottom:clamp(14px,3vmin,28px)">📯</button>
+  <button data-k="ArrowDown" style="right:calc(clamp(10px,3vmin,30px) + clamp(66px,14vmin,104px))">■</button>
+  <button data-k="ArrowUp" style="right:clamp(10px,3vmin,30px)">▲</button>
+</div>
+<div id="loading" class="screen"><h1>केराई रेस · Kerai Race</h1><p>Loading…</p></div>
+<div id="title" class="screen"></div>
+<div id="results" class="screen"></div>
+<div id="credit">Imagery &amp; map data © Google — private, personal use only · People: Microsoft Rocketbox (MIT)</div>
+<script defer src="assets/loader.138f27657ea20bd8.js"></script>
+</body>
+</html>
