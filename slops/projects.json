@@ -6,8 +6,15 @@
   },
   {
     "slug": "dino",
-    "title": "Dino × Jev",
+    "title": "Dino \u00d7 Jev",
     "description": "Chrome's dinosaur game, with Jev choosing when to jump and duck. Bring your own Jev API key, or play manually.",
     "image": null
+  },
+  {
+    "slug": "tic-tac-toe",
+    "title": "Tic-tac-toe",
+    "description": "Play against Jev with your own API key, or take on the free local AI.",
+    "image": "/slops/tic-tac-toe.svg",
+    "imageAlt": "A tic-tac-toe board with green crosses and purple circles."
   }
 ]
