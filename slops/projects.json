@@ -1,5 +1,14 @@
 [
   {
+    "slug": "dino",
+    "title": "Dino × Jev",
+    "description": "Chrome's dinosaur game, with Jev choosing when to jump and duck. Bring your own Jev API key, or play manually.",
+    "image": "/slops/dino.png",
+    "imageAlt": "The dinosaur jumping over the desert ground in Dino × Jev.",
+    "imageWidth": 728,
+    "imageHeight": 380
+  },
+  {
     "slug": "tic-tac-toe",
     "title": "Tic-tac-toe",
     "description": "Play against Jev with your own API key, or take on the free local AI.",
@@ -10,11 +19,5 @@
     "slug": "kerai-race",
     "title": "Kerai Race",
     "description": "Road Rash game adjusted to the map of my own village."
-  },
-  {
-    "slug": "dino",
-    "title": "Dino \u00d7 Jev",
-    "description": "Chrome's dinosaur game, with Jev choosing when to jump and duck. Bring your own Jev API key, or play manually.",
-    "image": null
   }
 ]
