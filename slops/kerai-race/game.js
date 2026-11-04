@@ -1565,7 +1565,7 @@ function buildMilestones() {
   return faces.length;
 }
 
-// ---------- Junction signboard: appears before the next junction, arrows relative to the rider ----------
+// ---------- Roadside junction signs; route arrows guide the rider without a floating screen copy ----------
 const jBoard = { group: null, node: -1, tex: null, canvas: null, t: 0 };
 function makeJunctionBoard() {
   const c = document.createElement('canvas'); c.width = 1024; c.height = 520;
@@ -1600,13 +1600,13 @@ const ARROWS = ['↑', '↗', '→', '↘', '↓', '↙', '←', '↖'];
 function updateJunctionBoard(dt) {
   if (!jBoard.group) makeJunctionBoard();
   jBoard.t -= dt; if (jBoard.t > 0) return; jBoard.t = 0.25;
-  const hide = () => { if ((jBoard.linger -= 0.25) > 0) return; jBoard.group.visible = jBoard.shown = false; $('sign').style.display = 'none'; };
+  const hide = () => { if ((jBoard.linger -= 0.25) > 0) return; jBoard.group.visible = jBoard.shown = false; };
   const rn = player.rn; if (!rn || rn.d > rn.ed.half + 3) { hide(); return; }
   const ed = rn.ed, dir = Math.cos(edgeYaw(ed, rn.s, 1) - player.h) > 0 ? 1 : -1;
   const node = dir > 0 ? ed.b : ed.a, dn = dir > 0 ? ed.L - rn.s : rn.s;
   const outs = ADJ[node].filter(e => e !== ed);
   if (dn > 120 || outs.length < 2) { hide(); return; }   // only real junctions get a board; it stays up through the turn and a moment after
-  jBoard.linger = 1.75; if (jBoard.shown) $('sign').style.display = 'block';
+  jBoard.linger = 1.75;
   if (jBoard.node === node + ':' + ed.id && jBoard.shown) return;
   jBoard.node = node + ':' + ed.id;
   // for each way out of the junction: the closest destination whose best route leaves that way
@@ -1668,7 +1668,7 @@ function updateJunctionBoard(dt) {
   });
   jBoard.tex.needsUpdate = true;
   // stand on the left verge, 12 m before the junction, facing the rider
-  // never on a carriageway: try the left verge, then the right, then further back; otherwise only the on-screen copy
+  // never on a carriageway: try the left verge, then the right, then further back; otherwise leave the road clear
   const onRoad = (q) => { const r = roadNear(q.x, q.z); return r && r.d < r.ed.half + 0.8; };
   let spot = null;
   for (const back of [12, 22, 32]) for (const side of [1, -1]) {
@@ -1680,7 +1680,6 @@ function updateJunctionBoard(dt) {
   if (spot) { jBoard.group.position.copy(spot.p); jBoard.group.rotation.y = spot.yaw + Math.PI; }
   jBoard.group.visible = !!spot;
   jBoard.shown = true;
-  const hs = $('sign'); hs.getContext('2d').drawImage(jBoard.canvas, 0, 0, hs.width, hs.height);
 }
 
 // ---------- Start: where the Dalsinghsarai – Angarghat road enters Kerai, by the Shahpur Patohi road ----------

@@ -97,7 +97,6 @@ body[data-state=loading] #fsbtn,body[data-state=title] #fsbtn,body[data-state=ov
 .touch-layout #road { bottom:calc(max(12px,var(--safe-bottom)) + 198px); max-width:calc(100vw - 24px); font-size:10px!important; }
 .touch-layout #msg { top:34%; font-size:21px; }
 .touch-layout #streak { top:calc(var(--safe-top) + 190px); font-size:11px; }
-.touch-layout #sign { top:calc(var(--safe-top) + 200px); width:42vw; }
 .touch-layout #credit { display:none; }
 .touch-layout #winner { width:75vw; box-sizing:border-box; padding:14px; top:30%; }
 .touch-layout .podium { font-size:14px; }
@@ -113,7 +112,6 @@ body[data-state=loading] #touch,body[data-state=title] #touch,body[data-state=ov
  .touch-layout #fsbtn { right:calc(max(12px,env(safe-area-inset-right)) + 152px); bottom:max(12px,var(--safe-bottom)); }
  .touch-layout #road { bottom:calc(max(12px,var(--safe-bottom)) + 50px); max-width:32vw; }
  .touch-layout #dirs { top:60px; left:90px; right:140px; max-height:calc(var(--view-h,100dvh) - 140px); }
- .touch-layout #sign { top:40%; width:26vw; right:18%; }
  .touch-layout #msg { top:40%; font-size:21px; }
  .touch-layout .screen { padding-top:max(12px,var(--safe-top)); }
 }
