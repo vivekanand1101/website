@@ -1,0 +1,128 @@
+/* Instruments and phone controls. Scene textures and rendering quality are unchanged. */
+:root { --safe-top:env(safe-area-inset-top,0px); --safe-bottom:env(safe-area-inset-bottom,0px); --control-bg:rgba(13,19,25,.84); }
+html,body { overscroll-behavior:none; }
+button,a,input,select { -webkit-tap-highlight-color:transparent; }
+button { -webkit-touch-callout:none; }
+#gl { height:var(--view-h,100dvh)!important; touch-action:none; }
+body .screen { z-index:10; height:var(--view-h,100dvh); bottom:auto; padding:max(16px,var(--safe-top)) max(16px,env(safe-area-inset-right)) max(16px,var(--safe-bottom)) max(16px,env(safe-area-inset-left)); }
+.screen .lob { box-sizing:border-box; width:min(560px,100%); min-width:0; }
+.lob .row label { min-width:0; }
+.lob input,.lob select { min-width:0; width:100%; box-sizing:border-box; }
+.lob .row button { flex-shrink:0; }
+.lob button.go { min-height:50px; }
+body #tr { width:182px; min-width:0; box-sizing:border-box; padding:7px 10px 10px; text-align:center; background:rgba(10,15,22,.86); border:1px solid rgba(255,255,255,.2); border-radius:18px; }
+#speedometer { position:relative; color:#ffd54f; width:100%; aspect-ratio:180/138; }
+#speedometer svg { position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+#speedometer .dial-tick { stroke:#d7e0e8; stroke-width:1.5; }
+#speedometer .dial-label { fill:#aebbc6; font:8px system-ui,sans-serif; text-anchor:middle; dominant-baseline:central; }
+#speed-arc { stroke:currentColor; }
+#speed-needle { fill:currentColor; }
+#speedometer[data-tone=fast] { color:#ff7448; }
+#speedometer[data-tone=braking] { color:#88caff; }
+.speed-readout { position:absolute; left:0; right:0; top:49%; text-align:center; font-variant-numeric:tabular-nums; }
+body #speed { font-size:32px; font-weight:800; line-height:1; color:#fff; }
+.speed-unit { display:block; margin-top:2px; color:#c2ced6; font-size:9px; letter-spacing:.15em; text-transform:uppercase; }
+#drive-status { position:absolute; bottom:1px; left:0; right:0; color:currentColor; font-size:9px; letter-spacing:.12em; font-weight:700; }
+.bike-health { display:flex; align-items:center; gap:6px; margin-top:4px; color:#c2ced6; font-size:9px; text-transform:uppercase; letter-spacing:.1em; }
+.bike-health .bar { flex:1; margin:0; height:5px; }
+#speed-fx { position:fixed; inset:0; overflow:hidden; opacity:0; pointer-events:none; z-index:1; }
+#speed-fx i { position:absolute; display:block; width:9vw; height:1px; background:linear-gradient(90deg,transparent,#e6f4ff); animation:wind .58s linear infinite; transform-origin:right; }
+#speed-fx i:nth-child(1) { top:26%; left:-3%; --slant:20deg; }
+#speed-fx i:nth-child(2) { top:43%; left:0; --slant:5deg; animation-delay:-.3s; }
+#speed-fx i:nth-child(3) { top:64%; left:-2%; --slant:-12deg; animation-delay:-.17s; }
+#speed-fx i:nth-child(4) { top:80%; left:-1%; --slant:-25deg; animation-delay:-.4s; }
+#speed-fx i:nth-child(n+5) { left:auto; right:-1%; transform-origin:left; background:linear-gradient(90deg,#e6f4ff,transparent); animation-name:wind-right; }
+#speed-fx i:nth-child(5) { top:26%; --slant:-20deg; animation-delay:-.2s; }
+#speed-fx i:nth-child(6) { top:43%; --slant:-5deg; animation-delay:-.4s; }
+#speed-fx i:nth-child(7) { top:64%; --slant:12deg; animation-delay:-.1s; }
+#speed-fx i:nth-child(8) { top:80%; --slant:25deg; animation-delay:-.3s; }
+@keyframes wind { from { transform:translateX(30px) rotate(var(--slant)) scaleX(.4); opacity:0; } 30% { opacity:1; } to { transform:translateX(-60px) rotate(var(--slant)) scaleX(1.6); opacity:0; } }
+@keyframes wind-right { from { transform:translateX(-30px) rotate(var(--slant)) scaleX(.4); opacity:0; } 30% { opacity:1; } to { transform:translateX(60px) rotate(var(--slant)) scaleX(1.6); opacity:0; } }
+body #touch { display:none; }
+#race-tools { position:fixed; right:16px; bottom:66px; display:flex; gap:7px; z-index:4; }
+#race-tools button,#standings-toggle,.resume-button,.lobby-button { min-height:44px; border:1px solid rgba(255,255,255,.35); border-radius:10px; background:var(--control-bg); color:#fff; font:600 12px system-ui,sans-serif; padding:8px 12px; touch-action:manipulation; cursor:pointer; }
+#race-tools button[aria-pressed=true] { border-color:#ffd54f; color:#ffd54f; }
+#standings-toggle { display:none; position:fixed; z-index:4; }
+#pause-screen { position:fixed; inset:0; z-index:12; background:rgba(5,9,15,.78); display:grid; place-items:center; text-align:center; }
+#pause-screen[hidden] { display:none; }
+#pause-screen h2 { font-size:32px; color:#ffd54f; margin:0 0 8px; }
+#pause-screen p { color:#c3d0dc; margin:0 0 20px; }
+.resume-button,.lobby-button { background:#ffca28; color:#151a20; border:0; font-size:17px; padding:12px 24px; min-height:48px; }
+.touch-help { display:none; }
+body[data-state=loading] #tr,body[data-state=title] #tr,body[data-state=over] #tr { visibility:hidden; }
+body[data-state=loading] #race-tools,body[data-state=title] #race-tools,body[data-state=over] #race-tools { display:none; }
+body[data-state=loading] #fsbtn,body[data-state=title] #fsbtn,body[data-state=over] #fsbtn { display:none; }
+.touch-layout #touch { display:flex; justify-content:space-between; align-items:flex-end; padding:0 max(12px,env(safe-area-inset-right)) max(12px,var(--safe-bottom)) max(12px,env(safe-area-inset-left)); box-sizing:border-box; z-index:4; bottom:0; gap:12px; }
+.touch-layout #touch button { position:static; box-sizing:border-box; border:1px solid rgba(255,255,255,.5); border-radius:14px; height:62px; width:62px; padding:4px; background:var(--control-bg); color:#fff; font:700 20px system-ui,sans-serif; touch-action:none; user-select:none; box-shadow:0 3px 12px rgba(0,0,0,.2); }
+.touch-layout #touch button small { display:block; font-size:9px; margin-top:2px; text-transform:uppercase; letter-spacing:.04em; }
+.touch-layout #touch button.on { background:#dfb42b; color:#141a20; border-color:#ffe287; transform:translateY(1px); }
+.touch-layout .controls-group { display:flex; flex-direction:column; gap:8px; }
+.touch-layout .controls-row { display:flex; align-items:flex-end; gap:8px; }
+.touch-layout .controls-actions { gap:8px; }
+.touch-layout #touch .controls-actions button { height:44px; width:62px; font-size:13px; border-radius:11px; }
+.touch-layout #touch .gas { width:72px; height:78px; background:rgba(43,109,57,.9); border-color:#9bd7a4; font-size:24px; }
+.touch-layout #touch .brake { width:60px; height:62px; background:rgba(115,39,35,.9); border-color:#ed9a8a; }
+.touch-layout #touch .gas.on,.touch-layout #touch .brake.on { background:#ffca28; color:#141a20; }
+.touch-layout .touch-help { display:block; color:#d5dfe7; font-size:13px; line-height:1.5; }
+.touch-layout table.keys { display:none; }
+.touch-layout .screen { justify-content:flex-start; overflow-y:auto; padding-top:max(22px,var(--safe-top)); }
+.touch-layout .screen h1 { font-size:25px; margin-bottom:8px; }
+.touch-layout .screen p { font-size:13px; }
+.touch-layout .lob { padding:12px; gap:9px; }
+.touch-layout .lob .row { gap:6px; }
+.touch-layout .lob select,.touch-layout .lob input { padding:9px 6px; min-height:44px; font-size:16px; }
+.touch-layout .lob .row label { font-size:11px; }
+.touch-layout #tl { left:max(10px,env(safe-area-inset-left)); top:calc(var(--safe-top) + 10px); min-width:0; width:80px; padding:8px; }
+.touch-layout #coins { font-size:23px; }
+.touch-layout #coinsub { font-size:9px; line-height:1.3; }
+.touch-layout #tc { top:calc(var(--safe-top) + 12px); padding:6px 10px; }
+.touch-layout #time { font-size:24px; }
+.touch-layout #tr { right:max(10px,env(safe-area-inset-right)); top:calc(var(--safe-top) + 8px); width:112px; padding:5px 5px 8px; border-radius:14px; }
+.touch-layout #speed { font-size:24px; }
+.touch-layout #drive-status { font-size:7px; }
+.touch-layout .speed-unit { font-size:7px; }
+.touch-layout .bike-health { font-size:7px; gap:4px; }
+.touch-layout #mini { left:max(10px,env(safe-area-inset-left)); right:auto; top:calc(var(--safe-top) + 84px); bottom:auto; width:70px; height:70px; border-width:2px; }
+.touch-layout #standings-toggle { display:block; left:max(10px,env(safe-area-inset-left)); top:calc(var(--safe-top) + 160px); min-height:36px; width:74px; padding:6px; font-size:11px; }
+.touch-layout #mission { top:calc(var(--safe-top) + 130px); left:96px; right:max(10px,env(safe-area-inset-right)); transform:none; padding:7px; border-radius:12px; gap:7px; }
+.touch-layout #mname { font-size:11px; max-width:calc(100vw - 156px); }
+.touch-layout #mdist { font-size:10px; }
+.touch-layout #arrow { width:22px; height:22px; flex-shrink:0; font-size:15px; }
+.touch-layout #dirs { display:none!important; top:calc(var(--safe-top) + 202px); left:10px; right:10px; bottom:auto; width:auto; max-height:calc(var(--view-h,100dvh) - 400px); overflow:auto; pointer-events:auto; }
+.touch-layout.standings-open #dirs { display:block!important; }
+.touch-layout #dirs .dr { display:flex; }
+.touch-layout #race-tools { left:50%; right:auto; bottom:calc(max(12px,var(--safe-bottom)) + 148px); transform:translateX(-50%); gap:6px; }
+.touch-layout #race-tools button { min-width:44px; padding:8px; font-size:11px; }
+.touch-layout #fsbtn { right:max(10px,env(safe-area-inset-right)); bottom:calc(max(12px,var(--safe-bottom)) + 148px); width:40px; height:44px; }
+.touch-layout #road { bottom:calc(max(12px,var(--safe-bottom)) + 198px); max-width:calc(100vw - 24px); font-size:10px!important; }
+.touch-layout #msg { top:34%; font-size:21px; }
+.touch-layout #streak { top:calc(var(--safe-top) + 190px); font-size:11px; }
+.touch-layout #sign { top:calc(var(--safe-top) + 200px); width:42vw; }
+.touch-layout #credit { display:none; }
+.touch-layout #winner { width:75vw; box-sizing:border-box; padding:14px; top:30%; }
+.touch-layout .podium { font-size:14px; }
+.touch-layout .podium td { padding:6px 8px; }
+body[data-state=loading] #touch,body[data-state=title] #touch,body[data-state=over] #touch,body[data-state=paused] #touch,body[data-state=loading] #standings-toggle,body[data-state=title] #standings-toggle,body[data-state=over] #standings-toggle { display:none; }
+@media (max-width:360px) { .touch-layout #tr { width:98px; } .touch-layout #time { font-size:21px; } .touch-layout #tc { padding:6px; } .touch-layout #touch button { width:56px; height:60px; } .touch-layout #touch .controls-actions button { width:56px; } .touch-layout #touch .gas { width:64px; } .touch-layout #touch .brake { width:54px; } }
+@media (orientation:landscape) and (max-height:560px) {
+ .touch-layout #mission { top:calc(var(--safe-top) + 64px); left:50%; right:auto; transform:translateX(-50%); max-width:42vw; }
+ .touch-layout #mname { max-width:32vw; }
+ .touch-layout #mini { width:58px; height:58px; top:calc(var(--safe-top) + 78px); }
+ .touch-layout #standings-toggle { top:calc(var(--safe-top) + 142px); width:62px; min-height:32px; }
+ .touch-layout #race-tools { bottom:max(12px,var(--safe-bottom)); }
+ .touch-layout #fsbtn { right:calc(max(12px,env(safe-area-inset-right)) + 152px); bottom:max(12px,var(--safe-bottom)); }
+ .touch-layout #road { bottom:calc(max(12px,var(--safe-bottom)) + 50px); max-width:32vw; }
+ .touch-layout #dirs { top:60px; left:90px; right:140px; max-height:calc(var(--view-h,100dvh) - 140px); }
+ .touch-layout #sign { top:40%; width:26vw; right:18%; }
+ .touch-layout #msg { top:40%; font-size:21px; }
+ .touch-layout .screen { padding-top:max(12px,var(--safe-top)); }
+}
+@media (prefers-reduced-motion:reduce) { #speed-fx { display:none; } #speed-fx i { animation:none; } }
+
+body:not(.fullscreen-supported) #fsbtn { display:none; }
+
+/* Keep the units clear at the smallest phone size. */
+.touch-layout .speed-readout { top:40%; }
+@media (max-width:360px) { .touch-layout #speed { font-size:20px; } }
+#speed-fx i { animation-play-state:paused; }
+.speed-active #speed-fx i { animation-play-state:running; }

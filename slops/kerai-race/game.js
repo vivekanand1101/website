@@ -40,7 +40,8 @@ scene.fog = new THREE.Fog(0xd6dde0, 80, 380);
 const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.1, 900);
 // fill whatever screen or window we're in, and keep up when it changes (resize, rotate, full screen, zoom)
 function fitScreen() {
-  const w = Math.max(1, document.documentElement.clientWidth || innerWidth), h = Math.max(1, document.documentElement.clientHeight || innerHeight);
+  const w = Math.max(1, document.documentElement.clientWidth || innerWidth), h = Math.max(1, Math.round(window.visualViewport && window.visualViewport.scale === 1 ? window.visualViewport.height : innerHeight));
+  document.documentElement.style.setProperty('--view-h', h + 'px');
   renderer.setPixelRatio(Math.min(devicePixelRatio, w * h > 1.6e6 ? 1 : 1.25));   // a Retina laptop would otherwise render 4× the pixels
   renderer.setSize(w, h); camera.aspect = w / h;
   let pov = false; try { pov = povMode; } catch (e) {}
@@ -3200,7 +3201,7 @@ function showResults() {
   const w = race.finished[0];
   $('results').innerHTML = `<h1>${w && w.kind === 'me' ? '🏆 आप जीत गए! YOU WON!' : w ? '🏆 ' + escapeHTML(w.name) + ' जीता!' : 'Race over'}</h1>
     <p>${RACE_PLACES[race.from].hi} → ${RACE_PLACES[race.to].hi} · ${(race.R.L / 1000).toFixed(2)} km</p>
-    <table class="podium">${rows}</table><p class="k">Press <b>Enter</b> for the lobby</p>`;
+    <table class="podium">${rows}</table><p class="k">Press <b>Enter</b> for the lobby</p><button type="button" class="lobby-button" data-lobby>Back to lobby</button>`;
   $('results').style.display = 'flex';
 }
 // course guidance in the HUD: the next turn on the course and the distance to the finish
@@ -3333,7 +3334,7 @@ function renderLobby() {
       ${isHost ? `<button id="lgo" class="go">🏁 ${online && others.length ? 'Start the race for everyone' : 'Start race'}</button>` : `<p class="wait">Waiting for 👑 ${escapeHTML((lobby.players.find(p => p.id === lobby.hostId) || {}).name || 'host')} to start…</p>`}
     </div>
     <table class="keys"><tr><td class="k"><b>W</b>/<b>↑</b> Throttle</td><td class="k"><b>S</b>/<b>↓</b> Brake</td><td class="k"><b>A D</b>/<b>← →</b> Steer</td><td class="k"><b>H</b> Horn</td><td class="k"><b>J</b> Kick left</td></tr>
-      <tr><td class="k"><b>R</b> Back on course</td><td class="k"><b>V</b> Rider's view</td><td class="k"><b>F</b> Full screen</td><td class="k"><b>Space</b> Jump</td><td class="k"><b>K</b> Kick right</td></tr></table><p><a href="/slops/" style="color:#ffe082">← Slops</a></p>`;
+      <tr><td class="k"><b>R</b> Back on course</td><td class="k"><b>V</b> Rider's view</td><td class="k"><b>F</b> Full screen</td><td class="k"><b>Space</b> Jump</td><td class="k"><b>K</b> Kick right</td></tr></table><p class="touch-help">Hold GAS to accelerate. Steer with your left thumb, brake with your right. Landscape gives you more room.</p><p><a href="/slops/" style="color:#ffe082">← Slops</a></p>`;
   const q = id => document.getElementById(id);
   if (keep) { const i = q('lname'); i.focus(); i.setSelectionRange(keep.s, keep.e); }
   q('lname').oninput = e => { lobby.name = e.target.value.replace(/^\s+/, ''); try { localStorage.setItem('keraiRaceName', lobby.name); } catch (er) {} clearTimeout(lobby.nameT); lobby.nameT = setTimeout(() => { if (race.net) race.net.send({ t: 'join', name: lobby.name.trim() }); }, 400); };
@@ -3563,21 +3564,15 @@ function updatePeds(dt) {
 
 // ---------- Player ----------
 const keys = {};
-addEventListener('keydown', e => { keys[e.code] = true; if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space'].includes(e.code)) e.preventDefault(); if (!e.repeat) onKey(e.code); });
-addEventListener('keyup', e => { keys[e.code] = false; });
-addEventListener('blur', () => { for (const k in keys) keys[k] = false; });
-// touch screens: on-screen buttons act like the keys; tap the title / results screen to start
-document.querySelectorAll('#touch button').forEach(b => {
-  const k = b.dataset.k, down = e => { e.preventDefault(); b.classList.add('on'); keys[k] = true; onKey(k); }, up = e => { e.preventDefault(); b.classList.remove('on'); keys[k] = false; };
-  b.addEventListener('pointerdown', down); b.addEventListener('pointerup', up); b.addEventListener('pointercancel', up); b.addEventListener('pointerleave', up);
-});
-$('results').addEventListener('pointerdown', () => onKey('Enter'));
+window.KERAI_UI.bindInput(keys, onKey, () => state);
 $('fsbtn').addEventListener('click', e => { e.stopPropagation(); toggleFullscreen(); });
 document.addEventListener('fullscreenchange', () => { $('fsbtn').textContent = document.fullscreenElement ? '🗗' : '⛶'; setTimeout(fitScreen, 100); });
-function toggleFullscreen() {                         // true full screen: the whole monitor, no browser bars
+function toggleFullscreen() {
   const d = document, el = d.documentElement;
-  if (!d.fullscreenElement && !d.webkitFullscreenElement) { const p = (el.requestFullscreen || el.webkitRequestFullscreen).call(el); if (p && p.catch) p.catch(() => {}); }
-  else (d.exitFullscreen || d.webkitExitFullscreen).call(d);
+  const entering = !d.fullscreenElement && !d.webkitFullscreenElement;
+  const action = entering ? (el.requestFullscreen || el.webkitRequestFullscreen) : (d.exitFullscreen || d.webkitExitFullscreen);
+  if (typeof action !== 'function') { say('Rotate your phone for a wider view', 2); return; }
+  try { const result = action.call(entering ? el : d); if (result && result.catch) result.catch(() => {}); } catch (e) {}
 }
 function onKey(code) {
   if (code === 'KeyF') toggleFullscreen();
@@ -3612,7 +3607,7 @@ function updatePlayer(dt) {
     return;
   }
   if (player.wobT > 0) { player.wobT -= dt; player.h += Math.sin(player.wobT * 28) * 0.9 * player.wobT * dt; }   // wobble after bumping a goat
-  const up = keys.ArrowUp || keys.KeyW, dn = keys.ArrowDown || keys.KeyS, lf = keys.ArrowLeft || keys.KeyA, rt = keys.ArrowRight || keys.KeyD;
+  const up = (keys.ArrowUp || keys.KeyW) && !(keys.ArrowDown || keys.KeyS), dn = keys.ArrowDown || keys.KeyS, lf = keys.ArrowLeft || keys.KeyA, rt = keys.ArrowRight || keys.KeyD;
   const rn = roadNear(player.pos.x, player.pos.z); if (rn) player.rn = rn;
   const onRoad = rn && rn.d < rn.ed.half + 0.9;
   const wet = inPuddle(player.pos.x, player.pos.z);
@@ -3712,7 +3707,7 @@ function startRace(entrants, from, to, online, isHost) {
   for (let k = traffic.length - 1; k >= 0; k--) if (routeProject(race.R, traffic[k].group.position, 0, 0, 40).d < 12) { removeTraffic(traffic[k]); traffic.splice(k, 1); }   // keep the grid clear
   heat = 0; raceT = 0; distance = 0;
   $('title').style.display = 'none'; $('results').style.display = 'none';
-  state = 'countdown'; countdown = 4.99; race.lightN = -1; updateCamera(0, true);
+  state = 'countdown'; window.KERAI_UI.syncState(state); countdown = 4.99; race.lightN = -1; updateCamera(0, true);
   say(`${RACE_PLACES[from].short} → ${RACE_PLACES[to].short} · ${(race.R.L / 1000).toFixed(2)} km`, 2.5, '#ffd54f');
 }
 function backToLobby() {
@@ -3782,6 +3777,7 @@ function drawMinimap() {
 function drawHUD() {
   const me = race.R && racerOf(race.myId);
   $('speed').textContent = Math.round(Math.abs(player.v) * 3.6);
+  window.KERAI_UI.update(player.v * 3.6, state, keys, performance.now(), povMode, player.crashT > 0);
   if (player.rn) $('road').textContent = '📍 ' + player.rn.ed.name;
   { const bh = $('bikehp'); if (bh) { bh.style.width = bikeDmg.hp + '%'; bh.style.background = bikeDmg.hp > 60 ? '#66bb6a' : bikeDmg.hp > 30 ? '#ffa726' : '#ef5350'; } }
   if (!me) { $('tl').style.display = $('tc').style.display = $('mission').style.display = $('dirs').style.display = 'none'; drawMinimap(); return; }
@@ -3865,7 +3861,7 @@ function frame(now) {
   const status = (t) => { $('loading').querySelector('p').textContent = t; return new Promise(r => setTimeout(r, 30)); };
   await status('Loading the satellite map of Kerai…');
   const imgs = {}; await Promise.all(Object.keys(window.KERAI_TILES).map(k => new Promise(res => { const i = new Image(); i.onload = res; i.onerror = res; i.src = window.KERAI_TILES[k]; imgs[k] = i; })));
-  await status('Loading the people of Kerai…'); window.__proofPhase?.('people-start'); await loadPeople(); window.__proofPhase?.('people-end'); window.__proofCheckpoint?.('people');
+  await status('Loading the people of Kerai…'); window.__proofPhase?.('people-start'); await loadPeople(); window.KERAI_NATIVE_PEOPLE = null; window.__proofPhase?.('people-end'); window.__proofCheckpoint?.('people');
   await status('Laying the roads…'); buildGround(imgs); buildRoads(); addWater();
   await status('Building 4,000 houses…'); buildBuildings();
   await status('Planting trees…'); const nt = buildTrees();

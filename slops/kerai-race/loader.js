@@ -27,10 +27,10 @@
   };
   let manifest;
   try{
-    manifest=await get('manifest.json');
+    manifest=await get('manifest.json?v=BUILD_VERSION');
     const [world,people,numbers,roads]=await Promise.all([
       get(manifest.world),get(manifest.people),Promise.all(manifest.numbers.map(n=>get(n,'binary'))).then(join),get(manifest.roads,'binary'),
-      (async()=>{await script(manifest.three);await script(manifest.skeleton);})()
+      Promise.all([script(manifest.ui),(async()=>{await script(manifest.three);await script(manifest.skeleton);})()])
     ]);
     window.KERAI_WORLD=world;window.KERAI_NATIVE_PEOPLE=revive(people,numbers);window.KERAI_ROADS=roads;
     window.KERAI_PEOPLE=Object.fromEntries(Object.entries(manifest.textures).map(([k,v])=>[k,new URL(v,base).href]));

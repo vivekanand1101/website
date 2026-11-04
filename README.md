@@ -51,3 +51,5 @@ The writing section's initial code was stolen from [Armin Ronacher’s blog](htt
 `slops/projects.json` holds the short project descriptions for `/slops/`. The index uses `shared/site.css` and is built by `slops/build.py`. The full-quality game is in `public/slops/kerai-race/`; numeric data uses lossless gzip chunks below the Pages asset limit. Its build source and visual regression evidence remain in the Kerai Race project.
 
 The published game is solo-only and runs entirely in the browser. There is no game Worker, Pages Function, Durable Object binding, or multiplayer backend.
+
+The speedometer, touch controls and viewport layouts are maintained in `slops/kerai-race/`. `slops/build-game.py` writes their fingerprinted assets into the deployment output. The heavy scene assets remain in `public/slops/kerai-race/assets/`.

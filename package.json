@@ -13,7 +13,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "playwright test",
-    "build:slops": "python3 slops/build.py"
+    "build:slops": "python3 slops/build.py && python3 slops/build-game.py"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
