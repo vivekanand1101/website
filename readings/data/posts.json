@@ -765,6 +765,54 @@
  ],
  "openai": [
   {
+   "title": "Accelerating engineering for the physical world",
+   "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+   "date": "2026-11-03T12:00:00+00:00",
+   "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product showcase of ChatGPT for CAD and PCB work with little technical depth."
+   }
+  },
+  {
+   "title": "How Cisco defends at machine speed with OpenAI",
+   "url": "https://openai.com/index/cisco-cyber",
+   "date": "2026-11-03T08:00:00+00:00",
+   "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study with no technical detail."
+   }
+  },
+  {
+   "title": "Heimstaden is changing residential real estate management with AI",
+   "url": "https://openai.com/index/heimstaden",
+   "date": "2026-11-03T08:00:00+00:00",
+   "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study about property management."
+   }
+  },
+  {
+   "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+   "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Executive hiring announcement."
+   }
+  },
+  {
    "title": "Rewarding defenders with bigger bug bounties",
    "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
    "date": "2026-11-02T18:00:00+00:00",
@@ -939,6 +987,18 @@
    }
   },
   {
+   "title": "Evernote turns AI-driven discovery into paid subscriptions",
+   "url": "https://openai.com/ads/customers/evernote",
+   "date": "2026-10-28T19:40:49+00:00",
+   "summary": "Evernote used ChatGPT Ads to introduce its note-taking app to people working with AI. The team tracked how often free trials led to paid subscriptions.",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Advertising customer story, marketing only."
+   }
+  },
+  {
    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
    "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
    "date": "2026-10-28T13:15:00+00:00",
@@ -1011,6 +1071,18 @@
    }
   },
   {
+   "title": "Introducing GPT-6.1 Terra",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+   "date": "2026-10-26T18:00:00+00:00",
+   "summary": "Delivering fast and capable computer use at scale",
+   "seen": "2026-10-27T03:09:01.794125+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company news, case study, or product announcement without technical depth."
+   }
+  },
+  {
    "title": "Working with academic communities to build scientific understanding",
    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
    "date": "2026-10-26T14:30:00+00:00",
@@ -1071,18 +1143,6 @@
      "backend"
     ],
     "reason": "How engineers use a coding agent for incident investigation."
-   }
-  },
-  {
-   "title": "Introducing GPT-6.1 Terra",
-   "url": "https://openai.com/index/introducing-gpt-6-1-terra",
-   "date": "2026-10-26T00:00:00+00:00",
-   "summary": "Bringing fast and capable computer use to everyone",
-   "seen": "2026-10-27T03:09:01.794125+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, case study, or product announcement without technical depth."
    }
   },
   {
@@ -1439,69 +1499,6 @@
    "url": "https://openai.com/index/amp-beyond-coding",
    "date": "2026-10-14T12:00:00+00:00",
    "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "SentinelOne cuts malware analysis from weeks to hours",
-   "url": "https://openai.com/index/sentinelone",
-   "date": "2026-10-14T12:00:00+00:00",
-   "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
-   "url": "https://openai.com/index/third-moment-research",
-   "date": "2026-10-14T07:00:00+00:00",
-   "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "backend"
-    ],
-    "reason": "Running 10,000 agents for 36+ hours at an AI lab."
-   }
-  },
-  {
-   "title": "How Block is building AI-powered security with OpenAI technology",
-   "url": "https://openai.com/index/block-ai-powered-security",
-   "date": "2026-10-14T07:00:00+00:00",
-   "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "The EU’s next chapter in AI is agentic",
-   "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
-   "date": "2026-10-14T00:00:00+00:00",
-   "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Higgsfield takes AI video from 1 minute to over 10",
-   "url": "https://openai.com/index/higgsfield-longer-videos-voice",
-   "date": "2026-10-13T12:00:00+00:00",
-   "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
    "seen": "2026-10-19T14:51:25.580290+00:00",
    "verdict": {
     "relevant": false,
@@ -6848,6 +6845,21 @@
  ],
  "meta": [
   {
+   "title": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
+   "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/",
+   "date": "2026-11-03T17:00:35+00:00",
+   "summary": "Facebook Feature Framework (F3) is Meta’s framework for authoring, compiling, and serving the machine learning features underlying ads ranking models, where a single request can require more than 20,000 features. We…",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Feature authoring, compiling and serving framework for ads ranking at 20,000 features per request."
+   }
+  },
+  {
    "title": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
    "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/",
    "date": "2026-10-29T16:00:12+00:00",
@@ -7075,6 +7087,18 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+   "url": "https://blog.cloudflare.com/zero-wire/",
+   "date": "2026-11-03T14:00:00+00:00",
+   "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure.",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product announcement of a CVE briefing hub with little engineering detail."
+   }
+  },
   {
    "title": "How we halved DNS build delay and cut memory use by 85%",
    "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
@@ -8828,6 +8852,32 @@
  ],
  "amp": [
   {
+   "title": "Service Accounts",
+   "url": "https://ampcode.com/news/service-accounts",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "/* Examples are a list of underlined titles. Hovering a title previews its example prompt or code with a short caption in a popover. Clicking or tapping a title focuses it, which pins the popover until you click or tap…",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always kept; product update on service accounts."
+   }
+  },
+  {
+   "title": "Artifacts",
+   "url": "https://ampcode.com/news/artifacts",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Agents in Amp can now collaborate with you in Artifacts. These are documents that belong to a single thread and that the agent, you, and your teammates can all edit. Here are two examples from our real threads. This…",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always kept; agents collaborating on shared documents."
+   }
+  },
+  {
    "title": "macOS Satellites",
    "url": "https://ampcode.com/news/macos-satellites",
    "date": "2026-10-29T00:00:00+00:00",
@@ -10286,30 +10336,6 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Workspace Settings",
-   "url": "https://ampcode.com/news/cli-workspace-settings",
-   "date": "2025-11-04T00:00:00+00:00",
-   "summary": "The Amp CLI now supports workspace-specific settings via .amp/settings.json files in your project directory. This allows you to configure the Amp CLI differently for each project, with settings like permissions, MCP…",
-   "seen": "2025-11-04T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Social Coding",
-   "url": "https://ampcode.com/news/social-coding",
-   "date": "2025-11-04T00:00:00+00:00",
-   "summary": "Update (2026-06-02): We've removed public thread sharing and related features; see The End of Public Threads for why. We're all learning a new way to code: prompting, referencing, planning, handoffs, specs, and…",
-   "seen": "2025-11-04T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "typesafe": [
@@ -10413,6 +10439,20 @@
   }
  ],
  "simon": [
+  {
+   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+   "date": "2026-11-03T16:29:48+00:00",
+   "summary": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as…",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always kept; hands-on test of an LLM reading model weights."
+   }
+  },
   {
    "title": "The U.S. Census Bureau and “Super Intelligence”",
    "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
@@ -11899,23 +11939,21 @@
     ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "A new SQL-powered permissions system in Datasette 1.0a20",
-   "url": "https://simonwillison.net/2025/Nov/4/datasette-10a20/",
-   "date": "2025-11-04T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-04T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "databases"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "pragmatic": [
+  {
+   "title": "How software engineering is changing: a tale of two eras",
+   "url": "https://newsletter.pragmaticengineer.com/p/how-software-engineering-is-changing",
+   "date": "2026-11-03T16:58:22+00:00",
+   "summary": "We invited readers to write about how building software changed, in an essay challenge. Many of you took part, and today we’re sharing the winning piece from a strong set of entries",
+   "seen": "2026-11-04T03:07:30.880864+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always kept; essay on how software engineering is changing."
+   }
+  },
   {
    "title": "The Pulse: Anthropic kills the coding interview",
    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-anthropic-kills-the-coding",
