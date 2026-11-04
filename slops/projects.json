@@ -3,5 +3,11 @@
     "slug": "kerai-race",
     "title": "Kerai Race",
     "description": "Road Rash game adjusted to the map of my own village."
+  },
+  {
+    "slug": "dino",
+    "title": "Dino × Jev",
+    "description": "Chrome's dinosaur game, with Jev choosing when to jump and duck. Bring your own Jev API key, or play manually.",
+    "image": null
   }
 ]

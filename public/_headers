@@ -4,3 +4,8 @@
   Cache-Control: no-cache
 /slops/kerai-race/
   Cache-Control: no-cache
+
+/slops/dino/*
+  Content-Security-Policy: default-src 'none'; frame-src https://dino-jev.vivekanand1101.workers.dev; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
