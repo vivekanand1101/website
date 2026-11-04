@@ -35,7 +35,6 @@
     window.KERAI_WORLD=world;window.KERAI_NATIVE_PEOPLE=revive(people,numbers);window.KERAI_ROADS=roads;
     window.KERAI_PEOPLE=Object.fromEntries(Object.entries(manifest.textures).map(([k,v])=>[k,new URL(v,base).href]));
     window.KERAI_TILES=Object.fromEntries(Object.entries(manifest.tiles).map(([k,v])=>[k,new URL(v,base).href]));
-    window.KERAI_WS_URL=new URL('ws',base).href.replace(/^http/,'ws');
     await script(manifest.game);
   }catch(error){console.error(error);const p=document.querySelector('#loading p');if(p)p.textContent='The game could not load. Please reload to try again.';}
 })();

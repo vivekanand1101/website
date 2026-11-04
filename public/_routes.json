@@ -1,7 +1,0 @@
-{
-  "version": 1,
-  "include": [
-    "/slops/kerai-race/ws"
-  ],
-  "exclude": []
-}

@@ -8,13 +8,3 @@ HUGO_VERSION = "0.158.0"
 
 [env.production.vars]
 HUGO_VERSION = "0.158.0"
-
-[[durable_objects.bindings]]
-name = "KERAI_ROOMS"
-class_name = "KeraiRoom"
-script_name = "kerai-race-multiplayer"
-
-[[env.production.durable_objects.bindings]]
-name = "KERAI_ROOMS"
-class_name = "KeraiRoom"
-script_name = "kerai-race-multiplayer"

@@ -50,4 +50,4 @@ The writing section's initial code was stolen from [Armin Ronacher’s blog](htt
 
 `slops/projects.json` holds the short project descriptions for `/slops/`. The index uses `shared/site.css` and is built by `slops/build.py`. The full-quality game is in `public/slops/kerai-race/`; numeric data uses lossless gzip chunks below the Pages asset limit. Its build source and visual regression evidence remain in the Kerai Race project.
 
-Multiplayer runs in `slops/multiplayer/worker.js`, one hibernating Durable Object per room. Deploy that Worker before the Pages site with `wrangler deploy --config slops/multiplayer/wrangler.jsonc`. The Pages function at `/slops/kerai-race/ws` uses the cross-script `KERAI_ROOMS` binding in `wrangler.toml`. `_routes.json` restricts Functions invocation to this endpoint; game assets remain static.
+The published game is solo-only and runs entirely in the browser. There is no game Worker, Pages Function, Durable Object binding, or multiplayer backend.

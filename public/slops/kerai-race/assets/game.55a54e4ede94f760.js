@@ -3310,37 +3310,8 @@ function botMaybeKick(r, dt) {
 // ================= Lobby & multiplayer (WebSocket to server/server.js on the host laptop) =================
 const lobby = { name: '', from: 'gate', to: 'pul', bots: 3, players: [], hostId: null, online: false };
 try { lobby.name = localStorage.getItem('keraiRaceName') || ''; } catch (e) {}
-function connectNet() {
-  if (!/^https?:/.test(location.protocol)) return null;
-  let ws; try { ws = new WebSocket(window.KERAI_WS_URL || ((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws')); } catch (e) { return null; }
-  const net = { ws, id: null, open: false, send(m) { if (ws.readyState === 1) ws.send(JSON.stringify(m)); },
-    sendState() {
-      const bots = race.isHost ? race.racers.filter(r => r.kind === 'bot').map(r => { const p = r.bk.group.position; return [r.id, +p.x.toFixed(2), +p.z.toFixed(2), +r.h.toFixed(3), +r.v.toFixed(2), +r.s.toFixed(1), r.crashT > 0 ? 1 : 0]; }) : undefined;
-      const me = racerOf(race.myId);
-      this.send({ t: 'st', p: [+player.pos.x.toFixed(2), +player.pos.z.toFixed(2), +player.h.toFixed(3), +player.v.toFixed(2), me ? +me.s.toFixed(1) : 0, player.crashT > 0 ? 1 : 0, +player.y.toFixed(2)], bots });
-    } };
-  ws.onopen = () => { net.open = true; lobby.online = true; if (lobby.name) net.send({ t: 'join', name: lobby.name }); renderLobby(); };
-  ws.onclose = () => { net.open = false; lobby.online = false; renderLobby(); };
-  ws.onmessage = (ev) => {
-    const m = JSON.parse(ev.data), now = performance.now();
-    if (m.t === 'hello') { net.id = m.id; race.myId = m.id; lobby.lan = m.lan; }
-    else if (m.t === 'lobby') { lobby.players = m.players; lobby.hostId = m.host; if (m.host !== net.id) { lobby.from = m.from; lobby.to = m.to; lobby.bots = m.bots; } renderLobby(); }
-    else if (m.t === 'go') startRace(m.entrants, m.from, m.to, true, m.host === net.id);
-    else if (m.t === 'st') {
-      const r = racerOf(m.id); if (r && r.kind !== 'me') r.net.push({ t: now, x: m.p[0], z: m.p[1], h: m.p[2], v: m.p[3], s: m.p[4], crash: m.p[5], y: m.p[6] });
-      if (m.bots && !race.isHost) for (const b of m.bots) { const rb = racerOf(b[0]); if (rb) rb.net.push({ t: now, x: b[1], z: b[2], h: b[3], v: b[4], s: b[5], crash: b[6] }); }
-    }
-    else if (m.t === 'kick') { const r = racerOf(m.id); if (r && r.kind !== 'me') startKick(r.bk, m.side); }
-    else if (m.t === 'kickhit') {
-      const from = racerOf(m.from), nm = from ? from.name.split(' ').pop() : 'someone';
-      if (m.to === race.myId) kickedBy(nm, m.side);
-      else if (race.isHost) { const b = racerOf(m.to); if (b && b.kind === 'bot') kickBot(b, m.side, b.name.split(' ').pop()); }
-    }
-    else if (m.t === 'fin') { const r = racerOf(m.id); if (r && r.kind !== 'me' && !r.finished) racerFinish(r, m.time); }
-    else if (m.t === 'left') { const r = racerOf(m.id); if (r && r.kind === 'net' && !r.finished) { r.left = true; scene.remove(r.bk.group); race.racers.splice(race.racers.indexOf(r), 1); } }
-  };
-  return net;
-}
+// The published game runs entirely in the browser.
+function connectNet() { return null; }
 // ---------- lobby screen ----------
 function renderLobby() {
   const el = $('title'); if (!el || state !== 'title') return;
@@ -3358,7 +3329,7 @@ function renderLobby() {
       <div class="tracks">${RACE_TRACKS.map(t => `<span class="${(t.a === lobby.from && t.b === lobby.to) || (t.b === lobby.from && t.a === lobby.to) ? 'on' : ''}">${t.name}</span>`).join('')}</div>
       <label>कंप्यूटर राइडर · Computer riders <select id="lbots" ${isHost ? '' : 'disabled'}>${[0, 1, 2, 3, 4, 5].map(n => `<option ${n === lobby.bots ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
       ${online ? `<div class="plist"><b>${lobby.players.length} in the room</b>${lobby.players.map(p => `<span>${p.id === lobby.hostId ? '👑 ' : '🏍 '}${escapeHTML(p.name || '…')}</span>`).join('')}</div>
-        <p class="small">Friends can join at <b>${location.origin}${location.pathname}</b></p>` : `<p class="small">Solo race against the computer. For multiplayer, start <b>server.js</b> and open the game from that address.</p>`}
+        <p class="small">Friends can join at <b>${location.origin}${location.pathname}</b></p>` : `<p class="small">Race against the computer. No account needed.</p>`}
       ${isHost ? `<button id="lgo" class="go">🏁 ${online && others.length ? 'Start the race for everyone' : 'Start race'}</button>` : `<p class="wait">Waiting for 👑 ${escapeHTML((lobby.players.find(p => p.id === lobby.hostId) || {}).name || 'host')} to start…</p>`}
     </div>
     <table class="keys"><tr><td class="k"><b>W</b>/<b>↑</b> Throttle</td><td class="k"><b>S</b>/<b>↓</b> Brake</td><td class="k"><b>A D</b>/<b>← →</b> Steer</td><td class="k"><b>H</b> Horn</td><td class="k"><b>J</b> Kick left</td></tr>
