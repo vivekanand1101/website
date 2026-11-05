@@ -1,6 +1,8 @@
 .site-navigation{--text:#1c1c1c;--muted:#62625e;font:18px/1.65 var(--serif)}
 .site-navigation .site-header{margin-bottom:0}
-.key-settings{max-width:760px;margin:24px auto;padding:0 24px;text-align:right}
+.game-controls{display:flex;align-items:flex-start;justify-content:flex-end;gap:12px;flex-wrap:wrap}
+.play-controls{display:flex;gap:4px}
+main>header button{min-height:40px}
 .key-summary{margin-left:auto}
 main{max-width:760px;margin:0 auto 80px}
 @media(max-width:500px){main>header{gap:16px;flex-wrap:wrap}.metrics{flex-wrap:wrap}}
