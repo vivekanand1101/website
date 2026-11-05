@@ -1,5 +1,5 @@
-import { requestRunnerPlan } from './modules/runner-client.js';
-import { mountKeySettings } from './key-settings.js';
+import { requestRunnerPlan } from './modules/runner-client.js?v=59355dc60686';
+import { mountKeySettings } from '/shared/jev-key-settings.js';
 let keys, relay = false;
 const audit=[];function record(kind,details){audit.push({kind,time:Math.round(performance.now()),...details});if(audit.length>80)audit.shift();$('trace').textContent=JSON.stringify(audit);}
 const $ = id => document.getElementById(id);

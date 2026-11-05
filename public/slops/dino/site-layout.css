@@ -1,4 +1,6 @@
 .site-navigation{--text:#1c1c1c;--muted:#62625e;font:18px/1.65 var(--serif)}
 .site-navigation .site-header{margin-bottom:0}
+.key-settings{max-width:760px;margin:24px auto;padding:0 24px;text-align:right}
+.key-summary{margin-left:auto}
 main{max-width:760px;margin:0 auto 80px}
 @media(max-width:500px){main>header{gap:16px;flex-wrap:wrap}.metrics{flex-wrap:wrap}}

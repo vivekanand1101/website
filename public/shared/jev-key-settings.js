@@ -1,6 +1,7 @@
-import { createKeyStore } from './modules/credentials.js';
+import { createKeyStore } from './jev-credentials.js';
 
-export function mountKeySettings({onChange = () => {}, onOpen = () => {}, jevProxy = false} = {}) {
+export function mountKeySettings({onChange = () => {}, onOpen = () => {}, jevProxy = false, relay = false, offlineLabel = ''} = {}) {
+  jevProxy = Boolean(jevProxy || relay);
   const storage = name => { try { return window[name]; } catch { return undefined; } };
   const store = createKeyStore(storage('sessionStorage'), storage('localStorage'));
   const host = document.createElement('section');
@@ -16,13 +17,13 @@ export function mountKeySettings({onChange = () => {}, onOpen = () => {}, jevPro
         <p id="key-storage-note" class="key-small">By default, the key lasts for this tab. Remembering stores it in this browser until you clear it. Use only a device you trust.</p>
         ${jevProxy ? '' : '<p class="key-small">Jev must allow requests from this website.</p>'}
         <p id="key-feedback" role="status" class="key-feedback"></p>
-        <div class="key-actions"><button type="submit" id="key-save">Save key & play</button><button type="button" id="key-clear">Clear saved key</button><button type="button" id="key-cancel">Cancel</button></div>
+        <div class="key-actions"><button type="submit" id="key-save">Save key & play</button><button type="button" id="key-clear">Clear saved key</button><button type="button" id="key-cancel">Cancel</button><button type="button" id="key-offline" hidden></button></div>
       </form>
     </dialog><p id="key-summary" class="key-summary" role="status"></p>`;
   (document.getElementById('key-controls') || document.body).append(host);
   const get = id => host.querySelector('#'+id), dialog = get('key-dialog'), input = get('jev-key'), feedback = get('key-feedback');
   let cachingWorked = true;
-  const summarize = () => { get('key-summary').textContent = store.key ? (cachingWorked ? store.remembered ? 'Jev key remembered on this device' : 'Jev key saved for this tab' : 'Jev key available for this page only; browser storage unavailable') : 'Your Jev API key is required to play'; };
+  const summarize = () => { get('key-summary').textContent = store.key ? (cachingWorked ? store.remembered ? 'Jev key remembered on this device' : 'Jev key saved for this tab' : 'Jev key available for this page only; browser storage unavailable') : offlineLabel ? 'No Jev key saved' : 'Your Jev API key is required to play'; };
   const close = () => { input.value = ''; input.type = 'password'; get('key-show').textContent = 'Show'; dialog.close(); };
   const open = (message = '') => { input.type = 'password'; get('key-show').textContent = 'Show'; store.cancel(); onOpen(); input.value = ''; input.required = !store.key; get('key-remember').checked = store.remembered; feedback.textContent = message || (store.key ? 'A key is saved. Paste a new one to replace it.' : ''); get('key-clear').disabled = !store.key; dialog.showModal(); input.focus(); };
   get('key-settings-open').onclick = () => open();
@@ -42,6 +43,11 @@ export function mountKeySettings({onChange = () => {}, onOpen = () => {}, jevPro
     open(removed ? 'Key cleared. Enter your Jev API key to play.' : 'Key cleared from this page. Browser storage could not be cleared; remove this site’s data in browser settings.');
   };
   get('key-clear').onclick = forget;
+  if (offlineLabel) {
+    get('key-offline').hidden = false;
+    get('key-offline').textContent = offlineLabel;
+    get('key-offline').onclick = () => { store.cancel(); close(); onChange(); };
+  }
   dialog.addEventListener('close', () => { input.value = ''; input.type = 'password'; get('key-show').textContent = 'Show'; get('key-settings-open').focus(); });
   for (const name of ['keydown','keyup']) dialog.addEventListener(name, event => event.stopPropagation());
   summarize(); if (!store.key) open();

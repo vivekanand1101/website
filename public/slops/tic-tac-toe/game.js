@@ -1,4 +1,4 @@
-import { mountKeySettings } from './key-settings.js';
+import { mountKeySettings } from '/shared/jev-key-settings.js';
 import { requestMove } from './modules/client.js';
 let keys;
 

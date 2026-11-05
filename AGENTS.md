@@ -44,6 +44,10 @@ and `readings/template.html`; change all three together.
 - A daily Claude routine follows `readings/ROUTINE.md` and commits `readings/data/posts.json`.
 - `readings/CRITERIA.md` decides which company-blog posts are kept.
 
+## Shared game key settings
+
+Dino and tic-tac-toe import the same `public/shared/jev-key-settings.js`, stylesheet, and `jev-credentials.js`. Change key entry and browser storage there. Dino is exported from the private dino-jev repository; its exporter preserves these shared imports.
+
 ## Content Guidelines
 
 - No em dashes. Ever. Vivek considers them an AI tell.
