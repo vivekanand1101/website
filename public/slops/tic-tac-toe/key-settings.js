@@ -24,9 +24,9 @@ export function mountKeySettings({onChange = () => {}, onOpen = () => {}, offlin
   let cachingWorked = true;
   const summarize = () => { get('key-summary').textContent = store.key ? (cachingWorked ? store.remembered ? 'Jev key remembered on this device' : 'Jev key saved for this tab' : 'Jev key available for this page only; browser storage unavailable') : 'Built-in browser opponent · no key or API calls'; };
   const close = () => { input.value = ''; input.type = 'password'; get('key-show').textContent = 'Show'; dialog.close(); };
-  const open = () => { input.type = 'password'; get('key-show').textContent = 'Show'; store.cancel(); onOpen(); input.value = ''; input.required = !store.key; get('key-remember').checked = store.remembered; feedback.textContent = store.key ? 'A key is saved. Paste a new one to replace it.' : ''; get('key-clear').disabled = !store.key; get('key-cancel').hidden = !store.key; dialog.showModal(); input.focus(); };
+  const open = (message = '') => { input.type = 'password'; get('key-show').textContent = 'Show'; store.cancel(); onOpen(); input.value = ''; input.required = !store.key; get('key-remember').checked = store.remembered; feedback.textContent = message || (store.key ? 'A key is saved. Paste a new one to replace it.' : ''); get('key-clear').disabled = !store.key; get('key-cancel').hidden = !store.key; dialog.showModal(); input.focus(); };
   get('key-offline').textContent = offlineLabel;
-  get('key-settings-open').onclick = open;
+  get('key-settings-open').onclick = () => open();
   get('key-show').onclick = () => { input.type = input.type === 'password' ? 'text' : 'password'; get('key-show').textContent = input.type === 'password' ? 'Show' : 'Hide'; };
   get('key-cancel').onclick = close;
   get('key-form').onsubmit = event => {
@@ -48,5 +48,5 @@ export function mountKeySettings({onChange = () => {}, onOpen = () => {}, offlin
   dialog.addEventListener('close', () => { input.value = ''; input.type = 'password'; get('key-show').textContent = 'Show'; });
   for (const name of ['keydown','keyup']) dialog.addEventListener(name, event => event.stopPropagation());
   summarize(); if (!store.key) open();
-  return {getKey: () => store.key, getSignal: () => store.signal, open};
+  return {requireKey: message => { store.clear(); summarize(); open(message); }, getKey: () => store.key, getSignal: () => store.signal, open};
 }

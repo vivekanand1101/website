@@ -14,7 +14,7 @@ export async function requestJev(apiKey, payload, signal, fetcher = fetch) {
     let response;
     try {
         response = await fetcher(JEV_ENDPOINT, {
-            method: 'POST', mode: 'cors', credentials: 'omit', redirect: 'error', referrerPolicy: 'no-referrer',
+            method: 'POST', mode: 'cors', credentials: 'omit', redirect: 'manual', referrerPolicy: 'no-referrer',
             signal: AbortSignal.any([AbortSignal.timeout(4000), ...(signal ? [signal] : [])]),
             headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(payload)
         });
@@ -26,6 +26,9 @@ export async function requestJev(apiKey, payload, signal, fetcher = fetch) {
             throw new JevError('Jev timed out. Try again.', true);
         throw new JevError('Cannot reach Jev from this website. Check your connection; Jev may need to allow this website’s origin (CORS).');
     }
+    // Workers supports manual redirects, not redirect:'error'. Never follow them with a key.
+    if (response.status >= 300 && response.status < 400)
+        throw new JevError('Jev returned an unexpected redirect. Try again later.');
     if (response.status === 401 || response.status === 403)
         throw new JevError('Jev rejected this key. Update it in Key settings.');
     if (response.status === 429)
