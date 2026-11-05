@@ -9,7 +9,7 @@ export async function requestRunnerPlan(input, key, signal, fetcher = fetch, rel
         let response;
         try {
             response = await fetcher(typeof relay === 'string' ? relay : './api/plan', {
-                method: 'POST', credentials: 'omit', redirect: 'error', referrerPolicy: 'no-referrer',
+                method: 'POST', credentials: 'same-origin', redirect: 'error', referrerPolicy: 'no-referrer',
                 headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
                 body: JSON.stringify(input), signal: AbortSignal.any([AbortSignal.timeout(5000), ...(signal ? [signal] : [])])
             });
@@ -19,6 +19,8 @@ export async function requestRunnerPlan(input, key, signal, fetcher = fetch, rel
                 throw new DOMException('Request cancelled.', 'AbortError');
             throw new JevError('Cannot reach the game host. Check your connection and try again.', true);
         }
+        if (response.headers.get('cf-mitigated') === 'challenge')
+            throw new JevError('Browser verification expired. Reload this page to continue with Jev.');
         let result;
         try {
             result = await response.json();

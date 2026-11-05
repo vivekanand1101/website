@@ -83,7 +83,7 @@ window.addEventListener('keydown',e=>{if(e.target?.closest?.('#key-dialog'))retu
 window.addEventListener('keyup',e=>{if(e.target?.closest?.('#key-dialog'))return;if(enabled&&(e.code==='Space'||e.code==='ArrowDown')){e.preventDefault();e.stopImmediatePropagation();}},true);
 window.addEventListener('load',async()=>{
  const hostedRelay = document.querySelector('meta[name=game-relay]')?.content;
- if (hostedRelay === 'https://dino-jev.vivekanand1101.workers.dev/api/plan') relay = hostedRelay;
+ if (hostedRelay === '/slops/dino/api/plan' || hostedRelay === 'https://dino-jev.vivekanand1101.workers.dev/api/plan') relay = hostedRelay;
  else try { const response = await fetch('./api/config', {cache:'no-store'}); relay = response.ok && (await response.json()).relay === true; } catch {}
  runner=new Runner('.interstitial-wrapper');
  // Start running without inserting an automatic jump. Jev chooses the first Space press.
