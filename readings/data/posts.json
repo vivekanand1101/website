@@ -1,6 +1,18 @@
 {
  "anthropic": [
   {
+   "title": "Investigating vault particles with Claude",
+   "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+   "date": "2026-11-04T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-05T03:08:12.211158+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Scientific research application with no summary and no clear engineering substance."
+   }
+  },
+  {
    "title": "AI for Science expands to foundations and research institutions",
    "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
    "date": "2026-10-28T00:00:00+00:00",
@@ -746,24 +758,72 @@
     ],
     "reason": "Building a C compiler with many parallel Claude agents."
    }
+  }
+ ],
+ "openai": [
+  {
+   "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+   "url": "https://openai.com/index/openai-to-acquire-pierre",
+   "date": "2026-11-04T14:30:00+00:00",
+   "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
+   "seen": "2026-11-05T03:08:12.211158+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Acquisition news."
+   }
   },
   {
-   "title": "Quantifying infrastructure noise in agentic coding evals",
-   "url": "https://www.anthropic.com/research/infrastructure-noise",
-   "date": "2026-02-05T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
+   "title": "A thousand fewer paths to root",
+   "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+   "date": "2026-11-04T08:00:00+00:00",
+   "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
+   "seen": "2026-11-05T03:08:12.211158+00:00",
    "verdict": {
     "relevant": true,
     "topics": [
      "ai",
      "backend"
     ],
-    "reason": "Measuring how infrastructure noise skews agentic coding evals."
+    "reason": "Autonomous pipeline that found and patched 948 Linux kernel privilege-escalation bugs."
    }
-  }
- ],
- "openai": [
+  },
+  {
+   "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+   "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+   "date": "2026-11-04T07:00:00+00:00",
+   "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
+   "seen": "2026-11-05T03:08:12.211158+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Availability announcement for a product in a cloud region."
+   }
+  },
+  {
+   "title": "Introducing Images 2.6",
+   "url": "https://openai.com/index/introducing-images-2-6",
+   "date": "2026-11-04T00:00:00+00:00",
+   "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+   "seen": "2026-11-05T03:08:12.211158+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product announcement for image generation features."
+   }
+  },
+  {
+   "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+   "url": "https://openai.com/index/devrev-enterprise-self-service",
+   "date": "2026-11-04T00:00:00+00:00",
+   "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+   "seen": "2026-11-05T03:08:12.211158+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study."
+   }
+  },
   {
    "title": "Accelerating engineering for the physical world",
    "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
@@ -1444,66 +1504,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Customer case study."
-   }
-  },
-  {
-   "title": "How Grupo Boticário uses AI to strengthen human connections",
-   "url": "https://openai.com/index/grupo-boticario",
-   "date": "2026-10-16T00:00:00+00:00",
-   "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to…",
-   "seen": "2026-10-28T03:08:09.369386+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer case study."
-   }
-  },
-  {
-   "title": "Bringing GPT-Rosalind to academic research labs",
-   "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-   "date": "2026-10-15T19:00:00+00:00",
-   "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Teaching students to think and learn through questions",
-   "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
-   "date": "2026-10-15T13:00:00+00:00",
-   "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Sullivan & Cromwell brings legal expertise into agreement review",
-   "url": "https://openai.com/index/sullivan-cromwell",
-   "date": "2026-10-15T00:00:00+00:00",
-   "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Amp puts AI agents to work beyond code with OpenAI models",
-   "url": "https://openai.com/index/amp-beyond-coding",
-   "date": "2026-10-14T12:00:00+00:00",
-   "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
    }
   }
  ],
@@ -7088,6 +7088,18 @@
  ],
  "cloudflare": [
   {
+   "title": "See the agents, set the terms: new visibility and control for personal agents",
+   "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+   "date": "2026-11-04T14:00:00+00:00",
+   "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access.",
+   "seen": "2026-11-05T03:08:12.211158+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product announcement on agent traffic controls with little technical detail."
+   }
+  },
+  {
    "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
    "url": "https://blog.cloudflare.com/zero-wire/",
    "date": "2026-11-03T14:00:00+00:00",
@@ -10339,6 +10351,20 @@
   }
  ],
  "typesafe": [
+  {
+   "title": "Don’t Call It a Decision Model",
+   "url": "https://typesafe.ai/blog/dont-call-it-a-decision-model",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Jev makes judgments, code makes decisions.",
+   "seen": "2026-11-05T03:08:12.211158+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always shown; about splitting LLM judgments from code decisions."
+   }
+  },
   {
    "title": "Jev: For the builders AND dreamers",
    "url": "https://typesafe.ai/blog/jev-1-14",
@@ -13599,18 +13625,6 @@
     "topics": [
      "backend"
     ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Tech jobs market 2025, part 3: job seekers’ stories",
-   "url": "https://newsletter.pragmaticengineer.com/p/tech-jobs-market-2025-part-3",
-   "date": "2025-11-04T17:23:15.287000+00:00",
-   "summary": "Details on the state of hiring from software engineers and EMs in the market for a new job. Insights on what’s happening from recruitment platforms: junior rebound, picky employers & a tough market",
-   "seen": "2025-11-04T17:23:15.287000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
   }
