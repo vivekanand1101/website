@@ -13,7 +13,7 @@
     "title": "Tic-tac-toe",
     "description": "Play against Jev with your own API key, or use the built-in browser opponent. No key needed.",
     "image": "/slops/tic-tac-toe.svg",
-    "imageAlt": "A tic-tac-toe board with green crosses and purple circles."
+    "imageAlt": "A tic-tac-toe board with crosses and circles."
   },
   {
     "slug": "kerai-race",

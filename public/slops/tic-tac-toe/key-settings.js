@@ -19,10 +19,10 @@ export function mountKeySettings({onChange = () => {}, onOpen = () => {}, offlin
         <div class="key-actions"><button type="submit" id="key-save">Save key & play</button><button type="button" id="key-offline"></button><button type="button" id="key-clear">Clear saved key</button><button type="button" id="key-cancel">Cancel</button></div>
       </form>
     </dialog><p id="key-summary" class="key-summary" role="status"></p>`;
-  document.body.append(host);
+  (document.getElementById('key-controls') || document.body).append(host);
   const get = id => host.querySelector('#'+id), dialog = get('key-dialog'), input = get('jev-key'), feedback = get('key-feedback');
   let cachingWorked = true;
-  const summarize = () => { get('key-summary').textContent = store.key ? (cachingWorked ? store.remembered ? 'Jev key remembered on this device' : 'Jev key saved for this tab' : 'Jev key available for this page only; browser storage unavailable') : 'Built-in browser opponent · no key or API calls'; };
+  const summarize = () => { get('key-summary').textContent = store.key ? (cachingWorked ? store.remembered ? 'Jev key remembered on this device' : 'Jev key saved for this tab' : 'Jev key available for this page only; browser storage unavailable') : 'Browser opponent · no key or API calls'; };
   const close = () => { input.value = ''; input.type = 'password'; get('key-show').textContent = 'Show'; dialog.close(); };
   const open = (message = '') => { input.type = 'password'; get('key-show').textContent = 'Show'; store.cancel(); onOpen(); input.value = ''; input.required = !store.key; get('key-remember').checked = store.remembered; feedback.textContent = message || (store.key ? 'A key is saved. Paste a new one to replace it.' : ''); get('key-clear').disabled = !store.key; get('key-cancel').hidden = !store.key; dialog.showModal(); input.focus(); };
   get('key-offline').textContent = offlineLabel;

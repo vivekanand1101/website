@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="405" viewBox="0 0 720 405" role="img" aria-labelledby="title desc">
-<title id="title">Tic-tac-toe</title><desc id="desc">Green crosses and purple circles on a dark tic-tac-toe board.</desc>
-<rect width="720" height="405" fill="#13141a"/>
-<g fill="#232631">
-<rect x="224" y="66" width="84" height="84" rx="12"/><rect x="318" y="66" width="84" height="84" rx="12"/><rect x="412" y="66" width="84" height="84" rx="12"/>
-<rect x="224" y="160" width="84" height="84" rx="12"/><rect x="318" y="160" width="84" height="84" rx="12"/><rect x="412" y="160" width="84" height="84" rx="12"/>
-<rect x="224" y="254" width="84" height="84" rx="12"/><rect x="318" y="254" width="84" height="84" rx="12"/><rect x="412" y="254" width="84" height="84" rx="12"/>
+<title id="title">Tic-tac-toe</title><desc id="desc">Charcoal crosses and blue circles on a light tic-tac-toe board.</desc>
+<rect width="720" height="405" fill="#fdfdfc"/>
+<g fill="#f4f4f2" stroke="#e4e4e2" stroke-width="1">
+<rect x="224" y="66" width="84" height="84" rx="3"/><rect x="318" y="66" width="84" height="84" rx="3"/><rect x="412" y="66" width="84" height="84" rx="3"/>
+<rect x="224" y="160" width="84" height="84" rx="3"/><rect x="318" y="160" width="84" height="84" rx="3"/><rect x="412" y="160" width="84" height="84" rx="3"/>
+<rect x="224" y="254" width="84" height="84" rx="3"/><rect x="318" y="254" width="84" height="84" rx="3"/><rect x="412" y="254" width="84" height="84" rx="3"/>
 </g><g fill="none" stroke-width="7" stroke-linecap="round">
-<path d="M248 90l36 36m0-36l-36 36M436 278l36 36m0-36l-36 36M248 278l36 36m0-36l-36 36" stroke="#d1f584"/>
-<g stroke="#b2a1ef"><circle cx="360" cy="202" r="23"/><circle cx="454" cy="108" r="23"/><circle cx="266" cy="202" r="23"/></g>
+<path d="M248 90l36 36m0-36l-36 36M436 278l36 36m0-36l-36 36M248 278l36 36m0-36l-36 36" stroke="#1c1c1c"/>
+<g stroke="#1f4e8c"><circle cx="360" cy="202" r="23"/><circle cx="454" cy="108" r="23"/><circle cx="266" cy="202" r="23"/></g>
 </g></svg>
