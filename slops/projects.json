@@ -11,7 +11,7 @@
   {
     "slug": "tic-tac-toe",
     "title": "Tic-tac-toe",
-    "description": "Play against Jev with your own API key, or use the built-in browser opponent. No key needed.",
+    "description": "Play tic-tac-toe against Jev using your own Jev API key.",
     "image": "/slops/tic-tac-toe.svg",
     "imageAlt": "A tic-tac-toe board with crosses and circles."
   },

@@ -41,34 +41,3 @@ export function validateBoard(input, startingPlayer = 'X') {
     }
     return [...board];
 }
-function score(board, player, depth) {
-    const result = status(board);
-    if (result === 'O_wins')
-        return 10 - depth;
-    if (result === 'X_wins')
-        return depth - 10;
-    if (result === 'draw')
-        return 0;
-    const values = legalMoves(board).map(move => {
-        const next = [...board];
-        next[move] = player;
-        return score(next, player === 'O' ? 'X' : 'O', depth + 1);
-    });
-    return player === 'O' ? Math.max(...values) : Math.min(...values);
-}
-export function minimax(board) {
-    if (status(board) !== 'in_progress')
-        throw new Error('No move on a terminal board.');
-    let bestMove = -1, bestScore = -Infinity;
-    // Ascending index breaks equally good choices deterministically.
-    for (const move of legalMoves(board)) {
-        const next = [...board];
-        next[move] = 'O';
-        const value = score(next, 'X', 1);
-        if (value > bestScore) {
-            bestScore = value;
-            bestMove = move;
-        }
-    }
-    return bestMove;
-}
