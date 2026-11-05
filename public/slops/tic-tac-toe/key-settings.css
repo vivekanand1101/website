@@ -17,3 +17,8 @@
 .key-dialog .key-feedback{color:var(--alert);font-size:14px;margin:0}
 .key-feedback:empty{display:none}
 @media(max-width:560px){#key-controls{text-align:left}.key-summary{max-width:none}.key-dialog{padding:22px}}
+
+.key-dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 12px}
+.key-dialog-heading h2{margin:0}
+.key-dialog #key-close{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;min-height:44px;padding:0;border:0;background:transparent;color:var(--muted);font:28px/1 var(--serif)}
+.key-dialog #key-close:hover{color:var(--text);background:var(--code-bg)}
