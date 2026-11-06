@@ -1,6 +1,20 @@
 {
  "anthropic": [
   {
+   "title": "Teaching AI to build scientific models",
+   "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
+   "date": "2026-11-06T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Research on training AI to build scientific models, with technical substance."
+   }
+  },
+  {
    "title": "Collage illustration pairing vintage measuring scales over a black-and-white photograph with a green print of a ribbed, vaulted cathedral ceiling.",
    "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
    "date": "2026-11-04T00:00:00+00:00",
@@ -744,23 +758,59 @@
     ],
     "reason": "Empirical data on how agents are used in practice."
    }
+  }
+ ],
+ "openai": [
+  {
+   "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+   "url": "https://openai.com/index/partnering-with-hacktron",
+   "date": "2026-11-06T08:00:00+00:00",
+   "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Partnership, customer story or marketing with little technical detail."
+   }
   },
   {
-   "title": "Building a C compiler with a team of parallel Claudes",
-   "url": "https://www.anthropic.com/research/building-c-compiler",
-   "date": "2026-02-05T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
+   "title": "Measuring how AI agents handle everyday wet-lab science",
+   "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+   "date": "2026-11-06T00:00:00+00:00",
+   "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
    "verdict": {
     "relevant": true,
     "topics": [
      "ai"
     ],
-    "reason": "Building a C compiler with many parallel Claude agents."
+    "reason": "Introduces a benchmark for evaluating AI agents on raw experimental data."
    }
-  }
- ],
- "openai": [
+  },
+  {
+   "title": "Cult.fit builds operational muscle with Codex",
+   "url": "https://openai.com/index/cultfit-builds-with-codex",
+   "date": "2026-11-05T20:00:00+00:00",
+   "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Partnership, customer story or marketing with little technical detail."
+   }
+  },
+  {
+   "title": "Australian universities are creating AI-native graduates",
+   "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+   "date": "2026-11-05T17:00:00+00:00",
+   "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Partnership, customer story or marketing with little technical detail."
+   }
+  },
   {
    "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
    "url": "https://openai.com/index/introducing-gpt-6-cyber",
@@ -776,6 +826,18 @@
    }
   },
   {
+   "title": "Merge builds product and business tools with OpenAI technology",
+   "url": "https://openai.com/index/merge-builds-with-openai",
+   "date": "2026-11-05T08:00:00+00:00",
+   "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Partnership, customer story or marketing with little technical detail."
+   }
+  },
+  {
    "title": "Setting a new standard for responsible AI infrastructure",
    "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
    "date": "2026-11-05T02:00:00+00:00",
@@ -785,6 +847,30 @@
     "relevant": false,
     "topics": [],
     "reason": "Community and policy announcement with no technical detail."
+   }
+  },
+  {
+   "title": "Flipsnack grows product signups with conversion optimization",
+   "url": "https://openai.com/ads/customers/flipsnack",
+   "date": "2026-11-05T00:45:15+00:00",
+   "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Partnership, customer story or marketing with little technical detail."
+   }
+  },
+  {
+   "title": "Franklin Templeton uses OpenAI to support investment research",
+   "url": "https://openai.com/index/franklin-templeton",
+   "date": "2026-11-05T00:00:00+00:00",
+   "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Partnership, customer story or marketing with little technical detail."
    }
   },
   {
@@ -1420,92 +1506,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Customer case study about Cloudflare using OpenAI products."
-   }
-  },
-  {
-   "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
-   "url": "https://openai.com/index/empowering-cyber-defenders",
-   "date": "2026-10-21T00:00:00+00:00",
-   "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
-   "seen": "2026-10-22T03:00:13.766239+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Policy and governance blueprint, not engineering."
-   }
-  },
-  {
-   "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-   "url": "https://openai.com/index/ted-taylor-restaurant",
-   "date": "2026-10-20T10:00:00+00:00",
-   "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
-   "seen": "2026-10-21T00:45:21.640412+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, partnership, program or announcement without technical detail."
-   }
-  },
-  {
-   "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-   "url": "https://openai.com/index/terminal-x",
-   "date": "2026-10-20T07:00:00+00:00",
-   "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
-   "seen": "2026-10-21T01:28:56.959577+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Domain science, policy or social research without engineering substance for this list."
-   }
-  },
-  {
-   "title": "OpenAI acquires Orchestra Bio",
-   "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-   "date": "2026-10-20T00:00:00+00:00",
-   "summary": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D, helping biopharma teams accelerate drug development and advance new treatments.",
-   "seen": "2026-10-21T00:45:21.640412+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, partnership, program or announcement without technical detail."
-   }
-  },
-  {
-   "title": "Advancing coding in low‑resource programming languages",
-   "url": "https://openai.com/index/low-resource-programming-languages",
-   "date": "2026-10-19T12:00:00+00:00",
-   "summary": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
-   "seen": "2026-10-20T06:27:13.815510+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Describes new coding evaluations (software engineering, SQLite, COBOL migration) used to improve model performance on low-resource languages, which has technical eval substance."
-   }
-  },
-  {
-   "title": "How Itaú is building generative AI for its entire customer base",
-   "url": "https://openai.com/index/itau-generative-ai",
-   "date": "2026-10-16T19:00:00+00:00",
-   "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees—in one of Brazil’s most regulated sectors.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
-   }
-  },
-  {
-   "title": "Benefit Street Partners answers questions faster with Codex",
-   "url": "https://openai.com/index/benefit-street-partners",
-   "date": "2026-10-16T00:00:00+00:00",
-   "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, customer story, announcement or essay without enough technical depth."
    }
   }
  ],
@@ -2578,6 +2578,19 @@
   }
  ],
  "mario": [
+  {
+   "title": "video.twimg.com",
+   "url": "https://video.twimg.com/amplify_video/2118674036750262272/vid/avc1/1920x1080/lT_9iBdHH8-tcv8K.mp4",
+   "date": "2026-11-06T15:03:15+00:00",
+   "summary": "recommended viewing. @lucasmeijer is always worth your time.",
+   "label": "Recommended",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always shown from a full-feed blog."
+   }
+  },
   {
    "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
@@ -6826,23 +6839,6 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Absurd Workflows: Durable Execution With Just Postgres",
-   "url": "https://lucumr.pocoo.org/2025/11/3/absurd-workflows/",
-   "date": "2025-11-06T00:01:45+00:00",
-   "summary": "Recommended reading. It follows the \"use agentic coding to create a minimal, well designed thing, not a space ship\" principle. Love it.",
-   "label": "Recommended",
-   "seen": "2025-11-06T00:01:45+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "backend",
-     "databases"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "meta": [
@@ -7089,6 +7085,20 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "The post-quantum future of web privacy",
+   "url": "https://blog.cloudflare.com/vole-mole/",
+   "date": "2026-11-06T14:00:00+00:00",
+   "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may…",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Security engineering on post-quantum cryptography for Privacy Pass."
+   }
+  },
   {
    "title": "Agents aren’t humans (but they kinda are)",
    "url": "https://blog.cloudflare.com/trusted-agent-delegation/",
@@ -8884,6 +8894,34 @@
   }
  ],
  "amp": [
+  {
+   "title": "Close the Loop",
+   "url": "https://ampcode.com/news/close-the-loop",
+   "date": "2026-11-06T00:00:00+00:00",
+   "summary": "You can now send feedback to Amp directly from your website. Enable the feedback widget in the settings for your project and add one script to your website. Then visit the site with ?amp appended, and the annotation…",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always shown from a full-feed blog."
+   }
+  },
+  {
+   "title": "Spaces",
+   "url": "https://ampcode.com/news/spaces",
+   "date": "2026-11-06T00:00:00+00:00",
+   "summary": "Today we're launching spaces, a new way to interact with agents and your team in Amp. A space is a conversation with a single agent whose job is to spawn and coordinate agents for you. You no longer have to create and…",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always shown from a full-feed blog."
+   }
+  },
   {
    "title": "GitLab Integration",
    "url": "https://ampcode.com/news/gitlab",
@@ -11972,35 +12010,21 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Video + notes on upgrading a Datasette plugin for the latest 1.0 alpha, with help from uv and OpenAI Codex CLI",
-   "url": "https://simonwillison.net/2025/Nov/6/upgrading-datasette-plugins/",
-   "date": "2025-11-06T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-06T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Code research projects with async coding agents like Claude Code and Codex",
-   "url": "https://simonwillison.net/2025/Nov/6/async-code-research/",
-   "date": "2025-11-06T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-06T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "pragmatic": [
+  {
+   "title": "The Pragmatic Summit 2027",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-summit-2027",
+   "date": "2026-11-06T19:39:15+00:00",
+   "summary": "The Summit is back in San Francisco, for the second year, and registrations are open for February 10, 2027",
+   "seen": "2026-11-06T20:38:00.536902+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always shown from a full-feed blog."
+   }
+  },
   {
    "title": "Scaling Slack and GitHub with Maude Lemaire",
    "url": "https://newsletter.pragmaticengineer.com/p/scaling-slack-and-github-with-maude",
@@ -13643,18 +13667,6 @@
    "date": "2025-11-11T17:01:48.253000+00:00",
    "summary": "Reflections on publishing The Software Engineer’s Guidebook two years ago, which has sold around 40,000 copies. Also: an unexpected trip to Mongolia to visit the startup which translated it",
    "seen": "2025-11-11T17:01:48.253000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "The Pulse #152: Cursor and GitHub double down on agents",
-   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-150-cursor-and-github-double",
-   "date": "2025-11-06T16:33:28.497000+00:00",
-   "summary": "Also: AI-assisted interviews at Meta, pay for Directors of Engineering at VC-funded startups, and is OpenAI inflating the bubble? And more",
-   "seen": "2025-11-06T16:33:28.497000+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
