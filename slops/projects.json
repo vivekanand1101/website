@@ -1,5 +1,11 @@
 [
   {
+    "slug": "pms-agent-call",
+    "title": "PMS Agent Call",
+    "description": "Playing around with voice agents.",
+    "audio": "/slops/pms%20agent%20call.mp3"
+  },
+  {
     "slug": "dino",
     "title": "Dino × Jev",
     "description": "I let Jev play Chrome’s dinosaur game, and after a few rounds of tweaking the prompt, I couldn’t get it to crash. The game shows Jev what’s coming and gives it a few plans to pick from. Turns out that’s enough.",
