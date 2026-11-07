@@ -1,5 +1,11 @@
 [
   {
+    "slug": "virtual-internships-mobile-app",
+    "title": "What if Virtual Internships had a mobile app for interns?",
+    "description": "A walkthrough of the intern onboarding flow.",
+    "video": "/slops/virtual-internships-onboarding.mp4"
+  },
+  {
     "slug": "pms-agent-call",
     "title": "PMS Agent Call",
     "description": "Playing around with voice agents.",
