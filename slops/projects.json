@@ -25,5 +25,11 @@
     "slug": "kerai-race",
     "title": "Kerai Race",
     "description": "I spent a weekend recreating Road Rash, a game I played as a kid, using the map of my own village."
+  },
+  {
+    "slug": "labour-thekedar",
+    "title": "Labour Thekedar",
+    "description": "A labor payment and attendance management app for contractors.",
+    "video": "/slops/labour-thekedar-demo.mp4"
   }
 ]
