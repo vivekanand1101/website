@@ -2,7 +2,7 @@
   {
     "slug": "dino",
     "title": "Dino × Jev",
-    "description": "Chrome's dinosaur game, with Jev choosing when to jump and duck. Bring your own Jev API key, or play manually.",
+    "description": "I let Jev play Chrome’s dinosaur game, and after a few rounds of tweaking the prompt, I couldn’t get it to crash. The game shows Jev what’s coming and gives it a few plans to pick from. Turns out that’s enough.",
     "image": "/slops/dino.png",
     "imageAlt": "The dinosaur jumping over the desert ground in Dino × Jev.",
     "imageWidth": 728,
@@ -11,13 +11,13 @@
   {
     "slug": "tic-tac-toe",
     "title": "Tic-tac-toe",
-    "description": "Play tic-tac-toe against Jev using your own Jev API key.",
+    "description": "Jev hasn’t lost to me at tic-tac-toe yet. Unfortunately, I can’t say the same.",
     "image": "/slops/tic-tac-toe.svg",
     "imageAlt": "A tic-tac-toe board with crosses and circles."
   },
   {
     "slug": "kerai-race",
     "title": "Kerai Race",
-    "description": "Road Rash game adjusted to the map of my own village."
+    "description": "I spent a weekend recreating Road Rash, a game I played as a kid, using the map of my own village."
   }
 ]
