@@ -9,10 +9,12 @@ projects=json.loads((ROOT/'slops/projects.json').read_text())
 def entry(project):
     slug=escape(project['slug'])
     title=escape(project['title'])
-    description=escape(project['description'])
     if 'video' in project:
+        description=escape(project.get('description', ''))
+        intro=f'<p>{description}</p>' if description else ''
         video=escape(project['video'])
-        return f'<article id="{slug}"><h2>{title}</h2><p>{description}</p><video controls playsinline preload="metadata" aria-label="{title} demo"><source src="{video}" type="video/mp4"><a href="{video}">Download {title} demo</a></video></article>'
+        return f'<article id="{slug}"><h2>{title}</h2>{intro}<video controls playsinline preload="metadata" aria-label="{title} demo"><source src="{video}" type="video/mp4"><a href="{video}">Download {title} demo</a></video></article>'
+    description=escape(project['description'])
     if 'audio' in project:
         audio=escape(project['audio'])
         return f'<article id="{slug}"><h2>{title}</h2><p>{description}</p><audio controls preload="none" aria-label="{title}"><source src="{audio}" type="audio/mpeg"><a href="{audio}">Download {title}</a></audio></article>'
