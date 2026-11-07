@@ -15,6 +15,20 @@
    }
   },
   {
+   "title": "The components of agent memory",
+   "url": "https://www.anthropic.com/research/components-of-agent-memory",
+   "date": "2026-11-06T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-07T20:37:56.340147+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Breaks down the building blocks of memory for LLM agents."
+   }
+  },
+  {
    "title": "Collage illustration pairing vintage measuring scales over a black-and-white photograph with a green print of a ribbed, vaulted cathedral ceiling.",
    "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
    "date": "2026-11-04T00:00:00+00:00",
@@ -743,20 +757,6 @@
      "ai"
     ],
     "reason": "Research on eval awareness affecting benchmark results."
-   }
-  },
-  {
-   "title": "Measuring AI agent autonomy in practice",
-   "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
-   "date": "2026-02-18T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:28:56.959577+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Empirical data on how agents are used in practice."
    }
   }
  ],
@@ -2578,6 +2578,34 @@
   }
  ],
  "mario": [
+  {
+   "title": "The components of agent memory",
+   "url": "https://www.anthropic.com/research/components-of-agent-memory",
+   "date": "2026-11-07T09:04:52+00:00",
+   "summary": "recommended reading.",
+   "label": "Recommended",
+   "seen": "2026-11-07T20:37:56.340147+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Breaks down the building blocks of memory for LLM agents."
+   }
+  },
+  {
+   "title": "video.twimg.com",
+   "url": "https://video.twimg.com/amplify_video/2118527647894446080/vid/avc1/1920x1080/DMqqZ572ZN-kn4C7.mp4",
+   "date": "2026-11-06T20:04:10+00:00",
+   "summary": "recommended viewing.",
+   "label": "Recommended",
+   "seen": "2026-11-07T20:37:56.340147+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Recommended video from a full-feed blog with no clear topic fit."
+   }
+  },
   {
    "title": "video.twimg.com",
    "url": "https://video.twimg.com/amplify_video/2118674036750262272/vid/avc1/1920x1080/lT_9iBdHH8-tcv8K.mp4",
@@ -10402,18 +10430,6 @@
    "date": "2025-11-18T00:00:00+00:00",
    "summary": "Gemini 3 Pro is now the new main model in Amp, powering the smart agent mode. This is a historic change. Ever since we've started work on Amp, back in February, Anthropic's Claude has been the main model. Not for lack…",
    "seen": "2025-11-18T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Rush Mode",
-   "url": "https://ampcode.com/news/rush-mode",
-   "date": "2025-11-07T00:00:00+00:00",
-   "summary": "Amp has a new mode: rush , named so because a rushed job is faster and cheaper in the moment, and sometimes that's more important than quality. Token-by-token, it's 67% cheaper and 50% faster than smart .…",
-   "seen": "2025-11-07T00:00:00+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
