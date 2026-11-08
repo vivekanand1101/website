@@ -1,5 +1,11 @@
 [
   {
+    "slug": "family-tv-remote",
+    "title": "Family TV Remote",
+    "description": "We had one remote for the smart TV and another for the set-top box. My parents and I kept mixing them up, so I built one interface for both, with shortcuts for the things we use most.",
+    "video": "/slops/family-tv-remote-demo.mp4"
+  },
+  {
     "slug": "virtual-internships-mobile-app",
     "title": "What if Virtual Internships had a mobile app for interns?",
     "video": "/slops/virtual-internships-onboarding.mp4"
