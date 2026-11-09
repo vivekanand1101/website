@@ -1,6 +1,20 @@
 {
  "anthropic": [
   {
+   "title": "Testing Claude on real-world electronics design",
+   "url": "https://www.anthropic.com/research/claude-electronics-design",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-09T20:37:30.104683+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Evaluates how Claude does on real electronics design tasks, a research result with technical substance."
+   }
+  },
+  {
    "title": "Teaching AI to build scientific models",
    "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
    "date": "2026-11-06T00:00:00+00:00",
@@ -15,7 +29,7 @@
    }
   },
   {
-   "title": "The components of agent memory",
+   "title": "Illustration of two offset half circles with a grid pattern, one green and one pink, facing each other across a gap on a light blue background.",
    "url": "https://www.anthropic.com/research/components-of-agent-memory",
    "date": "2026-11-06T00:00:00+00:00",
    "summary": "",
@@ -744,23 +758,33 @@
     "topics": [],
     "reason": "Domain science, policy or social research without engineering substance for this list."
    }
-  },
-  {
-   "title": "Eval awareness in Claude Opus 4.6’s BrowseComp performance",
-   "url": "https://www.anthropic.com/research/eval-awareness-browsecomp",
-   "date": "2026-03-06T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Research on eval awareness affecting benchmark results."
-   }
   }
  ],
  "openai": [
+  {
+   "title": "ChatGPT Enterprise now available in AWS Marketplace",
+   "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+   "date": "2026-11-09T19:00:00+00:00",
+   "summary": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+   "seen": "2026-11-09T20:37:30.104683+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Procurement and availability news with no technical detail."
+   }
+  },
+  {
+   "title": "Kuken Industries searches 70 years of drawings in minutes",
+   "url": "https://openai.com/index/kuken",
+   "date": "2026-11-09T08:00:00+00:00",
+   "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+   "seen": "2026-11-09T20:37:30.104683+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study without engineering depth."
+   }
+  },
   {
    "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
    "url": "https://openai.com/index/partnering-with-hacktron",
@@ -1481,35 +1505,23 @@
     ],
     "reason": "Engineering write-up on building an LLM-powered ad system for intent understanding at scale."
    }
-  },
+  }
+ ],
+ "armin": [
   {
-   "title": "Using thousands of AI agents to uncover new leads in biological data",
-   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-   "date": "2026-10-21T04:50:00+00:00",
-   "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
-   "seen": "2026-10-22T03:00:13.766239+00:00",
+   "title": "AI and Irontown",
+   "url": "https://lucumr.pocoo.org/2026/11/9/irontown/",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "For our last movie night we watched Princess Mononoke . I remembered loving that movie when I was younger, but watching it as an adult made me once again realize how Miyazaki has a way of expressing diverging sides…",
+   "seen": "2026-11-09T20:37:30.104683+00:00",
    "verdict": {
     "relevant": true,
     "topics": [
      "ai"
     ],
-    "reason": "Describes running thousands of distributed AI agents over large biological datasets, a technical multi-agent application."
+    "reason": "Personal essay on AI, from a full-feed blog."
    }
   },
-  {
-   "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
-   "url": "https://openai.com/index/cloudflare-cyber",
-   "date": "2026-10-21T00:00:00+00:00",
-   "summary": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality.",
-   "seen": "2026-10-22T03:00:13.766239+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer case study about Cloudflare using OpenAI products."
-   }
-  }
- ],
- "armin": [
   {
    "title": "Custom Voices With Qwen3-TTS",
    "url": "https://lucumr.pocoo.org/2026/10/29/qwen3-custom-voices/",
@@ -6866,22 +6878,23 @@
     ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Verifying your browser | OpenReview",
-   "url": "https://openreview.net/pdf?id=mdA5lVvNcU",
-   "date": "2025-11-09T06:44:18+00:00",
-   "summary": "Recommended reading.",
-   "label": "Recommended",
-   "seen": "2025-11-09T06:44:18+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "meta": [
+  {
+   "title": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
+   "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
+   "date": "2026-11-09T17:00:12+00:00",
+   "summary": "We built a vendor-neutral accelerator plugin architecture in lldb-server for debugging applications that span CPUs and GPUs. It separates shared debugger infrastructure from hardware-specific device control. The design…",
+   "seen": "2026-11-09T20:37:30.104683+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Systems engineering writeup on a vendor-neutral accelerator plugin design in lldb-server."
+   }
+  },
   {
    "title": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
    "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/",
@@ -7126,6 +7139,18 @@
  ],
  "cloudflare": [
   {
+   "title": "Launching the Vite Ecosystem Fund",
+   "url": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+   "date": "2026-11-09T13:00:00+00:00",
+   "summary": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not…",
+   "seen": "2026-11-09T20:37:30.104683+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Funding announcement for open source projects, not technical."
+   }
+  },
+  {
    "title": "The post-quantum future of web privacy",
    "url": "https://blog.cloudflare.com/vole-mole/",
    "date": "2026-11-06T14:00:00+00:00",
@@ -7155,7 +7180,7 @@
    }
   },
   {
-   "title": "See the agents, set the terms: new visibility and control for personal agents",
+   "title": "See the agents, set the terms: New visibility and control for personal agents",
    "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
    "date": "2026-11-04T14:00:00+00:00",
    "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access.",
@@ -7305,7 +7330,7 @@
    }
   },
   {
-   "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+   "title": "Localizing compliance at scale: Achieving South Korea’s ISMS certification",
    "url": "https://blog.cloudflare.com/k-isms/",
    "date": "2026-10-22T13:00:00+00:00",
    "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security…",
@@ -8934,6 +8959,20 @@
   }
  ],
  "amp": [
+  {
+   "title": "Portals on Your Runner",
+   "url": "https://ampcode.com/news/runner-portals",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "Portals , which you know and love from using them in orbs, now work on your local machines too. You can ask Amp to start a dev server or build a website on your machine and open it from the thread's Portal tab,…",
+   "seen": "2026-11-09T20:37:30.104683+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Coding agent feature from a full-feed blog."
+   }
+  },
   {
    "title": "Close the Loop",
    "url": "https://ampcode.com/news/close-the-loop",
@@ -10565,6 +10604,20 @@
  ],
  "simon": [
   {
+   "title": "Hide your slop PR descriptions behind <details><summary>",
+   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "date": "2026-11-09T04:25:05+00:00",
+   "summary": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature…",
+   "seen": "2026-11-09T20:37:30.104683+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Practical tip on handling PR descriptions written by coding agents."
+   }
+  },
+  {
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
    "date": "2026-11-03T16:29:48+00:00",
@@ -12021,18 +12074,6 @@
    "date": "2025-11-13T00:00:00+00:00",
    "summary": "",
    "seen": "2025-11-13T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Reverse engineering Codex CLI to get GPT-5-Codex-Mini to draw me a pelican",
-   "url": "https://simonwillison.net/2025/Nov/9/gpt-5-codex-mini/",
-   "date": "2025-11-09T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-09T00:00:00+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
