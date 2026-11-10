@@ -1,6 +1,18 @@
 {
  "anthropic": [
   {
+   "title": "Anthropic launches roadshow for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/roadshow-launch",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company IPO news with no technical content."
+   }
+  },
+  {
    "title": "Testing Claude on real-world electronics design",
    "url": "https://www.anthropic.com/research/claude-electronics-design",
    "date": "2026-11-09T00:00:00+00:00",
@@ -746,21 +758,57 @@
     ],
     "reason": "How to run long agentic scientific computing jobs with Claude."
    }
-  },
-  {
-   "title": "Introducing our Science Blog",
-   "url": "https://www.anthropic.com/research/introducing-anthropic-science",
-   "date": "2026-03-23T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:28:56.959577+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Domain science, policy or social research without engineering substance for this list."
-   }
   }
  ],
  "openai": [
+  {
+   "title": "Helping caregivers use AI in everyday life",
+   "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+   "date": "2026-11-10T12:00:00+00:00",
+   "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Education workshops, not engineering."
+   }
+  },
+  {
+   "title": "Introducing Businesses in ChatGPT",
+   "url": "https://openai.com/index/introducing-businesses-chatgpt",
+   "date": "2026-11-10T10:00:00+00:00",
+   "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product announcement with no technical detail."
+   }
+  },
+  {
+   "title": "Closing the AI guidance gap in education",
+   "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+   "date": "2026-11-10T09:00:00+00:00",
+   "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Education policy and research, not engineering."
+   }
+  },
+  {
+   "title": "Work at the Frontier: AI’s effect on freelance work",
+   "url": "https://openai.com/index/ai-effect-on-freelance-work",
+   "date": "2026-11-10T07:00:00+00:00",
+   "summary": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Labor market research, not engineering."
+   }
+  },
   {
    "title": "ChatGPT Enterprise now available in AWS Marketplace",
    "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
@@ -774,6 +822,21 @@
    }
   },
   {
+   "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+   "url": "https://openai.com/index/control-room",
+   "date": "2026-11-09T13:00:00+00:00",
+   "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Infrastructure for tracking and stopping model workloads across research clusters."
+   }
+  },
+  {
    "title": "Kuken Industries searches 70 years of drawings in minutes",
    "url": "https://openai.com/index/kuken",
    "date": "2026-11-09T08:00:00+00:00",
@@ -783,6 +846,18 @@
     "relevant": false,
     "topics": [],
     "reason": "Customer case study without engineering depth."
+   }
+  },
+  {
+   "title": "CodeRabbit scales agentic software development and ships 20x more",
+   "url": "https://openai.com/index/coderabbit-codex-daybreak",
+   "date": "2026-11-09T08:00:00+00:00",
+   "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study."
    }
   },
   {
@@ -1429,81 +1504,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, announcement or non-technical post without engineering detail."
-   }
-  },
-  {
-   "title": "Broad access through consistent standards",
-   "url": "https://openai.com/index/broad-access-through-consistent-standards",
-   "date": "2026-10-21T21:00:00+00:00",
-   "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
-   "seen": "2026-10-22T03:00:13.766239+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Usage-policy and distribution-partner post, not engineering."
-   }
-  },
-  {
-   "title": "How AT&T is rethinking in-house legal work with OpenAI",
-   "url": "https://openai.com/index/att-legal",
-   "date": "2026-10-21T17:00:00+00:00",
-   "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
-   "seen": "2026-10-22T03:00:13.766239+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer case study about legal work."
-   }
-  },
-  {
-   "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
-   "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
-   "date": "2026-10-21T13:00:00+00:00",
-   "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
-   "seen": "2026-10-22T03:00:13.766239+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Business expansion news about the ads product."
-   }
-  },
-  {
-   "title": "OpenAI models are coming to Google Cloud",
-   "url": "https://openai.com/index/openai-models-google-cloud",
-   "date": "2026-10-21T12:00:00+00:00",
-   "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
-   "seen": "2026-10-22T03:00:13.766239+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Partnership and availability announcement with no technical detail."
-   }
-  },
-  {
-   "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-   "date": "2026-10-21T07:00:00+00:00",
-   "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
-   "seen": "2026-10-22T03:00:13.766239+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Announces a coordination program and does not appear to include security engineering detail."
-   }
-  },
-  {
-   "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
-   "url": "https://openai.com/index/building-chatgpt-ad-stack",
-   "date": "2026-10-21T07:00:00+00:00",
-   "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
-   "seen": "2026-10-22T03:00:13.766239+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "backend"
-    ],
-    "reason": "Engineering write-up on building an LLM-powered ad system for intent understanding at scale."
    }
   }
  ],
@@ -2602,6 +2602,34 @@
   }
  ],
  "mario": [
+  {
+   "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+   "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+   "date": "2026-11-10T09:39:53+00:00",
+   "summary": "recommended reading. classifiers are all you need. bonus points if you use an llm to generate labeled data to train idiot models and then replace the llm with it.",
+   "label": "Recommended",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Replacing an LLM with a trained classifier to cut costs."
+   }
+  },
+  {
+   "title": "video.twimg.com",
+   "url": "https://video.twimg.com/amplify_video/2119816697322639360/vid/avc1/1920x1080/EvJALx4OnHxrUJpV.mp4",
+   "date": "2026-11-09T22:22:58+00:00",
+   "summary": "recommended viewing. sigh. here we go again, clowning on the internet. everytime @dillon_mulroy talks about his typescript code, the gods shine upon him.",
+   "label": "Recommended",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Video link about TypeScript code, no clear topic fit."
+   }
+  },
   {
    "title": "The components of agent memory",
    "url": "https://www.anthropic.com/research/components-of-agent-memory",
@@ -6882,6 +6910,32 @@
  ],
  "meta": [
   {
+   "title": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
+   "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/",
+   "date": "2026-11-10T17:00:49+00:00",
+   "summary": "Your algorithm is a suite of AI-powered tools that makes Facebook recommendations more transparent and steerable, with a single editable view of the interests that shape Feed and Reels. We’re sharing how Your algorithm…",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mostly a user-facing product feature announcement."
+   }
+  },
+  {
+   "title": "How We Built TLX: A Hardware-Native GPU Compiler for Production ML at Scale",
+   "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml/",
+   "date": "2026-11-10T16:59:31+00:00",
+   "summary": "Triton Low-Level Extensions (TLX), is an extension to Triton that helps engineers optimize GPU performance while preserving Triton’s productive programming model. TLX introduces explicit warp-group and cluster-level…",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "GPU compiler extensions for optimizing production ML kernels."
+   }
+  },
+  {
    "title": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
    "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
    "date": "2026-11-09T17:00:12+00:00",
@@ -7707,6 +7761,20 @@
  ],
  "railway": [
   {
+   "title": "Incident Report: October 21st Security Attack",
+   "url": "https://blog.railway.com/p/incident-report-october-security-incident",
+   "date": "2026-11-10T14:00:00+00:00",
+   "summary": "The incident report detailing the October 21st security attack.",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Security incident postmortem from an infrastructure provider."
+   }
+  },
+  {
    "title": "Managed Postgres on Railway",
    "url": "https://blog.railway.com/p/managed-postgres",
    "date": "2026-11-05T19:54:00+00:00",
@@ -8458,18 +8526,6 @@
     "topics": [],
     "reason": "Vendor listicle/marketing comparison."
    }
-  },
-  {
-   "title": "The Best PaaS Providers in 2026",
-   "url": "https://blog.railway.com/p/best-paas-providers-2026",
-   "date": "2026-05-25T00:00:00+00:00",
-   "summary": "What counts as a Platform-as-a-Service in 2026, who is still carrying the contract Heroku invented, and where each provider actually fits.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Vendor listicle/marketing comparison."
-   }
   }
  ],
  "ben": [
@@ -8959,6 +9015,18 @@
   }
  ],
  "amp": [
+  {
+   "title": "Boxes",
+   "url": "https://ampcode.com/news/boxes",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Today, we're introducing something new to Amp: boxes. A box is an always-on computer to which you can deploy the many delightful things you've built with Amp. Boxes are small and cheap (the smallest one is $18 per 30…",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown blog; product announcement, no topic fit."
+   }
+  },
   {
    "title": "Portals on Your Runner",
    "url": "https://ampcode.com/news/runner-portals",
@@ -10604,6 +10672,20 @@
  ],
  "simon": [
   {
+   "title": "Locating the source of a mysterious beep with Claude",
+   "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+   "date": "2026-11-09T23:57:21+00:00",
+   "summary": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in…",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Using Claude to locate a beeping source, an LLM use example."
+   }
+  },
+  {
    "title": "Hide your slop PR descriptions behind <details><summary>",
    "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
    "date": "2026-11-09T04:25:05+00:00",
@@ -12082,6 +12164,20 @@
   }
  ],
  "pragmatic": [
+  {
+   "title": "Software correctness & supply chain security, with Sean Allen",
+   "url": "https://newsletter.pragmaticengineer.com/p/software-correctness",
+   "date": "2026-11-10T15:00:21+00:00",
+   "summary": "A deep conversation on the biggest challenges of developing with AI – while trying not to mention the phrase “AI” once. Why? To dig up the fundamentals that are as important as ever",
+   "seen": "2026-11-10T20:40:33.052482+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Software correctness and supply chain security discussion."
+   }
+  },
   {
    "title": "The Pragmatic Summit 2027",
    "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-summit-2027",
