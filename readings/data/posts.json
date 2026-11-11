@@ -762,6 +762,18 @@
  ],
  "openai": [
   {
+   "title": "Gilbert + Tobin rethinks the business of law with AI",
+   "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+   "seen": "2026-11-11T03:00:43.263492+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study interview about a law firm's AI adoption, with no technical engineering content."
+   }
+  },
+  {
    "title": "Helping caregivers use AI in everyday life",
    "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
    "date": "2026-11-10T12:00:00+00:00",
@@ -1487,18 +1499,6 @@
    "url": "https://openai.com/index/forward-deployed-engineering-means",
    "date": "2026-10-22T06:00:00+00:00",
    "summary": "What forward deployed engineering means at OpenAI",
-   "seen": "2026-10-25T14:03:41.740917+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, announcement or non-technical post without engineering detail."
-   }
-  },
-  {
-   "title": "Uber brings ChatGPT Work to all employees with OpenAI",
-   "url": "https://openai.com/index/uber-chatgpt-work-rollout",
-   "date": "2026-10-22T00:00:00+00:00",
-   "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
    "seen": "2026-10-25T14:03:41.740917+00:00",
    "verdict": {
     "relevant": false,
