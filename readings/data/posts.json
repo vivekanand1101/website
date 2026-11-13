@@ -1,6 +1,20 @@
 {
  "anthropic": [
   {
+   "title": "Building strong safety evaluations",
+   "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+   "date": "2026-11-13T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-13T20:38:20.604690+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Technical research on how to design robust evals for model safety."
+   }
+  },
+  {
    "title": "Anthropic launches roadshow for proposed initial public offering",
    "url": "https://www.anthropic.com/news/roadshow-launch",
    "date": "2026-11-10T00:00:00+00:00",
@@ -744,23 +758,21 @@
     ],
     "reason": "A worked example of agentic research with Claude, including where it fails."
    }
-  },
-  {
-   "title": "Long-running Claude for scientific computing",
-   "url": "https://www.anthropic.com/research/long-running-claude",
-   "date": "2026-03-23T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:28:56.959577+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "How to run long agentic scientific computing jobs with Claude."
-   }
   }
  ],
  "openai": [
+  {
+   "title": "Introducing ChatGPT Wallet",
+   "url": "https://openai.com/index/introducing-chatgpt-wallet",
+   "date": "2026-11-13T15:00:00+00:00",
+   "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+   "seen": "2026-11-13T20:38:20.604690+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product announcement with no technical detail."
+   }
+  },
   {
    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
    "url": "https://openai.com/index/amplitude",
@@ -1480,18 +1492,6 @@
    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
    "date": "2026-10-26T14:30:00+00:00",
    "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
-   "seen": "2026-10-27T03:09:01.794125+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, case study, or product announcement without technical depth."
-   }
-  },
-  {
-   "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-   "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-   "date": "2026-10-26T13:45:00+00:00",
-   "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
    "seen": "2026-10-27T03:09:01.794125+00:00",
    "verdict": {
     "relevant": false,
@@ -2595,6 +2595,21 @@
   }
  ],
  "mario": [
+  {
+   "title": "After 600 experiments, here's what I discovered about JEPA world models",
+   "url": "https://haddyalchaer.com/jepa",
+   "date": "2026-11-13T19:37:34+00:00",
+   "summary": "recommended reading. pretty crazy the learned predictor is as good as a perfect physics sim.",
+   "label": "Recommended",
+   "seen": "2026-11-13T20:38:20.604690+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Experiment results on JEPA world models."
+   }
+  },
   {
    "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
    "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
@@ -6903,6 +6918,20 @@
  ],
  "meta": [
   {
+   "title": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
+   "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
+   "date": "2026-11-13T17:00:39+00:00",
+   "summary": "How Meta's Reality Labs brought Cuttlefish and its QEMU backend to macOS and Apple silicon. [...] Read More... The post Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon appeared…",
+   "seen": "2026-11-13T20:38:20.604690+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Systems write-up on porting a QEMU-based virtual device framework to Apple silicon."
+   }
+  },
+  {
    "title": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
    "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/",
    "date": "2026-11-11T17:00:38+00:00",
@@ -7199,6 +7228,50 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "Kitesurf is now open source",
+   "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+   "date": "2026-11-13T20:20:21+00:00",
+   "summary": "Kitesurf, our experimental browser engine for AI agents, is now open source. Inspect the code, run it locally, or deploy your own instance on Cloudflare Workers.",
+   "seen": "2026-11-13T20:38:20.604690+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Open-source browser engine built for AI agents, with runnable code."
+   }
+  },
+  {
+   "title": "Adapting to AI penetration testing orchestrators: The Modern Security Model",
+   "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
+   "date": "2026-11-13T19:26:07+00:00",
+   "summary": "AI-orchestrated penetration testing platforms like ARTEX have become increasingly powerful tools enabling effective attacks on exposed infrastructure. Here we share Cloudflare’s observations and recommended…",
+   "seen": "2026-11-13T20:38:20.604690+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Security engineering take on defending infrastructure against AI-driven pen testing."
+   }
+  },
+  {
+   "title": "Introducing Spend Management: Spending limits and alerts for Cloudflare",
+   "url": "https://blog.cloudflare.com/spend-management/",
+   "date": "2026-11-13T14:00:00+00:00",
+   "summary": "Spend Management adds opt-in spending caps for Cloudflare Workers and Durable Objects, and more products soon. Here is how we built the metering pipeline that turns usage into runtime decisions.",
+   "seen": "2026-11-13T20:38:20.604690+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend",
+     "databases"
+    ],
+    "reason": "Explains the metering pipeline that turns usage into runtime limits."
+   }
+  },
   {
    "title": "Choosing QuePaxa, an unusual consensus algorithm",
    "url": "https://blog.cloudflare.com/choosing-quepaxa/",
@@ -13831,18 +13904,6 @@
    "date": "2025-11-18T17:02:14.519000+00:00",
    "summary": "Tactics for getting promoted to Levels 5, 6, and 7, and advice on when to make your move into management. Former Amazon VP, Ethan Evans, reveals what he saw work during a successful Big Tech career",
    "seen": "2025-11-18T17:02:14.519000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "The Pulse #153: Is Microsoft too early to agentic OS – like with smartphones?",
-   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-153",
-   "date": "2025-11-13T17:53:36.961000+00:00",
-   "summary": "Also: agents coming the default way to write code, inside Cursor’s unique engineering culture, and more. Plus: early applications for The Pragmatic Summit",
-   "seen": "2025-11-13T17:53:36.961000+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
