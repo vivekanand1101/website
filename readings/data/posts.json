@@ -774,6 +774,30 @@
    }
   },
   {
+   "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+   "url": "https://openai.com/business/customer-stories/amplitude",
+   "date": "2026-11-12T20:00:00+00:00",
+   "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+   "seen": "2026-11-13T03:01:37.136519+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study promoting OpenAI usage rather than a technical engineering post."
+   }
+  },
+  {
+   "title": "Gondola doubles revenue as its team builds more with Codex",
+   "url": "https://openai.com/business/customer-stories/gondola",
+   "date": "2026-11-12T12:00:00+00:00",
+   "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+   "seen": "2026-11-13T03:01:37.136519+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study focused on business outcomes with no technical substance."
+   }
+  },
+  {
    "title": "Holiday Extras is rethinking what it can build with Codex",
    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
    "date": "2026-11-12T09:30:00+00:00",
@@ -1468,30 +1492,6 @@
    "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
    "date": "2026-10-26T13:45:00+00:00",
    "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
-   "seen": "2026-10-27T03:09:01.794125+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, case study, or product announcement without technical depth."
-   }
-  },
-  {
-   "title": "ChatGPT’s expanding world of work",
-   "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
-   "date": "2026-10-26T10:00:00+00:00",
-   "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
-   "seen": "2026-10-27T03:09:01.794125+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, case study, or product announcement without technical depth."
-   }
-  },
-  {
-   "title": "How Fanatics and OpenAI streamline the fan experience",
-   "url": "https://openai.com/index/fanatics-streamline-fan-experience",
-   "date": "2026-10-26T07:00:00+00:00",
-   "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
    "seen": "2026-10-27T03:09:01.794125+00:00",
    "verdict": {
     "relevant": false,
@@ -7782,6 +7782,18 @@
  ],
  "railway": [
   {
+   "title": "Bulletin: Compensation for unauthorized AI usage",
+   "url": "https://blog.railway.com/p/bulletin-compensation",
+   "date": "2026-11-12T00:46:24+00:00",
+   "summary": "An update on compensation for unauthorized token spend lost due to the October 21 security incident",
+   "seen": "2026-11-13T03:01:37.136519+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Covers compensation and refund claims after the incident, not its root cause or technical details."
+   }
+  },
+  {
    "title": "Incident Report: October 21st Security Attack",
    "url": "https://blog.railway.com/p/incident-report-october-security-incident",
    "date": "2026-11-10T14:00:00+00:00",
@@ -8534,18 +8546,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Vendor comparison listicle rather than a technical deep dive."
-   }
-  },
-  {
-   "title": "The Best Platforms to Deploy AI Apps in 2026 (Not the Models, the Apps Around Them)",
-   "url": "https://blog.railway.com/p/best-platforms-deploy-ai-apps-2026",
-   "date": "2026-05-25T00:00:00+00:00",
-   "summary": "Most 'best AI hosting' lists conflate model serving with hosting the app that calls the model. A ranking that splits the two layers and shows which platform serves which.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Vendor listicle/marketing comparison."
    }
   }
  ],
@@ -12179,18 +12179,6 @@
    "date": "2025-11-18T00:00:00+00:00",
    "summary": "",
    "seen": "2025-11-18T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "What happens if AI labs train for pelicans riding bicycles?",
-   "url": "https://simonwillison.net/2025/Nov/13/training-for-pelicans-riding-bicycles/",
-   "date": "2025-11-13T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-13T00:00:00+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
