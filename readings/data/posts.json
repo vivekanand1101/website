@@ -762,6 +762,128 @@
  ],
  "openai": [
   {
+   "title": "Broadening access to AI for scientists",
+   "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+   "date": "2026-11-16T17:00:00+00:00",
+   "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly news, partnership, policy or product announcement without technical detail."
+   }
+  },
+  {
+   "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+   "url": "https://openai.com/index/strengthening-online-child-safety",
+   "date": "2026-11-16T17:00:00+00:00",
+   "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly news, partnership, policy or product announcement without technical detail."
+   }
+  },
+  {
+   "title": "Science at the Frontier: How scientists use ChatGPT",
+   "url": "https://openai.com/index/science-at-the-frontier",
+   "date": "2026-11-16T12:00:00+00:00",
+   "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly news, partnership, policy or product announcement without technical detail."
+   }
+  },
+  {
+   "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+   "url": "https://openai.com/index/lvmh-media-division-partnership",
+   "date": "2026-11-16T09:00:00+00:00",
+   "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly news, partnership, policy or product announcement without technical detail."
+   }
+  },
+  {
+   "title": "Our first phase of embedded assessments",
+   "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+   "date": "2026-11-16T08:00:00+00:00",
+   "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Independent evals of model alignment, safeguards and monitoring systems."
+   }
+  },
+  {
+   "title": "Advancing computer-use agents for healthcare teams",
+   "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+   "date": "2026-11-16T06:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly news, partnership, policy or product announcement without technical detail."
+   }
+  },
+  {
+   "title": "More ways to move care forward with ChatGPT for Healthcare",
+   "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+   "date": "2026-11-16T06:00:00+00:00",
+   "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly news, partnership, policy or product announcement without technical detail."
+   }
+  },
+  {
+   "title": "The King’s Trust and OpenAI launch £1m partnership",
+   "url": "https://openai.com/index/the-kings-trust-and-openai",
+   "date": "2026-11-16T00:00:00+00:00",
+   "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly news, partnership, policy or product announcement without technical detail."
+   }
+  },
+  {
+   "title": "A step toward defining the Standard Model on a lattice",
+   "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+   "date": "2026-11-15T22:00:01+00:00",
+   "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly news, partnership, policy or product announcement without technical detail."
+   }
+  },
+  {
+   "title": "Our new blog for science",
+   "url": "https://openai.com/index/our-new-blog-for-science",
+   "date": "2026-11-15T22:00:00+00:00",
+   "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Mainly news, partnership, policy or product announcement without technical detail."
+   }
+  },
+  {
    "title": "Introducing ChatGPT Wallet",
    "url": "https://openai.com/index/introducing-chatgpt-wallet",
    "date": "2026-11-13T15:00:00+00:00",
@@ -1377,126 +1499,6 @@
      "ai"
     ],
     "reason": "Technical write-up an engineer would learn from."
-   }
-  },
-  {
-   "title": "How Ropes & Gray is developing AI for transactional diligence",
-   "url": "https://openai.com/index/ropes-gray-ai-diligence",
-   "date": "2026-10-29T07:00:00+00:00",
-   "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
-   "seen": "2026-10-30T03:08:16.639703+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, case study or product announcement without enough technical detail."
-   }
-  },
-  {
-   "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
-   "url": "https://openai.com/index/credit-saison",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
-   "seen": "2026-10-31T03:07:48.843593+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer case study focused on ROI."
-   }
-  },
-  {
-   "title": "Evernote turns AI-driven discovery into paid subscriptions",
-   "url": "https://openai.com/ads/customers/evernote",
-   "date": "2026-10-28T19:40:49+00:00",
-   "summary": "Evernote used ChatGPT Ads to introduce its note-taking app to people working with AI. The team tracked how often free trials led to paid subscriptions.",
-   "seen": "2026-11-04T03:07:30.880864+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Advertising customer story, marketing only."
-   }
-  },
-  {
-   "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-   "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
-   "date": "2026-10-28T13:15:00+00:00",
-   "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
-   "seen": "2026-10-29T03:08:41.809921+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Mainly company news, partnership or case study without technical depth."
-   }
-  },
-  {
-   "title": "The future of the firm",
-   "url": "https://openai.com/index/the-future-of-the-firm",
-   "date": "2026-10-28T10:00:00+00:00",
-   "summary": "How AI might enter the org chart—beneath, beside, and between us.",
-   "seen": "2026-10-29T03:08:41.809921+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Mainly company news, partnership or case study without technical depth."
-   }
-  },
-  {
-   "title": "Legora is building the agentic operating system for legal work",
-   "url": "https://openai.com/index/legora",
-   "date": "2026-10-28T09:30:00+00:00",
-   "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
-   "seen": "2026-10-29T03:08:41.809921+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Mainly company news, partnership or case study without technical depth."
-   }
-  },
-  {
-   "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-   "url": "https://openai.com/index/oracle-apps-in-chatgpt",
-   "date": "2026-10-27T07:00:00+00:00",
-   "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
-   "seen": "2026-10-28T03:08:09.369386+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Partnership announcement."
-   }
-  },
-  {
-   "title": "How Check Point accelerates vulnerability research with Daybreak",
-   "url": "https://openai.com/index/check-point-daybreak",
-   "date": "2026-10-27T00:00:00+00:00",
-   "summary": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster.",
-   "seen": "2026-10-28T03:08:09.369386+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer case study."
-   }
-  },
-  {
-   "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-   "url": "https://openai.com/index/greptile-code-review-codex-astra",
-   "date": "2026-10-26T22:00:00+00:00",
-   "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
-   "seen": "2026-10-27T03:09:01.794125+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, case study, or product announcement without technical depth."
-   }
-  },
-  {
-   "title": "Introducing GPT-6.1 Terra",
-   "url": "https://openai.com/index/introducing-gpt-6-1-terra",
-   "date": "2026-10-26T18:00:00+00:00",
-   "summary": "Delivering fast and capable computer use at scale",
-   "seen": "2026-10-27T03:09:01.794125+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, case study, or product announcement without technical depth."
    }
   }
  ],
@@ -12272,6 +12274,20 @@
   }
  ],
  "pragmatic": [
+  {
+   "title": "Software engineering after code becomes cheap with Satya Nadella",
+   "url": "https://newsletter.pragmaticengineer.com/p/software-engineering-after-code-becomes",
+   "date": "2026-11-16T13:33:48+00:00",
+   "summary": "Microsoft CEO Satya Nadella on AI’s impact on software engineering, code verification, and engineers’ careers.",
+   "seen": "2026-11-16T20:37:38.034025+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always shown; covers AI's effect on code verification and engineering."
+   }
+  },
   {
    "title": "The Pulse: What can we learn from the Railway hack?",
    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-what-can-we-learn-from-114",
