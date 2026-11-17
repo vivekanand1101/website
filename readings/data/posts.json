@@ -762,6 +762,54 @@
  ],
  "openai": [
   {
+   "title": "Introducing GPT-6.2 Astra and Sol",
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+   "date": "2026-11-17T17:45:00+00:00",
+   "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Model launch announcement with little technical detail."
+   }
+  },
+  {
+   "title": "Strengthening NATO and allied cyber defenses with AI",
+   "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+   "date": "2026-11-17T00:00:00+00:00",
+   "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Partnership and policy news, not engineering."
+   }
+  },
+  {
+   "title": "Introducing OpenAI for Chile",
+   "url": "https://openai.com/index/introducing-openai-for-chile",
+   "date": "2026-11-17T00:00:00+00:00",
+   "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Government partnership announcement."
+   }
+  },
+  {
+   "title": "Astra for Law leads in legal intelligence",
+   "url": "https://openai.com/index/astra-law-6-2",
+   "date": "2026-11-17T00:00:00+00:00",
+   "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product benchmark promotion for a legal vertical."
+   }
+  },
+  {
    "title": "Broadening access to AI for scientists",
    "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
    "date": "2026-11-16T17:00:00+00:00",
@@ -795,6 +843,18 @@
     "relevant": false,
     "topics": [],
     "reason": "Mainly news, partnership, policy or product announcement without technical detail."
+   }
+  },
+  {
+   "title": "How Revolut raises ambition without lowering the bar",
+   "url": "https://openai.com/business/customer-stories/revolut",
+   "date": "2026-11-16T09:30:00+00:00",
+   "summary": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study."
    }
   },
   {
@@ -992,6 +1052,18 @@
    }
   },
   {
+   "title": "ChatGPT Ads increases its market presence in 44 countries",
+   "url": "https://openai.com/ads/blog/chatgpt-ads-increases-its-market-presence",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Aleph selected as ChatGPT Ads’ exclusive reseller in 44 countries to offer local invoicing, in-person support and local market expertise to brands and agencies",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Ads reseller business news."
+   }
+  },
+  {
    "title": "ChatGPT Plus for veterans and servicemembers",
    "url": "https://openai.com/index/chatgpt-plus-for-veterans",
    "date": "2026-11-11T08:00:00+00:00",
@@ -1138,6 +1210,18 @@
     "relevant": false,
     "topics": [],
     "reason": "Customer case study."
+   }
+  },
+  {
+   "title": "How VistaPrint helps small businesses get the word out",
+   "url": "https://openai.com/ads/customers/vistaprint",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "Small business owners preparing for a launch or an event often know what they want to accomplish before they know what to print. VistaPrint uses ChatGPT Ads to show how products like signs and branded merchandise can…",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer marketing story."
    }
   },
   {
@@ -1411,92 +1495,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Utility partnership program, not engineering."
-   }
-  },
-  {
-   "title": "LifeVal",
-   "url": "https://openai.com/index/lifeval",
-   "date": "2026-11-02T09:00:00+00:00",
-   "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
-   "seen": "2026-11-03T03:08:01.125586+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Introduces a benchmark for evaluating AI on everyday tasks."
-   }
-  },
-  {
-   "title": "Qodo builds context into AI code review with Codex",
-   "url": "https://openai.com/index/qodo-codex-plugin",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
-   "seen": "2026-11-03T03:08:01.125586+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer case study and product integration."
-   }
-  },
-  {
-   "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-   "url": "https://openai.com/index/dan-driscoll-joins-openai",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
-   "seen": "2026-11-03T03:08:01.125586+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Personnel appointment news."
-   }
-  },
-  {
-   "title": "Making it easier for websites to express AI training preferences",
-   "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-   "date": "2026-10-30T09:30:00+00:00",
-   "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
-   "seen": "2026-10-31T03:07:48.843593+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Policy-oriented announcement about training preferences with little technical depth."
-   }
-  },
-  {
-   "title": "Community safety report and new protections for teens",
-   "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-   "date": "2026-10-30T09:00:00+00:00",
-   "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
-   "seen": "2026-10-31T03:07:48.843593+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Safety and policy news, not engineering detail."
-   }
-  },
-  {
-   "title": "Fair use benefits everyone",
-   "url": "https://openai.com/index/fair-use-benefits-everyone",
-   "date": "2026-10-30T00:00:00+00:00",
-   "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
-   "seen": "2026-10-31T03:07:48.843593+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Legal and policy advocacy about fair use."
-   }
-  },
-  {
-   "title": "An updated Model Spec for more capable and beneficial AI",
-   "url": "https://openai.com/index/updated-model-spec",
-   "date": "2026-10-29T17:00:00+00:00",
-   "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
-   "seen": "2026-10-30T03:08:16.639703+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Company news, case study or product announcement without enough technical detail."
    }
   }
  ],
@@ -6911,21 +6909,6 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Agentic AI’s OODA Loop Problem - Schneier on Security",
-   "url": "http://www.schneier.com/blog/archives/2025/10/agentic-ais-ooda-loop-problem.html",
-   "date": "2025-11-17T08:08:28+00:00",
-   "summary": "Recommended reading.",
-   "label": "Recommended",
-   "seen": "2025-11-17T08:08:28+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "meta": [
@@ -7240,6 +7223,20 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "Quad9’s withdrawal from France: A canary in the coal mine",
+   "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+   "date": "2026-11-17T20:24:27+00:00",
+   "summary": "Quad9's forced withdrawal from France highlights the dangers of mandating DNS-level blocking. We explore why forcing public resolvers to act as content filters is technically flawed and threatens the open Internet.",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Explains why DNS-level blocking by public resolvers is technically flawed."
+   }
+  },
   {
    "title": "Kitesurf is now open source",
    "url": "https://blog.cloudflare.com/kitesurf-open-source/",
@@ -7866,6 +7863,18 @@
   }
  ],
  "railway": [
+  {
+   "title": "Railway now supports linked billing with Claude Platform",
+   "url": "https://blog.railway.com/p/linked-billing-claude-platform",
+   "date": "2026-11-17T18:15:00+00:00",
+   "summary": "Link your Railway workspace to your Anthropic Claude Platform organization. Anthropic bills your organization directly for the Claude models you run in Railway Agent, and no API key needed to be stored.",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Billing integration announcement."
+   }
+  },
   {
    "title": "Bulletin: Compensation for unauthorized AI usage",
    "url": "https://blog.railway.com/p/bulletin-compensation",
@@ -8619,18 +8628,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Vendor listicle/marketing comparison."
-   }
-  },
-  {
-   "title": "The Best PostgreSQL Hosting for Developers in 2026",
-   "url": "https://blog.railway.com/p/best-postgresql-hosting-2026",
-   "date": "2026-05-25T00:00:00+00:00",
-   "summary": "Postgres hosting fragmented into three shapes in 2026: integrated PaaS, dedicated SaaS, and hyperscaler-native. A ranking that helps you pick the shape before you pick the vendor.",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Vendor comparison listicle rather than a technical deep dive."
    }
   }
  ],
@@ -10792,6 +10789,21 @@
  ],
  "simon": [
   {
+   "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+   "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+   "date": "2026-11-17T16:48:33+00:00",
+   "summary": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost…",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend",
+     "databases"
+    ],
+    "reason": "Always shown; Datasette running in the browser via service workers and Pyodide."
+   }
+  },
+  {
    "title": "Locating the source of a mysterious beep with Claude",
    "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
    "date": "2026-11-09T23:57:21+00:00",
@@ -12272,6 +12284,20 @@
   }
  ],
  "pragmatic": [
+  {
+   "title": "Inference engineering for software engineers",
+   "url": "https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers",
+   "date": "2026-11-17T16:11:23+00:00",
+   "summary": "When is the right time to drop APIs provided by the frontier AI labs, and what about choosing models & providers, caching, dedicated GPUs, KV cache concerns, and more? A practical deepdive",
+   "seen": "2026-11-17T20:37:58.993199+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always shown; inference, KV cache and model hosting tradeoffs."
+   }
+  },
   {
    "title": "Software engineering after code becomes cheap with Satya Nadella",
    "url": "https://newsletter.pragmaticengineer.com/p/software-engineering-after-code-becomes",
