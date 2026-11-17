@@ -860,6 +860,18 @@
    }
   },
   {
+   "title": "At Holiday Extras, dots get to work before anyone asks",
+   "url": "https://openai.com/business/customer-stories/holiday-extras-dots",
+   "date": "2026-11-16T00:00:00+00:00",
+   "summary": "Dots deliver launch reports unprompted, flag issues people might miss, and talk through upcoming meetings on the commute to work.",
+   "seen": "2026-11-17T03:00:51.367792+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study about a company using OpenAI's product, with no technical engineering substance."
+   }
+  },
+  {
    "title": "A step toward defining the Standard Model on a lattice",
    "url": "https://openai.com/index/step-toward-defining-the-standard-model",
    "date": "2026-11-15T22:00:01+00:00",
@@ -1485,20 +1497,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Company news, case study or product announcement without enough technical detail."
-   }
-  },
-  {
-   "title": "How we detect frontier model misalignment",
-   "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-   "date": "2026-10-29T09:00:00+00:00",
-   "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
-   "seen": "2026-10-30T03:08:16.639703+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Technical write-up an engineer would learn from."
    }
   }
  ],
