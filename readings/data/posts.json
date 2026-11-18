@@ -774,6 +774,18 @@
    }
   },
   {
+   "title": "Introducing ChatGPT for Sales",
+   "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+   "date": "2026-11-17T08:00:00+00:00",
+   "summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+   "seen": "2026-11-18T03:00:51.384621+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product and marketing announcement of sales plugins with no technical engineering detail."
+   }
+  },
+  {
    "title": "Strengthening NATO and allied cyber defenses with AI",
    "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
    "date": "2026-11-17T00:00:00+00:00",
@@ -1483,18 +1495,6 @@
      "backend"
     ],
     "reason": "Describes building a Git-compatible backend to handle Codex-scale development."
-   }
-  },
-  {
-   "title": "Introducing the Grid Protectors Program",
-   "url": "https://openai.com/index/grid-protectors-program",
-   "date": "2026-11-02T15:00:00+00:00",
-   "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-   "seen": "2026-11-03T03:08:01.125586+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Utility partnership program, not engineering."
    }
   }
  ],
@@ -10659,18 +10659,6 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Gemini 3 Pro",
-   "url": "https://ampcode.com/news/gemini-3",
-   "date": "2025-11-18T00:00:00+00:00",
-   "summary": "Gemini 3 Pro is now the new main model in Amp, powering the smart agent mode. This is a historic change. Ever since we've started work on Amp, back in February, Anthropic's Claude has been the main model. Not for lack…",
-   "seen": "2025-11-18T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "typesafe": [
@@ -12264,18 +12252,6 @@
    "date": "2025-11-19T00:00:00+00:00",
    "summary": "",
    "seen": "2025-11-19T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Trying out Gemini 3 Pro with audio transcription and a new pelican benchmark",
-   "url": "https://simonwillison.net/2025/Nov/18/gemini-3/",
-   "date": "2025-11-18T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-18T00:00:00+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
