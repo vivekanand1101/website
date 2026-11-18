@@ -1,6 +1,18 @@
 {
  "anthropic": [
   {
+   "title": "Claude solves two open problems in the physics of black holes",
+   "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+   "date": "2026-11-17T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Physics research results, not about engineering with AI or systems."
+   }
+  },
+  {
    "title": "Building strong safety evaluations",
    "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
    "date": "2026-11-13T00:00:00+00:00",
@@ -703,6 +715,18 @@
    }
   },
   {
+   "title": "What 81,000 people told us about the economics of AI",
+   "url": "https://www.anthropic.com/research/81k-economics",
+   "date": "2026-04-22T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Survey on economics of AI, which is policy and social research."
+   }
+  },
+  {
    "title": "Scaling Managed Agents: Decoupling the brain from the hands",
    "url": "https://www.anthropic.com/research/managed-agents",
    "date": "2026-04-08T00:00:00+00:00",
@@ -730,37 +754,74 @@
     ],
     "reason": "How Claude Code's auto permission mode was designed and built."
    }
-  },
-  {
-   "title": "Harness design for long-running application development",
-   "url": "https://www.anthropic.com/research/harness-design-long-running-apps",
-   "date": "2026-03-24T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Vibe physics: The AI grad student",
-   "url": "https://www.anthropic.com/research/vibe-physics",
-   "date": "2026-03-23T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-21T01:28:56.959577+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "A worked example of agentic research with Claude, including where it fails."
-   }
   }
  ],
  "openai": [
+  {
+   "title": "Inside the Codex sandbox",
+   "url": "https://openai.com/index/inside-the-codex-sandbox",
+   "date": "2026-11-18T08:00:00+00:00",
+   "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Explains how an agent sandbox enforces filesystem and network limits across operating systems."
+   }
+  },
+  {
+   "title": "Managing frontier AI risk: From training to deployment",
+   "url": "https://openai.com/index/managing-frontier-ai-risk",
+   "date": "2026-11-18T06:00:00+00:00",
+   "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "High-level risk and safety policy overview with little technical detail."
+   }
+  },
+  {
+   "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+   "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+   "date": "2026-11-18T00:00:00+00:00",
+   "summary": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Partnership announcement."
+   }
+  },
+  {
+   "title": "Advancing chip design with OpenAI models",
+   "url": "https://openai.com/index/advancing-chip-design-with-our-models",
+   "date": "2026-11-18T00:00:00+00:00",
+   "summary": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Technical results on models optimizing circuits and RISC-V core designs."
+   }
+  },
+  {
+   "title": "The Silent Consensus",
+   "url": "https://openai.com/index/the-silent-consensus",
+   "date": "2026-11-18T00:00:00+00:00",
+   "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Essay on AI and society, not technical."
+   }
+  },
   {
    "title": "Introducing GPT-6.2 Astra and Sol",
    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
@@ -1433,68 +1494,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Customer case study with no technical detail."
-   }
-  },
-  {
-   "title": "Heimstaden is changing residential real estate management with AI",
-   "url": "https://openai.com/index/heimstaden",
-   "date": "2026-11-03T08:00:00+00:00",
-   "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
-   "seen": "2026-11-04T03:07:30.880864+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer case study about property management."
-   }
-  },
-  {
-   "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-   "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
-   "seen": "2026-11-04T03:07:30.880864+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Executive hiring announcement."
-   }
-  },
-  {
-   "title": "Rewarding defenders with bigger bug bounties",
-   "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-   "date": "2026-11-02T18:00:00+00:00",
-   "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
-   "seen": "2026-11-03T03:08:01.125586+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Bug bounty program announcement with no technical detail."
-   }
-  },
-  {
-   "title": "Preparing our next security sprint to harden OpenAI",
-   "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-   "date": "2026-11-02T18:00:00+00:00",
-   "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
-   "seen": "2026-11-03T03:08:01.125586+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Announcement of a security sprint with a partner, little technical substance."
-   }
-  },
-  {
-   "title": "Scaling Git at OpenAI",
-   "url": "https://openai.com/index/scaling-git-at-openai",
-   "date": "2026-11-02T15:30:00+00:00",
-   "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
-   "seen": "2026-11-03T03:08:01.125586+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "backend"
-    ],
-    "reason": "Describes building a Git-compatible backend to handle Codex-scale development."
    }
   }
  ],
@@ -2605,6 +2604,19 @@
   }
  ],
  "mario": [
+  {
+   "title": "The History Behind the x86 CPU: From 4004 to 486",
+   "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+   "date": "2026-11-18T17:01:42+00:00",
+   "summary": "recommended reading by @pikuma what a nice trip down memory lane. still remember the first night with my printed out Intel manual, wrapping my 12yo head around segments. a few years later my \"mentor\" blitz directed me…",
+   "label": "Recommended",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always shown from a full-feed blog."
+   }
+  },
   {
    "title": "After 600 experiments, here's what I discovered about JEPA world models",
    "url": "https://haddyalchaer.com/jepa",
@@ -6913,6 +6925,35 @@
  ],
  "meta": [
   {
+   "title": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
+   "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models/",
+   "date": "2026-11-18T17:00:00+00:00",
+   "summary": "Our previous post in this series introduced the Ranking Engineer Agent (REA), an autonomous system that generates hypotheses, designs experiments, and proves new machine learning (ML) techniques on ads ranking models.…",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Autonomous agents running ML experiments across ads ranking models."
+   }
+  },
+  {
+   "title": "Design Once, Deploy at Scale: Building a Template-Driven ML Ecosystem",
+   "url": "https://engineering.fb.com/2026/11/18/ml-applications/design-once-deploy-at-scale-template-driven-ml-ecosystem/",
+   "date": "2026-11-18T16:59:38+00:00",
+   "summary": "As ML ecosystems grow to a large number of production models, the bottleneck is no longer inventing new techniques to improve these models, but rather shipping them reliably and efficiently across a fragmented model…",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Template-driven approach to shipping many production ML models reliably."
+   }
+  },
+  {
    "title": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
    "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
    "date": "2026-11-13T17:00:39+00:00",
@@ -7223,6 +7264,20 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "How Cloudflare WAF helps protect against Java4Shell (CVE-2026-114938)",
+   "url": "https://blog.cloudflare.com/java4shell-waf-protection/",
+   "date": "2026-11-18T14:52:10+00:00",
+   "summary": "Java4Shell is a critical memory-corruption flaw in OpenJDK's Base64 decoder that can lead to remote code execution. Cloudflare has released six WAF managed rules for paid plans that logs matching requests by default.…",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Security engineering on a memory-corruption flaw in OpenJDK's Base64 decoder and WAF mitigation."
+   }
+  },
   {
    "title": "Quad9’s withdrawal from France: A canary in the coal mine",
    "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
@@ -12261,6 +12316,20 @@
  ],
  "pragmatic": [
   {
+   "title": "Software factories and code reviews with Harjot Gill",
+   "url": "https://newsletter.pragmaticengineer.com/p/software-factories-and-code-reviews",
+   "date": "2026-11-18T18:08:52+00:00",
+   "summary": "CodeRabbit CEO Harjot Gill explains how he shipped over 5,000 pull requests in a month, why he believes human code review is dead, and what he gets from spending $250,000 a month on AI.",
+   "seen": "2026-11-18T20:37:23.730312+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always shown; covers AI-driven code review and agent-heavy workflows."
+   }
+  },
+  {
    "title": "Inference engineering for software engineers",
    "url": "https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers",
    "date": "2026-11-17T16:11:23+00:00",
@@ -13920,18 +13989,6 @@
    "date": "2025-11-19T17:09:43.515000+00:00",
    "summary": "Martin Fowler breaks down how AI is transforming software architecture and development, from refactoring and deterministic techniques to the timeless principles that still anchor great engineering.",
    "seen": "2025-11-19T17:09:43.515000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Career paths for software engineers at large tech companies",
-   "url": "https://newsletter.pragmaticengineer.com/p/career-paths-for-software-engineers",
-   "date": "2025-11-18T17:02:14.519000+00:00",
-   "summary": "Tactics for getting promoted to Levels 5, 6, and 7, and advice on when to make your move into management. Former Amazon VP, Ethan Evans, reveals what he saw work during a successful Big Tech career",
-   "seen": "2025-11-18T17:02:14.519000+00:00",
    "verdict": {
     "relevant": false,
     "topics": [],
