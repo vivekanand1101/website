@@ -756,6 +756,21 @@
  ],
  "openai": [
   {
+   "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+   "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+   "date": "2026-11-19T08:00:00+00:00",
+   "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
+   "seen": "2026-11-19T20:37:54.144391+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Describes Codex-powered workflows that find and fix performance issues in a production system."
+   }
+  },
+  {
    "title": "The Silent Consensus",
    "url": "https://openai.com/index/the-silent-consensus",
    "date": "2026-11-18T10:00:00+00:00",
@@ -1482,18 +1497,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Product announcement for image generation features."
-   }
-  },
-  {
-   "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
-   "url": "https://openai.com/index/devrev-enterprise-self-service",
-   "date": "2026-11-04T00:00:00+00:00",
-   "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
-   "seen": "2026-11-05T03:08:12.211158+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer case study."
    }
   }
  ],
@@ -2604,6 +2607,21 @@
   }
  ],
  "mario": [
+  {
+   "title": "All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI",
+   "url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&feature=youtu.be",
+   "date": "2026-11-19T08:04:06+00:00",
+   "summary": "recommended viewing.",
+   "label": "Recommended",
+   "seen": "2026-11-19T20:37:54.144391+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Recommended talk about AI-generated code quality."
+   }
+  },
   {
    "title": "The History Behind the x86 CPU: From 4004 to 486",
    "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
@@ -7265,10 +7283,22 @@
  ],
  "cloudflare": [
   {
+   "title": "Internet traffic and attacks during the 2026 U.S. midterm elections",
+   "url": "https://blog.cloudflare.com/internet-traffic-2026-us-election/",
+   "date": "2026-11-19T14:00:00+00:00",
+   "summary": "On November 3, 2026 U.S. voters headed to the polls. Here’s what Cloudflare data across more than 1,400 protected sites tells us about Election Day Internet traffic and cyberattacks.",
+   "seen": "2026-11-19T20:37:54.144391+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Election day traffic statistics report with little engineering substance."
+   }
+  },
+  {
    "title": "An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team",
    "url": "https://blog.cloudflare.com/open-clairic/",
    "date": "2026-11-18T22:00:00+00:00",
-   "summary": "Add your teaser here. It should complement the headline, not repeat it. Teaser cannot be longer than 240 characters. The Blog Review Gem will suggest an excerpt. Clairic graduates from preview, while Clairic-flash…",
+   "summary": "Clairic graduates from preview, while Clairic-flash joins the repertoire on Workers AI. We’re doing an open-weight release for both extraction models.",
    "seen": "2026-11-19T03:00:42.610932+00:00",
    "verdict": {
     "relevant": true,
@@ -12330,6 +12360,20 @@
  ],
  "pragmatic": [
   {
+   "title": "The Pulse: Is Amazon’s writing culture collapsing because of AI?",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-is-amazons-writing-culture",
+   "date": "2026-11-19T17:08:59+00:00",
+   "summary": "Also: Anthropic goes public with the largest-ever IPO, Meta frantically reverses shutdown of popular AI coding harness Conductor, and more",
+   "seen": "2026-11-19T20:37:54.144391+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Industry news roundup centered on AI and its effect on engineering teams."
+   }
+  },
+  {
    "title": "Software factories and code reviews with Harjot Gill",
    "url": "https://newsletter.pragmaticengineer.com/p/software-factories-and-code-reviews",
    "date": "2026-11-18T18:08:52+00:00",
@@ -13994,18 +14038,6 @@
     "topics": [
      "backend"
     ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "How AI will change software engineering – with Martin Fowler",
-   "url": "https://newsletter.pragmaticengineer.com/p/martin-fowler",
-   "date": "2025-11-19T17:09:43.515000+00:00",
-   "summary": "Martin Fowler breaks down how AI is transforming software architecture and development, from refactoring and deterministic techniques to the timeless principles that still anchor great engineering.",
-   "seen": "2025-11-19T17:09:43.515000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
   }
