@@ -771,6 +771,57 @@
    }
   },
   {
+   "title": "Deploying Daybreak Red",
+   "url": "https://openai.com/business/learn/deploying-daybreak-red",
+   "date": "2026-11-19T00:00:00+00:00",
+   "summary": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+   "seen": "2026-11-20T03:11:53.533497+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "A reference architecture for running supervised AI security investigations, covering safety controls and monitoring, has enough technical substance to keep (page returned 403, so judged from the summary)."
+   }
+  },
+  {
+   "title": "See PR scans in action",
+   "url": "https://openai.com/business/learn/pr-scans-demo",
+   "date": "2026-11-19T00:00:00+00:00",
+   "summary": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
+   "seen": "2026-11-20T03:11:53.533497+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product demo video of PR scans with no evident technical depth."
+   }
+  },
+  {
+   "title": "Explore the Codex Security Plugin",
+   "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+   "date": "2026-11-19T00:00:00+00:00",
+   "summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+   "seen": "2026-11-20T03:11:53.533497+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Product demo walkthrough of the Codex Security Plugin, essentially marketing."
+   }
+  },
+  {
+   "title": "Get started with Daybreak Blue",
+   "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+   "date": "2026-11-19T00:00:00+00:00",
+   "summary": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
+   "seen": "2026-11-20T03:11:53.533497+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Onboarding walkthrough for a product with no technical engineering content."
+   }
+  },
+  {
    "title": "The Silent Consensus",
    "url": "https://openai.com/index/the-silent-consensus",
    "date": "2026-11-18T10:00:00+00:00",
@@ -1446,57 +1497,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Partnership, customer story or marketing with little technical detail."
-   }
-  },
-  {
-   "title": "OpenAI to acquire Pierre Computer Company, Inc.",
-   "url": "https://openai.com/index/openai-to-acquire-pierre",
-   "date": "2026-11-04T14:30:00+00:00",
-   "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
-   "seen": "2026-11-05T03:08:12.211158+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Acquisition news."
-   }
-  },
-  {
-   "title": "A thousand fewer paths to root",
-   "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
-   "date": "2026-11-04T08:00:00+00:00",
-   "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
-   "seen": "2026-11-05T03:08:12.211158+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "backend"
-    ],
-    "reason": "Autonomous pipeline that found and patched 948 Linux kernel privilege-escalation bugs."
-   }
-  },
-  {
-   "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-   "url": "https://openai.com/index/daybreak-red-aws-govcloud",
-   "date": "2026-11-04T07:00:00+00:00",
-   "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
-   "seen": "2026-11-05T03:08:12.211158+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Availability announcement for a product in a cloud region."
-   }
-  },
-  {
-   "title": "Introducing Images 2.6",
-   "url": "https://openai.com/index/introducing-images-2-6",
-   "date": "2026-11-04T00:00:00+00:00",
-   "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
-   "seen": "2026-11-05T03:08:12.211158+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Product announcement for image generation features."
    }
   }
  ],
@@ -2607,6 +2607,21 @@
   }
  ],
  "mario": [
+  {
+   "title": "The Sweet Side of the Bitter Lesson — Thariq Shihipar, Independent",
+   "url": "https://www.youtube.com/watch?v=xRJMiaUoD_8&feature=youtu.be",
+   "date": "2026-11-19T20:32:34+00:00",
+   "summary": "recommended viewing.",
+   "label": "Recommended",
+   "seen": "2026-11-20T03:11:53.533497+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always-shown talk on the Bitter Lesson and building with AI models."
+   }
+  },
   {
    "title": "All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI",
    "url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&feature=youtu.be",
@@ -7282,6 +7297,20 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
+   "url": "https://blog.cloudflare.com/nginx2root/",
+   "date": "2026-11-20T01:58:29+00:00",
+   "summary": "Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of…",
+   "seen": "2026-11-20T03:11:53.533497+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Technical breakdown of five nginx memory-corruption RCE bugs and how proxying protects origins is solid security engineering."
+   }
+  },
   {
    "title": "Internet traffic and attacks during the 2026 U.S. midterm elections",
    "url": "https://blog.cloudflare.com/internet-traffic-2026-us-election/",
@@ -12335,20 +12364,6 @@
    "date": "2025-11-22T00:00:00+00:00",
    "summary": "",
    "seen": "2025-11-22T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Nano Banana Pro aka gemini-3-pro-image-preview is the best available image generation model",
-   "url": "https://simonwillison.net/2025/Nov/20/nano-banana-pro/",
-   "date": "2025-11-20T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-20T00:00:00+00:00",
    "verdict": {
     "relevant": true,
     "topics": [
