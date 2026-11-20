@@ -1,6 +1,18 @@
 {
  "anthropic": [
   {
+   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+   "url": "https://www.anthropic.com/news/ipo-close",
+   "date": "2026-11-20T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-20T20:37:48.572924+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Company IPO closing news with no technical content."
+   }
+  },
+  {
    "title": "Anthropic prices initial public offering",
    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
    "date": "2026-11-18T00:00:00+00:00",
@@ -737,24 +749,37 @@
     "topics": [],
     "reason": "Survey on economics of AI, which is policy and social research."
    }
-  },
-  {
-   "title": "Scaling Managed Agents: Decoupling the brain from the hands",
-   "url": "https://www.anthropic.com/research/managed-agents",
-   "date": "2026-04-08T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-10-19T14:51:25.580290+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai",
-     "backend"
-    ],
-    "reason": "Architecture for scaling hosted agents by separating reasoning from execution."
-   }
   }
  ],
  "openai": [
+  {
+   "title": "Combatting adversarial distillation",
+   "url": "https://openai.com/index/combatting-adversarial-distillation",
+   "date": "2026-11-20T10:00:00+00:00",
+   "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+   "seen": "2026-11-20T20:37:48.572924+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Covers training, detection and safeguards against model capability extraction."
+   }
+  },
+  {
+   "title": "Can AI help scientists identify promising drug candidates?",
+   "url": "https://openai.com/index/introducing-medchembench",
+   "date": "2026-11-20T00:00:00+00:00",
+   "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+   "seen": "2026-11-20T20:37:48.572924+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Introduces a benchmark for evaluating model reasoning on molecular structures and experimental evidence."
+   }
+  },
   {
    "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
@@ -1473,30 +1498,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Community and policy announcement with no technical detail."
-   }
-  },
-  {
-   "title": "Flipsnack grows product signups with conversion optimization",
-   "url": "https://openai.com/ads/customers/flipsnack",
-   "date": "2026-11-05T00:45:15+00:00",
-   "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
-   "seen": "2026-11-06T20:38:00.536902+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Partnership, customer story or marketing with little technical detail."
-   }
-  },
-  {
-   "title": "Franklin Templeton uses OpenAI to support investment research",
-   "url": "https://openai.com/index/franklin-templeton",
-   "date": "2026-11-05T00:00:00+00:00",
-   "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
-   "seen": "2026-11-06T20:38:00.536902+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Partnership, customer story or marketing with little technical detail."
    }
   }
  ],
@@ -6941,19 +6942,6 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Does the code matter?",
-   "url": "https://dimillian.medium.com/does-the-code-matter-da4b1b36e4fc?sk=3c5d2a912296e31affd394d9fdad1ad7",
-   "date": "2025-11-20T08:44:00+00:00",
-   "summary": "Recommended reading. Three notes. OP doesn't let the LLM go wild, but uses it deliberately to generate self contained things they disect. I still find value in coding by hand. Coding is a mode of thinking, just like…",
-   "label": "Recommended",
-   "seen": "2025-11-20T08:44:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "meta": [
@@ -7297,6 +7285,34 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
+   "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
+   "date": "2026-11-20T20:24:38+00:00",
+   "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
+   "seen": "2026-11-20T20:37:48.572924+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Security engineering write-up on a memory corruption flaw in default Rails and Sinatra apps and how it is mitigated."
+   }
+  },
+  {
+   "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+   "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
+   "date": "2026-11-20T20:00:45+00:00",
+   "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the…",
+   "seen": "2026-11-20T20:37:48.572924+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Explains a critical flaw in PHP's session handler and the rules that block it."
+   }
+  },
   {
    "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
    "url": "https://blog.cloudflare.com/nginx2root/",
@@ -14039,20 +14055,6 @@
    "verdict": {
     "relevant": false,
     "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "The Pulse #154: Cloudflare takes down half the internet – but shares a great postmortem",
-   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-154",
-   "date": "2025-11-20T18:06:09.095000+00:00",
-   "summary": "Also: why it’s not practical to build for CDN redundancy, Google launches AI IDE Antigravity externally while using Jetski internally, more AI fakers caught in remote interviews, and more",
-   "seen": "2025-11-20T18:06:09.095000+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "backend"
-    ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
   }
