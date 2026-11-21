@@ -2065,6 +2065,18 @@
  ],
  "thorsten": [
   {
+   "title": "Joy & Curiosity #107",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-107",
+   "date": "2026-11-21T18:15:30+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-11-21T20:37:32.327734+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Weekly links roundup from a full-feed blog, always kept."
+   }
+  },
+  {
    "title": "Joy & Curiosity #106",
    "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-106",
    "date": "2026-11-15T07:39:14+00:00",
@@ -2608,6 +2620,21 @@
   }
  ],
  "mario": [
+  {
+   "title": "Announcing DreamCoder",
+   "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+   "date": "2026-11-21T09:10:51+00:00",
+   "summary": "recommended reading by @mickeynp. many nice ideas in dreamcoder.",
+   "label": "Recommended",
+   "seen": "2026-11-21T20:37:32.327734+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Pointer to DreamCoder and its ideas on program synthesis."
+   }
+  },
   {
    "title": "We promoted developers into architects without informing them",
    "url": "https://manidoraisamy.com/developer-to-architect.html",
@@ -6944,19 +6971,6 @@
     ],
     "reason": "Rebuttal on whether LLM APIs are a state-sync problem."
    }
-  },
-  {
-   "title": "academic.oup.com",
-   "url": "https://academic.oup.com/pnasnexus/article/4/10/pgaf316/8303888?login=false",
-   "date": "2025-11-21T13:45:04+00:00",
-   "summary": "Recommended reading. Would be interesting to see similar studies wrt acquisition of knowledge in software development.",
-   "label": "Recommended",
-   "seen": "2025-11-21T13:45:04+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "meta": [
@@ -9277,6 +9291,20 @@
   }
  ],
  "amp": [
+  {
+   "title": "Puck in the Car",
+   "url": "https://ampcode.com/news/puck-in-the-car",
+   "date": "2026-11-21T00:00:00+00:00",
+   "summary": "You can now talk to Puck in your car, so you can work more safely while driving without looking at a screen. In the rare case that you do need to look at something, it's displayed very big so a quick glance is enough.…",
+   "seen": "2026-11-21T20:37:32.327734+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Voice interface for a coding agent, from a full-feed blog."
+   }
+  },
   {
    "title": "Amp for Windows",
    "url": "https://ampcode.com/news/amp-for-windows",
