@@ -753,6 +753,20 @@
  ],
  "openai": [
   {
+   "title": "Perplexity and Intelligence",
+   "url": "https://openai.com/index/perplexity-and-intelligence",
+   "date": "2026-11-22T00:00:00+00:00",
+   "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+   "seen": "2026-11-22T20:38:04.536961+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Explains how perplexity is used to evaluate model capabilities, which is technical AI evals content."
+   }
+  },
+  {
    "title": "Combatting adversarial distillation",
    "url": "https://openai.com/index/combatting-adversarial-distillation",
    "date": "2026-11-20T10:00:00+00:00",
@@ -1486,18 +1500,6 @@
      "ai"
     ],
     "reason": "A model trained to find vulnerabilities and fix them within authorized scope, which is agent and security engineering."
-   }
-  },
-  {
-   "title": "Merge builds product and business tools with OpenAI technology",
-   "url": "https://openai.com/index/merge-builds-with-openai",
-   "date": "2026-11-05T08:00:00+00:00",
-   "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
-   "seen": "2026-11-06T20:38:00.536902+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Partnership, customer story or marketing with little technical detail."
    }
   }
  ],
@@ -6957,20 +6959,6 @@
     ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Armin is wrong and here's why",
-   "url": "https://mariozechner.at/posts/2025-11-22-armin-is-wrong",
-   "date": "2025-11-22T00:00:00+00:00",
-   "summary": "A rambling rebuttal to Armin's claim that LLM APIs are a state synchronization problem.",
-   "seen": "2025-11-22T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Rebuttal on whether LLM APIs are a state-sync problem."
-   }
   }
  ],
  "meta": [
@@ -9561,7 +9549,7 @@
    "title": "Use Your Claude Plan in Amp",
    "url": "https://ampcode.com/news/use-your-claude-plan",
    "date": "2026-10-10T00:00:00+00:00",
-   "summary": "You can now use your Claude Subscription in Amp. It's free and available for everyone now. When creating a new thread, just pick Mode > Claude Code . It'll ask to link your Claude sub if you haven't already done that.…",
+   "summary": "You can now use your Claude subscription in Amp. It's free and available for everyone now. When creating a new thread, just pick Mode > Claude Code . It'll ask to link your Claude sub if you haven't already done that.…",
    "seen": "2026-10-10T00:00:00+00:00",
    "verdict": {
     "relevant": true,
@@ -12413,20 +12401,6 @@
     "relevant": true,
     "topics": [
      "databases"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Olmo 3 is a fully open LLM",
-   "url": "https://simonwillison.net/2025/Nov/22/olmo-3/",
-   "date": "2025-11-22T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-22T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
     ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
