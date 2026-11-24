@@ -753,6 +753,21 @@
  ],
  "openai": [
   {
+   "title": "OpenAI and Cisco introduce Shirudo",
+   "url": "https://openai.com/index/introducing-shirudo",
+   "date": "2026-11-23T21:20:00+00:00",
+   "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+   "seen": "2026-11-24T03:01:20.293224+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Introduces an open-source eBPF-based Linux runtime that hot-applies signed exploit shields and has agents generate them, with real security-engineering substance."
+   }
+  },
+  {
    "title": "Connected intelligence for in-house legal",
    "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
    "date": "2026-11-23T08:00:00+00:00",
@@ -762,6 +777,18 @@
     "relevant": false,
     "topics": [],
     "reason": "A webinar on AI for legal teams with no technical engineering content."
+   }
+  },
+  {
+   "title": "Richpanel helps companies automate 50% of support in 30 days",
+   "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+   "date": "2026-11-23T08:00:00+00:00",
+   "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+   "seen": "2026-11-24T03:01:20.293224+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study focused on business outcomes rather than technical engineering detail."
    }
   },
   {
@@ -1474,30 +1501,6 @@
      "ai"
     ],
     "reason": "Introduces a benchmark for evaluating AI agents on raw experimental data."
-   }
-  },
-  {
-   "title": "Cult.fit builds operational muscle with Codex",
-   "url": "https://openai.com/index/cultfit-builds-with-codex",
-   "date": "2026-11-05T20:00:00+00:00",
-   "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
-   "seen": "2026-11-06T20:38:00.536902+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Partnership, customer story or marketing with little technical detail."
-   }
-  },
-  {
-   "title": "Australian universities are creating AI-native graduates",
-   "url": "https://openai.com/index/australian-universities-ai-native-graduates",
-   "date": "2026-11-05T17:00:00+00:00",
-   "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
-   "seen": "2026-11-06T20:38:00.536902+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Partnership, customer story or marketing with little technical detail."
    }
   }
  ],
@@ -2620,6 +2623,21 @@
   }
  ],
  "mario": [
+  {
+   "title": "Build the Workshop Before the Software Factory — Armin Ronacher, Earendil",
+   "url": "https://www.youtube.com/watch?v=JNexz3Tbiu8",
+   "date": "2026-11-24T01:08:15+00:00",
+   "summary": "recommended viewing, featuring clankolas @mitsuhiko",
+   "label": "Recommended",
+   "seen": "2026-11-24T03:01:20.293224+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always-shown talk by Armin Ronacher about building tooling ('workshop') before AI-driven 'software factories'."
+   }
+  },
   {
    "title": "AIs might overthrow the government within a year – Paul Christiano",
    "url": "https://www.youtube.com/watch?is=6mhVjsgtN09nqrkN&v=SyHM5hNPAEo&feature=youtu.be",
@@ -10874,18 +10892,6 @@
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
-  },
-  {
-   "title": "Try Claude Opus 4.5 With Us",
-   "url": "https://ampcode.com/news/try-opus",
-   "date": "2025-11-24T00:00:00+00:00",
-   "summary": "Anthropic just released Claude Opus 4.5. We've been testing it, right on the heels of the Gemini 3 release, and have been very, very impressed. Exciting times! We're eager to figure out where and how it can fit into…",
-   "seen": "2025-11-24T00:00:00+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "typesafe": [
@@ -11003,6 +11009,18 @@
   }
  ],
  "simon": [
+  {
+   "title": "Ladybird's first alpha release",
+   "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+   "date": "2026-11-23T21:46:35+00:00",
+   "summary": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few…",
+   "seen": "2026-11-24T03:01:20.293224+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always-shown post on Ladybird's first browser alpha, which doesn't fall under the ai, backend or databases topics."
+   }
+  },
   {
    "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
    "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
@@ -12414,34 +12432,6 @@
    "verdict": {
     "relevant": false,
     "topics": [],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Claude Opus 4.5, and why evaluating new LLMs is increasingly difficult",
-   "url": "https://simonwillison.net/2025/Nov/24/claude-opus/",
-   "date": "2025-11-24T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-24T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "sqlite-utils 4.0a1 has several (minor) backwards incompatible changes",
-   "url": "https://simonwillison.net/2025/Nov/24/sqlite-utils-40a1/",
-   "date": "2025-11-24T00:00:00+00:00",
-   "summary": "",
-   "seen": "2025-11-24T00:00:00+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "databases"
-    ],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
   }
