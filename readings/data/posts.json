@@ -753,6 +753,42 @@
  ],
  "openai": [
   {
+   "title": "Searching for distant planets with Astra",
+   "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+   "date": "2026-11-24T11:00:00+00:00",
+   "summary": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
+   "seen": "2026-11-24T20:38:10.759571+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "A story about amateur astronomers using Codex, with little engineering detail."
+   }
+  },
+  {
+   "title": "How Intentful uses dots to make more time for growth",
+   "url": "https://openai.com/business/customer-stories/intentful-dots",
+   "date": "2026-11-24T00:00:00+00:00",
+   "summary": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
+   "seen": "2026-11-24T20:38:10.759571+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "A customer case study about a product assistant, no technical substance."
+   }
+  },
+  {
+   "title": "How iFood scales coding agents across 15,000 repositories",
+   "url": "https://openai.com/business/customer-stories/ifood",
+   "date": "2026-11-24T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-24T20:38:10.759571+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "A customer case study with no summary and no clear technical detail."
+   }
+  },
+  {
    "title": "OpenAI and Cisco introduce Shirudo",
    "url": "https://openai.com/index/introducing-shirudo",
    "date": "2026-11-23T21:20:00+00:00",
@@ -1463,44 +1499,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Customer case study."
-   }
-  },
-  {
-   "title": "How VistaPrint helps small businesses get the word out",
-   "url": "https://openai.com/ads/customers/vistaprint",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Small business owners preparing for a launch or an event often know what they want to accomplish before they know what to print. VistaPrint uses ChatGPT Ads to show how products like signs and branded merchandise can…",
-   "seen": "2026-11-17T20:37:58.993199+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer marketing story."
-   }
-  },
-  {
-   "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-   "url": "https://openai.com/index/partnering-with-hacktron",
-   "date": "2026-11-06T08:00:00+00:00",
-   "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
-   "seen": "2026-11-06T20:38:00.536902+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Partnership, customer story or marketing with little technical detail."
-   }
-  },
-  {
-   "title": "Measuring how AI agents handle everyday wet-lab science",
-   "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-   "date": "2026-11-06T00:00:00+00:00",
-   "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
-   "seen": "2026-11-06T20:38:00.536902+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Introduces a benchmark for evaluating AI agents on raw experimental data."
    }
   }
  ],
@@ -12437,6 +12435,20 @@
   }
  ],
  "pragmatic": [
+  {
+   "title": "The Pragmatic Engineer Essay Challenge: Category Winners (Part 1)",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge",
+   "date": "2026-11-24T19:16:38+00:00",
+   "summary": "How is AI changing the way we build software? Excerpts from three category winners of our recent essay contest, with links to 40 more by software engineers and experts",
+   "seen": "2026-11-24T20:38:10.759571+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Essays on how AI is changing the way software gets built."
+   }
+  },
   {
    "title": "The Pulse: Is Amazon’s writing culture collapsing because of AI?",
    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-is-amazons-writing-culture",
