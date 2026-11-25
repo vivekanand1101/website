@@ -1,6 +1,21 @@
 {
  "anthropic": [
   {
+   "title": "Migrating our Messages API to Rust",
+   "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+   "date": "2026-11-25T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-11-25T20:37:33.158749+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Engineering account of rewriting a production LLM API service in Rust."
+   }
+  },
+  {
    "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
    "url": "https://www.anthropic.com/news/ipo-close",
    "date": "2026-11-20T00:00:00+00:00",
@@ -736,18 +751,6 @@
     "relevant": false,
     "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "What 81,000 people told us about the economics of AI",
-   "url": "https://www.anthropic.com/research/81k-economics",
-   "date": "2026-04-22T00:00:00+00:00",
-   "summary": "",
-   "seen": "2026-11-18T20:37:23.730312+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Survey on economics of AI, which is policy and social research."
    }
   }
  ],
@@ -2637,6 +2640,34 @@
   }
  ],
  "mario": [
+  {
+   "title": "Google DeepMind's Demis Hassabis: How AI could become dangerous (with Reid Hoffman) | Summit '26",
+   "url": "https://www.youtube.com/watch?is=_7jKyxspeoPsB386&v=x7Z_1miRWB8&feature=youtu.be",
+   "date": "2026-11-25T17:37:59+00:00",
+   "summary": "recommended viewing. i always enjoy listening to and learning from hassabis. he also seems to be one of the not so many leaders in the space without sociopathic tendencies.",
+   "label": "Recommended",
+   "seen": "2026-11-25T20:37:33.158749+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Always shown; interview video on AI risk, no fitting topic."
+   }
+  },
+  {
+   "title": "Can Fei-Fei Li Reinvent AI (Again)?",
+   "url": "https://www.youtube.com/watch?is=C9XeIQBdT3WH-tb_&v=hORDMRY_bZ0&feature=youtu.be",
+   "date": "2026-11-25T12:15:37+00:00",
+   "summary": "recommended viewing. so extremely well presented and explained. jesus christ, this is so immensely cool. combining autoregressive inference, diffusion and causal modeling. it's like you have a bunch of \"simple\"…",
+   "label": "Recommended",
+   "seen": "2026-11-25T20:37:33.158749+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always shown; video on world models combining autoregressive, diffusion and causal modeling."
+   }
+  },
   {
    "title": "Build the Workshop Before the Software Factory — Armin Ronacher, Earendil",
    "url": "https://www.youtube.com/watch?v=JNexz3Tbiu8",
@@ -7345,6 +7376,21 @@
   }
  ],
  "cloudflare": [
+  {
+   "title": "Introducing Search for Agents",
+   "url": "https://blog.cloudflare.com/search-for-agents/",
+   "date": "2026-11-25T14:00:00+00:00",
+   "summary": "Flip one toggle to make your site searchable by AI agents — complete with automatic content indexing, a discoverable search API, and native HTTP QUERY support.",
+   "seen": "2026-11-25T20:37:33.158749+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Technical look at indexing and a search API with HTTP QUERY support for agents."
+   }
+  },
   {
    "title": "Probing DNS at Cloudflare",
    "url": "https://blog.cloudflare.com/probing-dns-at-cloudflare/",
@@ -12451,6 +12497,21 @@
  ],
  "pragmatic": [
   {
+   "title": "How Anthropic builds software in 2026 with Katelyn Lesse",
+   "url": "https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in",
+   "date": "2026-11-25T17:31:32+00:00",
+   "summary": "Katelyn Lesse explains how Anthropic rewrote Claude’s API in Rust and how AI agents are changing engineering at the company.",
+   "seen": "2026-11-25T20:37:33.158749+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "Always shown; covers the Rust API rewrite and agents in engineering workflows."
+   }
+  },
+  {
    "title": "The Pragmatic Engineer Essay Challenge: Category Winners (Part 1)",
    "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge",
    "date": "2026-11-24T19:16:38+00:00",
@@ -14117,18 +14178,6 @@
     "topics": [
      "backend"
     ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
-  },
-  {
-   "title": "Holiday gift ideas for techies",
-   "url": "https://newsletter.pragmaticengineer.com/p/copy-holiday-gift-ideas-for-techies-2025",
-   "date": "2025-11-25T17:30:00.645000+00:00",
-   "summary": "Gift ideas and inspiration for the tech workers in your life (and maybe yourself) this holiday season",
-   "seen": "2025-11-25T17:30:00.645000+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
     "reason": "Always-shown full-feed blog; topics tagged from title."
    }
   }
