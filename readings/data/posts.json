@@ -753,6 +753,20 @@
  ],
  "openai": [
   {
+   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+   "date": "2026-11-24T13:00:00+00:00",
+   "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+   "seen": "2026-11-25T03:00:46.862607+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Research result with technical substance on GPT-6 models designing proteins via reasoning and code, validated by lab binding tests."
+   }
+  },
+  {
    "title": "Searching for distant planets with Astra",
    "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
    "date": "2026-11-24T11:00:00+00:00",
@@ -786,6 +800,18 @@
     "relevant": false,
     "topics": [],
     "reason": "A customer case study with no summary and no clear technical detail."
+   }
+  },
+  {
+   "title": "Clay helps sales teams win with Codex and ChatGPT",
+   "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+   "date": "2026-11-24T00:00:00+00:00",
+   "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+   "seen": "2026-11-25T03:00:46.862607+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": "Customer case study focused on sales use cases rather than engineering detail."
    }
   },
   {
@@ -1476,33 +1502,23 @@
     ],
     "reason": "Infrastructure for tracking and stopping model workloads across research clusters."
    }
-  },
-  {
-   "title": "Kuken Industries searches 70 years of drawings in minutes",
-   "url": "https://openai.com/index/kuken",
-   "date": "2026-11-09T08:00:00+00:00",
-   "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
-   "seen": "2026-11-09T20:37:30.104683+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer case study without engineering depth."
-   }
-  },
-  {
-   "title": "CodeRabbit scales agentic software development and ships 20x more",
-   "url": "https://openai.com/index/coderabbit-codex-daybreak",
-   "date": "2026-11-09T08:00:00+00:00",
-   "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
-   "seen": "2026-11-10T20:40:33.052482+00:00",
-   "verdict": {
-    "relevant": false,
-    "topics": [],
-    "reason": "Customer case study."
-   }
   }
  ],
  "armin": [
+  {
+   "title": "Abolish Lock Poisoning",
+   "url": "https://lucumr.pocoo.org/2026/11/25/poisoning/",
+   "date": "2026-11-25T00:00:00+00:00",
+   "summary": "Rust has a curious feature that I don’t think the language would land today, if it was not there for a long time: mutex poisoning. When some Rust code panics while holding a std::sync::Mutex , the mutex is poisoned .…",
+   "seen": "2026-11-25T03:00:46.862607+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": "Always-shown post on Rust mutex poisoning semantics, a server-side language and concurrency topic."
+   }
+  },
   {
    "title": "AI and Irontown",
    "url": "https://lucumr.pocoo.org/2026/11/9/irontown/",
@@ -6986,21 +7002,6 @@
     ],
     "reason": "Lessons from building a minimal coding agent."
    }
-  },
-  {
-   "title": "The Bitter Lesson of LLM Extensions",
-   "url": "https://www.sawyerhood.com/blog/llm-extension",
-   "date": "2025-11-25T01:58:49+00:00",
-   "summary": "Recommended reading by @sawyerhood \"An agent isn't just a LLM in a while loop. It's an LLM in a while loop that has a computer strapped to it.\" Jupp!",
-   "label": "Recommended",
-   "seen": "2025-11-25T01:58:49+00:00",
-   "verdict": {
-    "relevant": true,
-    "topics": [
-     "ai"
-    ],
-    "reason": "Always-shown full-feed blog; topics tagged from title."
-   }
   }
  ],
  "meta": [
@@ -11007,6 +11008,20 @@
   }
  ],
  "simon": [
+  {
+   "title": "Three LLM inflection points in twelve months",
+   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+   "date": "2026-11-24T23:02:07+00:00",
+   "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve…",
+   "seen": "2026-11-25T03:00:46.862607+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": "Always-shown keynote writeup on inflection points in LLM and coding-agent capabilities."
+   }
+  },
   {
    "title": "Ladybird's first alpha release",
    "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
