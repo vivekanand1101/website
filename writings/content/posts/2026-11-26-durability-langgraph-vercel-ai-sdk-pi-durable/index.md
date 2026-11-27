@@ -23,62 +23,7 @@ For an API, the responses are usually faster but, for an AI agent, the turns are
 
 For a new project that we are building at VI, I thought of comparing the common frameworks for building AI agents - Langchain's Langgraph, Vercel's AI SDK and Earendil's pi durable
 
-## Earendil's Pi Durable
-
-Among the frameworks that I compared. Pi durable had the least amount of moving parts. It happens to be the closes to the basic agent loop as well. It is the newest among the three and currently experimental.
-
-It provides you with flexibility to create your own storage backend that you could use. It works as follows:
-
-1. Every user message, model call, tool call and each of the responses are stored in the storage
-
-2. Every tool call is a state machine in itself
-
-3. You can mark a tool as **replay safe**.  meaning, pi is free to re-execute it. Side effects inside it can happen twice, so this is where you need an idempotency key. If not specified as replay safe, pi will not re-execute it and model will get an interrupted tool call as a result.
-
-4. Allows for multi player conversations and forking of a conversation naturally
-
-5. After the crash, the boot can directly restart the pending and interrupted tasks
-
-6. Partial answers are saved while they stream, about every 100 ms, so a crash mid-answer doesn't lose what was already shown.
-
-7. Tasks have versions and migrations, so a new deploy can pick up tasks created by older code
-
-8. Durable timers are natively supported
-
-### The disadvantages
-
-1. Only one process can access the storage that means only one pod (if you are using k8s) of the agent will run. If you want to use same database for multiple agents, in postgres one way to do that is to use different schemas for different agents.
-
-   During deployment, we will have to be careful that only one storage is using the db at that time and thus needs some handling like a lease on the storage
-
-2. The package is experimental and is prone to breaking apis
-
-In the coach prototype, the handbook lookup is safe to repeat. The reminder tool leaves `replay` unset because repeating the call could schedule a second reminder. The examples below are shortened from the prototype, with imports, schemas, and app helpers omitted.
-
-```typescript
-// Pi records each tool call's intent before running execute.
-const tools = [
-  defineTool({
-    ...handbookDefinition,
-    // The tool does its actual work in execute.
-    execute: lookupHandbook,
-    // A read-only lookup can run again if the process dies mid-call.
-    replay: 'safe',
-  }),
-  // With replay unset, an interrupted call returns an error to the model.
-  defineTool({
-    ...reminderDefinition,
-    execute: scheduleReminder,
-  }),
-];
-
-const registry = createRegistry();
-registry.install(defineExtension({ name: 'coach', tools }));
-// On restart, reopen the same database to recover pending work.
-const storage = await openNodeSqliteStorage('durable.sqlite');
-const harness = await Harness.open(storage, { models, registry }, context);
-harness.resume();
-```
+The examples below are shortened from a prototype for that project, with imports, schemas, and app helpers omitted.
 
 ## Langchain's Langgraph
 
@@ -166,4 +111,61 @@ async function answer(question: string, policy: string) {
   });
   return text;
 }
+```
+
+## Earendil's Pi Durable
+
+Among the frameworks that I compared. Pi durable had the least amount of moving parts. It happens to be the closes to the basic agent loop as well. It is the newest among the three and currently experimental.
+
+It provides you with flexibility to create your own storage backend that you could use. It works as follows:
+
+1. Every user message, model call, tool call and each of the responses are stored in the storage
+
+2. Every tool call is a state machine in itself
+
+3. You can mark a tool as **replay safe**.  meaning, pi is free to re-execute it. Side effects inside it can happen twice, so this is where you need an idempotency key. If not specified as replay safe, pi will not re-execute it and model will get an interrupted tool call as a result.
+
+4. Allows for multi player conversations and forking of a conversation naturally
+
+5. After the crash, the boot can directly restart the pending and interrupted tasks
+
+6. Partial answers are saved while they stream, about every 100 ms, so a crash mid-answer doesn't lose what was already shown.
+
+7. Tasks have versions and migrations, so a new deploy can pick up tasks created by older code
+
+8. Durable timers are natively supported
+
+### The disadvantages
+
+1. Only one process can access the storage that means only one pod (if you are using k8s) of the agent will run. If you want to use same database for multiple agents, in postgres one way to do that is to use different schemas for different agents.
+
+   During deployment, we will have to be careful that only one storage is using the db at that time and thus needs some handling like a lease on the storage
+
+2. The package is experimental and is prone to breaking apis
+
+In the coach prototype, the handbook lookup is safe to repeat. The reminder tool leaves `replay` unset because repeating the call could schedule a second reminder.
+
+```typescript
+// Pi records each tool call's intent before running execute.
+const tools = [
+  defineTool({
+    ...handbookDefinition,
+    // The tool does its actual work in execute.
+    execute: lookupHandbook,
+    // A read-only lookup can run again if the process dies mid-call.
+    replay: 'safe',
+  }),
+  // With replay unset, an interrupted call returns an error to the model.
+  defineTool({
+    ...reminderDefinition,
+    execute: scheduleReminder,
+  }),
+];
+
+const registry = createRegistry();
+registry.install(defineExtension({ name: 'coach', tools }));
+// On restart, reopen the same database to recover pending work.
+const storage = await openNodeSqliteStorage('durable.sqlite');
+const harness = await Harness.open(storage, { models, registry }, context);
+harness.resume();
 ```
