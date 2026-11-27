@@ -19,7 +19,7 @@ When we a server running in production, there are many things that can go wrong.
 
 If you have written your pogram state in memory, which happens to be volatile, you could end up with losing state. A software that keeps the program state functional across crashing is a durable software
 
-For an API, the responses are usually faster but, for an AI agent, the turns are slower and potentially hours and days. It can involve multiple rounds of trips communication b/w the models, harness and tools given to the models. This means, there is a lot of state to track and the cost of repeating all the steps is expensive given the token prices.
+For an API, the responses are usually faster but, for an AI agent, the turns are slower and potentially hours and days. It can involve multiple rounds of trips communication b/w the models, harness and tools given to the models. This means, there is a lot of state to track and the cost of repeating all the steps is not just expensive but, could potentially have unwanted side effects like making a payment twice.
 
 For a new project that we are building at VI, I thought of comparing the common frameworks for building AI agents - Langchain's Langgraph, Vercel's AI SDK and Earendil's pi durable
 
